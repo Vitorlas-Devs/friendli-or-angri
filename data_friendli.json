@@ -1,0 +1,186 @@
+[
+    {
+        "Név": "Bikeshed",
+        "Leírás": "Bikeshed is a pre-processor for spec documents, turning a source document into a final spec document, with appropriate boilerplate, bibliography, indexes, etc all filled in. It's used on specs for CSS and many other W3C working groups, WHATWG, the C++ standards committee, and elsewhere!"
+    },
+    {
+        "Név": "Cirrus",
+        "Leírás": "Cirrus is a modular, responsive, and component centric SCSS framework aimed at bringing not only beautiful, hassle-free styling, but also a better developer experience. Almost all generated styles can be modified via its config style so you can mold the framework to whatever you want."
+    },
+    {
+        "Név": "Gatsby",
+        "Leírás": "Gatsby is an open-source static site generator built on top of Node.js using React and GraphQL. It provides over 2500 plugins to create static sites based on sources as Markdown documents, MDX, images, and numerous Content Management Systems such as WordPress, Drupal and more."
+    },
+    {
+        "Név": "Grunt",
+        "Leírás": "Grunt is a JavaScript task runner, a tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting. Grunt uses a custom configuration file to specify the tasks you want to run, and uses Node.js to run the tasks."
+    },
+    {
+        "Név": "Gulp",
+        "Leírás": "Gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something."
+    },
+    {
+        "Név": "Horde",
+        "Leírás": "Horde is a collection of PHP libraries and applications that provide a framework for building web-based applications. Horde is a community of developers who work together to create a set of PHP libraries and applications that provide a framework for building web-based applications."
+    },
+    {
+        "Név": "Hugo",
+        "Leírás": "Hugo is a static site generator written in Go. It is optimized for speed, ease of use, and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo is designed to work well for any kind of website including blogs, tumbles, and docs. Twitter Community Notes uses it."
+    },
+    {
+        "Név": "Torch",
+        "Leírás": "Torch is a scientific computing framework with wide support for machine learning algorithms that puts GPUs first. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation. PyTorch is an open source machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, primarily developed by Facebook's AI Research lab and now maintained by the PyTorch team under the Linux Foundation."
+    },
+    {
+        "Név": "pandas",
+        "Leírás": "pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language. In particular, it offers data structures and operations for manipulating numerical tables and time series."
+    },
+    {
+        "Név": "Phalcon",
+        "Leírás": "Phalcon is another PHP web framework that uses the MVC pattern but is written as a C extension. It is a full-stack framework that provides a complete set of tools to develop web applications. It is a high-performance framework that can be used to build websites and web applications."
+    },
+    {
+        "Név": "Mojolicious",
+        "Leírás": "Mojolicious is a full-featured web framework for the Perl programming language. It is designed to make web development fun again. It provides you with routes, commands, plugins, templates, testing frameworks, first-class Unicode support, and many other features."
+    },
+    {
+        "Név": "CodeIgniter",
+        "Leírás": "CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications. It is most often noted for its speed when compared to other PHP frameworks."
+    },
+    {
+        "Név": "PhoneGap",
+        "Leírás": "PhoneGap is a free and open source framework that allows you to create mobile apps using standardized web APIs for the platforms you care about. It is a distribution of Cordova, the popular open source project maintained by the Apache Software Foundation."
+    },
+    {
+        "Név": "Nightwatch",
+        "Leírás": "Nightwatch is an automated testing framework for web applications and websites, written in Node.js and using the W3C WebDriver API. It is easy to use and supports advanced selectors and assertions, as well as page object models. It is also extensible using a simple plugin architecture."
+    },
+    {
+        "Név": "Scrapy",
+        "Leírás": "Scrapy is a free and open source web crawling framework written in Python. It is used to extract the data you need from websites. In a fast, simple, yet extensible way. It can be used for a wide range of purposes, from data mining to monitoring and automated testing."
+    },
+    {
+        "Név": "Electron",
+        "Leírás": "Electron is a framework for creating native applications with web technologies like JavaScript, HTML, and CSS. It takes care of the hard parts so you can focus on the core of your application. It is based on Node.js and Chromium and is used by Discord, Figma, VS Code, and many others."
+    },
+    {
+        "Név": "MEMORY",
+        "Leírás": "MEMORY is a storage engine for MySQL and MariaDB relational database management systems, developed by Oracle and MariaDB. It is designed to store data that must be accessed quickly, for example caches, or intermediate data that needs to be transformed before storing it to regular tables."
+    },
+    {
+        "Név": "MyRocks",
+        "Leírás": "MyRocks is open-source software developed at Facebook in order to use MySQL features with RocksDB implementations. MyRock's efficiency focuses on better space efficiency, better write efficiency, and better read efficiency."
+    },
+    {
+        "Név": "Federated",
+        "Leírás": "Federated is a storage engine for the MySQL MariaDB relational database management system that allows to create a table that is a local representation of a foreign (remote) table. It uses the MySQL client library API as a data transport, treating remote tables as if they were located on the local server. "
+    },
+    {
+        "Név": "BaseX",
+        "Leírás": "BaseX is a native and light-weight XML database management system and XQuery processor, developed as a community project on GitHub."
+    },
+    {
+        "Név": "Caché",
+        "Leírás": "InterSystems Caché is a commercial operational database management system. It is a relational database management system (RDBMS) that supports SQL and ACID transactions. It is used for storing and retrieving data in a variety of applications, including healthcare, financial services, and telecommunications."
+    },
+    {
+        "Név": "eXist",
+        "Leírás": "eXist is a native XML database, a NoSQL database, and a XQuery 3.1 processor. It is a free and open source software, developed as a community project on GitHub."
+    },
+    {
+        "Név": "Virtuoso",
+        "Leírás": "Virtuoso Universal Server is a middleware and database engine hybrid that combines the functionality of a traditional relational database management, object-relational database, virtual database, RDF, XML, free-text, web application server and file server functionality in a single system. Rather than have dedicated servers for each of the aforementioned functionality realms, Virtuoso is a 'universal server'."
+    },
+    {
+        "Név": "Apache Ignite",
+        "Leírás": "Apache Ignite is a distributed database management system for high-performance computing, and its database utilizes RAM as the default storage."
+    },
+    {
+        "Név": "Starcounter",
+        "Leírás": "Starcounter is a database management system that uses a relational model and SQL as its query language. It is a native object database that stores data in memory and uses a transaction log to persist data to disk."
+    },
+    {
+        "Név": "SpiderMonkey",
+        "Leírás": "SpiderMonkey is the first JavaScript engine, written by Brendan Eich at Netscape Communications, later released as open source and currently maintained by the Mozilla Foundation. It is used in the Firefox web browser."
+    },
+    {
+        "Név": "KJS",
+        "Leírás": "KJS is KDE's ECMAScript-JavaScript engine that was originally developed for the KDE project's Konqueror web browser by Harri Porten."
+    },
+    {
+        "Név": "Stalin",
+        "Leírás": "Stalin (STAtic Language ImplementatioN) is a programming language, an aggressive optimizing batch whole-program Scheme compiler. It runs slowly, with little or no support for debugging or other niceties. The name is a joke: 'Stalin brutally optimizes.'"
+    },
+    {
+        "Név": "Smalltalk",
+        "Leírás": "Smalltalk was designed and created in part for educational use. It is a general-purpose, object-oriented, dynamically typed, reflective programming language, meaining that is has the ability to inspect its own structure and behavior at runtime."
+    },
+    {
+        "Név": "Bitwarden",
+        "Leírás": "Bitwarden is a free and open source password management service that stores sensitive information such as website credentials, credit card details, and SSH keys in an encrypted vault. It is available as a web application, browser extension, and mobile application."
+    },
+    {
+        "Név": "Password Safe",
+        "Leírás": "Password Safe is a free and open source password manager developed by Bruce Schneier. It is available for Windows, macOS, and Linux. It is a cross-platform password manager that stores passwords in an encrypted database."
+    },
+    {
+        "Név": "Django",
+        "Leírás": "Django is a free and open-source, Python-based web framework that follows the model-template-views (MTV) architectural pattern. Django's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and 'pluggability' of components, less code, low coupling, rapid development, and the principle of don't repeat yourself."
+    },
+    {
+        "Név": "Ruby on Rails",
+        "Leírás": "Ruby on Rails is a server-side web application framework written in Ruby. It is a model-view-controller (MVC) framework, providing default structures for a database, a web service, and web pages."
+    },
+    {
+        "Név": "XOOPS",
+        "Leírás": "XOOPS is a free open-source content management system (CMS), written in PHP. It uses a modular architecture allowing users to customize, update and theme their websites."
+    },
+    {
+        "Név": "NTLDR",
+        "Leírás": "NTLDR is the boot loader for all releases of Windows NT operating system from 1993 with the release of Windows NT 3.1 up until Windows XP."
+    },
+    {
+        "Név": "SYSLINUX",
+        "Leírás": "SYSLINUX is a bootloader for the Linux operating system (OS) that is specifically designed for booting from a CD-ROM, USB drive, or network. It is a lightweight bootloader that is easy to install and customize, and it supports a wide range of hardware platforms."
+    },
+    {
+        "Név": "Vim",
+        "Leírás": "Vim is a command-line text editor, that runs in a terminal emulator. It increases productivity by making it very hard to exit the editor."
+    },
+    {
+        "Név": "Yew",
+        "Leírás": "Yew is a modern Rust framework for creating multi-threaded front-end web apps with WebAssembly. It achieves high performance by minimizing DOM API calls for each page render and by making it easy to offload processing to background web workers."
+    },
+    {
+        "Név": "Keras",
+        "Leírás": "Keras is an open-source software library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library. It was developed with a focus on enabling fast experimentation."
+    },
+    {
+        "Név": "Caffe",
+        "Leírás": "Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by Berkeley AI Research"
+    },
+    {
+        "Név": "CoffeeScript",
+        "Leírás": "CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar inspired by Ruby, Python, and Haskell in an effort to enhance JavaScript's brevity and readability."
+    },
+    {
+        "Név": "Tkinter",
+        "Leírás": "Tkinter is a Python module that provides a simple and easy-to-use interface to the Tk GUI (Graphical User Interface) toolkit, and is Python's de facto standard GUI."
+    },
+    {
+        "Név": "TACTIC",
+        "Leírás": "TACTIC is a web-based, open source workflow platform and digital asset management system. It uses a hierarchical drawing engine to deliver self-contained HTML5 widgets to a browser. Each widget is an encapsulated bundle of HTML, JavaScript, CSS (cascading style sheets) and server-side Python code."
+    },
+    {
+        "Név": "Camping",
+        "Leírás": "Camping is a web application microframework written in Ruby. Camping's source code is less than 4 KB in size. Camping stores a complete fledgling web application in a single file, like a bundle of many small CGI scripts, but organizes it as a model-view-controller application"
+    },
+    {
+        "Név": "Raygun",
+        "Leírás": "Raygun is a cloud-based error and performance monitoring service for web and mobile applications. Crash reports, real-time user tracking, and finding application performance bottlenecks are all made easier with it."
+    },
+    {
+        "Név": "NetBeans",
+        "Leírás": "NetBeans is an integrated development environment (IDE) for developing applications in Java, JavaScript, PHP, C/C++ and other programming languages. It is open-source and is developed by Oracle Corporation."
+    }
+]
