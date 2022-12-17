@@ -89,7 +89,7 @@
     },
     {
         "Név": "Virtuoso",
-        "Leírás": "Virtuoso Universal Server is a middleware and database engine hybrid that combines the functionality of a traditional relational database management, object-relational database, virtual database, RDF, XML, free-text, web application server and file server functionality in a single system. Rather than have dedicated servers for each of the aforementioned functionality realms, Virtuoso is a 'universal server'."
+        "Leírás": "Virtuoso Universal Server is a middleware and database engine hybrid that combines the functionality of a traditional relational database management, object-relational database, virtual database, RDF, XML, free-text, web application server and file server functionality in a single system. Rather than have dedicated servers for each of the aforementioned functionality realms, Virtuoso is a \"universal server\"."
     },
     {
         "Név": "Apache Ignite",
@@ -109,7 +109,7 @@
     },
     {
         "Név": "Stalin",
-        "Leírás": "Stalin (STAtic Language ImplementatioN) is a programming language, an aggressive optimizing batch whole-program Scheme compiler. It runs slowly, with little or no support for debugging or other niceties. The name is a joke: 'Stalin brutally optimizes.'"
+        "Leírás": "Stalin (STAtic Language ImplementatioN) is a programming language, an aggressive optimizing batch whole-program Scheme compiler. It runs slowly, with little or no support for debugging or other niceties. The name is a joke: \"Stalin brutally optimizes.\""
     },
     {
         "Név": "Smalltalk",
@@ -125,7 +125,7 @@
     },
     {
         "Név": "Django",
-        "Leírás": "Django is a free and open-source, Python-based web framework that follows the model-template-views (MTV) architectural pattern. Django's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and 'pluggability' of components, less code, low coupling, rapid development, and the principle of don't repeat yourself."
+        "Leírás": "Django is a free and open-source, Python-based web framework that follows the model-template-views (MTV) architectural pattern. Django's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and \"pluggability\" of components, less code, low coupling, rapid development, and the principle of don't repeat yourself."
     },
     {
         "Név": "Ruby on Rails",
@@ -182,5 +182,17 @@
     {
         "Név": "NetBeans",
         "Leírás": "NetBeans is an integrated development environment (IDE) for developing applications in Java, JavaScript, PHP, C/C++ and other programming languages. It is open-source and is developed by Oracle Corporation."
+    },
+    {
+        "Név": "AutoIt",
+        "Leírás": "AutoIt is a freeware programming language for Microsoft Windows. In its earliest release, it was primarily intended to create automation scripts for Microsoft Windows programs but has since grown to include enhancements in both programming language design and overall functionality."
+    },
+    {
+        "Név": "Babel",
+        "Leírás": "Babel is a JavaScript compiler. It is used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments."
+    },
+    {
+        "Név": "PyCharm",
+        "Leírás": "PyCharm is an integrated development environment (IDE) used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains. It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (VCSes), and supports web development with Django as well as data science with Anaconda."
     }
 ]
