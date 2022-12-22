@@ -582,449 +582,197 @@
     "Leírás": "Felismus is a modular backdoor that has been used by Sowbug. The name comes from the Latin words: felis (cat), mus (mouse). It also has a human-readable encryption key: \"Tom&Jerry@14here\". Felismus checks for processes associated with anti-virus vendors and has masqueraded as legitimate Adobe Content Management System files."
   },
   {
-    "Id": "S0267",
     "Név": "FELIXROOT",
     "Leírás": "FELIXROOT is a backdoor that has been used to target Ukrainian victims. The malware uses custom encryption to communicate with its command and control (C2) server, and collects information about the infected machine before wiping its own tracks. FELIXROOT is delivered through weaponized documents that exploit vulnerabilities in Microsoft Office, and is distributed via Russian-language documents."
   },
   {
-    "Id": "S0679",
     "Név": "Ferocious",
     "Leírás": "Ferocious is a first stage implant composed of VBS and PowerShell scripts that has been used by WIRTE since at least 2021. Ferocious can delete files and modify the registry to maintain its presence on the system, and can discover and check for security software and gather information about the system. It can also attempt to evade detection by checking for virtualization or sandbox environments."
   },
   {
-    "Id": "S0120",
     "Név": "Fgdump",
-    "Leírás": "Fgdump is a Windows password hash dumper."
+    "Leírás": "Fgdump is a Windows (NT/2000/XP/2003) password hash dumper. It is designed for use by security professionals for legitimate purposes, such as password auditing and discovering trust relationships, and requires high-level credentials to run effectively. FGDump stops antivirus programs if they are running, was compiled using Visual Studio .NET 2003 and includes solution and project files."
   },
   {
-    "Id": "S0355",
-    "Név": "Final1stspy",
-    "Leírás": "Final1stspy is a dropper family that has been used to deliver DOGCALL."
-  },
-  {
-    "Id": "S0182",
     "Név": "FinFisher",
     "Leírás": "FinFisher is a government-grade commercial surveillance spyware reportedly sold exclusively to government agencies for use in targeted and lawful criminal investigations. It is heavily obfuscated and uses multiple anti-analysis techniques. It has other variants including Wingbird."
   },
   {
-    "Id": "S0618",
     "Név": "FIVEHANDS",
     "Leírás": "FIVEHANDS is a customized version of DEATHRANSOM ransomware written in C++. FIVEHANDS has been used since at least 2021, including in Ransomware-as-a-Service (RaaS) campaigns, sometimes along with SombRAT."
   },
   {
-    "Id": "S0696",
     "Név": "Flagpro",
     "Leírás": "Flagpro is a Windows-based, first-stage downloader that has been used by BlackTech since at least October 2020. It has primarily been used against defense, media, and communications companies in Japan."
   },
   {
-    "Id": "S0143",
     "Név": "Flame",
-    "Leírás": "Flame is a sophisticated toolkit that has been used to collect information since at least 2010, largely targeting Middle East countries."
+    "Leírás": "Flame is a sophisticated toolkit that has been used to collect information since at least 2010, largely targeting Middle East countries. It is able to capture audio and take regular screenshots, create backdoor accounts, exploit vulnerabilities in remote systems, replicate through removable media, identify security software, and execute itself through the Rundll32 utility. Flame can also transmit encoded information over Bluetooth and act as a Bluetooth beacon, as well as infect USB sticks and spread laterally through Autorun functionality."
   },
   {
-    "Id": "S0036",
-    "Név": "FLASHFLOOD",
-    "Leírás": "FLASHFLOOD is malware developed by APT30 that allows propagation and exfiltration of data over removable devices. APT30 may use this capability to exfiltrate data across air-gaps."
-  },
-  {
-    "Id": "S0381",
-    "Név": "FlawedAmmyy",
-    "Leírás": "FlawedAmmyy is a remote access tool (RAT) that was first seen in early 2016. The code for FlawedAmmyy was based on leaked source code for a version of Ammyy Admin, a remote access software."
-  },
-  {
-    "Id": "S0383",
-    "Név": "FlawedGrace",
-    "Leírás": "FlawedGrace is a fully featured remote access tool (RAT) written in C++ that was first observed in late 2017."
-  },
-  {
-    "Id": "S0408",
-    "Név": "FlexiSpy",
-    "Leírás": "FlexiSpy is sophisticated surveillanceware for iOS and Android. Publicly-available, comprehensive analysis has only been found for the Android version.FlexiSpy markets itself as a parental control and employee monitoring application."
-  },
-  {
-    "Id": "S0173",
-    "Név": "FLIPSIDE",
-    "Leírás": "FLIPSIDE is a simple tool similar to Plink that is used by FIN5 to maintain access to victims."
-  },
-  {
-    "Id": "S0661",
     "Név": "FoggyWeb",
-    "Leírás": "FoggyWeb is a passive and highly-targeted backdoor capable of remotely exfiltrating sensitive information from a compromised Active Directory Federated Services (AD FS) server. It has been used by APT29 since at least early April 2021."
+    "Leírás": "FoggyWeb is a passive and highly-targeted backdoor capable of remotely exfiltrating sensitive information from a compromised Active Directory Federated Services (AD FS) server. It has been used by APT29 since at least early April 2021. It can receive and execute additional malicious components and then masquerade the output of C2 commands as a legitimate file."
   },
   {
-    "Id": "S0193",
-    "Név": "Forfiles",
-    "Leírás": "Forfiles is a Windows utility commonly used in batch jobs to execute commands on one or more selected files or directories (ex: list all directories in a drive, read the first line of all files created yesterday, etc.). Forfiles can be executed from either the command line, Run window, or batch files/scripts."
-  },
-  {
-    "Id": "S0503",
     "Név": "FrameworkPOS",
-    "Leírás": "FrameworkPOS is a point of sale (POS) malware used by FIN6 to steal payment card data from sytems that run physical POS devices."
+    "Leírás": "FrameworkPOS is a point of sale (POS) malware used by FIN6 to steal payment card data from sytems that run physical POS devices. It can XOR credit card information before sending it to its operators, and then FrameworkPOS can use DNS tunneling for exfiltration of credit card data."
   },
   {
-    "Id": "S0577",
-    "Név": "FrozenCell",
-    "Leírás": "FrozenCell is the mobile component of a family of surveillanceware, with a corresponding desktop component known as KasperAgent and Micropsia."
-  },
-  {
-    "Id": "S0277",
     "Név": "FruitFly",
-    "Leírás": "FruitFly is designed to spy on mac users  ."
-  },
-  {
-    "Id": "S0095",
-    "Név": "ftp",
-    "Leírás": "ftp is a utility commonly available with operating systems to transfer information over the File Transfer Protocol (FTP). Adversaries can use it to transfer other tools onto a system or to exfiltrate data."
+    "Leírás": "FruitFly is designed to spy on mac users."
   },
   {
     "Id": "S1044",
     "Név": "FunnyDream",
-    "Leírás": "FunnyDream is a backdoor with multiple components that was used during the FunnyDream campaign since at least 2019, primarily for execution and exfiltration."
+    "Leírás": "FunnyDream is a backdoor with multiple components that was used during the FunnyDream campaign since at least 2019, primarily for execution and exfiltration. It has the ability to discover application windows, establish persistence on the infected system, execute commands and send the results to its command and control (C2) server, identify specific files for collection, remove indicators of its presence, download additional files onto the compromised host, capture keystrokes, communicate with its C2 server over TCP and UDP, and obfuscate its C2 address."
   },
   {
-    "Id": "S0628",
     "Név": "FYAnti",
     "Leírás": "FYAnti is a loader that has been used by menuPass since at least 2020, including to deploy QuasarRAT."
   },
   {
-    "Id": "S0410",
     "Név": "Fysbis",
-    "Leírás": "Fysbis is a Linux-based backdoor used by APT28 that dates back to at least 2014."
+    "Leírás": "Fysbis is a Linux-based backdoor used by APT28 that dates back to at least 2014. The malware has the ability to delete and search for files."
   },
   {
-    "Id": "S0168",
     "Név": "Gazer",
-    "Leírás": "Gazer is a backdoor used by Turla since at least 2016."
+    "Leírás": "Gazer is a backdoor used by Turla since at least 2016. It achieves persistence in funky ways: by creating a .lnk file in the Start menu or by setting the value \"Shell\" with \"explorer.exe, %malware_pathfile%\" under a registry key. It had a faked certificate, and it was signed by \"Ultimate Computer Support Ltd.\"Publisher\"."
   },
   {
-    "Id": "S0666",
     "Név": "Gelsemium",
-    "Leírás": "Gelsemium is a modular malware comprised of a dropper (Gelsemine), a loader (Gelsenicine), and main (Gelsevirine) plug-ins written using the Microsoft Foundation Class (MFC) framework. Gelsemium has been used by the Gelsemium group since at least 2014."
+    "Leírás": "Gelsemium is a modular malware comprised of a dropper (Gelsemine), a loader (Gelsenicine), and main (Gelsevirine) plug-ins written using the Microsoft Foundation Class (MFC) framework. It can use token manipulation to bypass UAC on Windows7 systems and elevate process privileges on the compromised host. Gelsemium has been used by the Gelsemium group since at least 2014."
   },
   {
-    "Id": "S0049",
-    "Név": "GeminiDuke",
-    "Leírás": "GeminiDuke is malware that was used by APT29 from 2009 to 2012."
-  },
-  {
-    "Id": "S0460",
     "Név": "Get2",
     "Leírás": "Get2 is a downloader written in C++ that has been used by TA505 to deliver FlawedGrace, FlawedAmmyy, Snatch and SDBbot."
   },
   {
-    "Id": "S0032",
     "Név": "gh0st RAT",
-    "Leírás": "gh0st RAT is a remote access tool (RAT). The source code is public and it has been used by multiple groups."
+    "Leírás": "gh0st RAT is a remote access tool (RAT). The source code is public and it has been used by multiple groups. The operators have used dynamic DNS to mask the true location of their C2 behind rapidly changing IP addresses."
   },
   {
-    "Id": "S0423",
     "Név": "Ginp",
-    "Leírás": "Ginp is an Android banking trojan that has been used to target Spanish banks. Some of the code was taken directly from Anubis."
+    "Leírás": "Ginp is an Android banking trojan that has been used to target Spanish banks. It can inject input to make itself the default SMS handler, and then collect and send SMS messages with the device’s contact list and screenshots to its C2 server."
   },
   {
-    "Id": "S0026",
-    "Név": "GLOOXMAIL",
-    "Leírás": "GLOOXMAIL is malware used by APT1 that mimics legitimate Jabber/XMPP traffic."
-  },
-  {
-    "Id": "S0249",
-    "Név": "Gold Dragon",
-    "Leírás": "Gold Dragon is a Korean-language, data gathering implant that was first observed in the wild in South Korea in July 2017. Gold Dragon was used along with Brave Prince and RunningRAT in operations targeting organizations associated with the 2018 Pyeongchang Winter Olympics."
-  },
-  {
-    "Id": "S0535",
-    "Név": "Golden Cup",
-    "Leírás": "Golden Cup is Android spyware that has been used to target World Cup fans."
-  },
-  {
-    "Id": "S0551",
-    "Név": "GoldenEagle",
-    "Leírás": "GoldenEagle is a piece of Android malware that has been used in targeting of Uyghurs, Muslims, Tibetans, individuals in Turkey, and individuals in China. Samples have been found as early as 2012."
-  },
-  {
-    "Id": "S0493",
-    "Név": "GoldenSpy",
-    "Leírás": "GoldenSpy is a backdoor malware which has been packaged with legitimate tax preparation software. GoldenSpy was discovered targeting organizations in China, being delivered with the \"Intelligent Tax\" software suite which is produced by the Golden Tax Department of Aisino Credit Information Co. and required to pay local taxes."
-  },
-  {
-    "Id": "S0597",
-    "Név": "GoldFinder",
-    "Leírás": "GoldFinder is a custom HTTP tracer tool written in Go that logs the route a packet takes between a compromised network and a C2 server. It can be used to inform  threat actors of potential points of discovery or logging of their actions, including C2 related to other malware. GoldFinder was discovered in early 2021 during an investigation into the SolarWinds cyber intrusion by APT29."
-  },
-  {
-    "Id": "S0588",
-    "Név": "GoldMax",
-    "Leírás": "GoldMax is a second-stage C2 backdoor written in Go with Windows and Linux variants that are nearly identical in functionality. GoldMax was discovered in early 2021 during the investigation into the SolarWinds intrusion, and has likely been used by APT29 since at least mid-2019. GoldMax uses multiple defense evasion techniques, including avoiding virtualization execution and masking malicious traffic."
-  },
-  {
-    "Id": "S0421",
-    "Név": "GolfSpy",
-    "Leírás": "GolfSpy is Android spyware deployed by the group Bouncing Golf."
-  },
-  {
-    "Id": "S0290",
     "Név": "Gooligan",
     "Leírás": "Gooligan is a malware family that runs privilege escalation exploits on Android devices and then uses its escalated privileges to steal authentication tokens that can be used to access data from many Google applications. Gooligan has been described as part of the Ghost Push Android malware family."
   },
   {
-    "Id": "S0477",
     "Név": "Goopy",
-    "Leírás": "Goopy is a Windows backdoor and Trojan used by APT32 and shares several similarities to another backdoor used by the group (Denis). Goopy is named for its impersonation of the legitimate Google Updater executable."
+    "Leírás": "Goopy is a Windows backdoor and Trojan used by APT32 and shares several similarities to another backdoor used by the group (Denis). Goopy is named for its impersonation of the legitimate Google Updater executable. It has the ability to disable Microsoft Outlook's security policies to disable macro warnings and then use a Microsoft Outlook backdoor macro to communicate with its C2."
   },
   {
-    "Id": "S0536",
     "Név": "GPlayed",
-    "Leírás": "GPlayed is an Android trojan with a broad range of capabilities."
+    "Leírás": "GPlayed is an Android trojan with a broad range of capabilities. It can lock the user out of the device by showing a persistent overlay or just wipe the device."
   },
   {
-    "Id": "S0531",
     "Név": "Grandoreiro",
     "Leírás": "Grandoreiro is a banking trojan written in Delphi that was first observed in 2016 and uses a Malware-as-a-Service (MaaS) business model. Grandoreiro has confirmed victims in Brazil, Mexico, Portugal, and Spain."
   },
   {
-    "Id": "S0237",
     "Név": "GravityRAT",
-    "Leírás": "GravityRAT is a remote access tool (RAT) and has been in ongoing development since 2016. The actor behind the tool remains unknown, but two usernames have been recovered that link to the author, which are \"TheMartian\" and \"The Invincible.\" According to the National Computer Emergency Response Team (CERT) of India, the malware has been identified in attacks against organization and entities in India."
+    "Leírás": "GravityRAT is a remote access tool (RAT) and has been in ongoing development since 2016. The actor behind the tool remains unknown, but two usernames have been recovered that link to the author, which are \"TheMartian\" and \"The Invincible.\" According to the National Computer Emergency Response Team (CERT) of India, the malware has been identified in attacks against organization and entities in India. It has used HTTP over a non-standard port, such as TCP port 46769."
   },
   {
-    "Id": "S0690",
-    "Név": "Green Lambert",
-    "Leírás": " a macOS version was uploaded to a multiscanner service in September 2014."
-  },
-  {
-    "Id": "S0342",
     "Név": "GreyEnergy",
-    "Leírás": "GreyEnergy is a backdoor written in C and compiled in Visual Studio. GreyEnergy shares similarities with the BlackEnergy malware and is thought to be the successor of it."
+    "Leírás": "GreyEnergy is a backdoor written in C and compiled in Visual Studio. It has used Tor relays for Command and Control servers and digitally signs the malware with a code-signing certificate. GreyEnergy shares similarities with the BlackEnergy malware and is thought to be the successor of it. "
   },
   {
-    "Id": "S0417",
     "Név": "GRIFFON",
-    "Leírás": "GRIFFON is a JavaScript backdoor used by FIN7."
+    "Leírás": "GRIFFON is a JavaScript (yes) backdoor used by FIN7. It has used PowerShell to execute the Meterpreter downloader TinyMet."
   },
   {
-    "Id": "S0632",
-    "Név": "GrimAgent",
-    "Leírás": " it is likely used by FIN6 and Wizard Spider."
-  },
-  {
-    "Id": "S0008",
-    "Név": "gsecdump",
-    "Leírás": "gsecdump is a publicly-available credential dumper used to obtain password hashes and LSA secrets from Windows operating systems."
-  },
-  {
-    "Id": "S0561",
     "Név": "GuLoader",
-    "Leírás": "GuLoader is a file downloader that has been used since at least December 2019 to distribute a variety of remote administration tool (RAT) malware, including NETWIRE, Agent Tesla, NanoCore, FormBook, and Parallax RAT."
+    "Leírás": "GuLoader is a file downloader that has been used since at least December 2019 to distribute a variety of remote administration tool (RAT) malware, including NETWIRE, Agent Tesla, NanoCore, FormBook, and Parallax RAT. It has the ability to download malware from Google Drive, lol."
   },
   {
-    "Id": "S0406",
     "Név": "Gustuff",
-    "Leírás": "Gustuff is mobile malware designed to steal users' banking and virtual currency credentials."
+    "Leírás": "Gustuff is mobile malware designed to steal users' banking and virtual currency credentials. It uses WebView overlays to prompt the user for their device unlock code, as well as banking and cryptocurrency application credentials. Gustuff can also send push notifications pretending to be from a bank, triggering a phishing overlay. It has also obfuscated command information using a custom base85-based encoding."
   },
   {
-    "Id": "S0132",
     "Név": "H1N1",
     "Leírás": "H1N1 is a malware variant that has been distributed via a campaign using VBA macros to infect victims. Although it initially had only loader capabilities, it has evolved to include information-stealing functionality."
   },
   {
-    "Id": "S0047",
     "Név": "Hacking Team UEFI Rootkit",
     "Leírás": "Hacking Team UEFI Rootkit is a rootkit developed by the company Hacking Team as a method of persistence for remote access software."
   },
   {
-    "Id": "S0151",
     "Név": "HALFBAKED",
-    "Leírás": "HALFBAKED is a malware family consisting of multiple components intended to establish persistence in victim networks."
+    "Leírás": "HALFBAKED is a malware family consisting of multiple components intended to establish persistence in victim networks. It can obtain information about running processes. 🥐"
   },
   {
-    "Id": "S0037",
-    "Név": "HAMMERTOSS",
-    "Leírás": "HAMMERTOSS is a backdoor that was used by APT29 in 2015."
-  },
-  {
-    "Id": "S0499",
     "Név": "Hancitor",
-    "Leírás": "Hancitor is a downloader that has been used by Pony and other information stealing malware."
+    "Leírás": "Hancitor is a downloader that has been used by Pony and other information stealing malware. The malware has used malicious Microsoft Word documents, sent via email, which prompted the victim to enable macros."
   },
   {
-    "Id": "S0214",
     "Név": "HAPPYWORK",
-    "Leírás": "HAPPYWORK is a downloader used by APT37 to target South Korean government and financial victims in November 2016."
+    "Leírás": "HAPPYWORK is a downloader used by APT37 to target South Korean government and financial victims in November 2016. IT CAN COLLECT THE VICTIM USER NAME."
   },
   {
-    "Id": "S0246",
     "Név": "HARDRAIN",
-    "Leírás": "HARDRAIN is a Trojan malware variant reportedly used by the North Korean government."
+    "Leírás": "HARDRAIN is a Trojan malware variant reportedly used by the North Korean government. No surprise."
   },
   {
-    "Id": "S0224",
     "Név": "Havij",
     "Leírás": "Havij is an automatic SQL Injection tool distributed by the Iranian ITSecTeam security company. Havij has been used by penetration testers and adversaries."
   },
   {
-    "Id": "S0391",
-    "Név": "HAWKBALL",
-    "Leírás": "HAWKBALL is a backdoor that was observed in targeting of the government sector in Central Asia."
-  },
-  {
-    "Id": "S0071",
-    "Név": "hcdLoader",
-    "Leírás": "hcdLoader is a remote access tool (RAT) that has been used by APT18."
-  },
-  {
-    "Id": "S0061",
     "Név": "HDoor",
-    "Leírás": "HDoor is malware that has been customized and used by the Naikon group."
+    "Leírás": "HDoor is malware that has been customized and used by the Naikon group. It scans to identify open ports on the victim."
   },
   {
-    "Id": "S0617",
     "Név": "HELLOKITTY",
-    "Leírás": "HELLOKITTY is a ransomware written in C++  that shares similar code structure and functionality with DEATHRANSOM and FIVEHANDS. HELLOKITTY has been used since at least 2020, targets have included a Polish video game developer and a Brazilian electric power company."
+    "Leírás": "HELLOKITTY is a ransomware written in C++ that shares similar code structure and functionality with DEATHRANSOM and FIVEHANDS. HELLOKITTY has been used since at least 2020, targets have included a Polish video game developer and a Brazilian electric power company. It can use an embedded RSA-2048 public key to encrypt victim data for ransom and can delete volume shadow copies."
   },
   {
-    "Id": "S0170",
-    "Név": "Helminth",
-    "Leírás": "Helminth is a backdoor that has at least two variants - one written in VBScript and PowerShell that is delivered via a macros in Excel spreadsheets, and one that is a standalone Windows executable."
-  },
-  {
-    "Id": "S0544",
     "Név": "HenBox",
-    "Leírás": "HenBox is Android malware that attempts to only execute on Xiaomi devices running the MIUI operating system. HenBox has primarily been used to target Uyghurs, a minority Turkic ethnic group."
+    "Leírás": "HenBox is Android malware that attempts to only execute on Xiaomi devices running the MIUI operating system. HenBox has primarily been used to target Uyghurs, a minority Turkic ethnic group. It can access the device’s camera, microphone, and location."
   },
   {
-    "Id": "S0697",
     "Név": "HermeticWiper",
-    "Leírás": "HermeticWiper is a data wiper that has been used since at least early 2022, primarily against Ukraine with additional activity observed in Latvia and Lithuania. Some sectors targeted include government, financial, defense, aviation, and IT services."
+    "Leírás": "HermeticWiper is a data wiper that has been used since at least early 2022, primarily against Ukraine with additional activity observed in Latvia and Lithuania. Some sectors targeted include government, financial, defense, aviation, and IT services. It has the ability to corrupt disk partitions and obtain raw disk access to destroy data, and it can overwrite its own file with random bites."
   },
   {
-    "Id": "S0698",
-    "Név": "HermeticWizard",
-    "Leírás": "HermeticWizard is a worm that has been used to spread HermeticWiper in attacks against organizations in Ukraine since at least 2022."
-  },
-  {
-    "Id": "S1027",
-    "Név": "Heyoka Backdoor",
-    "Leírás": "Heyoka Backdoor is a custom backdoor--based on the Heyoka open source exfiltration tool--that  has been used by Aoqin Dragon since at least 2013."
-  },
-  {
-    "Id": "S0087",
-    "Név": "Hi-Zor",
-    "Leírás": "Hi-Zor is a remote access tool (RAT) that has characteristics similar to Sakula. It was used in a campaign named INOCNATION."
-  },
-  {
-    "Id": "S0394",
-    "Név": "HiddenWasp",
-    "Leírás": "HiddenWasp is a Linux-based Trojan used to target systems for remote control. It comes in the form of a statically linked ELF binary with stdlibc++."
-  },
-  {
-    "Id": "S0135",
-    "Név": "HIDEDRV",
-    "Leírás": "HIDEDRV is a rootkit used by APT28. It has been deployed along with Downdelph to execute and hide that malware."
-  },
-  {
-    "Id": "S0009",
     "Név": "Hikit",
-    "Leírás": "Hikit is malware that has been used by Axiom for late-stage persistence and exfiltration after the initial compromise."
+    "Leírás": "Hikit is malware that has been used by Axiom for late-stage persistence and exfiltration after the initial compromise. It has attempted to disable driver signing verification by tampering with several Registry keys prior to the loading of a rootkit driver component."
   },
   {
-    "Id": "S0601",
     "Név": "Hildegard",
     "Leírás": "Hildegard is malware that targets misconfigured kubelets for initial access and runs cryptocurrency miner operations. The malware was first observed in January 2021. The TeamTNT activity group is believed to be behind Hildegard."
   },
   {
-    "Id": "S0232",
-    "Név": "HOMEFRY",
-    "Leírás": "HOMEFRY is a 64-bit Windows password dumper/cracker that has previously been used in conjunction with other Leviathan backdoors."
-  },
-  {
-    "Id": "S0376",
-    "Név": "HOPLIGHT",
-    "Leírás": "HOPLIGHT is a backdoor Trojan that has reportedly been used by the North Korean government."
-  },
-  {
-    "Id": "S0431",
     "Név": "HotCroissant",
     "Leírás": "HotCroissant is a remote access trojan (RAT) attributed by U.S. government entities to malicious North Korean government cyber activity, tracked collectively as HIDDEN COBRA. HotCroissant shares numerous code similarities with Rifdoor."
   },
   {
-    "Id": "S0040",
-    "Név": "HTRAN",
-    "Leírás": "HTRAN is a tool that proxies connections through intermediate hops and aids users in disguising their true geographical location. It can be used by adversaries to hide their location when interacting with the victim networks."
-  },
-  {
-    "Id": "S0070",
     "Név": "HTTPBrowser",
-    "Leírás": "HTTPBrowser is malware that has been used by several threat groups.   It is believed to be of Chinese origin."
+    "Leírás": "HTTPBrowser is malware that has been used by several threat groups. It is believed to be of Chinese origin. It abuses the Windows DLL load order by using a legitimate Symantec anti-virus binary, VPDN_LU.exe, to load a malicious DLL that mimics a legitimate Symantec DLL, navlu.dll."
   },
   {
-    "Id": "S0068",
     "Név": "httpclient",
     "Leírás": "httpclient is malware used by Putter Panda. It is a simple tool that provides a limited range of functionality, suggesting it is likely used as a second-stage or supplementary/backup tool."
   },
   {
-    "Id": "S0322",
     "Név": "HummingBad",
-    "Leírás": "HummingBad is a family of Android malware that generates fraudulent advertising revenue and has the ability to obtain root access on older, vulnerable versions of Android."
+    "Leírás": "HummingBad is a family of Android malware that generates fraudulent advertising revenue and has the ability to obtain root access on older, vulnerable versions of Android. HummingBad can create fraudulent statistics inside the official Google Play Store."
   },
   {
-    "Id": "S0321",
-    "Név": "HummingWhale",
-    "Leírás": "HummingWhale is an Android malware family that performs ad fraud."
-  },
-  {
-    "Id": "S0203",
     "Név": "Hydraq",
     "Leírás": "Hydraq is a data-theft trojan first used by Elderwood in the 2009 Google intrusion known as Operation Aurora, though variations of this trojan have been used in more recent campaigns by other Chinese actors, possibly including APT17."
   },
   {
-    "Id": "S0398",
     "Név": "HyperBro",
-    "Leírás": "HyperBro is a custom in-memory backdoor used by Threat Group-3390."
+    "Leírás": "HyperBro is a custom in-memory backdoor used by Threat Group-3390. It has used HTTPS for C2 communications."
   },
   {
-    "Id": "S0537",
-    "Név": "HyperStack",
-    "Leírás": "HyperStack is a RPC-based backdoor used by Turla since at least 2018. HyperStack has similarities to other backdoors used by Turla including Carbon."
-  },
-  {
-    "Id": "S1022",
-    "Név": "IceApple",
-    "Leírás": "IceApple is a modular Internet Information Services (IIS) post-exploitation framework, that has been used since at least 2021 against the technology, academic, and government sectors."
-  },
-  {
-    "Id": "S0483",
-    "Név": "IcedID",
-    "Leírás": "IcedID is a modular banking malware designed to steal financial information that has been observed in the wild since at least 2017.  IcedID  has been downloaded by Emotet in multiple campaigns."
-  },
-  {
-    "Id": "S0101",
-    "Név": "ifconfig",
-    "Leírás": "ifconfig is a Unix-based utility used to gather information about and interact with the TCP/IP settings on a system."
-  },
-  {
-    "Id": "S0278",
-    "Név": "iKitten",
-    "Leírás": "iKitten is a macOS exfiltration agent  ."
-  },
-  {
-    "Id": "S0434",
-    "Név": "Imminent Monitor",
-    "Leírás": "Imminent Monitor was a commodity remote access tool (RAT) offered for sale from 2012 until 2019, when an operation was conducted to take down the Imminent Monitor infrastructure. Various cracked versions and variations of this RAT are still in circulation."
-  },
-  {
-    "Id": "S0357",
     "Név": "Impacket",
     "Leírás": "Impacket is an open source collection of modules written in Python for programmatically constructing and manipulating network protocols. Impacket contains several tools for remote service execution, Kerberos manipulation, Windows credential dumping, packet sniffing, and relay attacks."
   },
   {
-    "Id": "S1045",
-    "Név": "INCONTROLLER",
-    "Leírás": "INCONTROLLER is custom malware that includes multiple modules tailored towards ICS devices and technologies, including Schneider Electric and Omron PLCs as well as OPC UA, Modbus, and CODESYS protocols. INCONTROLLER has the ability to discover specific devices, download logic on the devices, and exploit platform-specific vulnerabilities. As of September 2022, some security researchers assessed INCONTROLLER was developed by CHERNOVITE."
-  },
-  {
-    "Id": "S0604",
     "Név": "Industroyer",
-    "Leírás": "Industroyer is a sophisticated malware framework designed to cause an impact to the working processes of Industrial Control Systems (ICS), specifically components used in electrical substations. Industroyer was used in the attacks on the Ukrainian power grid in December 2016. This is the first publicly known malware specifically designed to target and impact operations in the electric grid."
+    "Leírás": "Industroyer is a sophisticated malware framework designed to cause an impact to the working processes of Industrial Control Systems (ICS), specifically components used in electrical substations. Industroyer was used in the attacks on the Ukrainian power grid in December 2016. This is the first publicly known malware specifically designed to target and impact operations in the electric grid. I like the name."
   },
   {
     "Id": "S0259",
