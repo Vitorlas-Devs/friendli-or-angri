@@ -530,129 +530,66 @@
     "Leírás": "Elise is a custom backdoor Trojan that appears to be used exclusively by Lotus Blossom. It is part of a larger group of tools referred to as LStudio, ST Group, and APT0LSTU."
   },
   {
-    "Id": "S0064",
     "Név": "ELMER",
-    "Leírás": "ELMER is a non-persistent, proxy-aware HTTP backdoor written in Delphi that has been used by APT16."
+    "Leírás": "ELMER is a non-persistent, proxy-aware HTTP backdoor written in Delphi that has been used by APT16. It is capable of performing file uploads and downloads, file execution, and process and directory listings. To retrieve commands, ELMER sends HTTP GET requests to a hard-coded C2 server, and parses the HTTP response packets received from the C2 server for an integer string corresponding to the command that needs to be executed."
   },
   {
-    "Id": "S0082",
-    "Név": "Emissary",
-    "Leírás": "Emissary is a Trojan that has been used by Lotus Blossom. It shares code with Elise, with both Trojans being part of a malware group referred to as LStudio."
-  },
-  {
-    "Id": "S0367",
     "Név": "Emotet",
     "Leírás": "Emotet is a modular malware variant which is primarily used as a downloader for other malware variants such as TrickBot and IcedID. Emotet first emerged in June 2014 and has been primarily used to target the banking sector."
   },
   {
-    "Id": "S0363",
     "Név": "Empire",
     "Leírás": "Empire is an open source, cross-platform remote administration and post-exploitation framework that is publicly available on GitHub. While the tool itself is primarily written in Python, the post-exploitation agents are written in pure PowerShell for Windows and Python for Linux/macOS. Empire was one of five tools singled out by a joint report on public hacking tools being widely used by adversaries."
   },
   {
-    "Id": "S0634",
     "Név": "EnvyScout",
-    "Leírás": "EnvyScout is a dropper that has been used by APT29 since at least 2021."
+    "Leírás": "EnvyScout is a dropper that writes a malicious ISO to disk. It has been used by APT29 since at least 2021 and has its name derived from the filename NV.html. There is also a hidden file \"BOOM.exe\"."
   },
   {
-    "Id": "S0091",
-    "Név": "Epic",
-    "Leírás": "Epic is a backdoor that has been used by Turla."
-  },
-  {
-    "Id": "S0404",
-    "Név": "esentutl",
-    "Leírás": "esentutl is a command-line tool that provides database utilities for the Windows Extensible Storage Engine."
-  },
-  {
-    "Id": "S0507",
     "Név": "eSurv",
     "Leírás": "eSurv is mobile surveillanceware designed for the lawful intercept market that was developed over the course of many years."
   },
   {
-    "Id": "S0478",
     "Név": "EventBot",
     "Leírás": "EventBot is an Android banking trojan and information stealer that abuses Android’s accessibility service to steal data from various applications. EventBot was designed to target over 200 different banking and financial applications, the majority of which are European bank and cryptocurrency exchange applications."
   },
   {
-    "Id": "S0396",
     "Név": "EvilBunny",
     "Leírás": "EvilBunny is a C++ malware sample observed since 2011 that was designed to be a execution platform for Lua scripts."
   },
   {
-    "Id": "S0152",
     "Név": "EvilGrab",
     "Leírás": "EvilGrab is a malware family with common reconnaissance capabilities. It has been deployed by menuPass via malicious Microsoft Office documents as part of spearphishing campaigns."
   },
   {
-    "Id": "S0568",
-    "Név": "EVILNUM",
-    "Leírás": "EVILNUM is fully capable backdoor that was first identified in 2018. EVILNUM is used by the APT group Evilnum which has the same name."
-  },
-  {
-    "Id": "S0401",
-    "Név": "Exaramel for Linux",
-    "Leírás": "Exaramel for Linux is a backdoor written in the Go Programming Language and compiled as a 64-bit ELF binary. The Windows version is tracked separately under Exaramel for Windows."
-  },
-  {
-    "Id": "S0343",
-    "Név": "Exaramel for Windows",
-    "Leírás": "Exaramel for Windows is a backdoor used for targeting Windows systems. The Linux version is tracked separately under Exaramel for Linux."
-  },
-  {
-    "Id": "S0522",
-    "Név": "Exobot",
-    "Leírás": "Exobot is Android banking malware, primarily targeting financial institutions in Germany, Austria, and France."
-  },
-  {
-    "Id": "S0405",
     "Név": "Exodus",
     "Leírás": "Exodus is Android spyware deployed in two distinct stages named Exodus One (dropper) and Exodus Two (payload)."
   },
   {
-    "Id": "S0361",
-    "Név": "Expand",
-    "Leírás": "Expand is a Windows utility used to expand one or more compressed CAB files. It has been used by BBSRAT to decompress a CAB file into executable content."
-  },
-  {
-    "Id": "S0569",
     "Név": "Explosive",
     "Leírás": "Explosive is a custom-made remote access tool used by the group Volatile Cedar. It was first identified in the wild in 2015."
   },
   {
-    "Id": "S0076",
-    "Név": "FakeM",
-    "Leírás": "FakeM is a shellcode-based Windows backdoor that has been used by Scarlet Mimic."
-  },
-  {
-    "Id": "S0509",
-    "Név": "FakeSpy",
-    "Leírás": "FakeSpy is Android spyware that has been operated by the Chinese threat actor behind the Roaming Mantis campaigns."
-  },
-  {
-    "Id": "S0181",
     "Név": "FALLCHILL",
     "Leírás": "FALLCHILL is a RAT that has been used by Lazarus Group since at least 2016 to target the aerospace, telecommunications, and finance industries. It is usually dropped by other Lazarus Group malware or delivered when a victim unknowingly visits a compromised website."
   },
   {
-    "Id": "S0512",
     "Név": "FatDuke",
-    "Leírás": "FatDuke is a backdoor used by APT29 since at least 2016."
+    "Leírás": "FatDuke is a backdoor used by APT29 since at least 2016. FatDuke has attempted to mimic a compromised user's traffic by using the same user agent as the installed browser, and it has been regularly repacked by its operators to create large binaries and evade detection."
   },
   {
-    "Id": "S0171",
     "Név": "Felismus",
-    "Leírás": "Felismus is a modular backdoor that has been used by Sowbug."
+    "Leírás": "Felismus is a modular backdoor that has been used by Sowbug. The name comes from the Latin words: felis (cat), mus (mouse). It also has a human-readable encryption key: \"Tom&Jerry@14here\". Felismus checks for processes associated with anti-virus vendors and has masqueraded as legitimate Adobe Content Management System files."
   },
   {
     "Id": "S0267",
     "Név": "FELIXROOT",
-    "Leírás": "FELIXROOT is a backdoor that has been used to target Ukrainian victims."
+    "Leírás": "FELIXROOT is a backdoor that has been used to target Ukrainian victims. The malware uses custom encryption to communicate with its command and control (C2) server, and collects information about the infected machine before wiping its own tracks. FELIXROOT is delivered through weaponized documents that exploit vulnerabilities in Microsoft Office, and is distributed via Russian-language documents."
   },
   {
     "Id": "S0679",
     "Név": "Ferocious",
-    "Leírás": "Ferocious is a first stage implant composed of VBS and PowerShell scripts that has been used by WIRTE since at least 2021."
+    "Leírás": "Ferocious is a first stage implant composed of VBS and PowerShell scripts that has been used by WIRTE since at least 2021. Ferocious can delete files and modify the registry to maintain its presence on the system, and can discover and check for security software and gather information about the system. It can also attempt to evade detection by checking for virtualization or sandbox environments."
   },
   {
     "Id": "S0120",
