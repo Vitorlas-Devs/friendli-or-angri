@@ -775,999 +775,508 @@
     "Leírás": "Industroyer is a sophisticated malware framework designed to cause an impact to the working processes of Industrial Control Systems (ICS), specifically components used in electrical substations. Industroyer was used in the attacks on the Ukrainian power grid in December 2016. This is the first publicly known malware specifically designed to target and impact operations in the electric grid. I like the name."
   },
   {
-    "Id": "S0259",
-    "Név": "InnaputRAT",
-    "Leírás": "InnaputRAT is a remote access tool that can exfiltrate files from a victim’s machine. InnaputRAT has been seen out in the wild since 2016."
-  },
-  {
-    "Id": "S0463",
-    "Név": "INSOMNIA",
-    "Leírás": "INSOMNIA is spyware that has been used by the group Evil Eye."
-  },
-  {
-    "Id": "S0260",
-    "Név": "InvisiMole",
-    "Leírás": "InvisiMole is a modular spyware program that has been used by the InvisiMole Group since at least 2013. InvisiMole has two backdoor modules called RC2FM and RC2CL that are used to perform post-exploitation activities. It has been discovered on compromised victims in the Ukraine and Russia. Gamaredon Group infrastructure has been used to download and execute InvisiMole against a small number of victims."
-  },
-  {
-    "Id": "S0231",
-    "Név": "Invoke-PSImage",
-    "Leírás": "Invoke-PSImage takes a PowerShell script and embeds the bytes of the script into the pixels of a PNG image. It generates a one liner for executing either from a file of from the web. Example of usage is embedding the PowerShell code from the Invoke-Mimikatz module and embed it into an image file. By calling the image file from a macro for example, the macro will download the picture and execute the PowerShell code, which in this case will dump the passwords."
-  },
-  {
-    "Id": "S0100",
-    "Név": "ipconfig",
-    "Leírás": "ipconfig is a Windows utility that can be used to find information about a system's TCP/IP, DNS, DHCP, and adapter configuration."
-  },
-  {
-    "Id": "S0581",
-    "Név": "IronNetInjector",
-    "Leírás": "IronNetInjector is a Turla toolchain that utilizes scripts from the open-source IronPython implementation of Python with a .NET injector to drop one or more payloads including ComRAT."
-  },
-  {
-    "Id": "S0189",
-    "Név": "ISMInjector",
-    "Leírás": "ISMInjector is a Trojan used to install another OilRig backdoor, ISMAgent."
-  },
-  {
-    "Id": "S0015",
-    "Név": "Ixeshe",
-    "Leírás": "Ixeshe is a malware family that has been used since at least 2009 against targets in East Asia."
-  },
-  {
-    "Id": "S0163",
     "Név": "Janicab",
     "Leírás": "Janicab is an OS X trojan that relied on a valid developer ID and oblivious users to install it."
   },
   {
-    "Id": "S0528",
     "Név": "Javali",
-    "Leírás": "Javali is a banking trojan that has targeted Portuguese and Spanish-speaking countries since 2017, primarily focusing on customers of financial institutions in Brazil and Mexico."
+    "Leírás": "Javali is a banking trojan that has targeted Portuguese and Spanish-speaking countries since 2017, primarily focusing on customers of financial institutions in Brazil and Mexico. Javali can read C2 information from Google Documents and YouTube."
   },
   {
-    "Id": "S0389",
-    "Név": "JCry",
-    "Leírás": "JCry is ransomware written in Go. It was identified as apart of the #OpJerusalem 2019 campaign."
-  },
-  {
-    "Id": "S0044",
-    "Név": "JHUHUGIT",
-    "Leírás": "JHUHUGIT is malware used by APT28. It is based on Carberp source code and serves as reconnaissance malware."
-  },
-  {
-    "Id": "S0201",
-    "Név": "JPIN",
-    "Leírás": "JPIN is a custom-built backdoor family used by PLATINUM. Evidence suggests developers of JPIN and Dipsind code bases were related in some way."
-  },
-  {
-    "Id": "S0283",
-    "Név": "jRAT",
-    "Leírás": "jRAT is a cross-platform, Java-based backdoor originally available for purchase in 2012. Variants of jRAT have been distributed via a software-as-a-service platform, similar to an online subscription model."
-  },
-  {
-    "Id": "S0648",
-    "Név": "JSS Loader",
-    "Leírás": "JSS Loader is Remote Access Trojan (RAT) with .NET and C++ variants that has been used by FIN7 since at least 2020."
-  },
-  {
-    "Id": "S0325",
     "Név": "Judy",
-    "Leírás": "Judy is auto-clicking adware that was distributed through multiple apps in the Google Play Store."
+    "Leírás": "Judy is auto-clicking adware that was distributed through multiple apps in the Google Play Store. It bypasses Google Play's protections by downloading a malicious payload at runtime after installation, and uses infected devices to generate fraudulent clicks on advertisements to generate revenue."
   },
   {
-    "Id": "S0215",
     "Név": "KARAE",
-    "Leírás": "KARAE is a backdoor typically used by APT37 as first-stage malware."
+    "Leírás": "KARAE is a backdoor typically used by APT37 as first-stage malware. It was distributed through torrent file-sharing websites to South Korean victims, using a YouTube video downloader application as a lure."
   },
   {
-    "Id": "S0088",
     "Név": "Kasidet",
-    "Leírás": "Kasidet is a backdoor that has been dropped by using malicious VBA macros."
+    "Leírás": "Kasidet is a backdoor that has been dropped by using malicious VBA macros. The malware has the ability to initiate keylogging and screen captures."
   },
   {
-    "Id": "S0265",
     "Név": "Kazuar",
-    "Leírás": "Kazuar is a fully featured, multi-platform backdoor Trojan written using the Microsoft .NET framework."
+    "Leírás": "Kazuar is a fully featured, multi-platform backdoor Trojan written using the Microsoft .NET framework. If running in a Windows environment, Kazuar saves a DLL to disk that is injected into the explorer.exe process to execute the payload. Kazuar can also be configured to inject and execute within specific processes."
   },
   {
-    "Id": "S0585",
-    "Név": "Kerrdown",
-    "Leírás": "Kerrdown is a custom downloader that has been used by APT32 since at least 2018 to install spyware from a server on the victim's network."
-  },
-  {
-    "Id": "S0487",
     "Név": "Kessel",
-    "Leírás": "Kessel is an advanced version of OpenSSH which acts as a custom backdoor, mainly acting to steal credentials and function as a bot. Kessel has been active since its C2 domain began resolving in August 2018."
+    "Leírás": "Kessel is an advanced version of OpenSSH which acts as a custom backdoor, mainly acting to steal credentials and function as a bot. Kessel has been active since its C2 domain began resolving in August 2018. It has maliciously altered the OpenSSH binary on targeted systems to create a backdoor."
   },
   {
-    "Id": "S1020",
     "Név": "Kevin",
     "Leírás": "Kevin is a backdoor implant written in C++ that has been used by HEXANE since at least June 2020, including in operations against organizations in Tunisia."
   },
   {
-    "Id": "S0387",
-    "Név": "KeyBoy",
-    "Leírás": "KeyBoy is malware that has been used in targeted campaigns against members of the Tibetan Parliament in 2016."
-  },
-  {
-    "Id": "S0276",
-    "Név": "Keydnap",
-    "Leírás": "This piece of malware steals the content of the user's keychain while maintaining a permanent backdoor  ."
-  },
-  {
-    "Id": "S0271",
-    "Név": "KEYMARBLE",
-    "Leírás": "KEYMARBLE is a Trojan that has reportedly been used by the North Korean government."
-  },
-  {
-    "Id": "S0288",
-    "Név": "KeyRaider",
-    "Leírás": "KeyRaider is malware that steals Apple account credentials and other data from jailbroken iOS devices. It also has ransomware functionality."
-  },
-  {
-    "Id": "S0526",
-    "Név": "KGH_SPY",
-    "Leírás": "KGH_SPY is a modular suite of tools used by Kimsuky for reconnaissance, information stealing, and backdoor capabilities. KGH_SPY derived its name from PDB paths and internal names found in samples containing \"KGH\"."
-  },
-  {
-    "Id": "S0607",
-    "Név": "KillDisk",
-    "Leírás": "KillDisk is a disk-wiping tool designed to overwrite files with random data to render the OS unbootable. It was first observed as a component of BlackEnergy malware during cyber attacks against Ukraine in 2015. KillDisk has since evolved into stand-alone malware used by a variety of threat actors against additional targets in Europe and Latin America"
-  },
-  {
-    "Id": "S0599",
-    "Név": "Kinsing",
-    "Leírás": "Kinsing is Golang-based malware that runs a cryptocurrency miner and attempts to spread itself to other hosts in the victim environment."
-  },
-  {
-    "Id": "S0437",
-    "Név": "Kivars",
-    "Leírás": "Kivars is a modular remote access tool (RAT), derived from the Bifrost RAT, that was used by BlackTech in a 2010 campaign."
-  },
-  {
-    "Id": "S0250",
     "Név": "Koadic",
     "Leírás": "Koadic is a Windows post-exploitation framework and penetration testing tool that is publicly available on GitHub. Koadic has several options for staging payloads and creating implants, and performs most of its operations using Windows Script Host."
   },
   {
-    "Id": "S0641",
     "Név": "Kobalos",
-    "Leírás": " it has been found in Europe, North America, and Asia. Kobalos was first identified in late 2019."
+    "Leírás": "Kobalos is a multi-platform backdoor that can be used against Linux, FreeBSD, and Solaris. Kobalos has been deployed against high profile targets, including high-performance computers, academic servers, an endpoint security vendor, and a large internet service provider; it has been found in Europe, North America, and Asia. Kobalos was first identified in late 2019."
   },
   {
-    "Id": "S0669",
     "Név": "KOCTOPUS",
-    "Leírás": "KOCTOPUS's batch variant is loader used by LazyScripter since 2018 to launch Octopus and Koadic and, in some cases, QuasarRAT. KOCTOPUS also has a VBA variant that has the same functionality as the batch version."
+    "Leírás": "KOCTOPUS's batch variant is loader used by LazyScripter since 2018 to launch Octopus and Koadic and, in some cases, QuasarRAT. KOCTOPUS also has a VBA variant that has the same functionality as the batch version. It will perform UAC bypass either through fodhelper.exe or eventvwr.exe."
   },
   {
-    "Id": "S0162",
     "Név": "Komplex",
-    "Leírás": "Komplex is a backdoor that has been used by APT28 on OS X and appears to be developed in a similar manner to XAgentOSX  ."
+    "Leírás": "Komplex is a backdoor that has been used by APT28 on OS X and appears to be developed in a similar manner to XAgentOSX. The OsInfo function in Komplex collects a running process list."
   },
   {
-    "Id": "S0156",
-    "Név": "KOMPROGO",
-    "Leírás": "KOMPROGO is a signature backdoor used by APT32 that is capable of process, file, and registry management."
-  },
-  {
-    "Id": "S0356",
     "Név": "KONNI",
-    "Leírás": " there is some evidence potentially linking KONNI to APT37."
+    "Leírás": "KONNI is a remote access tool that security researchers assess has been used by North Korean cyber actors since at least 2014. KONNI has been linked to several suspected North Korean campaigns targeting political organizations in Russia, East Asia, Europe and the Middle East. A version of KONNI searches for filenames created with a previous version of the malware, suggesting different versions targeted the same victims and the versions may work together."
   },
   {
-    "Id": "S0236",
-    "Név": "Kwampirs",
-    "Leírás": "Kwampirs is a backdoor Trojan used by Orangeworm. It has been found on machines which had software installed for the use and control of high-tech imaging devices such as X-Ray and MRI machines."
-  },
-  {
-    "Id": "S0349",
     "Név": "LaZagne",
     "Leírás": "LaZagne is a post-exploitation, open-source tool used to recover stored passwords on a system. It has modules for Windows, Linux, and OSX, but is mainly focused on Windows systems. LaZagne is publicly available on GitHub."
   },
   {
-    "Id": "S0395",
     "Név": "LightNeuron",
     "Leírás": "LightNeuron is a sophisticated backdoor that has targeted Microsoft Exchange servers since at least 2014. LightNeuron has been used by Turla to target diplomatic and foreign affairs-related organizations. The presence of certain strings in the malware suggests a Linux variant of LightNeuron exists."
   },
   {
-    "Id": "S0211",
     "Név": "Linfo",
     "Leírás": "Linfo is a rootkit trojan used by Elderwood to open a backdoor on compromised hosts."
   },
   {
-    "Id": "S0362",
     "Név": "Linux Rabbit",
     "Leírás": "Linux Rabbit is malware that targeted Linux servers and IoT devices in a campaign lasting from August to October 2018. It shares code with another strain of malware known as Rabbot. The goal of the campaign was to install cryptocurrency miners onto the targeted servers and devices."
   },
   {
-    "Id": "S0513",
-    "Név": "LiteDuke",
-    "Leírás": "LiteDuke is a third stage backdoor that was used by APT29, primarily in 2014-2015. LiteDuke used the same dropper as PolyglotDuke, and was found on machines also compromised by MiniDuke."
-  },
-  {
-    "Id": "S0680",
     "Név": "LitePower",
     "Leírás": "LitePower is a downloader and second stage malware that has been used by WIRTE since at least 2021."
   },
   {
-    "Id": "S0681",
     "Név": "Lizar",
     "Leírás": "Lizar is a modular remote access tool written using the .NET Framework that shares structural similarities to Carbanak. It has likely been used by FIN7 since at least February 2021."
   },
   {
-    "Id": "S0372",
-    "Név": "LockerGoga",
-    "Leírás": "LockerGoga is ransomware that was first reported in January 2019, and has been tied to various attacks on European companies, including industrial and manufacturing firms."
-  },
-  {
-    "Id": "S0397",
     "Név": "LoJax",
     "Leírás": "LoJax is a UEFI rootkit used by APT28 to persist remote access software on targeted systems."
   },
   {
-    "Id": "S0447",
-    "Név": "Lokibot",
-    "Leírás": "Lokibot is a widely distributed information stealer that was first reported in 2015. It is designed to steal sensitive information such as usernames, passwords, cryptocurrency wallets, and other credentials. Lokibot can also create a backdoor into infected systems to allow an attacker to install additional payloads."
-  },
-  {
-    "Id": "S0582",
     "Név": "LookBack",
     "Leírás": "LookBack is a remote access trojan written in C++ that was used against at least three US utility companies in July 2019. The TALONITE activity group has been observed using LookBack."
   },
   {
-    "Id": "S0451",
     "Név": "LoudMiner",
     "Leírás": "LoudMiner is a cryptocurrency miner which uses virtualization software to siphon system resources. The miner has been bundled with pirated copies of Virtual Studio Technology (VST) for Windows and macOS."
   },
   {
-    "Id": "S0042",
     "Név": "LOWBALL",
     "Leírás": "LOWBALL is malware used by admin@338. It was used in August 2015 in email messages targeting Hong Kong-based media organizations."
   },
   {
-    "Id": "S0121",
     "Név": "Lslsass",
     "Leírás": "Lslsass is a publicly-available tool that can dump active logon session password hashes from the lsass process."
   },
   {
-    "Id": "S0532",
-    "Név": "Lucifer",
-    "Leírás": "Lucifer is a crypto miner and DDoS hybrid malware that leverages well-known exploits to spread laterally on Windows platforms."
-  },
-  {
-    "Id": "S0010",
     "Név": "Lurid",
     "Leírás": "Lurid is a malware family that has been used by several groups, including PittyTiger, in targeted attacks as far back as 2006."
   },
   {
-    "Id": "S0409",
-    "Név": "Machete",
-    "Leírás": "Machete is a cyber espionage toolset used by Machete. It is a Python-based backdoor targeting Windows machines that was first observed in 2010."
-  },
-  {
-    "Id": "S1016",
     "Név": "MacMa",
     "Leírás": "MacMa is a macOS-based backdoor with a large set of functionalities to control and exfiltrate files from a compromised computer. MacMa has been observed in the wild since November 2021."
   },
   {
-    "Id": "S1048",
-    "Név": "macOS.OSAMiner",
-    "Leírás": " security researchers assessed macOS.OSAMiner may have been circulating since at least 2015. macOS.OSAMiner is known for embedding one run-only AppleScript into another, which helped the malware evade full analysis for five years due to a lack of Apple event (AEVT) analysis tools."
-  },
-  {
-    "Id": "S0282",
-    "Név": "MacSpy",
-    "Leírás": "MacSpy is a malware-as-a-service offered on the darkweb  ."
-  },
-  {
-    "Id": "S0413",
     "Név": "MailSniper",
     "Leírás": "MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.). It can be used by a non-administrative user to search their own email, or by an Exchange administrator to search the mailboxes of every user in a domain."
   },
   {
-    "Id": "S0485",
     "Név": "Mandrake",
-    "Leírás": "Mandrake is a sophisticated Android espionage platform that has been active in the wild since at least 2016. Mandrake is very actively maintained, with sophisticated features and attacks that are executed with surgical precision.Mandrake has gone undetected for several years by providing legitimate, ad-free applications with social media and real reviews to back the apps. The malware is only activated when the operators issue a specific command."
+    "Leírás": "Mandrake is a sophisticated Android espionage platform that has been active in the wild since at least 2016. Mandrake is very actively maintained, with sophisticated features and attacks that are executed with surgical precision. Mandrake has gone undetected for several years by providing legitimate, ad-free applications with social media and real reviews to back the apps. The malware is only activated when the operators issue a specific command."
   },
   {
-    "Id": "S0317",
     "Név": "Marcher",
-    "Leírás": "Marcher is Android malware that is used for financial fraud."
+    "Leírás": "Marcher is Android malware that is used for financial fraud. It attempts to overlay itself on top of legitimate banking apps in an effort to capture user credentials. Marcher also attempts to overlay itself on top of legitimate apps such as the Google Play Store in an effort to capture user credit card information."
   },
   {
-    "Id": "S0652",
-    "Név": "MarkiRAT",
-    "Leírás": "MarkiRAT is a remote access Trojan (RAT) compiled with Visual Studio that has been used by Ferocious Kitten since at least 2015."
-  },
-  {
-    "Id": "S0167",
     "Név": "Matryoshka",
-    "Leírás": " v1 was seen in the wild from July 2016 until January 2017. v2 has fewer commands and other minor differences."
+    "Leírás": "Matryoshka is a malware framework used by CopyKittens that consists of a dropper, loader, and RAT. It has multiple versions; v1 was seen in the wild from July 2016 until January 2017. v2 has fewer commands and other minor differences."
   },
   {
-    "Id": "S0303",
-    "Név": "MazarBOT",
-    "Leírás": "MazarBOT is Android malware that was distributed via SMS in Denmark in 2016."
-  },
-  {
-    "Id": "S0449",
     "Név": "Maze",
     "Leírás": "Maze ransomware, previously known as \"ChaCha\", was discovered in May 2019. In addition to encrypting files on victim machines for impact, Maze operators conduct information stealing campaigns prior to encryption and post the information online to extort affected companies."
   },
   {
-    "Id": "S0500",
     "Név": "MCMD",
     "Leírás": "MCMD is a remote access tool that provides remote command shell capability used by Dragonfly 2.0."
   },
   {
-    "Id": "S0459",
     "Név": "MechaFlounder",
     "Leírás": "MechaFlounder is a python-based remote access tool (RAT) that has been used by APT39. The payload uses a combination of actor developed code and code snippets freely available online in development communities."
   },
   {
-    "Id": "S0175",
     "Név": "meek",
     "Leírás": "meek is an open-source Tor plugin that tunnels Tor traffic through HTTPS connections."
   },
   {
-    "Id": "S0576",
     "Név": "MegaCortex",
     "Leírás": "MegaCortex is ransomware that first appeared in May 2019.  MegaCortex has mainly targeted industrial organizations."
   },
   {
-    "Id": "S0530",
     "Név": "Melcoz",
     "Leírás": "Melcoz is a banking trojan family built from the open source tool Remote Access PC. Melcoz was first observed in attacks in Brazil and since 2018 has spread to Chile, Mexico, Spain, and Portugal."
   },
   {
-    "Id": "S0443",
     "Név": "MESSAGETAP",
     "Leírás": "MESSAGETAP is a data mining malware family deployed by APT41 into telecommunications networks to monitor and save SMS traffic from specific phone numbers, IMSI numbers, or that contain specific keywords."
   },
   {
-    "Id": "S0455",
     "Név": "Metamorfo",
     "Leírás": "Metamorfo is a Latin-American banking trojan operated by a Brazilian cybercrime group that has been active since at least April 2018. The group focuses on targeting banks and cryptocurrency services in Brazil and Mexico."
   },
   {
-    "Id": "S0688",
     "Név": "Meteor",
     "Leírás": "Meteor is a wiper that was used against Iranian government organizations, including Iranian Railways, the Ministry of Roads, and Urban Development systems, in July 2021. Meteor is likely a newer version of similar wipers called Stardust and Comet that were reportedly used by a group called \"Indra\" since at least 2019 against private companies in Syria."
   },
   {
-    "Id": "S0339",
     "Név": "Micropsia",
     "Leírás": "Micropsia is a remote access tool written in Delphi."
   },
   {
-    "Id": "S1015",
     "Név": "Milan",
     "Leírás": "Milan is a backdoor implant based on DanBot that was written in Visual C++ and .NET. Milan has been used by HEXANE since at least June 2020."
   },
   {
-    "Id": "S0002",
     "Név": "Mimikatz",
     "Leírás": "Mimikatz is a credential dumper capable of obtaining plaintext Windows account logins and passwords, along with many other features that make it useful for testing the security of networks."
   },
   {
-    "Id": "S0179",
     "Név": "MimiPenguin",
     "Leírás": "MimiPenguin is a credential dumper, similar to Mimikatz, designed specifically for Linux platforms."
   },
   {
-    "Id": "S0133",
     "Név": "Miner-C",
     "Leírás": "Miner-C is malware that mines victims for the Monero cryptocurrency. It has targeted FTP servers and Network Attached Storage (NAS) devices to spread."
   },
   {
-    "Id": "S0051",
     "Név": "MiniDuke",
     "Leírás": "MiniDuke is malware that was used by APT29 from 2010 to 2015. The MiniDuke toolset consists of multiple downloader and backdoor components. The loader has been used with other MiniDuke components as well as in conjunction with CosmicDuke and PinchDuke."
   },
   {
-    "Id": "S0280",
     "Név": "MirageFox",
     "Leírás": "MirageFox is a remote access tool used against Windows systems. It appears to be an upgraded version of a tool known as Mirage, which is a RAT believed to originate in 2012."
   },
   {
-    "Id": "S0084",
     "Név": "Mis-Type",
     "Leírás": "Mis-Type is a backdoor hybrid that was used in Operation Dust Storm by 2012."
   },
   {
-    "Id": "S0083",
     "Név": "Misdat",
     "Leírás": "Misdat is a backdoor that was used in Operation Dust Storm from 2010 to 2011."
   },
   {
-    "Id": "S0080",
     "Név": "Mivast",
     "Leírás": "Mivast is a backdoor that has been used by Deep Panda. It was reportedly used in the Anthem breach."
   },
   {
-    "Id": "S0079",
     "Név": "MobileOrder",
     "Leírás": "MobileOrder is a Trojan intended to compromise Android mobile devices. It has been used by Scarlet Mimic."
   },
   {
-    "Id": "S0553",
     "Név": "MoleNet",
     "Leírás": "MoleNet is a downloader tool with backdoor capabilities that has been observed in use since at least 2019."
   },
   {
-    "Id": "S1026",
     "Név": "Mongall",
     "Leírás": "Mongall is a backdoor that has been used since at least 2013, including by Aoqin Dragon."
   },
   {
-    "Id": "S0407",
     "Név": "Monokle",
     "Leírás": "Monokle is targeted, sophisticated mobile surveillanceware. It is developed for Android, but there are some code artifacts that suggests an iOS version may be in development."
   },
   {
-    "Id": "S0149",
     "Név": "MoonWind",
     "Leírás": "MoonWind is a remote access tool (RAT) that was used in 2016 to target organizations in Thailand."
   },
   {
-    "Id": "S0284",
     "Név": "More_eggs",
-    "Leírás": "More_eggs is a JScript backdoor used by Cobalt Group and FIN6. Its name was given based on the variable \"More_eggs\" being present in its code. There are at least two different versions of the backdoor being used, version 2.0 and version 4.4."
+    "Leírás": "More_eggs is a JavaScript backdoor used by Cobalt Group and FIN6. Its name was given based on the variable \"More_eggs\" being present in its code. There are at least two different versions of the backdoor being used, version 2.0 and version 4.4."
   },
   {
-    "Id": "S1047",
     "Név": "Mori",
     "Leírás": "Mori is a backdoor that has been used by MuddyWater since at least January 2022."
   },
   {
-    "Id": "S0256",
     "Név": "Mosquito",
     "Leírás": "Mosquito is a Win32 backdoor that has been used by Turla. Mosquito is made up of three parts: the installer, the launcher, and the backdoor. The main backdoor is called CommanderDLL and is launched by the loader program."
   },
   {
-    "Id": "S0233",
-    "Név": "MURKYTOP",
-    "Leírás": "MURKYTOP is a reconnaissance tool used by Leviathan."
-  },
-  {
-    "Id": "S0699",
     "Név": "Mythic",
     "Leírás": "Mythic is an open source, cross-platform post-exploitation/command and control platform. Mythic is designed to \"plug-n-play\" with various agents and communication channels. Deployed Mythic C2 servers have been observed as part of potentially malicious infrastructure."
   },
   {
-    "Id": "S0205",
     "Név": "Naid",
     "Leírás": "Naid is a trojan used by Elderwood to open a backdoor on compromised hosts."
   },
   {
-    "Id": "S0228",
     "Név": "NanHaiShu",
     "Leírás": "NanHaiShu is a remote access tool and JScript backdoor used by Leviathan. NanHaiShu has been used to target government and private-sector organizations that have relations to the South China Sea dispute."
   },
   {
-    "Id": "S0336",
     "Név": "NanoCore",
     "Leírás": "NanoCore is a modular remote access tool developed in .NET that can be used to spy on victims and steal information. It has been used by threat actors since 2013."
   },
   {
-    "Id": "S0637",
     "Név": "NativeZone",
     "Leírás": "NativeZone is the name given collectively to disposable custom Cobalt Strike loaders used by APT29 since at least 2021."
   },
   {
-    "Id": "S0247",
-    "Név": "NavRAT",
-    "Leírás": "NavRAT is a remote access tool designed to upload, download, and execute files. It has been observed in attacks targeting South Korea."
-  },
-  {
-    "Id": "S0590",
-    "Név": "NBTscan",
-    "Leírás": "NBTscan is an open source tool that has been used by state groups to conduct internal reconnaissance within a compromised network."
-  },
-  {
-    "Id": "S0102",
-    "Név": "nbtstat",
-    "Leírás": "nbtstat is a utility used to troubleshoot NetBIOS name resolution."
-  },
-  {
-    "Id": "S0272",
     "Név": "NDiskMonitor",
     "Leírás": "NDiskMonitor is a custom backdoor written in .NET that appears to be unique to Patchwork."
   },
   {
-    "Id": "S0630",
     "Név": "Nebulae",
-    "Leírás": "Nebulae Is a backdoor that has been used by Naikon  since at least 2020."
+    "Leírás": "Nebulae Is a backdoor that has been used by Naikon since at least 2020."
   },
   {
-    "Id": "S0691",
-    "Név": "Neoichor",
-    "Leírás": " similar malware families used by the group include Leeson and Numbldea."
-  },
-  {
-    "Id": "S0210",
     "Név": "Nerex",
     "Leírás": "Nerex is a Trojan used by Elderwood to open a backdoor on compromised hosts."
   },
   {
-    "Id": "S0039",
-    "Név": "Net",
-    "Leírás": "The Net utility is a component of the Windows operating system. It is used in command-line operations for control of users, groups, services, and network connections. Net has a great deal of functionality,  much of which is useful for an adversary, such as gathering system and network information for Discovery, moving laterally through SMB/Windows Admin Shares using net use commands, and interacting with services. The net1.exe utility is executed for certain functionality when net.exe is run and can be used directly in commands such as net1 user."
-  },
-  {
-    "Id": "S0056",
     "Név": "Net Crawler",
     "Leírás": "Net Crawler is an intranet worm capable of extracting credentials using credential dumpers and spreading to systems on a network over SMB by brute forcing accounts with recovered passwords and using PsExec to execute a copy of Net Crawler."
   },
   {
-    "Id": "S0034",
     "Név": "NETEAGLE",
     "Leírás": "NETEAGLE is a backdoor developed by APT30 with compile dates as early as 2008. It has two main variants known as \"Scout\" and \"Norton.\""
   },
   {
-    "Id": "S0108",
-    "Név": "netsh",
-    "Leírás": "netsh is a scripting utility used to interact with networking components on local or remote systems."
-  },
-  {
-    "Id": "S0104",
-    "Név": "netstat",
-    "Leírás": "netstat is an operating system utility that displays active TCP connections, listening ports, and network statistics."
-  },
-  {
-    "Id": "S0033",
     "Név": "NetTraveler",
     "Leírás": "NetTraveler is malware that has been used in multiple cyber espionage campaigns for basic surveillance of victims. The earliest known samples have timestamps back to 2005, and the largest number of observed samples were created between 2010 and 2013."
   },
   {
-    "Id": "S0457",
     "Név": "Netwalker",
     "Leírás": "Netwalker is fileless ransomware written in PowerShell and executed directly in memory."
   },
   {
-    "Id": "S0198",
     "Név": "NETWIRE",
     "Leírás": "NETWIRE is a publicly available, multiplatform remote administration tool (RAT) that has been used by criminal and APT groups since at least 2012."
   },
   {
-    "Id": "S0508",
     "Név": "Ngrok",
     "Leírás": "Ngrok is a legitimate reverse proxy tool that can create a secure tunnel to servers located behind firewalls or on local machines that do not have a public IP. Ngrok has been leveraged by threat actors in several campaigns including use for lateral movement and data exfiltration."
   },
   {
-    "Id": "S0118",
     "Név": "Nidiran",
     "Leírás": "Nidiran is a custom backdoor developed and used by Suckfly. It has been delivered via strategic web compromise."
   },
   {
-    "Id": "S0385",
-    "Név": "njRAT",
-    "Leírás": "njRAT is a remote access tool (RAT) that was first observed in 2012. It has been used by threat actors in the Middle East."
-  },
-  {
-    "Id": "S0359",
-    "Név": "Nltest",
-    "Leírás": "Nltest is a Windows command-line utility used to list domain controllers and enumerate domain trusts."
-  },
-  {
-    "Id": "S0353",
     "Név": "NOKKI",
     "Leírás": "NOKKI is a modular remote access tool. The earliest observed attack using NOKKI was in January 2018. NOKKI has significant code overlap with the KONNI malware family. There is some evidence potentially linking NOKKI to APT37."
   },
   {
-    "Id": "S0299",
     "Név": "NotCompatible",
     "Leírás": "NotCompatible is an Android malware family that was used between at least 2014 and 2016. It has multiple variants that have become more sophisticated over time."
   },
   {
-    "Id": "S0368",
     "Név": "NotPetya",
-    "Leírás": "NotPetya is malware that was used by Sandworm Team in a worldwide attack starting on June 27, 2017. While NotPetya appears as a form of ransomware, its main purpose was to destroy data and disk structures on compromised systems"
+    "Leírás": "NotPetya is malware that was used by Sandworm Team in a worldwide attack starting on June 27, 2017. While NotPetya appears as a form of ransomware, its main purpose was to destroy data and disk structures on compromised systems; the attackers never intended to make the encrypted data recoverable. As such, NotPetya may be more appropriately thought of as a form of wiper malware. NotPetya contains worm-like features to spread itself across a computer network using the SMBv1 exploits EternalBlue and EternalRomance."
   },
   {
-    "Id": "S0286",
     "Név": "OBAD",
-    "Leírás": "OBAD is an Android malware family."
+    "Leírás": "OBAD is an Android malware family. It contains encrypted code along with an obfuscated decryption routine to make it difficult to analyze."
   },
   {
-    "Id": "S0644",
-    "Név": "ObliqueRAT",
-    "Leírás": "ObliqueRAT is a remote access trojan, similar to Crimson, that has been in use by Transparent Tribe since at least 2020."
-  },
-  {
-    "Id": "S0346",
     "Név": "OceanSalt",
     "Leírás": "OceanSalt is a Trojan that was used in a campaign targeting victims in South Korea, United States, and Canada. OceanSalt shares code similarity with SpyNote RAT, which has been linked to APT1."
   },
   {
-    "Id": "S0340",
     "Név": "Octopus",
     "Leírás": "Octopus is a Windows Trojan written in the Delphi programming language that has been used by Nomadic Octopus to target government organizations in Central Asia since at least 2014."
   },
   {
-    "Id": "S0439",
     "Név": "Okrum",
     "Leírás": "Okrum is a Windows backdoor that has been seen in use since December 2016 with strong links to Ke3chang."
   },
   {
-    "Id": "S0138",
-    "Név": "OLDBAIT",
-    "Leírás": "OLDBAIT is a credential harvester used by APT28."
-  },
-  {
-    "Id": "S0285",
     "Név": "OldBoot",
-    "Leírás": "OldBoot is an Android malware family."
+    "Leírás": "OldBoot is an Android malware family. It uses escalated privileges to modify the init script on the device's boot partition to maintain persistence."
   },
   {
-    "Id": "S0365",
     "Név": "Olympic Destroyer",
     "Leírás": "Olympic Destroyer is malware that was used by Sandworm Team against the 2018 Winter Olympics, held in Pyeongchang, South Korea. The main purpose of the malware was to render infected computer systems inoperable. The malware leverages various native Windows utilities and API calls to carry out its destructive tasks. Olympic Destroyer has worm-like features to spread itself across a computer network in order to maximize its destructive impact."
   },
   {
-    "Id": "S0052",
-    "Név": "OnionDuke",
-    "Leírás": "OnionDuke is malware that was used by APT29 from 2013 to 2015."
-  },
-  {
-    "Id": "S0264",
     "Név": "OopsIE",
-    "Leírás": "OopsIE is a Trojan used by OilRig to remotely execute commands as well as upload/download files to/from victims."
+    "Leírás": "OopsIE is a Trojan used by OilRig to remotely execute commands as well as upload/download files to/from victims. It performs several anti-VM and sandbox checks on the victim's machine. One technique the group has used was to perform a WMI query SELECT * FROM MSAcpi_ThermalZoneTemperature to check the temperature to see if it’s running in a virtual environment."
   },
   {
-    "Id": "S0229",
     "Név": "Orz",
     "Leírás": "Orz is a custom JavaScript backdoor used by Leviathan. It was observed being used in 2014 as well as in August 2017 when it was dropped by Microsoft Publisher files."
   },
   {
-    "Id": "S0165",
     "Név": "OSInfo",
-    "Leírás": "OSInfo is a custom tool used by APT3 to do internal discovery on a victim's computer and network."
+    "Leírás": "OSInfo is a custom tool used by APT3 to do internal discovery on a victim's computer and network. It specifically looks for Domain Admins and power users within the domain."
   },
   {
-    "Id": "S0402",
-    "Név": "OSX/Shlayer",
-    "Leírás": "OSX/Shlayer is a Trojan designed to install adware on macOS that was first discovered in 2018."
-  },
-  {
-    "Id": "S0352",
-    "Név": "OSX_OCEANLOTUS.D",
-    "Leírás": "OSX_OCEANLOTUS.D is a MacOS backdoor with several variants that has been used by APT32."
-  },
-  {
-    "Id": "S0594",
     "Név": "Out1",
     "Leírás": "Out1 is a remote access tool written in python and used by MuddyWater since at least 2021."
   },
   {
-    "Id": "S1017",
-    "Név": "OutSteel",
-    "Leírás": "OutSteel is a file uploader and document stealer developed with the scripting language AutoIT that has been used by Ember Bear since at least March 2021."
-  },
-  {
-    "Id": "S0072",
     "Név": "OwaAuth",
     "Leírás": "OwaAuth is a Web shell and credential stealer deployed to Microsoft Exchange servers that appears to be exclusively used by Threat Group-3390."
   },
   {
-    "Id": "S0598",
     "Név": "P.A.S. Webshell",
     "Leírás": "P.A.S. Webshell is a publicly available multifunctional PHP webshell in use since at least 2016 that provides remote access and execution on target web servers."
   },
   {
-    "Id": "S0016",
     "Név": "P2P ZeuS",
     "Leírás": "P2P ZeuS is a closed-source fork of the leaked version of the ZeuS botnet. It presents improvements over the leaked version, including a peer-to-peer architecture."
   },
   {
-    "Id": "S0626",
-    "Név": "P8RAT",
-    "Leírás": "P8RAT is a fileless malware used by menuPass to download and execute payloads since at least 2020."
-  },
-  {
-    "Id": "S0399",
     "Név": "Pallas",
     "Leírás": "Pallas is mobile surveillanceware that was custom-developed by Dark Caracal."
   },
   {
-    "Id": "S0664",
     "Név": "Pandora",
     "Leírás": "Pandora is a multistage kernel rootkit with backdoor functionality that has been in use by Threat Group-3390 since at least 2020."
   },
   {
-    "Id": "S0208",
     "Név": "Pasam",
     "Leírás": "Pasam is a trojan used by Elderwood to open a backdoor on compromised hosts."
   },
   {
-    "Id": "S0122",
     "Név": "Pass-The-Hash Toolkit",
     "Leírás": "Pass-The-Hash Toolkit is a toolkit that allows an adversary to \"pass\" a password hash (without knowing the original password) to log in to systems."
   },
   {
-    "Id": "S0556",
     "Név": "Pay2Key",
     "Leírás": "Pay2Key is a ransomware written in C++ that has been used by Fox Kitten since at least July 2020 including campaigns against Israeli companies. Pay2Key has been incorporated with a leak site to display stolen sensitive information to further pressure victims into payment."
   },
   {
-    "Id": "S1050",
     "Név": "PcShare",
     "Leírás": "PcShare is an open source remote access tool that has been modified and used by Chinese threat actors, most notably during the FunnyDream campaign since late 2018."
   },
   {
-    "Id": "S0316",
-    "Név": "Pegasus for Android",
-    "Leírás": "Pegasus for Android is the Android version of malware that has reportedly been linked to the NSO Group.   The iOS version is tracked separately under Pegasus for iOS."
+    "Név": "Pegasus",
+    "Leírás": "Pegasus for iOS is the iOS version of malware that has reportedly been linked to the NSO Group. It has been advertised and sold to target high-value victims. The Android version is tracked separately."
   },
   {
-    "Id": "S0289",
-    "Név": "Pegasus for iOS",
-    "Leírás": "Pegasus for iOS is the iOS version of malware that has reportedly been linked to the NSO Group. It has been advertised and sold to target high-value victims.   The Android version is tracked separately under Pegasus for Android."
-  },
-  {
-    "Id": "S0683",
     "Név": "Peirates",
     "Leírás": "Peirates is a post-exploitation Kubernetes exploitation framework with a focus on gathering service account tokens for lateral movement and privilege escalation. The tool is written in GoLang and publicly available on GitHub."
   },
   {
-    "Id": "S0587",
     "Név": "Penquin",
     "Leírás": "Penquin is a remote access trojan (RAT) with multiple versions used by Turla to target Linux systems since at least 2014."
   },
   {
-    "Id": "S0643",
     "Név": "Peppy",
     "Leírás": "Peppy is a Python-based remote access Trojan, active since at least 2012, with similarities to Crimson."
   },
   {
-    "Id": "S0158",
-    "Név": "PHOREAL",
-    "Leírás": "PHOREAL is a signature backdoor used by APT32."
-  },
-  {
-    "Id": "S0517",
     "Név": "Pillowmint",
     "Leírás": "Pillowmint is a point-of-sale malware used by FIN7 designed to capture credit card information."
   },
   {
-    "Id": "S0048",
-    "Név": "PinchDuke",
-    "Leírás": "PinchDuke is malware that was used by APT29 from 2008 to 2010."
-  },
-  {
-    "Id": "S0097",
-    "Név": "Ping",
-    "Leírás": "Ping is an operating system utility commonly used to troubleshoot and verify network connections."
-  },
-  {
-    "Id": "S1031",
     "Név": "PingPull",
     "Leírás": "PingPull is a remote access Trojan (RAT) written in Visual C++ that has been used by GALLIUM since at least June 2022. PingPull has been used to target telecommunications companies, financial institutions, and government entities in Afghanistan, Australia, Belgium, Cambodia, Malaysia, Mozambique, the Philippines, Russia, and Vietnam."
   },
   {
-    "Id": "S0501",
     "Név": "PipeMon",
-    "Leírás": "PipeMon is a multi-stage modular backdoor used by Winnti Group."
+    "Leírás": "PipeMon is a multi-stage modular backdoor used by Winnti Group. It can decrypt password-protected executables."
   },
   {
-    "Id": "S0124",
     "Név": "Pisloader",
     "Leírás": "Pisloader is a malware family that is notable due to its use of DNS as a C2 protocol as well as its use of anti-analysis tactics. It has been used by APT18 and is similar to another malware family, HTTPBrowser, that has been used by the group."
   },
   {
-    "Id": "S0291",
     "Név": "PJApps",
-    "Leírás": "PJApps is an Android malware family."
+    "Leírás": "PJApps is an Android malware family. It has the capability to collect and leak the victim's phone number, location and mobile device unique identifier (IMEI)."
   },
   {
-    "Id": "S0254",
     "Név": "PLAINTEE",
     "Leírás": "PLAINTEE is a malware sample that has been used by Rancor in targeted attacks in Singapore and Cambodia."
   },
   {
-    "Id": "S1006",
     "Név": "PLC-Blaster",
-    "Leírás": "PLC-Blaster is a piece of proof-of-concept malware that runs on Siemens S7 PLCs. This worm locates other Siemens S7 PLCs on the network and attempts to infect them.  Once this worm has infected its target and attempted to infect other devices on the network, the worm can then run one of many modules."
+    "Leírás": "PLC-Blaster is a piece of proof-of-concept malware that runs on Siemens S7 PLCs. This worm locates other Siemens S7 PLCs on the network and attempts to infect them. Once this worm has infected its target and attempted to infect other devices on the network, the worm can then run one of many modules."
   },
   {
-    "Id": "S0435",
     "Név": "PLEAD",
     "Leírás": "PLEAD is a remote access tool (RAT) and downloader used by BlackTech in targeted attacks in East Asia including Taiwan, Japan, and Hong Kong. PLEAD has also been referred to as TSCookie, though more recent reporting indicates likely separation between the two. PLEAD was observed in use as early as March 2017."
   },
   {
-    "Id": "S0013",
     "Név": "PlugX",
     "Leírás": "PlugX is a remote access tool (RAT) with modular plugins that has been used by multiple threat groups."
   },
   {
-    "Id": "S0067",
     "Név": "pngdowner",
     "Leírás": "pngdowner is malware used by Putter Panda. It is a simple tool with limited functionality and no persistence mechanism, suggesting it is used only as a simple \"download-and-execute\" utility."
   },
   {
-    "Id": "S0428",
-    "Név": "PoetRAT",
-    "Leírás": "PoetRAT is a remote access trojan (RAT) that was first identified in April 2020. PoetRAT has been used in multiple campaigns against the private and public sectors in Azerbaijan, including ICS and SCADA systems in the energy sector. The STIBNITE activity group has been observed using the malware. PoetRAT derived its name from references in the code to poet William Shakespeare."
-  },
-  {
-    "Id": "S0012",
-    "Név": "PoisonIvy",
-    "Leírás": "PoisonIvy is a popular remote access tool (RAT) that has been used by many groups."
-  },
-  {
-    "Id": "S0518",
-    "Név": "PolyglotDuke",
-    "Leírás": "PolyglotDuke is a downloader that has been used by APT29 since at least 2013. PolyglotDuke has been used to drop MiniDuke."
-  },
-  {
-    "Id": "S0453",
     "Név": "Pony",
     "Leírás": "Pony is a credential stealing malware, though has also been used among adversaries for its downloader capabilities. The source code for Pony Loader 1.0 and 2.0 were leaked online, leading to their use by various threat actors."
   },
   {
-    "Id": "S0216",
     "Név": "POORAIM",
     "Leírás": "POORAIM is a backdoor used by APT37 in campaigns since at least 2014."
   },
   {
-    "Id": "S0378",
     "Név": "PoshC2",
     "Leírás": "PoshC2 is an open source remote administration and post-exploitation framework that is publicly available on GitHub. The server-side components of the tool are primarily written in Python, while the implants are written in PowerShell. Although PoshC2 is primarily focused on Windows implantation, it does contain a basic Python dropper for Linux/macOS."
   },
   {
-    "Id": "S0150",
-    "Név": "POSHSPY",
-    "Leírás": "POSHSPY is a backdoor that has been used by APT29 since at least 2015. It appears to be used as a secondary backdoor used if the actors lost access to their primary backdoors."
-  },
-  {
-    "Id": "S0177",
     "Név": "Power Loader",
     "Leírás": "Power Loader is modular code sold in the cybercrime market used as a downloader in malware families such as Carberp, Redyms and Gapz."
   },
   {
-    "Id": "S0139",
-    "Név": "PowerDuke",
-    "Leírás": "PowerDuke is a backdoor that was used by APT29 in 2016. It has primarily been delivered through Microsoft Word or Excel attachments containing malicious macros."
-  },
-  {
-    "Id": "S1012",
     "Név": "PowerLess",
     "Leírás": "PowerLess is a PowerShell-based modular backdoor that has been used by Magic Hound since at least 2022."
   },
   {
-    "Id": "S0685",
-    "Név": "PowerPunch",
-    "Leírás": "PowerPunch is a lightweight downloader that has been used by Gamaredon Group since at least 2021."
-  },
-  {
-    "Id": "S0441",
     "Név": "PowerShower",
     "Leírás": "PowerShower is a PowerShell backdoor used by Inception for initial reconnaissance and to download and execute second stage payloads."
   },
   {
-    "Id": "S0145",
     "Név": "POWERSOURCE",
     "Leírás": "POWERSOURCE is a PowerShell backdoor that is a heavily obfuscated and modified version of the publicly available tool DNS_TXT_Pwnage. It was observed in February 2017 in spearphishing campaigns against personnel involved with United States Securities and Exchange Commission (SEC) filings at various organizations. The malware was delivered when macros were enabled by the victim and a VBS script was dropped."
   },
   {
-    "Id": "S0194",
-    "Név": "PowerSploit",
-    "Leírás": "PowerSploit is an open source, offensive security framework comprised of PowerShell modules and scripts that perform a wide range of tasks related to penetration testing such as code execution, persistence, bypassing anti-virus, recon, and exfiltration."
-  },
-  {
-    "Id": "S0393",
-    "Név": "PowerStallion",
-    "Leírás": "PowerStallion is a lightweight PowerShell backdoor used by Turla, possibly as a recovery access tool to install other backdoors."
-  },
-  {
-    "Id": "S0223",
     "Név": "POWERSTATS",
     "Leírás": "POWERSTATS is a PowerShell-based first stage backdoor used by MuddyWater."
   },
   {
-    "Id": "S0371",
     "Név": "POWERTON",
     "Leírás": "POWERTON is a custom PowerShell backdoor first observed in 2018. It has typically been deployed as a late-stage backdoor by APT33. At least two variants of the backdoor have been identified, with the later version containing improved functionality."
   },
   {
-    "Id": "S1046",
-    "Név": "PowGoop",
-    "Leírás": " it has been used by MuddyWater as their main loader."
-  },
-  {
-    "Id": "S0184",
-    "Név": "POWRUNER",
-    "Leírás": "POWRUNER is a PowerShell script that sends and receives commands to and from the C2 server."
-  },
-  {
-    "Id": "S0113",
-    "Név": "Prikormka",
-    "Leírás": "Prikormka is a malware family used in a campaign known as Operation Groundbait. It has predominantly been observed in Ukraine and was used as early as 2008."
-  },
-  {
-    "Id": "S0654",
     "Név": "ProLock",
     "Leírás": "ProLock is a ransomware strain that has been used in Big Game Hunting (BGH) operations since at least 2020, often obtaining initial access with QakBot. ProLock is the successor to PwndLocker ransomware which was found to contain a bug allowing decryption without ransom payment in 2019."
   },
   {
-    "Id": "S0279",
     "Név": "Proton",
-    "Leírás": "Proton is a macOS backdoor focusing on data theft and credential access  ."
+    "Leírás": "Proton is a macOS backdoor focusing on data theft and credential access, which kills security tools like Wireshark that are running, and gathers credentials for Google Chrome."
   },
   {
-    "Id": "S0238",
     "Név": "Proxysvc",
     "Leírás": "Proxysvc is a malicious DLL used by Lazarus Group in a campaign known as Operation GhostSecret. It has appeared to be operating undetected since 2017 and was mostly observed in higher education organizations. The goal of Proxysvc is to deliver additional payloads to the target and to maintain control for the attacker. It is in the form of a DLL that can also be executed as a standalone process."
   },
   {
-    "Id": "S0613",
     "Név": "PS1",
     "Leírás": "PS1 is a loader that was used to deploy 64-bit backdoors in the CostaRicto campaign."
   },
   {
-    "Id": "S0029",
-    "Név": "PsExec",
-    "Leírás": "PsExec is a free Microsoft tool that can be used to execute a program on another computer. It is used by IT administrators and attackers."
-  },
-  {
-    "Id": "S0078",
     "Név": "Psylo",
     "Leírás": "Psylo is a shellcode-based Trojan that has been used by Scarlet Mimic. It has similar characteristics as FakeM."
   },
   {
-    "Id": "S0147",
     "Név": "Pteranodon",
     "Leírás": "Pteranodon is a custom backdoor used by Gamaredon Group."
   },
   {
-    "Id": "S0196",
-    "Név": "PUNCHBUGGY",
-    "Leírás": "PUNCHBUGGY is a backdoor malware used by FIN8 that has been observed targeting POS networks in the hospitality industry."
-  },
-  {
-    "Id": "S0197",
-    "Név": "PUNCHTRACK",
-    "Leírás": "PUNCHTRACK is non-persistent point of sale (POS) system malware utilized by FIN8 to scrape payment card data."
-  },
-  {
-    "Id": "S0192",
     "Név": "Pupy",
-    "Leírás": "Pupy is an open source, cross-platform (Windows, Linux, OSX, Android) remote administration and post-exploitation tool.  It is written in Python and can be generated as a payload in several different ways (Windows exe, Python file, PowerShell oneliner/file, Linux elf, APK, Rubber Ducky, etc.).  Pupy is publicly available on GitHub."
+    "Leírás": "Pupy is an open source, cross-platform (Windows, Linux, OSX, Android) remote administration and post-exploitation tool.  It is written in Python and can be generated as a payload in several different ways (Windows exe, Python file, PowerShell oneliner/file, Linux elf, APK, Rubber Ducky, etc.). Pupy is publicly available on GitHub."
   },
   {
-    "Id": "S0006",
-    "Név": "pwdump",
-    "Leírás": "pwdump is a credential dumper."
-  },
-  {
-    "Id": "S1032",
-    "Név": "PyDCrypt",
-    "Leírás": "PyDCrypt is malware written in Python designed to deliver DCSrv. It has been used by Moses Staff since at least September 2021, with each sample tailored for its intended victim organization."
-  },
-  {
-    "Id": "S0583",
     "Név": "Pysa",
     "Leírás": "Pysa is a ransomware that was first used in October 2018 and has been seen to target particularly high-value finance, government and healthcare organizations."
   },
   {
-    "Id": "S0650",
-    "Név": "QakBot",
-    "Leírás": "QakBot is a modular banking trojan that has been used primarily by financially-motivated actors since at least 2007. QakBot is continuously maintained and developed and has evolved from an information stealer into a delivery agent for ransomware, most notably ProLock and Egregor."
-  },
-  {
-    "Id": "S0269",
-    "Név": "QUADAGENT",
-    "Leírás": "QUADAGENT is a PowerShell backdoor used by OilRig."
-  },
-  {
-    "Id": "S0262",
     "Név": "QuasarRAT",
     "Leírás": "QuasarRAT is an open-source, remote access tool that has been publicly available on GitHub since at least 2014. QuasarRAT is developed in the C# language."
-  },
-  {
-    "Id": "S0686",
-    "Név": "QuietSieve",
-    "Leírás": "QuietSieve is an information stealer that has been used by Gamaredon Group since at least 2021."
   },
   {
     "Id": "S0481",
@@ -1775,1104 +1284,416 @@
     "Leírás": "Ragnar Locker is a ransomware that has been in use since at least December 2019."
   },
   {
-    "Id": "S0565",
     "Név": "Raindrop",
     "Leírás": "Raindrop is a loader used by APT29 that was discovered on some victim machines during investigations related to the 2020 SolarWinds cyber intrusion. It was discovered in January 2021 and was likely used since at least May 2020."
   },
   {
-    "Id": "S0629",
     "Név": "RainyDay",
     "Leírás": "RainyDay is a backdoor tool that has been used by Naikon since at least 2020."
   },
   {
-    "Id": "S0458",
     "Név": "Ramsay",
     "Leírás": "Ramsay is an information stealing malware framework designed to collect and exfiltrate sensitive documents, including from air-gapped systems. Researchers have identified overlaps between Ramsay and the Darkhotel-associated Retro malware."
   },
   {
-    "Id": "S0055",
-    "Név": "RARSTONE",
-    "Leírás": "RARSTONE is malware used by the Naikon group that has some characteristics similar to PlugX."
-  },
-  {
-    "Id": "S0241",
-    "Név": "RATANKBA",
-    "Leírás": "RATANKBA is a remote controller tool used by Lazarus Group. RATANKBA has been used in attacks targeting financial institutions in Poland, Mexico, Uruguay, the United Kingdom, and Chile. It was also seen used against organizations related to telecommunications, management consulting, information technology, insurance, aviation, and education. RATANKBA has a graphical user interface to allow the attacker to issue jobs to perform on the infected machines."
-  },
-  {
-    "Id": "S0364",
     "Név": "RawDisk",
     "Leírás": "RawDisk is a legitimate commercial driver from the EldoS Corporation that is used for interacting with files, disks, and partitions. The driver allows for direct modification of data on a local computer's hard drive. In some cases, the tool can enact these raw disk modifications from user-mode processes, circumventing Windows operating system security features."
   },
   {
-    "Id": "S0169",
     "Név": "RawPOS",
     "Leírás": "RawPOS is a point-of-sale (POS) malware family that searches for cardholder data on victims. It has been in use since at least 2008.    FireEye divides RawPOS into three components: FIENDCRY, DUEBREW, and DRIFTWOOD."
   },
   {
-    "Id": "S1040",
-    "Név": "Rclone",
-    "Leírás": "Rclone is a command line program for syncing files with cloud storage services such as Dropbox, Google Drive, Amazon S3, and MEGA. Rclone has been used in a number of ransomware campaigns, including those associated with the Conti and DarkSide Ransomware-as-a-Service operations."
-  },
-  {
-    "Id": "S0295",
-    "Név": "RCSAndroid",
-    "Leírás": "RCSAndroid is Android malware."
-  },
-  {
-    "Id": "S0662",
     "Név": "RCSession",
     "Leírás": "RCSession is a backdoor written in C++ that has been in use since at least 2018 by Mustang Panda and by Threat Group-3390 (Type II Backdoor)."
   },
   {
-    "Id": "S0495",
     "Név": "RDAT",
     "Leírás": "RDAT is a backdoor used by the suspected Iranian threat group OilRig. RDAT was originally identified in 2017 and targeted companies in the telecommunications sector."
   },
   {
-    "Id": "S0416",
-    "Név": "RDFSNIFFER",
-    "Leírás": "RDFSNIFFER is a module loaded by BOOSTWRITE which allows an attacker to monitor and tamper with legitimate connections made via an application designed to provide visibility and system management capabilities to remote IT techs."
-  },
-  {
-    "Id": "S0172",
     "Név": "Reaver",
     "Leírás": "Reaver is a malware family that has been in the wild since at least late 2016. Reporting indicates victims have primarily been associated with the \"Five Poisons,\" which are movements the Chinese government considers dangerous. The type of malware is rare due to its final payload being in the form of Control Panel items."
   },
   {
-    "Id": "S0539",
     "Név": "Red Alert 2.0",
     "Leírás": "Red Alert 2.0 is a banking trojan that masquerades as a VPN client."
   },
   {
-    "Id": "S0326",
     "Név": "RedDrop",
     "Leírás": "RedDrop is an Android malware family that exfiltrates sensitive data from devices."
   },
   {
-    "Id": "S0153",
     "Név": "RedLeaves",
     "Leírás": "RedLeaves is a malware family used by menuPass. The code overlaps with PlugX and may be based upon the open source tool Trochilus."
   },
   {
-    "Id": "S0075",
-    "Név": "Reg",
-    "Leírás": "Reg is a Windows utility used to interact with the Windows Registry. It can be used at the command-line interface to query, add, modify, and remove information. Utilities such as Reg are known to be used by persistent threats."
-  },
-  {
-    "Id": "S0511",
-    "Név": "RegDuke",
-    "Leírás": "RegDuke is a first stage implant written in .NET and used by APT29 since at least 2017. RegDuke has been used to control a compromised machine when control of other implants on the machine was lost."
-  },
-  {
-    "Id": "S0019",
     "Név": "Regin",
     "Leírás": "Regin is a malware platform that has targeted victims in a range of industries, including telecom, government, and financial institutions. Some Regin timestamps date back to 2003."
   },
   {
-    "Id": "S0332",
     "Név": "Remcos",
     "Leírás": "Remcos is a closed-source tool that is marketed as a remote control and surveillance software by a company called Breaking Security. Remcos has been observed being used in malware campaigns."
   },
   {
-    "Id": "S0375",
     "Név": "Remexi",
     "Leírás": "Remexi is a Windows-based Trojan that was developed in the C programming language."
   },
   {
-    "Id": "S0166",
-    "Név": "RemoteCMD",
-    "Leírás": "RemoteCMD is a custom tool used by APT3 to execute commands on a remote system similar to SysInternal's PSEXEC functionality."
-  },
-  {
-    "Id": "S0592",
-    "Név": "RemoteUtilities",
-    "Leírás": "RemoteUtilities is a legitimate remote administration tool that has been used by MuddyWater since at least 2021 for execution on target machines."
-  },
-  {
-    "Id": "S0125",
     "Név": "Remsec",
-    "Leírás": "Remsec is a modular backdoor that has been used by Strider and appears to have been designed primarily for espionage purposes. Many of its modules are written in Lua."
+    "Leírás": "Remsec is a modular backdoor that has been used by *Strider* and appears to have been designed primarily for espionage purposes. Many of its modules are written in Lua."
   },
   {
-    "Id": "S0174",
     "Név": "Responder",
     "Leírás": "Responder is an open source tool used for LLMNR, NBT-NS and MDNS poisoning, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication."
   },
   {
-    "Id": "S0379",
-    "Név": "Revenge RAT",
-    "Leírás": "Revenge RAT is a freely available remote access tool written in .NET (C#)."
-  },
-  {
-    "Id": "S0496",
-    "Név": "REvil",
-    "Leírás": "REvil is a ransomware family that has been linked to the GOLD SOUTHFIELD group and operated as ransomware-as-a-service (RaaS) since at least April 2019. REvil, which as been used against organizations in the manufacturing, transportation, and electric sectors, is highly configurable and shares code similarities with the GandCrab RaaS."
-  },
-  {
-    "Id": "S0258",
     "Név": "RGDoor",
     "Leírás": "RGDoor is a malicious Internet Information Services (IIS) backdoor developed in the C++ language. RGDoor has been seen deployed on webservers belonging to the Middle East government organizations. RGDoor provides backdoor access to compromised IIS servers."
   },
   {
-    "Id": "S0433",
     "Név": "Rifdoor",
     "Leírás": "Rifdoor is a remote access trojan (RAT) that shares numerous code similarities with HotCroissant."
   },
   {
-    "Id": "S0403",
     "Név": "Riltok",
     "Leírás": "Riltok is banking malware that uses phishing popups to collect user credentials."
   },
   {
-    "Id": "S0003",
-    "Név": "RIPTIDE",
-    "Leírás": "RIPTIDE is a proxy-aware backdoor used by APT12."
-  },
-  {
-    "Id": "S0448",
     "Név": "Rising Sun",
     "Leírás": "Rising Sun is a modular backdoor that was used extensively in Operation Sharpshooter between 2017 and 2019. Rising Sun infected at least 87 organizations around the world, including nuclear, defense, energy, and financial service companies. Security researchers assessed Rising Sun included some source code from Lazarus Group's Trojan Duuzer."
   },
   {
-    "Id": "S0684",
-    "Név": "ROADTools",
-    "Leírás": "ROADTools is a framework for enumerating Azure Active Directory environments. The tool is written in Python and publicly available on GitHub."
-  },
-  {
-    "Id": "S0400",
     "Név": "RobbinHood",
     "Leírás": "RobbinHood is ransomware that was first observed being used in an attack against the Baltimore city government's computer network."
   },
   {
-    "Id": "S0112",
-    "Név": "ROCKBOOT",
-    "Leírás": "ROCKBOOT is a Bootkit that has been used by an unidentified, suspected China-based group."
-  },
-  {
-    "Id": "S0270",
     "Név": "RogueRobin",
     "Leírás": "RogueRobin is a payload used by DarkHydrus that has been developed in PowerShell and C#."
   },
   {
-    "Id": "S0240",
-    "Név": "ROKRAT",
-    "Leírás": "ROKRAT is a cloud-based remote access tool (RAT) used by APT37 to target victims in South Korea. APT37 has used ROKRAT during several campaigns from 2016 through 2021."
-  },
-  {
-    "Id": "S0411",
     "Név": "Rotexy",
     "Leírás": "Rotexy is an Android banking malware that has evolved over several years. It was originally an SMS spyware Trojan first spotted in October 2014, and since then has evolved to contain more features, including ransomware functionality."
   },
   {
-    "Id": "S0103",
-    "Név": "route",
-    "Leírás": "route can be used to find or change information within the local system IP routing table."
-  },
-  {
-    "Id": "S0090",
     "Név": "Rover",
     "Leírás": "Rover is malware suspected of being used for espionage purposes. It was used in 2015 in a targeted email sent to an Indian Ambassador to Afghanistan."
   },
   {
-    "Id": "S0148",
     "Név": "RTM",
     "Leírás": "RTM is custom malware written in Delphi. It is used by the group of the same name (RTM). Newer versions of the malware have been reported publicly as Redaman."
   },
   {
-    "Id": "S0358",
     "Név": "Ruler",
     "Leírás": "Ruler is a tool to abuse Microsoft Exchange services. It is publicly available on GitHub and the tool is executed via the command line. The creators of Ruler have also released a defensive tool, NotRuler, to detect its usage."
   },
   {
-    "Id": "S0313",
-    "Név": "RuMMS",
-    "Leírás": "RuMMS is an Android malware family."
-  },
-  {
-    "Id": "S0253",
     "Név": "RunningRAT",
     "Leírás": "RunningRAT is a remote access tool that appeared in operations surrounding the 2018 Pyeongchang Winter Olympics along with Gold Dragon and Brave Prince."
   },
   {
-    "Id": "S0446",
     "Név": "Ryuk",
     "Leírás": "Ryuk is a ransomware designed to target enterprise environments that has been used in attacks since at least 2018. Ryuk shares code similarities with Hermes ransomware."
   },
   {
-    "Id": "S0085",
     "Név": "S-Type",
     "Leírás": "S-Type is a backdoor that was used in Operation Dust Storm since at least 2013."
   },
   {
-    "Id": "S1018",
-    "Név": "Saint Bot",
-    "Leírás": "Saint Bot is a .NET downloader that has been used by Ember Bear since at least March 2021."
-  },
-  {
-    "Id": "S0074",
     "Név": "Sakula",
     "Leírás": "Sakula is a remote access tool (RAT) that first surfaced in 2012 and was used in intrusions throughout 2015."
   },
   {
-    "Id": "S0370",
     "Név": "SamSam",
     "Leírás": "SamSam is ransomware that appeared in early 2016. Unlike some ransomware, its variants have required operators to manually interact with the malware to execute some of its core components."
   },
   {
-    "Id": "S0111",
-    "Név": "schtasks",
-    "Leírás": "schtasks is used to schedule execution of programs or scripts on a Windows system to run at a specific date and time."
-  },
-  {
-    "Id": "S0461",
-    "Név": "SDBbot",
-    "Leírás": "SDBbot is a backdoor with installer and loader components that has been used by TA505 since at least 2019."
-  },
-  {
-    "Id": "S0195",
-    "Név": "SDelete",
-    "Leírás": "SDelete is an application that securely deletes data in a way that makes it unrecoverable. It is part of the Microsoft Sysinternals suite of tools."
-  },
-  {
-    "Id": "S0053",
-    "Név": "SeaDuke",
-    "Leírás": "SeaDuke is malware that was used by APT29 from 2014 to 2015. It was used primarily as a secondary backdoor for victims that were already compromised with CozyCar."
-  },
-  {
-    "Id": "S0345",
     "Név": "Seasalt",
     "Leírás": "Seasalt is malware that has been linked to APT1's 2010 operations. It shares some code similarities with OceanSalt."
   },
   {
-    "Id": "S0185",
-    "Név": "SEASHARPEE",
-    "Leírás": "SEASHARPEE is a Web shell that has been used by OilRig."
-  },
-  {
-    "Id": "S0382",
     "Név": "ServHelper",
     "Leírás": "ServHelper is a backdoor first observed in late 2018. The backdoor is written in Delphi and is typically delivered as a DLL file."
   },
   {
-    "Id": "S0639",
-    "Név": "Seth-Locker",
-    "Leírás": "Seth-Locker is a ransomware with some remote control capabilities that has been in use since at least 2021."
-  },
-  {
-    "Id": "S0596",
-    "Név": "ShadowPad",
-    "Leírás": "ShadowPad is a modular backdoor that was first identified in a supply chain compromise of the NetSarang software in mid-July 2017. The malware was originally thought to be exclusively used by APT41, but has since been observed to be used by various Chinese threat activity groups."
-  },
-  {
-    "Id": "S0140",
     "Név": "Shamoon",
     "Leírás": "Shamoon is wiper malware that was first used by an Iranian group known as the \"Cutting Sword of Justice\" in 2012. Other versions known as Shamoon 2 and Shamoon 3 were observed in 2016 and 2018. Shamoon has also been seen leveraging RawDisk and Filerase to carry out data wiping tasks. The term Shamoon is sometimes used to refer to the group using the malware as well as the malware itself."
   },
   {
-    "Id": "S1019",
     "Név": "Shark",
-    "Leírás": " it has been used by HEXANE since at least July 2021."
+    "Leírás": "Shark is a backdoor malware written in C# and .NET that is an updated version of Milan; it has been used by HEXANE since at least July 2021."
   },
   {
-    "Id": "S0546",
-    "Név": "SharpStage",
-    "Leírás": "SharpStage is a .NET malware with backdoor capabilities."
-  },
-  {
-    "Id": "S0450",
-    "Név": "SHARPSTATS",
-    "Leírás": "SHARPSTATS is a .NET backdoor used by MuddyWater since at least 2019."
-  },
-  {
-    "Id": "S0294",
-    "Név": "ShiftyBug",
-    "Leírás": "ShiftyBug is an auto-rooting adware family of malware for Android. The family is very similar to the other Android families known as Shedun, Shuanet, Kemoge, though it is not believed all the families were created by the same group."
-  },
-  {
-    "Id": "S0444",
-    "Név": "ShimRat",
-    "Leírás": "ShimRat has been used by the suspected China-based adversary Mofang in campaigns targeting multiple countries and sectors including government, military, critical infrastructure, automobile, and weapons development. The name \"ShimRat\" comes from the malware's extensive use of Windows Application Shimming to maintain persistence."
-  },
-  {
-    "Id": "S0445",
-    "Név": "ShimRatReporter",
-    "Leírás": "ShimRatReporter is a tool used by suspected Chinese adversary Mofang to automatically conduct initial discovery. The details from this discovery are used to customize follow-on payloads (such as ShimRat) as well as set up faux infrastructure which mimics the adversary's targets. ShimRatReporter has been used in campaigns targeting multiple countries and sectors including government, military, critical infrastructure, automobile, and weapons development."
-  },
-  {
-    "Id": "S0028",
-    "Név": "SHIPSHAPE",
-    "Leírás": "SHIPSHAPE is malware developed by APT30 that allows propagation and exfiltration of data over removable devices. APT30 may use this capability to exfiltrate data across air-gaps."
-  },
-  {
-    "Id": "S0063",
-    "Név": "SHOTPUT",
-    "Leírás": "SHOTPUT is a custom backdoor used by APT3."
-  },
-  {
-    "Id": "S0217",
-    "Név": "SHUTTERSPEED",
-    "Leírás": "SHUTTERSPEED is a backdoor used by APT37."
-  },
-  {
-    "Id": "S0589",
-    "Név": "Sibot",
-    "Leírás": "Sibot is dual-purpose malware written in VBScript designed to achieve persistence on a compromised system as well as download and execute additional payloads. Microsoft discovered three Sibot variants in early 2021 during its investigation of APT29 and the SolarWinds cyber intrusion campaign."
-  },
-  {
-    "Id": "S0610",
-    "Név": "SideTwist",
-    "Leírás": "SideTwist is a C-based backdoor that has been used by OilRig since at least 2021."
-  },
-  {
-    "Id": "S0692",
-    "Név": "SILENTTRINITY",
-    "Leírás": "SILENTTRINITY is an open source remote administration and post-exploitation framework primarily written in Python that includes stagers written in Powershell, C, and Boo. SILENTTRINITY was used in a 2019 campaign against Croatian government agencies by unidentified cyber actors."
-  },
-  {
-    "Id": "S0549",
-    "Név": "SilkBean",
-    "Leírás": "SilkBean is a piece of Android surveillanceware containing comprehensive remote access tool (RAT) functionality that has been used in targeting of the Uyghur ethnic group."
-  },
-  {
-    "Id": "S0623",
-    "Név": "Siloscape",
-    "Leírás": "Siloscape is malware that targets Kubernetes clusters through Windows containers. Siloscape was first observed in March 2021."
-  },
-  {
-    "Id": "S0419",
-    "Név": "SimBad",
-    "Leírás": "SimBad was a strain of adware on the Google Play Store, distributed through the RXDroider Software Development Kit. The name \"SimBad\" was derived from the fact that most of the infected applications were simulator games. The adware was controlled using an instance of the open source framework Parse Server."
-  },
-  {
-    "Id": "S0007",
-    "Név": "Skeleton Key",
-    "Leírás": "Skeleton Key is malware used to inject false credentials into domain controllers with the intent of creating a backdoor password.  Functionality similar to Skeleton Key is included as a module in Mimikatz."
-  },
-  {
-    "Id": "S0468",
-    "Név": "Skidmap",
-    "Leírás": "Skidmap is a kernel-mode rootkit used for cryptocurrency mining."
-  },
-  {
-    "Id": "S0327",
     "Név": "Skygofree",
     "Leírás": "Skygofree is Android spyware that is believed to have been developed in 2014 and used through at least 2017."
   },
   {
-    "Id": "S0633",
     "Név": "Sliver",
     "Leírás": "Sliver is an open source, cross-platform, red team command and control framework written in Golang."
   },
   {
-    "Id": "S0533",
-    "Név": "SLOTHFULMEDIA",
-    "Leírás": "SLOTHFULMEDIA is a remote access Trojan written in C++ that has been used by an unidentified \"sophisticated cyber actor\" since at least January 2017. It has been used to target government organizations, defense contractors, universities, and energy companies in Russia, India, Kazakhstan, Kyrgyzstan, Malaysia, Ukraine, and Eastern Europe.  In October 2020, Kaspersky Labs assessed SLOTHFULMEDIA is part of an activity cluster it refers to as \"IAmTheKing\". ESET also noted code similarity between SLOTHFULMEDIA and droppers used by a group it refers to as \"PowerPool\"."
-  },
-  {
-    "Id": "S0218",
-    "Név": "SLOWDRIFT",
-    "Leírás": "SLOWDRIFT is a backdoor used by APT37 against academic and strategic victims in South Korea."
-  },
-  {
-    "Id": "S1035",
-    "Név": "Small Sieve",
-    "Leírás": "Small Sieve is a Telegram Bot API-based Python backdoor that has been distributed using a Nullsoft Scriptable Install System (NSIS) Installer"
-  },
-  {
-    "Id": "S0226",
     "Név": "Smoke Loader",
-    "Leírás": "Smoke Loader is a malicious bot application that can be used to load other malware.Smoke Loader has been seen in the wild since at least 2011 and has included a number of different payloads. It is notorious for its use of deception and self-protection. It also comes with several plug-ins."
+    "Leírás": "Smoke Loader is a malicious bot application that can be used to load other malware. Smoke Loader has been seen in the wild since at least 2011 and has included a number of different payloads. It is notorious for its use of deception and self-protection. It also comes with several plug-ins."
   },
   {
-    "Id": "S0649",
-    "Név": "SMOKEDHAM",
-    "Leírás": " it has been used by at least one ransomware-as-a-service affiliate."
-  },
-  {
-    "Id": "S0159",
-    "Név": "SNUGRIDE",
-    "Leírás": "SNUGRIDE is a backdoor that has been used by menuPass as first stage malware."
-  },
-  {
-    "Id": "S0273",
-    "Név": "Socksbot",
-    "Leírás": "Socksbot is a backdoor that  abuses Socket Secure (SOCKS) proxies."
-  },
-  {
-    "Id": "S0627",
     "Név": "SodaMaster",
     "Leírás": "SodaMaster is a fileless malware used by menuPass to download and execute payloads since at least 2020."
   },
   {
-    "Id": "S0615",
-    "Név": "SombRAT",
-    "Leírás": "SombRAT is a modular backdoor written in C++ that has been used since at least 2019 to download and execute malicious payloads, including FIVEHANDS ransomware."
-  },
-  {
-    "Id": "S0516",
-    "Név": "SoreFang",
-    "Leírás": "SoreFang is first stage downloader used by APT29 for exfiltration and to load other malware."
-  },
-  {
-    "Id": "S0157",
     "Név": "SOUNDBITE",
     "Leírás": "SOUNDBITE is a signature backdoor used by APT32."
   },
   {
-    "Id": "S0035",
     "Név": "SPACESHIP",
     "Leírás": "SPACESHIP is malware developed by APT30 that allows propagation and exfiltration of data over removable devices. APT30 may use this capability to exfiltrate data across air-gaps."
   },
   {
-    "Id": "S0543",
     "Név": "Spark",
     "Leírás": "Spark is a Windows backdoor and has been in use since as early as 2017."
   },
   {
-    "Id": "S0374",
     "Név": "SpeakUp",
     "Leírás": "SpeakUp is a Trojan backdoor that targets both Linux and OSX devices. It was first observed in January 2019."
   },
   {
-    "Id": "S0646",
     "Név": "SpicyOmelette",
     "Leírás": "SpicyOmelette is a JavaScript based remote access tool that has been used by Cobalt Group since at least 2018."
   },
   {
-    "Id": "S0227",
-    "Név": "spwebmember",
-    "Leírás": "spwebmember is a Microsoft SharePoint enumeration and data dumping tool written in .NET."
-  },
-  {
-    "Id": "S0324",
-    "Név": "SpyDealer",
-    "Leírás": "SpyDealer is Android malware that exfiltrates sensitive data from Android devices."
-  },
-  {
-    "Id": "S0305",
-    "Név": "SpyNote RAT",
-    "Leírás": "SpyNote RAT (Remote Access Trojan) is a family of malicious Android apps. The SpyNote RAT builder tool can be used to develop malicious apps with the malware's functionality."
-  },
-  {
-    "Id": "S0225",
     "Név": "sqlmap",
     "Leírás": "sqlmap is an open source penetration testing tool that can be used to automate the process of detecting and exploiting SQL injection flaws."
   },
   {
-    "Id": "S0390",
     "Név": "SQLRat",
     "Leírás": "SQLRat is malware that executes SQL scripts to avoid leaving traditional host artifacts. FIN7 has been observed using it."
   },
   {
-    "Id": "S1030",
     "Név": "Squirrelwaffle",
     "Leírás": "Squirrelwaffle is a loader that was first seen in September 2021. It has been used in spam email campaigns to deliver additional malware such as Cobalt Strike and the QakBot banking trojan."
   },
   {
-    "Id": "S0058",
     "Név": "SslMM",
     "Leírás": "SslMM is a full-featured backdoor used by Naikon that has multiple variants."
   },
   {
-    "Id": "S0188",
     "Név": "Starloader",
     "Leírás": "Starloader is a loader component that has been observed loading Felismus and associated tools."
   },
   {
-    "Id": "S1037",
     "Név": "STARWHALE",
     "Leírás": "STARWHALE is Windows Script File (WSF) backdoor that has been used by MuddyWater, possibly since at least November 2021"
   },
   {
-    "Id": "S0328",
     "Név": "Stealth Mango",
     "Leírás": "Stealth Mango is Android malware that has reportedly been used to successfully compromise the mobile devices of government officials, members of the military, medical professionals, and civilians. The iOS malware known as Tangelo is believed to be from the same developer."
   },
   {
-    "Id": "S0380",
-    "Név": "StoneDrill",
-    "Leírás": "StoneDrill is wiper malware discovered in destructive campaigns against both Middle Eastern and European targets in association with APT33."
-  },
-  {
-    "Id": "S0142",
     "Név": "StreamEx",
     "Leírás": "StreamEx is a malware family that has been used by Deep Panda since at least 2015. In 2016, it was distributed via legitimate compromised Korean websites."
   },
   {
-    "Id": "S1034",
-    "Név": "StrifeWater",
-    "Leírás": "StrifeWater is a remote-access tool that has been used by Moses Staff in the initial stages of their attacks since at least November 2021."
-  },
-  {
-    "Id": "S0491",
-    "Név": "StrongPity",
-    "Leírás": "StrongPity is an information stealing malware used by PROMETHIUM."
-  },
-  {
-    "Id": "S0603",
-    "Név": "Stuxnet",
-    "Leírás": "Stuxnet was the first publicly reported piece of malware to specifically target industrial control systems devices. Stuxnet is a large and complex piece of malware that utilized multiple different behaviors including multiple zero-day vulnerabilities, a sophisticated Windows rootkit, and network infection routines. Stuxnet was discovered in 2010, with some components being used as early as November 2008."
-  },
-  {
-    "Id": "S1042",
-    "Név": "SUGARDUMP",
-    "Leírás": "SUGARDUMP is a proprietary browser credential harvesting tool that was used by UNC3890 during the C0010 campaign. The first known SUGARDUMP version was used since at least early 2021, a second SMTP C2 version was used from late 2021-early 2022, and a third HTTP C2 variant was used since at least April 2022."
-  },
-  {
-    "Id": "S1049",
     "Név": "SUGARUSH",
     "Leírás": "SUGARUSH is a small custom backdoor that can establish a reverse shell over TCP to a hard coded C2 address. SUGARUSH was first identified during analysis of UNC3890's C0010 campaign targeting Israeli companies, which began in late 2020."
   },
   {
-    "Id": "S0559",
-    "Név": "SUNBURST",
-    "Leírás": "SUNBURST is a trojanized DLL designed to fit within the SolarWinds Orion software update framework. It was used by APT29 since at least February 2020."
-  },
-  {
-    "Id": "S0562",
-    "Név": "SUNSPOT",
-    "Leírás": "SUNSPOT is an implant that injected the SUNBURST backdoor into the SolarWinds Orion software update framework. It was used by APT29 since at least February 2020."
-  },
-  {
-    "Id": "S0578",
-    "Név": "SUPERNOVA",
-    "Leírás": "SUPERNOVA is an in-memory web shell written in .NET C#. It was discovered in November 2020 during the investigation of APT29's SolarWinds cyber operation but determined to be unrelated. Subsequent analysis suggests SUPERNOVA may have been used by the China-based threat group SPIRAL."
-  },
-  {
-    "Id": "S0018",
-    "Név": "Sykipot",
-    "Leírás": "Sykipot is malware that has been used in spearphishing campaigns since approximately 2007 against victims primarily in the US. One variant of Sykipot hijacks smart cards on victims.  The group using this malware has also been referred to as Sykipot."
-  },
-  {
-    "Id": "S0242",
-    "Név": "SynAck",
-    "Leírás": "SynAck is variant of Trojan ransomware targeting mainly English-speaking users since at least fall 2017."
-  },
-  {
-    "Id": "S0519",
     "Név": "SYNful Knock",
     "Leírás": "SYNful Knock is a stealthy modification of the operating system of network devices that can be used to maintain persistence within a victim's network and provide new capabilities to the adversary."
   },
   {
-    "Id": "S0060",
-    "Név": "Sys10",
-    "Leírás": "Sys10 is a backdoor that was used throughout 2013 by Naikon."
-  },
-  {
-    "Id": "S0464",
-    "Név": "SYSCON",
-    "Leírás": "SYSCON is a backdoor that has been in use since at least 2017 and has been associated with campaigns involving North Korean themes. SYSCON has been delivered by the CARROTBALL and CARROTBAT droppers."
-  },
-  {
-    "Id": "S0096",
-    "Név": "Systeminfo",
-    "Leírás": "Systeminfo is a Windows utility that can be used to gather detailed information about a computer."
-  },
-  {
-    "Id": "S0663",
     "Név": "SysUpdate",
     "Leírás": "SysUpdate is a backdoor written in C++ that has been used by Threat Group-3390 since at least 2020."
   },
   {
-    "Id": "S0098",
     "Név": "T9000",
     "Leírás": "T9000 is a backdoor that is a newer variant of the T5000 malware family, also known as Plat1. Its primary function is to gather information about the victim. It has been used in multiple targeted attacks against U.S.-based organizations."
   },
   {
-    "Id": "S0011",
-    "Név": "Taidoor",
-    "Leírás": "Taidoor is a remote access trojan (RAT) that has been used by Chinese government cyber actors to maintain access on victim networks. Taidoor has primarily been used against Taiwanese government organizations since at least 2010."
-  },
-  {
-    "Id": "S0586",
-    "Név": "TAINTEDSCRIBE",
-    "Leírás": "TAINTEDSCRIBE is a fully-featured beaconing implant integrated with command modules used by Lazarus Group. It was first reported in May 2020."
-  },
-  {
-    "Id": "S0467",
     "Név": "TajMahal",
     "Leírás": "TajMahal is a multifunctional spying framework that has been in use since at least 2014. TajMahal is comprised of two separate packages, named Tokyo and Yokohama, and can deploy up to 80 plugins."
   },
   {
-    "Id": "S0329",
     "Név": "Tangelo",
     "Leírás": "Tangelo is iOS malware that is believed to be from the same developers as the Stealth Mango Android malware. It is not a mobile application, but rather a Debian package that can only run on jailbroken iOS devices."
   },
   {
-    "Id": "S1011",
     "Név": "Tarrask",
     "Leírás": "Tarrask is malware that has been used by HAFNIUM since at least August 2021. Tarrask was designed to evade digital defenses and maintain persistence by generating concealed scheduled tasks."
   },
   {
-    "Id": "S0057",
-    "Név": "Tasklist",
-    "Leírás": "The Tasklist utility displays a list of applications and services with their Process IDs (PID) for all tasks running on either a local or a remote computer. It is packaged with Windows operating systems and can be executed from the command-line interface."
-  },
-  {
-    "Id": "S0164",
-    "Név": "TDTESS",
-    "Leírás": "TDTESS is a 64-bit .NET binary backdoor used by CopyKittens."
-  },
-  {
-    "Id": "S0560",
-    "Név": "TEARDROP",
-    "Leírás": "TEARDROP is a memory-only dropper that was discovered on some victim machines during investigations related to the 2020 SolarWinds cyber intrusion. It was likely used by APT29 since at least May 2020."
-  },
-  {
-    "Id": "S0545",
     "Név": "TERRACOTTA",
     "Leírás": "TERRACOTTA is an ad fraud botnet that has been capable of generating over 2 billion fraudulent requests per week."
   },
   {
-    "Id": "S0146",
     "Név": "TEXTMATE",
     "Leírás": "TEXTMATE is a second-stage PowerShell backdoor that is memory-resident. It was observed being used along with POWERSOURCE in February 2017."
   },
   {
-    "Id": "S0595",
     "Név": "ThiefQuest",
     "Leírás": "ThiefQuest is a virus, data stealer, and wiper that presents itself as ransomware targeting macOS systems. ThiefQuest was first seen in 2020 distributed via trojanized pirated versions of popular macOS software on Russian forums sharing torrent links. Even though ThiefQuest presents itself as ransomware, since the dynamically generated encryption key is never sent to the attacker it may be more appropriately thought of as a form of wiper malware."
   },
   {
-    "Id": "S0665",
     "Név": "ThreatNeedle",
     "Leírás": "ThreatNeedle is a backdoor that has been used by Lazarus Group since at least 2019 to target cryptocurrency, defense, and mobile gaming organizations.  It is considered to be an advanced cluster of Lazarus Group's Manuscrypt (a.k.a. NukeSped) malware family."
   },
   {
-    "Id": "S0558",
     "Név": "Tiktok Pro",
     "Leírás": "Tiktok Pro is spyware that has been masquerading as the TikTok application."
   },
   {
-    "Id": "S0668",
-    "Név": "TinyTurla",
-    "Leírás": "TinyTurla is a backdoor that has been used by Turla against targets in the US, Germany, and Afghanistan since at least 2020."
-  },
-  {
-    "Id": "S0131",
-    "Név": "TINYTYPHON",
-    "Leírás": "TINYTYPHON is a backdoor  that has been used by the actors responsible for the MONSOON campaign. The majority of its code was reportedly taken from the MyDoom worm."
-  },
-  {
-    "Id": "S0004",
-    "Név": "TinyZBot",
-    "Leírás": "TinyZBot is a bot written in C# that was developed by Cleaver."
-  },
-  {
-    "Id": "S0671",
     "Név": "Tomiris",
     "Leírás": "Tomiris is a backdoor written in Go that continuously queries its C2 server for executables to download and execute on a victim system. It was first reported in September 2021 during an investigation of a successful DNS hijacking campaign against a Commonwealth of Independent States (CIS) member. Security researchers assess there are similarities between Tomiris and GoldMax."
   },
   {
-    "Id": "S0183",
-    "Név": "Tor",
-    "Leírás": " at each step in the proxy network, the topmost layer is decrypted and the contents forwarded on to the next node until it reaches its destination."
-  },
-  {
-    "Id": "S0678",
     "Név": "Torisma",
     "Leírás": "Torisma is a second stage implant designed for specialized monitoring that has been used by Lazarus Group. Torisma was discovered during an investigation into the 2020 Operation North Star campaign that targeted the defense sector."
   },
   {
-    "Id": "S0682",
-    "Név": "TrailBlazer",
-    "Leírás": "TrailBlazer is a modular malware that has been used by APT29 since at least 2019."
-  },
-  {
-    "Id": "S0424",
     "Név": "Triada",
     "Leírás": "Triada was first reported in 2016 as a second stage malware. Later versions in 2019 appeared with new techniques and as an initial downloader of other Trojan apps."
   },
   {
-    "Id": "S0266",
-    "Név": "TrickBot",
-    "Leírás": "TrickBot is a Trojan spyware program written in C++ that first emerged in September 2016 as a possible successor to Dyre. TrickBot was developed and initially used by Wizard Spider for targeting banking sites in North America, Australia, and throughout Europe"
-  },
-  {
-    "Id": "S0427",
-    "Név": "TrickMo",
-    "Leírás": "TrickMo a 2FA bypass mobile banking trojan, most likely being distributed by TrickBot. TrickMo has been primarily targeting users located in Germany.TrickMo is designed to steal transaction authorization numbers (TANs), which are typically used as one-time passwords."
-  },
-  {
-    "Id": "S1009",
     "Név": "Triton",
     "Leírás": "Triton is an attack framework built to interact with Triconex Safety Instrumented System (SIS) controllers."
   },
   {
-    "Id": "S0307",
-    "Név": "Trojan-SMS.AndroidOS.Agent.ao",
-    "Leírás": "Trojan-SMS.AndroidOS.Agent.ao is Android malware."
-  },
-  {
-    "Id": "S0306",
-    "Név": "Trojan-SMS.AndroidOS.FakeInst.a",
-    "Leírás": "Trojan-SMS.AndroidOS.FakeInst.a is Android malware."
-  },
-  {
-    "Id": "S0308",
-    "Név": "Trojan-SMS.AndroidOS.OpFake.a",
-    "Leírás": "Trojan-SMS.AndroidOS.OpFake.a is Android malware."
-  },
-  {
-    "Id": "S0094",
-    "Név": "Trojan.Karagany",
-    "Leírás": "Trojan.Karagany is a modular remote access tool used for recon and linked to Dragonfly. The source code for Trojan.Karagany originated from Dream Loader malware which was leaked in 2010 and sold on underground forums."
-  },
-  {
-    "Id": "S0001",
-    "Név": "Trojan.Mebromi",
-    "Leírás": "Trojan.Mebromi is BIOS-level malware that takes control of the victim before MBR."
-  },
-  {
-    "Id": "S0178",
-    "Név": "Truvasys",
-    "Leírás": "Truvasys is first-stage malware that has been used by PROMETHIUM. It is a collection of modules written in the Delphi programming language."
-  },
-  {
-    "Id": "S0436",
     "Név": "TSCookie",
-    "Leírás": "TSCookie is a remote access tool (RAT) that has been used by BlackTech in campaigns against Japanese targets.. TSCookie has been referred to as PLEAD though more recent reporting indicates a separation between the two."
+    "Leírás": "TSCookie is a remote access tool (RAT) that has been used by BlackTech in campaigns against Japanese targets. TSCookie has been referred to as PLEAD though more recent reporting indicates a separation between the two."
   },
   {
-    "Id": "S0647",
     "Név": "Turian",
     "Leírás": "Turian is a backdoor that has been used by BackdoorDiplomacy to target Ministries of Foreign Affairs, telecommunication companies, and charities in Africa, Europe, the Middle East, and Asia. First reported in 2021, Turian is likely related to Quarian, an older backdoor that was last observed being used in 2013 against diplomatic targets in Syria and the United States."
   },
   {
-    "Id": "S0199",
-    "Név": "TURNEDUP",
-    "Leírás": "TURNEDUP is a non-public backdoor. It has been dropped by APT33's StoneDrill malware."
-  },
-  {
-    "Id": "S0302",
     "Név": "Twitoor",
     "Leírás": "Twitoor is a dropper application capable of receiving commands from social media."
   },
   {
-    "Id": "S0263",
     "Név": "TYPEFRAME",
     "Leírás": "TYPEFRAME is a remote access tool that has been used by Lazarus Group."
   },
   {
-    "Id": "S0116",
     "Név": "UACMe",
     "Leírás": "UACMe is an open source assessment tool that contains many methods for bypassing Windows User Account Control on multiple versions of the operating system."
   },
   {
-    "Id": "S0333",
-    "Név": "UBoatRAT",
-    "Leírás": "UBoatRAT is a remote access tool that was identified in May 2017."
-  },
-  {
-    "Id": "S0221",
     "Név": "Umbreon",
     "Leírás": "A Linux rootkit that provides backdoor access and hides from defenders."
   },
   {
-    "Id": "S0130",
-    "Név": "Unknown Logger",
-    "Leírás": "Unknown Logger is a publicly released, free backdoor. Version 1.5 of the backdoor has been used by the actors responsible for the MONSOON campaign."
-  },
-  {
-    "Id": "S0275",
     "Név": "UPPERCUT",
     "Leírás": "UPPERCUT is a backdoor that has been used by menuPass."
   },
   {
-    "Id": "S0022",
-    "Név": "Uroburos",
-    "Leírás": "Uroburos is a rootkit used by Turla."
-  },
-  {
-    "Id": "S0386",
     "Név": "Ursnif",
     "Leírás": "Ursnif is a banking trojan and variant of the Gozi malware observed being spread through various automated exploit kits, Spearphishing Attachments, and malicious links. Ursnif is associated primarily with data theft, but variants also include components (backdoors, spyware, file injectors, etc.) capable of a wide variety of behaviors."
   },
   {
-    "Id": "S0452",
     "Név": "USBferry",
     "Leírás": "USBferry is an information stealing malware and has been used by Tropic Trooper in targeted attacks against Taiwanese and Philippine air-gapped military environments. USBferry shares an overlapping codebase with YAHOYAH, though it has several features which makes it a distinct piece of malware."
   },
   {
-    "Id": "S0136",
-    "Név": "USBStealer",
-    "Leírás": "USBStealer is malware that has been used by APT28 since at least 2005 to extract information from air-gapped networks. It does not have the capability to communicate over the Internet and has been used in conjunction with ADVSTORESHELL."
-  },
-  {
-    "Id": "S0476",
     "Név": "Valak",
     "Leírás": "Valak is a multi-stage modular malware that can function as a standalone information stealer or downloader, first observed in 2019 targeting enterprises in the US and Germany."
   },
   {
-    "Id": "S0636",
-    "Név": "VaporRage",
-    "Leírás": "VaporRage is a shellcode downloader that has been used by APT29 since at least 2021."
-  },
-  {
-    "Id": "S0207",
     "Név": "Vasport",
     "Leírás": "Vasport is a trojan used by Elderwood to open a backdoor on compromised hosts."
   },
   {
-    "Id": "S0442",
     "Név": "VBShower",
     "Leírás": "VBShower is a backdoor that has been used by Inception since at least 2019. VBShower has been used as a downloader for second stage payloads, including PowerShower."
   },
   {
-    "Id": "S0257",
-    "Név": "VERMIN",
-    "Leírás": "VERMIN is a remote access tool written in the Microsoft .NET framework. It is mostly composed of original code, but also has some open source code."
-  },
-  {
-    "Id": "S0418",
-    "Név": "ViceLeaker",
-    "Leírás": "ViceLeaker is a spyware framework, capable of extensive surveillance and data exfiltration operations, primarily targeting devices belonging to Israeli citizens."
-  },
-  {
-    "Id": "S0506",
-    "Név": "ViperRAT",
-    "Leírás": "ViperRAT is sophisticated surveillanceware that has been in operation since at least 2015 and was used to target the Israeli Defense Force."
-  },
-  {
-    "Id": "S0180",
     "Név": "Volgmer",
     "Leírás": "Volgmer is a backdoor Trojan designed to provide covert access to a compromised system. It has been used since at least 2013 to target the government, financial, automotive, and media industries. Its primary delivery mechanism is suspected to be spearphishing."
   },
   {
-    "Id": "S1010",
     "Név": "VPNFilter",
     "Leírás": "VPNFilter is a multi-stage, modular platform with versatile capabilities to support both intelligence-collection and destructive cyber attack operations. VPNFilter modules such as its packet sniffer ('ps') can collect traffic that passes through an infected device, allowing the theft of website credentials and monitoring of Modbus SCADA protocols."
   },
   {
-    "Id": "S0366",
     "Név": "WannaCry",
     "Leírás": "WannaCry is ransomware that was first seen in a global attack during May 2017, which affected more than 150 countries. It contains worm-like features to spread itself across a computer network using the SMBv1 exploit EternalBlue."
   },
   {
-    "Id": "S0670",
     "Név": "WarzoneRAT",
     "Leírás": "WarzoneRAT is a malware-as-a-service remote access tool (RAT) written in C++ that has been publicly available for purchase since at least late 2018."
   },
   {
-    "Id": "S0612",
-    "Név": "WastedLocker",
-    "Leírás": "WastedLocker is a ransomware family attributed to Indrik Spider that has been used since at least May 2020. WastedLocker has been used against a broad variety of sectors, including manufacturing, information technology, and media."
-  },
-  {
-    "Id": "S0579",
     "Név": "Waterbear",
     "Leírás": "Waterbear is modular malware attributed to BlackTech that has been used primarily for lateral movement, decrypting, and triggering payloads and is capable of hiding network behaviors."
   },
   {
-    "Id": "S0109",
-    "Név": "WEBC2",
-    "Leírás": "WEBC2 is a family of backdoor malware used by APT1 as early as July 2006. WEBC2 backdoors are designed to retrieve a webpage, with commands hidden in HTML comments or special tags, from a predetermined C2 server."
-  },
-  {
-    "Id": "S0515",
     "Név": "WellMail",
     "Leírás": "WellMail is a lightweight malware written in Golang used by APT29, similar in design and structure to WellMess."
   },
   {
-    "Id": "S0514",
     "Név": "WellMess",
     "Leírás": "WellMess is lightweight malware family with variants written in .NET and Golang that has been in use since at least 2018 by APT29."
   },
   {
-    "Id": "S0645",
-    "Név": "Wevtutil",
-    "Leírás": "Wevtutil is a Windows command-line utility that enables administrators to retrieve information about event logs and publishers."
-  },
-  {
-    "Id": "S0689",
     "Név": "WhisperGate",
     "Leírás": "WhisperGate is a multi-stage wiper designed to look like ransomware that has been used in attacks against Ukraine since at least January 2022."
   },
   {
-    "Id": "S0206",
     "Név": "Wiarp",
     "Leírás": "Wiarp is a trojan used by Elderwood to open a backdoor on compromised hosts."
   },
   {
-    "Id": "S0005",
     "Név": "Windows Credential Editor",
     "Leírás": "Windows Credential Editor is a password dumping tool."
   },
   {
-    "Id": "S0155",
-    "Név": "WINDSHIELD",
-    "Leírás": "WINDSHIELD is a signature backdoor used by APT32."
-  },
-  {
-    "Id": "S0466",
     "Név": "WindTail",
     "Leírás": "WindTail is a macOS surveillance implant used by Windshift. WindTail shares code similarities with Hack Back aka KitM OSX."
   },
   {
-    "Id": "S0219",
-    "Név": "WINERACK",
-    "Leírás": "WINERACK is a backdoor used by APT37."
-  },
-  {
-    "Id": "S0191",
     "Név": "Winexe",
-    "Leírás": "Winexe is a lightweight, open source tool similar to PsExec designed to allow system administrators to execute commands on remote servers.  Winexe is unique in that it is a GNU/Linux based client."
+    "Leírás": "Winexe is a lightweight, open source tool similar to PsExec designed to allow system administrators to execute commands on remote servers. Winexe is unique in that it is a GNU/Linux based client."
   },
   {
-    "Id": "S0176",
     "Név": "Wingbird",
     "Leírás": "Wingbird is a backdoor that appears to be a version of commercial software FinFisher. It is reportedly used to attack individual computers instead of networks. It was used by NEODYMIUM in a May 2016 campaign."
   },
   {
-    "Id": "S0059",
     "Név": "WinMM",
     "Leírás": "WinMM is a full-featured, simple backdoor used by Naikon."
   },
   {
-    "Id": "S0430",
-    "Név": "Winnti for Linux",
-    "Leírás": "Winnti for Linux is a trojan, seen since at least 2015, designed specifically for targeting Linux systems. Reporting indicates the winnti malware family is shared across a number of actors including Winnti Group. The Windows variant is tracked separately under Winnti for Windows."
-  },
-  {
-    "Id": "S0141",
-    "Név": "Winnti for Windows",
-    "Leírás": "Winnti for Windows is a modular remote access Trojan (RAT) that has been used likely by multiple groups to carry out intrusions in various regions since at least 2010, including by one group referred to as the same name, Winnti Group.. The Linux variant is tracked separately under Winnti for Linux."
-  },
-  {
-    "Id": "S0041",
-    "Név": "Wiper",
-    "Leírás": "Wiper is a family of destructive malware used in March 2013 during breaches of South Korean banks and media companies."
-  },
-  {
-    "Id": "S0312",
-    "Név": "WireLurker",
-    "Leírás": "WireLurker is a family of macOS malware that targets iOS devices connected over USB."
-  },
-  {
-    "Id": "S0489",
-    "Név": "WolfRAT",
-    "Leírás": "WolfRAT is malware based on a leaked version of Dendroid that has primarily targeted Thai users. WolfRAT has most likely been operated by the now defunct organization Wolf Research."
-  },
-  {
-    "Id": "S0314",
-    "Név": "X-Agent for Android",
-    "Leírás": "X-Agent for Android is Android malware that was placed in a repackaged version of a Ukrainian artillery targeting application. The malware reportedly retrieved general location data on where the victim device was used, and therefore could likely indicate the potential location of Ukrainian artillery.  Is it tracked separately from the CHOPSTICK."
-  },
-  {
-    "Id": "S0161",
-    "Név": "XAgentOSX",
-    "Leírás": "XAgentOSX is a trojan that has been used by APT28  on OS X and appears to be a port of their standard CHOPSTICK or XAgent trojan."
-  },
-  {
-    "Id": "S0341",
-    "Név": "Xbash",
-    "Leírás": "Xbash is a malware family that has targeted Linux and Microsoft Windows servers. The malware has been tied to the Iron Group, a threat actor group known for previous ransomware attacks. Xbash was developed in Python and then converted into a self-contained Linux ELF executable by using PyInstaller."
-  },
-  {
-    "Id": "S0298",
-    "Név": "Xbot",
-    "Leírás": "Xbot is an Android malware family that was observed in 2016 primarily targeting Android users in Russia and Australia."
-  },
-  {
-    "Id": "S0653",
-    "Név": "xCaon",
-    "Leírás": "xCaon is an HTTP variant of the BoxCaon malware family that has used by IndigoZebra since at least 2014. xCaon has been used to target political entities in Central Asia, including Kyrgyzstan and Uzbekistan."
-  },
-  {
-    "Id": "S0123",
-    "Név": "xCmd",
-    "Leírás": "xCmd is an open source tool that is similar to PsExec and allows the user to execute applications on remote systems."
-  },
-  {
-    "Id": "S0297",
     "Név": "XcodeGhost",
     "Leírás": "XcodeGhost is iOS malware that infected at least 39 iOS apps in 2015 and potentially affected millions of users."
   },
   {
-    "Id": "S0658",
-    "Név": "XCSSET",
-    "Leírás": "XCSSET is a macOS modular backdoor that targets Xcode application developers. XCSSET was first observed in August 2020 and has been used to install a backdoor component, modify browser applications, conduct collection, and provide ransomware-like encryption capabilities."
-  },
-  {
-    "Id": "S0318",
-    "Név": "XLoader for Android",
-    "Leírás": "XLoader for Android is a malicious Android app first observed targeting Japan, Korea, China, Taiwan, and Hong Kong in 2018. It has more recently been observed targeting South Korean users as a pornography application. It is tracked separately from the XLoader for iOS."
-  },
-  {
-    "Id": "S0490",
-    "Név": "XLoader for iOS",
-    "Leírás": "XLoader for iOS is a malicious iOS application that is capable of gathering system information. It is tracked separately from the XLoader for Android."
-  },
-  {
-    "Id": "S0117",
-    "Név": "XTunnel",
-    "Leírás": "XTunnel a VPN-like network proxy tool that can relay traffic between a C2 server and a victim. It was first seen in May 2013 and reportedly used by APT28 during the compromise of the Democratic National Committee."
-  },
-  {
-    "Id": "S0388",
     "Név": "YAHOYAH",
     "Leírás": "YAHOYAH is a Trojan used by Tropic Trooper as a second-stage backdoor."
   },
   {
-    "Id": "S0311",
-    "Név": "YiSpecter",
-    "Leírás": "YiSpecter iOS malware that affects both jailbroken and non-jailbroken iOS devices. It is also unique because it abuses private APIs in the iOS system to implement functionality."
-  },
-  {
-    "Id": "S0248",
     "Név": "yty",
     "Leírás": "yty is a modular, plugin-based malware framework. The components of the framework are written in a variety of programming languages."
   },
   {
-    "Id": "S0251",
     "Név": "Zebrocy",
     "Leírás": "Zebrocy is a Trojan that has been used by APT28 since at least November 2015. The malware comes in several programming language variants, including C++, Delphi, AutoIt, C#, VB.NET, and Golang."
   },
   {
-    "Id": "S0494",
     "Név": "Zen",
     "Leírás": "Zen is Android malware that was first seen in 2013."
   },
   {
-    "Id": "S0287",
-    "Név": "ZergHelper",
-    "Leírás": "ZergHelper is iOS riskware that was unique due to its apparent evasion of Apple's App Store review process. No malicious functionality was identified in the app, but it presents security risks."
-  },
-  {
-    "Id": "S0027",
     "Név": "Zeroaccess",
     "Leírás": "Zeroaccess is a kernel-mode Rootkit that attempts to add victims to the ZeroAccess botnet, often for monetary gain."
   },
   {
-    "Id": "S0230",
-    "Név": "ZeroT",
-    "Leírás": "ZeroT is a Trojan used by TA459, often in conjunction with PlugX."
-  },
-  {
-    "Id": "S0330",
     "Név": "Zeus Panda",
     "Leírás": "Zeus Panda is a Trojan designed to steal banking information and other sensitive credentials for exfiltration. Zeus Panda’s original source code was leaked in 2011, allowing threat actors to use its source code as a basis for new malware variants. It is mainly used to target Windows operating systems ranging from Windows XP through Windows 10."
   },
   {
-    "Id": "S0086",
     "Név": "ZLib",
-    "Leírás": "ZLib is a full-featured backdoor that was used as a second-stage implant during Operation Dust Storm since at least 2014. ZLib is malware and should not be confused with the legitimate compression library from which its name is derived."
+    "Leírás": "ZLib is a full-featured backdoor that was used as a second-stage implant during Operation Dust Storm since at least 2014. ZLib is malware and should not be confused with the legitimate compression library from which its name is derived. ZLib also should not be confused with Z-Library."
   },
   {
-    "Id": "S0672",
     "Név": "Zox",
     "Leírás": "Zox is a remote access tool that has been used by Axiom since at least 2008."
-  },
-  {
-    "Id": "S0350",
-    "Név": "zwShell",
-    "Leírás": "zwShell is a remote access tool (RAT) written in Delphi that has been seen in the wild since the spring of 2010 and used by threat actors during Night Dragon."
-  },
-  {
-    "Id": "S0412",
-    "Név": "ZxShell",
-    "Leírás": "ZxShell is a remote administration tool and backdoor that can be downloaded from the Internet, particularly from Chinese hacker websites. It has been used since at least 2004."
   },
   {
     "Id": "S1013",

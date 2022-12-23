@@ -194,5 +194,97 @@
     {
         "Név": "PyCharm",
         "Leírás": "PyCharm is an integrated development environment (IDE) used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains. It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (VCSes), and supports web development with Django as well as data science with Anaconda."
+    },
+    {
+        "Név": "JAX",
+        "Leírás": "JAX is a Python library for numerical computation that is developed and maintained by Google. It is built on top of NumPy, a popular library for numerical computing, and provides additional functionality for machine learning, optimization, and automatic differentiation."
+    },
+    {
+        "Név": "triton",
+        "Leírás": "triton is a language and compiler for writing highly efficient custom Deep-Learning primitives. The aim of Triton is to provide an open-source Python-like environment to write fast code at higher productivity than CUDA, but also with higher flexibility than other existing DSLs."
+    },
+    {
+        "Név": "Tailwind",
+        "Leírás": "Tailwind CSS is an open source utility-first CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables."
+    },
+    {
+        "Név": "TupiTube",
+        "Leírás": "TupiTube is a free and open-source 2D animation software that is focused on usability for children, teenagers, and amateur artists."
+    },
+    {
+        "Név": "Synfig",
+        "Leírás": "Synfig is a free and open-source vector-based 2D animation software. The goal of the developers is to create a program that is capable of producing \"feature-film quality animation with fewer people and resources\"."
+    },
+    {
+        "Név": "Harmony",
+        "Leírás": "Harmony is a Java-based software for creating high-definition music videos with 2D and 3D animations. The application was developed by Digital Chaotics."
+    },
+    {
+        "Név": "Ajax",
+        "Leírás": "Ajax is a set of web development techniques that uses various web technologies on the client-side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously without interfering with the display and behaviour of the existing page."
+    },
+    {
+        "Név": "Ajax Animator",
+        "Leírás": "Ajax Animator is a free, web-based animation suite. It is primarily written using JavaScript, the Ext JS framework, and HTML5-related technologies such as SVG."
+    },
+    {
+        "Név": "iClone",
+        "Leírás": "iClone is a real-time 3D animation software developed by Reallusion. It is designed for 3D game development, virtual reality, and character animation."
+    },
+    {
+        "Név": "Messiah",
+        "Leírás": "Messiah (also known as messiah:studio) is a 3D animation and rendering application developed by pmG Worldwide. Messiah has been used for character animation and the creation of VFX shots in several feature films and shorts."
+    },
+    {
+        "Név": "Anim8or",
+        "Leírás": "Anim8or is a freeware OpenGL-based 3D modeling and animation program by R. Steven Glanville, a software engineer at NVidia."
+    },
+    {
+        "Név": "OGRE",
+        "Leírás": "Object-Oriented Graphics Rendering Engine (OGRE) is a scene-oriented, real-time, open-source, 3D rendering engine."
+    },
+    {
+        "Név": "Three.js",
+        "Leírás": "Three.js is a popular cross-browser JavaScript library and application programming interface (API) used to create and display animated 3D computer graphics in a web browser. Three.js uses WebGL."
+    },
+    {
+        "Név": "SPLAT!",
+        "Leírás": "SPLAT! (short for an RF Signal Propagation, Loss, And Terrain analysis tool[1]) is a GNU GPL-licensed terrestrial radio propagation model application initially written for Linux but has since been ported for Windows and OS X."
+    },
+    {
+        "Név": "EchoLink",
+        "Leírás": "EchoLink is a computer-based Amateur Radio system distributed free of charge that allows radio amateurs to communicate with other amateur radio operators using Voice over IP (VoIP) technology on the Internet."
+    },
+    {
+        "Név": "XAMPP",
+        "Leírás": "XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache Friends, consisting mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages. XAMPP is so buggy it almost qualifies as malware."
+    },
+    {
+        "Név": "DAMP",
+        "Leírás": "DAMP is a solution stack of computer software, that is used to run dynamic Web sites or servers. The acronym stands for Darwin, Apache, MySQL, and PHP."
+    },
+    {
+        "Név": "LAMP",
+        "Leírás": "LAMP is an acronym for Linux, Apache, MySQL, and PHP. The LAMP components are largely interchangeable and not limited to the original selection. As a solution stack, LAMP is suitable for building dynamic Web sites and Web applications."
+    },
+    {
+        "Név": "Duplicati",
+        "Leírás": "Duplicati is a backup client that securely stores encrypted, incremental, compressed remote backups of local files on cloud storage services and remote file servers."
+    },
+    {
+        "Név": "Bacula",
+        "Leírás": "Bacula is an open-source, enterprise-level computer backup system for heterogeneous networks. It is designed to automate backup tasks that had often required intervention from a systems administrator or computer operator."
+    },
+    {
+        "Név": "Back In Time",
+        "Leírás": "Back In Time is a backup application for Linux. It uses rsync as backend and has the characteristic feature of using hard links for files which are identical in snapshots at different times, thus using disk space just once for files that remained unchanged."
+    },
+    {
+        "Név": "HYSYS",
+        "Leírás": "Aspen HYSYS (or simply HYSYS) is a chemical process simulator currently developed by AspenTech used to mathematically model chemical processes, from unit operations to full chemical plants and refineries."
+    },
+    {
+        "Név": "Check Point",
+        "Leírás": "Check Point is an American-Israeli multinational provider of software and combined hardware and software products for IT security."
     }
 ]
