@@ -286,5 +286,204 @@
     {
         "Név": "Check Point",
         "Leírás": "Check Point is an American-Israeli multinational provider of software and combined hardware and software products for IT security."
+    },
+    {
+        "Név": "Dr.Web",
+        "Leírás": "Dr.Web is a software suite developed by Russian anti-malware company Doctor Web. First released in 1992, it became the first anti-virus service in Russia."
+    },
+    {
+        "Név": "Sheetgo",
+        "Leírás": "Sheetgo is a cloud-based automation tool that allows users to transfer data between spreadsheets and other office apps."
+    },
+    {
+        "Név": "GnuCash",
+        "Leírás": "GnuCash is an accounting program that implements a double-entry bookkeeping system. It is part of the GNU Project."
+    },
+    {
+        "Név": "recordMyDesktop",
+        "Leírás": "recordMyDesktop is a free and open source desktop screencasting software application written for Linux."
+    },
+    {
+        "Név": "Harvest",
+        "Leírás": "Harvest is a web-based time tracking tool, which was one of the first software as a service applications to be built on the Ruby on Rails framework, and is listed as one of the most prolific by its creators."
+    },
+    {
+        "Név": "Timely",
+        "Leírás": "Timely is an automatic time tracking software."
+    },
+    {
+        "Név": "FogBugz",
+        "Leírás": "FogBugz is an integrated web-based project management system featuring bug and issue tracking, discussion forums, wikis, customer relationship management, and evidence-based scheduling originally developed by Fog Creek Software."
+    },
+    {
+        "Név": "OpenFOAM",
+        "Leírás": "OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics."
+    },
+    {
+        "Név": "SIMMON",
+        "Leírás": "SIMMON (SIMulation MONitor) was a proprietary software testing system developed in the late 1960s in the IBM Product Test Laboratory."
+    },
+    {
+        "Név": "Segger",
+        "Leírás": "Segger Microcontroller, founded in 1992, is a private company involved in the embedded systems industry. It provides products used to develop and manufacture four categories of embedded systems."
+    },
+    {
+        "Név": "Valgrind",
+        "Leírás": "Valgrind is a programming tool for memory debugging, memory leak detection, and profiling."
+    },
+    {
+        "Név": "Ups",
+        "Leírás": "Ups is an open source source-level debugger developed in the late 1980s for Unix and Unix-like systems."
+    },
+    {
+        "Név": "SheepShaver",
+        "Leírás": "SheepShaver is an open-source PowerPC Apple Macintosh emulator originally designed for BeOS and Linux."
+    },
+    {
+        "Név": "Wine",
+        "Leírás": "Wine (formerly a recursive backronym for Wine Is Not an Emulator, now just \"Wine\") is a free and open-source compatibility layer that aims to allow application software and computer games developed for Microsoft Windows to run on Unix-like operating systems."
+    },
+    {
+        "Név": "Rufus",
+        "Leírás": "Rufus is a free and open-source portable application for Microsoft Windows that can be used to format and create bootable USB flash drives or Live USBs."
+    },
+    {
+        "Név": "DreamBooth",
+        "Leírás": "DreamBooth is a deep learning generation model used to fine-tune existing text-to-image models (such as Stable Diffusion), developed by researchers from Google Research and Boston University in 2022."
+    },
+    {
+        "Név": "Waitroom",
+        "Leírás": "Waitroom is a host-led livestreaming and video meeting platform that allows one-on-one engagement between hosts and their audiences. These engagements can range from 30 seconds to 30 minutes long. Waitroom was co-founded in the summer of 2020."
+    },
+    {
+        "Név": "SafeMoon",
+        "Leírás": "SafeMoon LLC is a cryptocurrency and blockchain company created in March 2021. The company also has a SafeMoon token (SFM) which trades on the Binance Smart Chain blockchain. The token charges a 10% fee on transactions."
+    },
+    {
+        "Név": "DeepSpeed",
+        "Leírás": "DeepSpeed is an open source deep learning optimization library for PyTorch. The library is designed to reduce computing power and memory use and to train large distributed models with better parallelism on existing computer hardware. The DeepSpeed source code is licensed under MIT License and available on GitHub."
+    },
+    {
+        "Név": "Clubhouse",
+        "Leírás": "Clubhouse is a social audio app released in 2020 for iOS and Android where users can communicate in audio chat rooms that accommodate groups of thousands of people. Clubhouse led to the emergence of a new social media segment known as social audio or drop-in audio."
+    },
+    {
+        "Név": "Gas",
+        "Leírás": "Gas, formerly known as Melt as well as Crush, is an American anonymous social media app. Launched in August 2022, the app is oriented towards high schoolers."
+    },
+    {
+        "Név": "Libgcrypt",
+        "Leírás": "Libgcrypt is a cryptography library developed as a separated module of GnuPG. It provides the basic functions for encryption, decryption, signatures, message authentication codes, and a few other cryptographic primitives."
+    },
+    {
+        "Név": "Celia",
+        "Leírás": "Celia is an artificially intelligent virtual assistant developed by Huawei for their latest HarmonyOS and Android-based EMUI smartphones that lack Google Services and a Google Assistant. The assistant can perform day-to-day tasks, which include making a phone call, setting a reminder and checking the weather."
+    },
+    {
+        "Név": "Clova",
+        "Leírás": "Clova is a virtual assistant developed by Naver, a South Korean internet company. It is available in Korean, Japanese, and English. Clova is available on smartphones, smart speakers, and smart TVs."
+    },
+    {
+        "Név": "Bixby",
+        "Leírás": "Bixby is a virtual assistant developed by Samsung Electronics. In May 2017, Samsung announced that Bixby would be coming to its line of Family Hub 2.0 refrigerators, making it the first non-mobile product to include the virtual assistant."
+    },
+    {
+        "Név": "Alice",
+        "Leírás": "Alice is a Russian intelligent personal assistant for Android, iOS and Windows operating systems and Yandex's own devices developed by Yandex. Alice was officially introduced on 10 October 2017. Aside from common tasks, such as internet search or weather forecasts, it can also run applications."
+    },
+    {
+        "Név": "PeduliLindungi",
+        "Leírás": "PeduliLindungi is the official COVID-19 contact tracing app used for digital contact tracing in Indonesia. On 23 August 2021, Coordinating Minister for Maritime and Investments Affairs, Luhut Binsar Panjaitan, encouraged the government to make this app a mandatory requirement before using public transportations, such as train, bus, ferry, and plane. Furthermore, citizen must have installed the app before entering shopping malls, factories, and sport venues. In September 2021, stored personal data of at least 1.3 million Indonesian residents were leaked online, including the vaccine certificate of President Joko Widodo."
+    },
+    {
+        "Név": "TVING",
+        "Leírás": "TVING is a South Korean online streaming service operated by TVING Corporation, a joint venture of CJ E&M (CJ Group), Naver and JTBC. It is a platform that streams dramas, entertainment shows, exclusive television films and specials."
+    },
+    {
+        "Név": "Viki",
+        "Leírás": "Rakuten Viki is an American video streaming website. It streams videos similar to other services, but also allows users to subtitle content available in 200 languages as well as provides original programming. Headquartered in San Mateo, California, it has offices in Singapore, Tokyo, Japan, and Seoul, South Korea."
+    },
+    {
+        "Név": "Crunchyroll",
+        "Leírás": "Crunchyroll is an American subscription video on-demand over-the-top streaming service owned by Sony through a joint venture between Sony Pictures and Sony Music Entertainment Japan's Aniplex. The service primarily distributes films and television series produced by East Asian media, including Japanese anime."
+    },
+    {
+        "Név": "Microsoft Classroom",
+        "Leírás": "Microsoft Classroom was an online blended learning platform for schools that aimed to simplify grading assignments and student communication in a paperless way. It was introduced for Office 365 Education subscribers in April 2016. On May 18, 2017 Microsoft announced the retirement of Microsoft Classroom."
+    },
+    {
+        "Név": "Sxmo",
+        "Leírás": "Sxmo is a user interface for mobile devices with Linux. It is a collection of suckless tools and scripts, with the intention to create a fully functional interface adhering to the Unix philosophy."
+    },
+    {
+        "Név": "suckless",
+        "Leírás": "suckless.org is a free software community of programmers working on projects with a focus on minimalism, simplicity, clarity, and frugality. The group developed the dwm and wmii window managers, surf tabbed, and other programs that are said to adhere strictly to the Unix philosophy of \"doing one thing and doing it well\"."
+    },
+    {
+        "Név": "TraceTogether",
+        "Leírás": "TraceTogether is a digital system implemented by the Government of Singapore to facilitate contact tracing efforts in response to the COVID-19 pandemic in Singapore. The main goal is quick identification of persons who may have come into close contact with anyone who has tested positive for COVID-19. It's on GitHub tho."
+    },
+    {
+        "Név": "Bosque",
+        "Leírás": "Bosque is a free and open-source programming language designed & developed by Microsoft that was inspired by the syntax and types of TypeScript and the semantics of ML and Node/JavaScript. Design goals for the language include better software quality and improved developer productivity."
+    },
+    {
+        "Név": "Chirp",
+        "Leírás": "Chirp is a U.S. based audiobook retail service. It allows users to and stream audiobooks directly from the website or in the app, and is an a la carte retailer, not a subscription based model. The company does not rely on monthly subscriptions and provides discounted prices to its users."
+    },
+    {
+        "Név": "Sanctuary",
+        "Leírás": "Sanctuary is a mobile app focusing on astrology and mystical services.[1][2] Users enter their birthday, time of birth, and place of birth information into the app and receive a birth chart as well as daily horoscope readings. Users can also sign up for a monthly membership and receive on-demand astrological readings via a text message format."
+    },
+    {
+        "Név": "DeepNude",
+        "Leírás": "DeepNude a downloadable Windows and Linux application that used neural networks, specifically generative adversarial networks (GAN), to remove clothing from images of women. The app had both a paid and unpaid version, the paid version costing $50. On June 27 2019, the creators removed the application and refunded consumers, although various copies of the app, both free and for charge, continue to exist. On GitHub, the open-source version of this program called \"open-deepnude\" was deleted."
+    },
+    {
+        "Név": "Redkey USB",
+        "Leírás": "Redkey USB is a computer utility developed to securely erase data. It is sold as a bootable live USB drive from which the Redkey software can be used on a perpetual license basis. During 2019, a second Redkey crowdfunding campaign went viral on Indiegogo following a video review by Linus Tech Tips."
+    },
+    {
+        "Név": "Rainway",
+        "Leírás": "Rainway is a video game streaming service. Rainway allows users to run games on their Windows 10 PC and play them on other devices over an internet connection. Rainway is compatible with games purchased from Steam, Origin, Battle.net, itch.io, GOG.com and Uplay. The service can run in web browsers and will also be compatible with iOS and Android mobile phones, as well as Xbox One consoles."
+    },
+    {
+        "Név": "Proton",
+        "Leírás": "Proton is a compatibility layer for Microsoft Windows games to run on Linux-based operating systems. Proton is developed by Valve in cooperation with developers from CodeWeavers. It is a collection of software and libraries combined with a patched version of Wine to improve performance and compatibility with Windows games. Proton is officially distributed through the Steam client."
+    },
+    {
+        "Név": "Terra",
+        "Leírás": "Terra is a blockchain protocol and payment platform used for algorithmic stablecoins. The project was created in 2018 by Terraform Labs, a startup co-founded by Do Kwon and Daniel Shin."
+    },
+    {
+        "Név": "CatBoost",
+        "Leírás": "CatBoost is an open-source software library developed by Yandex. It provides a gradient boosting framework which among other features attempts to solve for Categorical features using a permutation driven alternative compared to the classical algorithm."
+    },
+    {
+        "Név": "Ballerina",
+        "Leírás": "Ballerina is an open-source programming language for the cloud that makes it easier to use, combine, and create network services."
+    },
+    {
+        "Név": "Slowly",
+        "Leírás": "Slowly is a geosocial networking application that allows users to exchange delayed messages or \"letters\". The time taken by a message to be delivered depends on the distance between the sender and the recipient."
+    },
+    {
+        "Név": "Phosh",
+        "Leírás": "Phosh (portmanteau of phone and shell) is a graphical user interface designed for mobile and touch-based devices. It is the default shell used on several mobile Linux operating systems including PureOS, Mobian, and Fedora Mobility. It is also an option on postmarketOS, Manjaro, and openSUSE."
+    },
+    {
+        "Leírás": "Peeple is a mobile application that allows people to leave recommendations for other people based on professional, personal, and romantic relationships. Initially described as a \"Yelp for People\"."
+    },
+    {
+        "Név": "Vulkan",
+        "Leírás": "Vulkan is a cross-platform application programming interface (API) for rendering 2D and 3D graphics. It is developed by the Khronos Group, a non-profit consortium of companies creating open standards for the development of parallel computing and graphics."
+    },
+    {
+        "Név": "Thiruvananthapuram City Police Mobile App",
+        "Leírás": "This is the official mobile application for the citizens and public by the Thiruvananthapuram City Police in Kerala, India. The main interface consists of a large red \"PANIC\" button."
+    },
+    {
+        "Név": "Trackbuster",
+        "Leírás": "Trackbuster is an online service used to identify and remove email trackers."
     }
 ]
