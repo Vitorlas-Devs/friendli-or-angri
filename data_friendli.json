@@ -485,5 +485,13 @@
     {
         "Név": "Trackbuster",
         "Leírás": "Trackbuster is an online service used to identify and remove email trackers."
+    },
+    {
+        "Név": "Anaconda",
+        "Leírás": "Anaconda is a free and open-source distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment. The distribution includes data science packages suitable for Windows, Linux, and macOS."
+    },
+    {
+        "Név": "Spyder",
+        "Leírás": "Spyder is a cross-platform integrated development environment (IDE) for the Python programming language. It is a part of the Anaconda distribution and can be installed independently from it in other Python distributions. Spyder is free and open-source software, released under the terms of the MIT License."
     }
 ]
