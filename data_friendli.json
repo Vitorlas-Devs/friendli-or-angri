@@ -249,7 +249,7 @@
     },
     {
         "Név": "SPLAT!",
-        "Leírás": "SPLAT! (short for an RF Signal Propagation, Loss, And Terrain analysis tool[1]) is a GNU GPL-licensed terrestrial radio propagation model application initially written for Linux but has since been ported for Windows and OS X."
+        "Leírás": "SPLAT! (short for an RF Signal Propagation, Loss, And Terrain analysis tool) is a GNU GPL-licensed terrestrial radio propagation model application initially written for Linux but has since been ported for Windows and OS X."
     },
     {
         "Név": "EchoLink",
@@ -493,5 +493,81 @@
     {
         "Név": "Spyder",
         "Leírás": "Spyder is a cross-platform integrated development environment (IDE) for the Python programming language. It is a part of the Anaconda distribution and can be installed independently from it in other Python distributions. Spyder is free and open-source software, released under the terms of the MIT License."
+    },
+    {
+        "Név": "Triller",
+        "Leírás": "Triller is an American video-sharing social networking service. The service allows users to create and share short-form videos, including videos set to, or automatically synchronized to music"
+    },
+    {
+        "Név": "Alien Blue",
+        "Leírás": "Alien Blue is a third-party Reddit client for iOS and Android. The app was released in 2011 and was the most popular Reddit client for iOS until it was discontinued in 2014."
+    },
+    {
+        "Név": "Hack",
+        "Leírás": "Hack is a programming language for HHVM. Hack is a superset of PHP that adds optional type annotations, a more powerful type system, and other features. It was developed by Facebook and released in 2014."
+    },
+    {
+        "Név": "Hackintosh",
+        "Leírás": "Hackintoshing is the process of installing macOS on non-Apple hardware. This includes desktops, laptops, and even servers. Hackintoshing is a form of computer modding."
+    },
+    {
+        "Név": "HAMMER2",
+        "Leírás": "HAMMER2 is a file system developed by the FreeBSD project. It had a long incubation and development period before it officially entered production in April 2018, as the recommended root filesystem in the Dragonfly BSD 5.2 release."
+    },
+    {
+        "Név": "Velocity",
+        "Leírás": "Velocity is a cross-platform JavaScript library designed to simplify the client-side scripting of website animation. Velocity is free, open-source software licensed under the MIT License. It is the most popular open source web animation engine."
+    },
+    {
+        "Név": "Brainscape",
+        "Leírás": "Brainscape is a web and mobile education platform that allows students to study adaptive flashcards. The website and mobile application allow students, teachers, and corporate trainers to create (or upload) electronic flashcards and study them using a spaced repetition learning technique."
+    },
+    {
+        "Név": "Anki",
+        "Leírás": "Anki is a cross-platform application designed to help users remember facts, such as words or numbers, using a technique called spaced repetition. Anki is free and open-source software, released under the GNU General Public License."
+    },
+    {
+        "Név": "Citra",
+        "Leírás": "Citra is a free and open-source emulator of the handheld Nintendo 3DS for Windows, macOS, Linux, and Android."
+    },
+    {
+        "Név": "Mattermost",
+        "Leírás": "Mattermost is an open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack and Microsoft Teams."
+    },
+    {
+        "Név": "frei0r",
+        "Leírás": "frei0r is a simple cross-platform framework for video effects. It provides filters, mixers and generators by means of minimalistic plugin API. The behaviour of the effects can be controlled from the host through simple parameters. The intent is to solve the recurring reimplementation or adaptation issue of standard video effects."
+    },
+    {
+        "Név": "Searx",
+        "Leírás": "Searx is a free and open-source metasearch engine, available under the GNU Affero General Public License version 3, with the aim of protecting the privacy of its users. To this end, Searx does not share users' IP addresses or search history with the search engines from which it gathers results. Tracking cookies served by the search engines are blocked, preventing user-profiling-based results modification."
+    },
+    {
+        "Név": "Public Whip",
+        "Leírás": "The Public Whip is a parliamentary informatics project that analyses and publishes the voting history of MPs in the Parliament of the United Kingdom."
+    },
+    {
+        "Név": "Cuda",
+        "Leírás": "CUDA is a parallel computing platform and programming model developed by NVIDIA for general computing on graphical processing units. With CUDA, developers are able to dramatically speed up computing applications by harnessing the power of GPUs."
+    },
+    {
+        "Név": "ROCm",
+        "Leírás": "ROCm is a free and open-source software platform for high-performance computing on AMD GPUs. It is a collection of open-source software tools, libraries and drivers that are designed to work together to provide a complete platform for GPU computing."
+    },
+    {
+        "Név": "Lichess",
+        "Leírás": "Lichess is a free and open-source Internet chess server run by a non-profit organization of the same name."
+    },
+    {
+        "Név": "APL",
+        "Leírás": "APL is a programming language created by Kenneth E. Iverson in 1962. Its central datatype is the multidimensional array. It uses a large range of special graphic symbols to represent most functions and operators, leading to very concise code."
+    },
+    {
+        "Név": "Fortran",
+        "Leírás": "Fortran is a general-purpose, imperative programming language that is especially suited to numeric computation and scientific computing. It is a compiled language, and is therefore more efficient than interpreted languages such as Python, Perl, and Ruby, but less efficient than languages such as C and C++."
+    },
+    {
+        "Név": "COBOL",
+        "Leírás": "COBOL is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented. COBOL is primarily used in business, finance, and administrative systems for companies and governments."
     }
 ]
