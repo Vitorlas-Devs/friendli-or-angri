@@ -569,5 +569,13 @@
     {
         "Név": "COBOL",
         "Leírás": "COBOL is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented. COBOL is primarily used in business, finance, and administrative systems for companies and governments."
+    },
+    {
+        "Név": "Dragon NaturallySpeaking",
+        "Leírás": "Dragon NaturallySpeaking is a speech recognition software package developed by Dragon Systems of Newton, Massachusetts, which was acquired in turn by Lernout & Hauspie Speech Products, Nuance Communications, and Microsoft."
+    },
+    {
+        "Név": "openHAB",
+        "Leírás": "open Home Automation Bus (openHAB) is an open source home automation software written in Java. It is deployed on premises and connects to devices and services from different vendors."
     }
 ]
