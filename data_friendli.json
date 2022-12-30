@@ -577,5 +577,9 @@
     {
         "Név": "openHAB",
         "Leírás": "open Home Automation Bus (openHAB) is an open source home automation software written in Java. It is deployed on premises and connects to devices and services from different vendors."
+    },
+    {
+        "Név": "Poetry",
+        "Leírás": "Poetry is a python dependency management tool to manage dependencies, packages, and libraries in your python project. It will help you to make your project more simple by resolving dependency complexities in your project and managing to install and update for you."
     }
 ]
