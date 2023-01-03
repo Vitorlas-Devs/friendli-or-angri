@@ -8,27 +8,27 @@
 
     <NavigationPage Title="Home" IconImageSource="{StaticResource TabOne}">
         <x:Arguments>
-            <local:MainPage Title="Home" />
+            <local:MainPage />
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Play" IconImageSource="{StaticResource TabTwo}">
         <x:Arguments>
-            <local:MainPage Title="Play" />
+            <local:PlayPage />
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="History" IconImageSource="{StaticResource TabThree}">
         <x:Arguments>
-            <local:MainPage Title="History" />
+            <local:HistoryPage />
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Stats" IconImageSource="{StaticResource TabFour}">
         <x:Arguments>
-            <local:MainPage Title="Stats" />
+            <local:StatsPage />
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Settings" IconImageSource="{StaticResource TabFive}">
         <x:Arguments>
-            <local:MainPage Title="Settings" />
+            <local:SettingsPage />
         </x:Arguments>
     </NavigationPage>
 
