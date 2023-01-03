@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:FriendliOrAngri;assembly=FriendliOrAngri"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="FriendliOrAngri.AppTabbedPage">
+
+    <NavigationPage Title="Home" IconImageSource="{StaticResource TabOne}">
+        <x:Arguments>
+            <local:MainPage Title="Home" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Play" IconImageSource="{StaticResource TabTwo}">
+        <x:Arguments>
+            <local:MainPage Title="Play" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="History" IconImageSource="{StaticResource TabThree}">
+        <x:Arguments>
+            <local:MainPage Title="History" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Stats" IconImageSource="{StaticResource TabFour}">
+        <x:Arguments>
+            <local:MainPage Title="Stats" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Settings" IconImageSource="{StaticResource TabFive}">
+        <x:Arguments>
+            <local:MainPage Title="Settings" />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
