@@ -20,17 +20,17 @@
                FontFamily="FontAwesome"
                Size="30"
                Color="{StaticResource Primary}"
-               Glyph="{x:Static local:IconFont.History}"/>
+               Glyph="{x:Static local:IconFont.Star}"/>
     <FontImage x:Key="TabFour"
                FontFamily="FontAwesome"
                Size="30"
                Color="{StaticResource Primary}"
-               Glyph="{x:Static local:IconFont.ThList}"/>
+               Glyph="{x:Static local:IconFont.History}"/>
     <FontImage x:Key="TabFive"
                FontFamily="FontAwesome"
                Size="30"
                Color="{StaticResource Primary}"
-               Glyph="{x:Static local:IconFont.Toolbox}"/>
+               Glyph="{x:Static local:IconFont.ThList}"/>
 
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />

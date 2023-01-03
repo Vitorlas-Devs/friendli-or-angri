@@ -16,19 +16,19 @@
             <local:PlayPage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="History" IconImageSource="{StaticResource TabThree}">
+    <NavigationPage Title="Free Mode" IconImageSource="{StaticResource TabThree}">
+        <x:Arguments>
+            <local:FreePage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="History" IconImageSource="{StaticResource TabFour}">
         <x:Arguments>
             <local:HistoryPage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Stats" IconImageSource="{StaticResource TabFour}">
+    <NavigationPage Title="Stats" IconImageSource="{StaticResource TabFive}">
         <x:Arguments>
             <local:StatsPage />
-        </x:Arguments>
-    </NavigationPage>
-    <NavigationPage Title="Settings" IconImageSource="{StaticResource TabFive}">
-        <x:Arguments>
-            <local:SettingsPage />
         </x:Arguments>
     </NavigationPage>
 
