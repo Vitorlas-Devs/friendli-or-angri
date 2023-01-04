@@ -3,40 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FriendliOrAngri.MainPage"
              Title="Home">
-			 
+
     <ScrollView>
         <VerticalStackLayout 
             Spacing="25" 
-            Padding="30,0" 
+            Padding="10,0" 
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-                
-            <Label 
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-            
-            <Label 
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+            <Label Text="Welcome to Friendli or Angri" 
+                   FontSize="Large" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
 
-            <Button 
-                x:Name="CounterBtn"
-                Text="CLICK"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <ListView ItemsSource="{Binding Pages}" WidthRequest="300" VerticalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding Title}" 
+                                    FontSize="Medium" 
+                                    FontAttributes="Bold" 
+                                    VerticalOptions="Center" />
+                            <Label Text="{Binding Description}" 
+                                    FontSize="Small" 
+                                    VerticalOptions="Center" />
+                        </StackLayout>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
 
         </VerticalStackLayout>
     </ScrollView>
- 
+
 </ContentPage>
