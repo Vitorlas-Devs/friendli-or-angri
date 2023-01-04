@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FriendliOrAngri;assembly=FriendliOrAngri"
              x:Class="FriendliOrAngri.MainPage"
              Title="Home">
-
     <ScrollView>
         <VerticalStackLayout 
             Spacing="25" 
@@ -18,22 +18,23 @@
             <ListView ItemsSource="{Binding Pages}" WidthRequest="300" VerticalOptions="FillAndExpand">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding Title}" 
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Icon}" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" />
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Title}" 
                                     FontSize="Medium" 
                                     FontAttributes="Bold" 
                                     VerticalOptions="Center" />
-                            <Label Text="{Binding Description}" 
+                                    <Label Text="{Binding Description}" 
                                     FontSize="Small" 
                                     VerticalOptions="Center" />
-                        </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
-
-
-
         </VerticalStackLayout>
     </ScrollView>
 
