@@ -17,14 +17,5 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-
-        Img.Source = new FontImageSource
-        {
-            Glyph = "\uf57d",
-            FontFamily = "FontAwesome",
-            Size = 44,
-            Color = Colors.Black
-        };
-
     }
 }

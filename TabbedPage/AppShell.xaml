@@ -7,7 +7,7 @@
     Shell.FlyoutBehavior="Disabled">
 
 
-    <TabBar x:Name="MyTabBar">
+    <TabBar>
         <Tab Title="Home" Icon="{StaticResource TabOne}">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
         </Tab>
@@ -24,11 +24,5 @@
             <ShellContent ContentTemplate="{DataTemplate local:StatsPage}" Route="StatsPage"/>
         </Tab>
     </TabBar>
-    
-    <!--<ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
-
 
 </Shell>

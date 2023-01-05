@@ -16,21 +16,21 @@
             Padding="10,0" 
             VerticalOptions="Center">
 
-            <Label Text="Welcome to Friendli or Angri" 
+            <Label Text="Friendli or Angri" 
                    FontSize="Large" 
                    FontAttributes="Bold" 
                    HorizontalOptions="Center" />
             
-            <Image x:Name="Img">
-                
-            </Image>
+            <Label Text="We found a ton of funny virus names, and as it turns out, it can be hard to tell them apart from real, legit software! I swear humans are bad at naming anything." 
+                   FontSize="Medium"
+                   HorizontalOptions="Center"/>
 
-            <ListView ItemsSource="{Binding Pages}" WidthRequest="300" VerticalOptions="FillAndExpand">
+            <ListView ItemsSource="{Binding Pages}" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Never" RowHeight="90">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding Icon}" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" />
+                            <StackLayout VerticalOptions="Center" Orientation="Horizontal" Spacing="10">
+                                <Image Source="{Binding Icon}" WidthRequest="40" HeightRequest="40" VerticalOptions="Center"/>
                                 <StackLayout Orientation="Vertical">
                                     <Label Text="{Binding Title}" 
                                     FontSize="Medium" 
@@ -38,7 +38,9 @@
                                     VerticalOptions="Center" />
                                     <Label Text="{Binding Description}" 
                                     FontSize="Small" 
-                                    VerticalOptions="Center" />
+                                    VerticalOptions="Center"
+                                           WidthRequest="320"
+                                    LineBreakMode="WordWrap" />
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>
