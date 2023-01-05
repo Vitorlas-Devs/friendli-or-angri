@@ -172,7 +172,6 @@
     "Leírás": "BLUELIGHT is a remote access Trojan used by APT37 that was first observed in early 2021."
   },
   {
-    "Id": "S0486",
     "Név": "Bonadan",
     "Leírás": "Bonadan is a malicious version of OpenSSH which acts as a custom backdoor. Bonadan has been active since at least 2018 and combines a new cryptocurrency-mining module with the same credential-stealing module used by the Onderon family of backdoors."
   },
@@ -393,7 +392,6 @@
     "Leírás": "DarkComet is a Windows remote administration tool and backdoor."
   },
   {
-    "Id": "S0673",
     "Név": "DarkWatchman",
     "Leírás": "DarkWatchman is a lightweight JavaScript-based remote access tool (RAT) that avoids file operations, first observed in November 2021. It can retrieve browser history and search for anti-virus products on the system."
   },
@@ -622,7 +620,6 @@
     "Leírás": "FruitFly is designed to spy on mac users."
   },
   {
-    "Id": "S1044",
     "Név": "FunnyDream",
     "Leírás": "FunnyDream is a backdoor with multiple components that was used during the FunnyDream campaign since at least 2019, primarily for execution and exfiltration. It has the ability to discover application windows, establish persistence on the infected system, execute commands and send the results to its command and control (C2) server, identify specific files for collection, remove indicators of its presence, download additional files onto the compromised host, capture keystrokes, communicate with its C2 server over TCP and UDP, and obfuscate its C2 address."
   },
@@ -1279,7 +1276,6 @@
     "Leírás": "QuasarRAT is an open-source, remote access tool that has been publicly available on GitHub since at least 2014. QuasarRAT is developed in the C# language."
   },
   {
-    "Id": "S0481",
     "Név": "Ragnar Locker",
     "Leírás": "Ragnar Locker is a ransomware that has been in use since at least December 2019."
   },
@@ -1696,7 +1692,6 @@
     "Leírás": "Zox is a remote access tool that has been used by Axiom since at least 2008."
   },
   {
-    "Id": "S1013",
     "Név": "ZxxZ",
     "Leírás": "ZxxZ is a trojan written in Visual C++ that has been used by BITTER since at least August 2021, including against Bangladeshi government personnel."
   }
