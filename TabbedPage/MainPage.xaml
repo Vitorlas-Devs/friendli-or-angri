@@ -2,8 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FriendliOrAngri;assembly=FriendliOrAngri"
+             xmlns:viewmodels="clr-namespace:FriendliOrAngri.ViewModels"
              x:Class="FriendliOrAngri.MainPage"
              Title="Home">
+    
+    <ContentPage.BindingContext>
+        <viewmodels:PagesListViewModel/>
+    </ContentPage.BindingContext>
+    
     <ScrollView>
         <VerticalStackLayout 
             Spacing="25" 
@@ -14,6 +20,10 @@
                    FontSize="Large" 
                    FontAttributes="Bold" 
                    HorizontalOptions="Center" />
+            
+            <Image x:Name="Img">
+                
+            </Image>
 
             <ListView ItemsSource="{Binding Pages}" WidthRequest="300" VerticalOptions="FillAndExpand">
                 <ListView.ItemTemplate>
