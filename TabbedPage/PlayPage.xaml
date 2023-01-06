@@ -4,9 +4,15 @@
              x:Class="FriendliOrAngri.PlayPage"
              Title="Play">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to PLAY!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label 
+            x:Name="lbSoftware"
+            LineBreakMode="WordWrap"
+            MaximumWidthRequest="180"
+            FontSize="Large"
+            Margin="0,50,0,0"
+            Scale="2"
+            HorizontalTextAlignment="Center"/>
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
