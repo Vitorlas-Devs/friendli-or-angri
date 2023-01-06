@@ -436,10 +436,6 @@
     "Description": "Sanctuary is a mobile app focusing on astrology and mystical services. Users enter their birthday, time of birth, and place of birth information into the app and receive a birth chart as well as daily horoscope readings. Users can also sign up for a monthly membership and receive on-demand astrological readings via a text message format."
   },
   {
-    "Name": "DeepNude",
-    "Description": "DeepNude a downloadable Windows and Linux application that used neural networks, specifically generative adversarial networks (GAN), to remove clothing from images of women. The app had both a paid and unpaid version, the paid version costing $50. On June 27 2019, the creators removed the application and refunded consumers, although various copies of the app, both free and for charge, continue to exist. On GitHub, the open-source version of this program called \"open-deepnude\" was deleted."
-  },
-  {
     "Name": "Redkey USB",
     "Description": "Redkey USB is a computer utility developed to securely erase data. It is sold as a bootable live USB drive from which the Redkey software can be used on a perpetual license basis. During 2019, a second Redkey crowdfunding campaign went viral on Indiegogo following a video review by Linus Tech Tips."
   },
@@ -472,6 +468,7 @@
     "Description": "Phosh (portmanteau of phone and shell) is a graphical user interface designed for mobile and touch-based devices. It is the default shell used on several mobile Linux operating systems including PureOS, Mobian, and Fedora Mobility. It is also an option on postmarketOS, Manjaro, and openSUSE."
   },
   {
+    "Name": "Peeple",
     "Description": "Peeple is a mobile application that allows people to leave recommendations for other people based on professional, personal, and romantic relationships. Initially described as a \"Yelp for People\"."
   },
   {
