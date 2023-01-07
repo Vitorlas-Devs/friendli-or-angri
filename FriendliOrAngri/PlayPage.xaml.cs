@@ -12,13 +12,16 @@ public class Software
 
 public partial class PlayPage : ContentPage
 {
+    private List<string> lastSoftwares;
+
     public Software Software;
+
     public PlayPage()
     {
+        lastSoftwares= new List<string>();
+
         InitializeComponent();
         ChooseRandomSoftwareAsync();
-
-
     }
     public async void ChooseRandomSoftwareAsync()
     {
@@ -32,8 +35,17 @@ public partial class PlayPage : ContentPage
             text = reader.ReadToEnd();
         }
         List<Software> softwareList = JsonSerializer.Deserialize<List<Software>>(text);
-        int randomIndex = random.Next(softwareList.Count);
-        Software = softwareList[randomIndex];
+
+        do
+        {
+            int randomIndex = random.Next(softwareList.Count);
+            Software = softwareList[randomIndex];
+        } while (lastSoftwares.Contains(Software.Name));
+
+        lastSoftwares.Add(Software.Name);
+        if (lastSoftwares.Count > 25)
+            lastSoftwares.RemoveAt(0);
+
         lbSoftware.Text = Software.Name;
         Software.IsFriendly = isFriendly;
     }
