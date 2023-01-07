@@ -15,7 +15,7 @@ public abstract class GeneralRepository<T>
 		string connectionString = ConfigurationManager
 			.ConnectionStrings["friendliOrAngri"]?
 			.ConnectionString;
-        this.dbClient = new(connectionString);
+        this.dbClient = new("mongodb://localhost:27017");
 	}
 
 	public abstract IEnumerable<T> GetAll();
