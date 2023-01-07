@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendliOrAngriASP.Data", "FriendliOrAngri.Data\FriendliOrAngriASP.Data.csproj", "{678F1D2D-11FB-4081-93D2-41C865CF3817}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendliOrAngriASP", "FriendliOrAngriASP\FriendliOrAngriASP.csproj", "{AEBDE833-5806-4E40-8AC8-DF4A24D4CAA3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{678F1D2D-11FB-4081-93D2-41C865CF3817} = {678F1D2D-11FB-4081-93D2-41C865CF3817}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
