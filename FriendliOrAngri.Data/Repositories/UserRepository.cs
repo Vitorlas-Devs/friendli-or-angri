@@ -18,8 +18,12 @@ public class UserRepository : GeneralRepository<UserModel>
             yield return user;
     }
 
-    public override UserModel Insert(UserModel item)
+    public override UserModel Insert(UserModel model)
     {
-        throw new NotImplementedException();
+        model.Id = 1;
+        if (GetAll().Count() > 0)
+            model.Id = GetAll().Max(u => u.Id) + 1;
+        this.collection.InsertOne(model);
+        return model;
     }
 }
