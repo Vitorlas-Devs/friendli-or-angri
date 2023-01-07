@@ -429,7 +429,7 @@
   },
   {
     "Name": "Chirp",
-    "Description": "Chirp is a U.S. based audiobook retail service. It allows users to and stream audiobooks directly from the website or in the app, and is an a la carte retailer, not a subscription based model. The company does not rely on monthly subscriptions and provides discounted prices to its users."
+    "Description": "Chirp is a U.S. based audiobook retail service. It allows users to stream audiobooks directly from the website or in the app, and is an a la carte retailer, not a subscription based model. The company does not rely on monthly subscriptions and provides discounted prices to its users."
   },
   {
     "Name": "Sanctuary",
@@ -586,5 +586,188 @@
   {
     "Name": "HCL",
     "Description": "HashiCorp Configuration Language (HCL) is a unique configuration language. It was designed to be used with HashiCorp tools, notably Terraform, but HCL has expanded as a more general configuration language. It's visually similar to JSON with additional data structures and capabilities built-in."
+  },
+  {
+    "Name": "Kerberos",
+    "Description": "Kerberos is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography. A free implementation of this protocol is available from the Massachusetts Institute of Technology (MIT). Kerberos is available in many commercial products as well."
+  },
+  {
+    "Name": "Samba",
+    "Description": "Samba is a free and open-source re-implementation of the SMB/CIFS networking protocol. Samba is a suite of programs that allows a computer running the Linux operating system to function as a server for file and print resources, and as a domain controller for Windows clients."
+  },
+  {
+    "Name": "Algorithmia",
+    "Description": "This is an algorithm and data-structure library for .NET 3.5 and up. Algorithmia contains sophisticated algorithms and data-structures like graphs, priority queues, command, undo-redo and more."
+  },
+  {
+    "Name": "Towel",
+    "Description": "Towel is a .NET Standard library that contains data structures, algorithms, mathematics, metadata, extensions, console, measurements, and other useful stuff."
+  },
+  {
+    "Name": "NancyFx",
+    "Description": "Nancy is a lightweight, low-ceremony, framework for building HTTP based services on .NET Framework/Core and Mono. The goal of the framework is to stay out of the way as much as possible and provide a super-duper-happy-path to all interactions."
+  },
+  {
+    "Name": "peasy",
+    "Description": "Peasy is a middle tier framework that offers an easy to use and flexible rules engine and was designed to address common challenges such as concurrency handling, transactional support, fault tolerance, threading, scalability, async and multiple client support, and easy testability, all without a huge learning curve!"
+  },
+  {
+    "Name": "DotNetty",
+    "Description": "DotNetty is a port of Netty, asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients."
+  },
+  {
+    "Name": "Fusion",
+    "Description": "Fusion is a .NET Core and Blazor library that attempts to dramatically improve the way we implement real-time and high-load services by introducing a novel kind of \"computed observables\" - immutable, thread-safe, and most importantly, almost invisible for developers."
+  },
+  {
+    "Name": "SideWaffle",
+    "Description": "SideWaffle is a Visual Studio extension that adds a number of project and item templates to Visual Studio. These templates are designed to make it easier to create projects and files that are useful for web developers."
+  },
+  {
+    "Name": "Nucleus",
+    "Description": "Nucleus is a Vue startup application template that uses ASP.NET Core API layered architecture at the back-end and JWT based authentication."
+  },
+  {
+    "Name": "SIML",
+    "Description": "Synthetic Intelligence Markup Language is a next generation Chatbot & Digital Assistant Language. Developers can easily integrate Natural Language Processing into their .NET and Mono/Xamarin applications while the users can enjoy fast and intelligent conversations."
+  },
+  {
+    "Name": "Bundler",
+    "Description": "Bundler is a fast, cross-platform, command-line runner (easily integrated into existing IDEs, inc VS.NET) with optimized support for ASP.NET MVC and ServiceStack that statically compiles, minifies and combines your websites less, sass, stylus, css, coffeescript, livescript and js files."
+  },
+  {
+    "Name": "SquishIt",
+    "Description": "SquishIt is an asset optimization library for .net web applications. It handles combining and minifying css and javascript assets through creation of bundles. There are currently extensions available that allow use of .less, coffeescript, SASS/SCSS and Hogan templates through SquishIt's preprocessor pipeline."
+  },
+  {
+    "Name": "Make",
+    "Description": "GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files. Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files."
+  },
+  {
+    "Name": "Cake",
+    "Description": "Cake (C# Make) is a build automation system with a C# DSL to do things like compiling code, copy files/folders, running unit tests, compress files and build NuGet packages."
+  },
+  {
+    "Name": "FAKE",
+    "Description": "FAKE - F# Make is a cross platform build automation system. Due to its integration in F#, all the benefits of the .NET Framework and functional programming can be used, including the extensive class library, powerful debuggers and integrated development environments."
+  },
+  {
+    "Name": "Nake",
+    "Description": "Nake is a magic task runner tool for .NET Core. It's a hybrid of Shovel and Rake. The DSL for defining tasks is uniquely minimal and it's just plain (naked) C# code!"
+  },
+  {
+    "Name": "Rake",
+    "Description": "Rake is a Make-like program implemented in Ruby. Tasks and dependencies are specified in standard Ruby syntax."
+  },
+  {
+    "Name": "NUKE",
+    "Description": "NUKE is the AKEless Build System for C#/.NET. It brings your build automation to an even level with every other .NET project."
+  },
+  {
+    "Name": "FastReport",
+    "Description": "The open source report generator for .NET Core 2.x/.Net Framework 4.x. FastReport can be used in ASP.NET MVC, Web API applications."
+  },
+  {
+    "Name": "CacheCow",
+    "Description": "CacheCow is an ASP.NET Web API HTTP caching implementation both on client and server."
+  },
+  {
+    "Name": "Typin",
+    "Description": "Typin is a simple to use declarative framework for interactive CLI applications and command line tools (direct mode) that has its roots in CliFx."
+  },
+  {
+    "Name": "mojoPortal",
+    "Description": "mojoPortal is an extensible, cross database, mobile friendly, web content management system (CMS), and web application framework written in C# ASP.NET."
+  },
+  {
+    "Name": "Umbraco",
+    "Description": "Umbraco is a free open source Content Management System built on the ASP.NET platform."
+  },
+  {
+    "Name": "P",
+    "Description": "P is a state machine based programming language for formally modeling and specifying complex distributed systems. P allows programmers to model their system design as a collection of communicating state machines. P supports several backend analysis engines (based on automated reasoning techniques like model checking and symbolic execution) to check that the distributed system modeled in P satisfy the desired correctness specifications."
+  },
+  {
+    "Name": "BouncyCastle",
+    "Description": "BouncyCastle is a reference implementation for cryptographic algorithms on the CLR together with the .Net System.Security.Cryptography library."
+  },
+  {
+    "Name": "Yessql",
+    "Description": "Yessql is a .NET document database interface for relational databases, because in SQL we (still) trust !"
+  },
+  {
+    "Name": "JustDecompile",
+    "Description": "JustDecompile is a free Telerik tool for . NET assembly browsing and decompiling. It enables you to take an existing compiled assembly (. dll or.exe) and easily browse the symbols it contains. Then just as easily, decompile the assembly language back to readable C#, VB and IL."
+  },
+  {
+    "Name": "dnSpy",
+    "Description": "dnSpy is a debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have any source code available."
+  },
+  {
+    "Name": "ILSpy",
+    "Description": "ILSpy is the open-source .NET assembly browser and decompiler."
+  },
+  {
+    "Name": "dotPeek",
+    "Description": "dotPeek is a free-of-charge standalone tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code."
+  },
+  {
+    "Name": "Ooui",
+    "Description": "Ooui (pronounced weee!) is a small cross-platform UI library for .NET that uses web technologies. It presents a classic object-oriented UI API that controls a dumb browser. With Ooui, you get the full power of your favorite .NET programming language plus the ability to interact with your app using any device."
+  },
+  {
+    "Name": "RestLess",
+    "Description": "RestLess is another type-safe REST API client library. It is heavily inspired by Refit, which is inspired by Retrofit, but does not works exactly the same way."
+  },
+  {
+    "Name": "Ionide",
+    "Description": "Ionide is an organization which builds high quality, cross platform developer tools for F#. Our flagship project is Ionide-VSCode - a Visual Studio Code plugin, with more than 1 million downloads, transforming VSCode into a fully-fledged F# IDE."
+  },
+  {
+    "Name": "Rider",
+    "Description": "Rider is a cross-platform C# IDE based on the IntelliJ platform and ReSharper."
+  },
+  {
+    "Name": "vvvv",
+    "Description": "vvvv is a very visual live-programming environment that takes you from rapid prototyping to final production."
+  },
+  {
+    "Name": "Wax",
+    "Description": "Wax is an interactive editor for WiX projects. Don't ask.'"
+  },
+  {
+    "Name": "i18n",
+    "Description": "The i18n library is designed to replace the use of .NET resources in favor of an easier, globally recognized standard for localizing ASP.NET-based web applications."
+  },
+  {
+    "Name": "Pyrolite",
+    "Description": "This library allows your Java or .NET program to interface very easily with the Python world. It uses the Pyro protocol to call methods on remote objects."
+  },
+  {
+    "Name": "Ninject",
+    "Description": "Ninject is the ninja of .net dependency injectors: it's lightning-fast and ultra-lightweight. It helps you split your application into a collection of loosely-coupled, highly-cohesive pieces, and then glue them back together in a flexible manner."
+  },
+  {
+    "Name": "Jurassic",
+    "Description": "Jurassic is an implementation of the ECMAScript language and runtime. It aims to provide the best performing and most standards-compliant implementation of JavaScript for .NET. Jurassic is not intended for end-users; instead it is intended to be integrated into .NET programs. If you are the author of a .NET program, you can use Jurassic to compile and execute JavaScript code."
+  },
+  {
+    "Name": "FluentEmail",
+    "Description": "FluentEmail is an all in one email sender for .NET. Supports popular senders (SendGrid, MailGun, etc) and Razor templates."
+  },
+  {
+    "Name": "MailKit",
+    "Description": "MailKit is a complete cross-platform mail stack, that includes IMAP, POP3, SMTP, authentication and more."
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
   }
+
+
+
 ]
