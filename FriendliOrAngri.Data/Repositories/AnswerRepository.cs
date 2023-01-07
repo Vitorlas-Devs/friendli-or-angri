@@ -1,8 +1,9 @@
 ﻿using FriendliOrAngri.Data.Models;
+using FriendliOrAngriASP.Data.Repositories;
 
 namespace FriendliOrAngri.Data.Repositories;
 
-public class AnswerRepository
+public class AnswerRepository : GeneralRepository<AnswerModel>
 {
 
 }
