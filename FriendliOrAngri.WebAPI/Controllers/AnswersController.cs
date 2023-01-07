@@ -6,30 +6,30 @@ namespace FriendliOrAngri.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class AnswersController : ControllerBase
     {
-        private readonly UserRepository userRepository;
+        private readonly AnswerRepository answerRepository;
 
-        public UsersController() =>
-            this.userRepository = new();
+        public AnswersController() =>
+            this.answerRepository = new();
 
         [HttpGet]
-        public IActionResult GetAll() =>
+        public IActionResult GetAll() => 
             this.Run(() =>
-                Ok(userRepository.GetAll())
+                Ok(answerRepository.GetAll())
             );
 
         [HttpPost]
-        public IActionResult Insert(UserModel model) =>
+        public IActionResult Insert(AnswerModel model) =>
             this.Run(() =>
-                Ok(userRepository.Insert(model))
+                Ok(answerRepository.Insert(model))
             );
 
         [HttpDelete]
         public IActionResult Delete(int id) =>
             this.Run(() =>
             {
-                userRepository.Delete(id);
+                answerRepository.Delete(id);
                 return Ok();
             });
     }
