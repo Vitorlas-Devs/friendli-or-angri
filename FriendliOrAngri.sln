@@ -5,12 +5,9 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FriendliOrAngri", "FriendliOrAngri\FriendliOrAngri.csproj", "{BEDD3294-AA85-49C7-95D6-B5727A650A96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendliOrAngriASP.Data", "FriendliOrAngri.Data\FriendliOrAngriASP.Data.csproj", "{678F1D2D-11FB-4081-93D2-41C865CF3817}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendliOrAngri.WebAPI.Data", "FriendliOrAngri.Data\FriendliOrAngri.WebAPI.Data.csproj", "{678F1D2D-11FB-4081-93D2-41C865CF3817}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendliOrAngriASP", "FriendliOrAngriASP\FriendliOrAngriASP.csproj", "{AEBDE833-5806-4E40-8AC8-DF4A24D4CAA3}"
-	ProjectSection(ProjectDependencies) = postProject
-		{678F1D2D-11FB-4081-93D2-41C865CF3817} = {678F1D2D-11FB-4081-93D2-41C865CF3817}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendliOrAngri.WebAPI", "FriendliOrAngri.WebAPI\FriendliOrAngri.WebAPI.csproj", "{B5EABFC0-F767-413B-BF32-6A2E7B9E5C34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +25,10 @@ Global
 		{678F1D2D-11FB-4081-93D2-41C865CF3817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{678F1D2D-11FB-4081-93D2-41C865CF3817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{678F1D2D-11FB-4081-93D2-41C865CF3817}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEBDE833-5806-4E40-8AC8-DF4A24D4CAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEBDE833-5806-4E40-8AC8-DF4A24D4CAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEBDE833-5806-4E40-8AC8-DF4A24D4CAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEBDE833-5806-4E40-8AC8-DF4A24D4CAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5EABFC0-F767-413B-BF32-6A2E7B9E5C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5EABFC0-F767-413B-BF32-6A2E7B9E5C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5EABFC0-F767-413B-BF32-6A2E7B9E5C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5EABFC0-F767-413B-BF32-6A2E7B9E5C34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
