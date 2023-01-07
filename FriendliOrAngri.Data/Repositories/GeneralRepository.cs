@@ -1,7 +1,23 @@
-﻿namespace FriendliOrAngriASP.Data.Repositories;
+﻿using MongoDB.Driver;
+using System.Configuration;
 
-public class GeneralRepository<T>
+namespace FriendliOrAngriASP.Data.Repositories;
+
+public abstract class GeneralRepository<T>
     where T : class
 {
+	protected readonly MongoClient dbClient;
 
+	protected virtual IMongoDatabase database => dbClient.GetDatabase("friendliOrAngri");
+
+	public GeneralRepository()
+	{
+		string connectionString = ConfigurationManager
+			.ConnectionStrings["friendliOrAngri"]?
+			.ConnectionString;
+        this.dbClient = new(connectionString);
+	}
+
+	public abstract IEnumerable<T> GetAll();
+	public abstract T Insert(T item);
 }
