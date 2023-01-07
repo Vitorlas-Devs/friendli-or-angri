@@ -26,4 +26,7 @@ public class AnswerRepository : GeneralRepository<AnswerModel>
         this.collection.InsertOne(model);
         return model;
     }
+
+    public override void Delete(int id) =>
+        this.collection.DeleteOne(a => a.Id == id);
 }

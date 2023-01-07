@@ -26,4 +26,7 @@ public class UserRepository : GeneralRepository<UserModel>
         this.collection.InsertOne(model);
         return model;
     }
+
+    public override void Delete(int id) =>
+        this.collection.DeleteOne(u => u.Id == id);
 }

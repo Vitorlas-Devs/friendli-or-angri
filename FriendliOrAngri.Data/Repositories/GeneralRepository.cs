@@ -20,4 +20,5 @@ public abstract class GeneralRepository<T>
 
 	public abstract IEnumerable<T> GetAll();
 	public abstract T Insert(T item);
+	public abstract void Delete(int id);
 }
