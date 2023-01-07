@@ -760,6 +760,242 @@
     "Description": "MailKit is a complete cross-platform mail stack, that includes IMAP, POP3, SMTP, authentication and more."
   },
   {
+    "Name": "Humanizer",
+    "Description": "Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities. It is part of the .NET Foundation, and operates under their code of conduct."
+  },
+  {
+    "Name": "YoutubeExplode",
+    "Description": "YoutubeExplode is a library for C# that provides an interface to query metadata of YouTube videos, playlists and channels, as well as to resolve and download video streams and closed caption tracks. Behind a layer of abstraction, this library works by scraping raw page data and exploiting reverse-engineered internal endpoints."
+  },
+  {
+    "Name": "Quickenshtein",
+    "Description": "Quickenshtein is an extremely quick and memory efficient Levenshtein Distance calculator with SIMD and Threading support."
+  },
+  {
+    "Name": "Toxy",
+    "Description": "Toxy is a .NET data/text extraction framework similar to Apache Tika in Java. It supports a lot of popular formats such as docx, xlsx, xls, pdf, csv, txt, epub, html and so on."
+  },
+  {
+    "Name": "Outlook Redemption",
+    "Description": "Outlook Redemption is a paid library used to work with the Outlook Object Model and (Extended) MAPI. Supports Outlook 98 - 2021. Work with objects/mails/accounts/folders in Exchange and Outlook."
+  },
+  {
+    "Name": "Hangfire",
+    "Description": "Hangfire provides a unified programming model to handle background tasks in a reliable way and run them on shared hosting, dedicated hosting or in cloud. Incredibly easy way to perform fire-and-forget, delayed and recurring jobs inside ASP.NET applications."
+  },
+  {
+    "Name": "RawRabbit",
+    "Description": "RawRabbit is a modern .NET framework for communication over RabbitMQ. The modular design and middleware oriented architecture makes the client highly customizable while providing sensible default for topology, routing and more."
+  },
+  {
+    "Name": "SIPSorcery",
+    "Description": "SIPSorcery is a cross platform C# .NET library supporting SIP, VoIP and WebRTC. It enables real-time communications, typically audio and video calls for applications."
+  },
+  {
+    "Name": "Ceras",
+    "Description": "Ceras is a C# binary serializer. It converts any object into a byte[] and back. It goes above and beyond in terms of features, speed, and comfort. Supports reference loops, large/complicated inheritance chains, splitting objects into parts and more."
+  },
+  {
+    "Name": "Migrant",
+    "Description": "Migrant is a serialization framework for .NET and Mono projects. Its aim is to provide an easy way to serialize complex graphs of objects, with minimal programming effort."
+  },
+  {
+    "Name": "NBomber",
+    "Description": "NBomber is a very simple load testing framework for Pull and Push scenarios. It's 100% written in F# and targeting .NET Core and full .NET Framework."
+  },
+  {
+    "Name": "Rhino Mocks",
+    "Description": "Rhino Mocks is a Dynamic Mocking Framework for .NET."
+  },
+  {
+    "Name": "Moq",
+    "Description": "Moq is the most popular and friendly mocking framework for .NET. And that is that."
+  },
+  {
+    "Name": "Snapshooter",
+    "Description": "Snapshooter is a snapshot testing tool for .NET Core and .NET Framework. It is a flexible tool to simplify the result validation in your unit tests in .Net. It is based on the idea of Jest Snapshot Testing."
+  },
+  {
+    "Name": "Superpower",
+    "Description": "Superpower is a C# parser construction toolkit with high-quality error reporting. The job of a parser is to take a sequence of characters as input, and produce a data structure that's easier for a program to analyze, manipulate, or transform."
+  },
+  {
+    "Name": "Dagger",
+    "Description": "Dagger is a fully static, compile-time dependency injection framework for Java, Kotlin, and Android. It is an adaptation of an earlier version created by Square and now maintained by Google."
+  },
+  {
+    "Name": "Toothpick",
+    "Description": "Toothpick is a scope tree based Dependency Injection (DI) library for Java. It is a full-featured, runtime based, but reflection free."
+  },
+  {
+    "Name": "Themis",
+    "Description": "Themis provides strong, usable cryptography for busy people. It is an open-source high-level cryptographic services library for securing data during authentication, storage, messaging, network exchange, etc."
+  },
+  {
+    "Name": "OkHttp",
+    "Description": "OkHttp is an HTTP client for Android and Java applications."
+  },
+  {
+    "Name": "Mutter",
+    "Description": "Mutter is a window manager initially designed and implemented for the X Window System, but then evolved to be a Wayland compositor. It became the default window manager in GNOME 3."
+  },
+  {
+    "Name": "Ratpoison",
+    "Description": "Ratpoison is a simple Window Manager with no fat library dependencies, no fancy graphics, no window decorations, and no rodent dependence. It is largely modelled after GNU Screen which has done wonders in the virtual terminal market."
+  },
+  {
+    "Name": "awesome",
+    "Description": "awesome is a highly configurable, next generation framework window manager for the X Window System. It is very fast and extensible."
+  },
+  {
+    "Name": "Spice-Up",
+    "Description": "Spice-Up is a presentations app for the modern Linux Desktop."
+  },
+  {
+    "Name": "Whatever",
+    "Description": "Whatever is a lightweight unofficial Evernote, a note-taking app, client for Linux desktop. Whatever is built with Electron."
+  },
+  {
+    "Name": "The Fuck",
+    "Description": "The Fuck is a magnificent app which corrects your previous console command."
+  },
+  {
+    "Name": "Insomnia",
+    "Description": "Insomnia is an open-source, cross-platform API client for GraphQL, REST, WebSockets and gRPC."
+  },
+  {
+    "Name": "HTTPie",
+    "Description": "HTTPie is a command-line HTTP client. Its goal is to make CLI interaction with web services as human-friendly as possible. HTTPie is designed for testing, debugging, and generally interacting with APIs & HTTP servers."
+  },
+  {
+    "Name": "Apidog",
+    "Description": "Apidog is an all-in-one, cross-platform workspace for API Design, Documentation, Debug, Mock, Test."
+  },
+  {
+    "Name": "Broccoli",
+    "Description": "Broccoli is a fast, reliable asset pipeline, supporting constant-time rebuilds and compact build definitions."
+  },
+  {
+    "Name": "Johnny-Five",
+    "Description": "Johnny-Five is an Open Source, Firmata Protocol based, IoT and Robotics programming framework, developed by the Nodebots Community. Johnny-Five programs can be written for Arduino and more."
+  },
+  {
+    "Name": "Kalm",
+    "Description": "Kalm is a low-level socket router and middleware framework for Node.js."
+  },
+  {
+    "Name": "he",
+    "Description": "he (for \"HTML entities\") is a robust HTML entity encoder/decoder written in JavaScript. It supports all standardized named character references as per HTML, handles ambiguous ampersands and other edge cases just like a browser would, has an extensive test suite, and — contrary to many other JavaScript solutions — he handles astral Unicode symbols just fine. Apparently, it is used by 10M repositories on GitHub."
+  },
+  {
+    "Name": "PEG",
+    "Description": "PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily."
+  },
+  {
+    "Name": "Ignite",
+    "Description": "Ignite is the most popular, battle-tested React Native app boilerplate for both Expo and bare React Native. It comes with a CLI, component/model generators, and more!"
+  },
+  {
+    "Name": "Pepperoni",
+    "Description": "Pepperoni is a React Native App starter kit for Android and iOS."
+  },
+  {
+    "Name": "ZombieBox",
+    "Description": "ZombieBox is a JavaScript framework for development of Smart TV and STB applications."
+  },
+  {
+    "Name": "DIAL",
+    "Description": "DIAL - for DIscovery And Launch - is a simple protocol that second-screen devices can use to discover and launch apps on first-screen devices. Developed by Netflix and Google."
+  },
+  {
+    "Name": "MMWormhole",
+    "Description": "MMWormhole provides a simple way to pass messages between two iOS apps or between an iOS app and an iOS extension."
+  },
+  {
+    "Name": "Dopamine",
+    "Description": "Dopamine is an elegant audio player which tries to make organizing and listening to music as simple and pretty as possible. The new version is written using Electron, Angular and Typescript."
+  },
+  {
+    "Name": "foobar2000",
+    "Description": "foobar2000 is a free audio player for Windows, supports a wide range of audio formats and has a lot of cool features."
+  },
+  {
+    "Name": "kobo",
+    "Description": "Rakuten kobo is an incredibly ugly but powerful software for ebook management and conversion."
+  },
+  {
+    "Name": "Darknet",
+    "Description": "Darknet is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation."
+  },
+  {
+    "Name": "DarkPlaces",
+    "Description": "DarkPlaces is a Quake2 engine modification. It can not easily be described, as it is simply an improved Quake."
+  },
+  {
+    "Name": "Allegro",
+    "Description": "Allegro is a cross-platform library mainly aimed at video game and multimedia programming. It handles common, low-level tasks such as creating windows, accepting user input, loading data, drawing images, playing sounds, etc."
+  },
+  {
+    "Name": "fun_with_flags",
+    "Description": "fun_with_flags is an Elixir feature flag library. Feature flags, or feature toggles, are boolean values associated to a name. They should be used to control whether some application feature is enabled or disabled, and they are meant to be modified at runtime."
+  },
+  {
+    "Name": "igor",
+    "Description": "gor is an abstraction layer for PostgreSQL, written in Go. Igor syntax is (almost) compatible with GORM."
+  },
+  {
+    "Name": "Squirrel",
+    "Description": "Squirrel is a Go library that helps you build SQL queries."
+  },
+  {
+    "Name": "Bower",
+    "Description": "Bower is a package manager for the web. Bower runs over Git."
+  },
+  {
+    "Name": "jam",
+    "Description": "jam is a JavaScript package manager - using a browser-focused and RequireJS compatible repository."
+  },
+  {
+    "Name": "Ender",
+    "Description": "Ender is the no-library library. It's not a jQuery replacement. It's not even a static asset. It's a tool for making the consumption of front-end JavaScript packages dead simple and incredibly powerful."
+  },
+  {
+    "Name": "Flow",
+    "Description": "Flow is a static type checker for JavaScript from Facebook."
+  },
+  {
+    "Name": "Protractor",
+    "Description": "Protractor is an end-to-end test framework for Angular and AngularJS applications. Protractor is a Node.js program built on top of WebDriverJS. Protractor runs tests against your application running in a real browser, interacting with it as a user would."
+  },
+  {
+    "Name": "tape",
+    "Description": "tape - Tap-producing test harness for node and browsers."
+  },
+  {
+    "Name": "Preact",
+    "Description": "Preact is a fast 3kB alternative to React with the same modern API. Components & Virtual DOM."
+  },
+  {
+    "Name": "riot",
+    "Description": "riot is a simple and elegant component-based React-like library, but with very small size."
+  },
+  {
+    "Name": "Whatsup",
+    "Description": "Whatsup is a modern frontend framework written in TypeScript with its own reactivity system and JSX components based on pure functions and generators."
+  },
+  {
+    "Name": "Cocos",
+    "Description": "Cocos is an efficient, light-weight, cross-platform, all in one 3D development engine."
+  },
+  {
+    "Name": "HANDSONTABLE",
+    "Description": "HANDSONTABLE is a JavaScript component that combines data grid features with spreadsheet-like UX. It provides data binding, data validation, filtering, sorting, and CRUD operations. HANDSONTABLE works with React, Angular, and Vue."
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
     "Name": "",
     "Description": ""
   },
@@ -767,6 +1003,8 @@
     "Name": "",
     "Description": ""
   }
+
+
 
 
 
