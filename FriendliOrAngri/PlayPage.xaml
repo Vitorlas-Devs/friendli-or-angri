@@ -3,9 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FriendliOrAngri.PlayPage"
              Title="Play">
-    <VerticalStackLayout>
-        <HorizontalStackLayout HorizontalOptions="Center">
-            <Label 
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout >
+                <Label x:Name="lbHearts" Text="Life:" FontSize="20"/>
+                <HorizontalStackLayout x:Name="hslHearts">
+                </HorizontalStackLayout>
+                <HorizontalStackLayout x:Name="hslBlackHearts">
+                </HorizontalStackLayout>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label 
                 x:Name="lbSoftware"
                 LineBreakMode="WordWrap"
                 MaximumWidthRequest="180"
@@ -13,29 +21,29 @@
                 Margin="0,50,0,0"
                 Scale="2"
                 HorizontalTextAlignment="Center"/>
-        </HorizontalStackLayout>
+            </HorizontalStackLayout>
 
 
-        <ScrollView HeightRequest="300" Margin="0,50,0,0" WidthRequest="380" >
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Label
+            <ScrollView HeightRequest="300" Margin="0,50,0,0" WidthRequest="380" >
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Label
                     x:Name="lbDescription"
                     LineBreakMode="WordWrap"
                     WidthRequest="360"
                     FontSize="Medium"
                     HorizontalTextAlignment="Start"/>
-            </HorizontalStackLayout>
-        </ScrollView>
+                </HorizontalStackLayout>
+            </ScrollView>
 
-        <Label
+            <Label
             x:Name="lbResult"
             HeightRequest="30"
             FontSize="Large"
             Margin="0,30,0,0"
             HorizontalTextAlignment="Center"/>
 
-        <FlexLayout VerticalOptions="End" Margin="0,20,0,0" Direction="Row" AlignContent="Center" JustifyContent="SpaceAround" HeightRequest="50">
-            <Button
+            <FlexLayout VerticalOptions="End" Margin="0,20,0,0" Direction="Row" AlignContent="Center" JustifyContent="SpaceAround" HeightRequest="50">
+                <Button
                 x:Name="btnAngry"
                 Text="😠 Angri"
                 BackgroundColor="{StaticResource AngriColor}"
@@ -44,7 +52,7 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 Clicked="btnAngry_Clicked"/>
-            <Button
+                <Button
                 x:Name="btnFriendly"
                 Text="😇 Friendli"
                 BackgroundColor="{StaticResource FriendliColor}"
@@ -53,9 +61,9 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 Clicked="btnFriendly_Clicked"/>
-        </FlexLayout>
+            </FlexLayout>
 
-        <Button
+            <Button
             x:Name="btnNext"
             Text="Go next"
             Margin="0,20,0,0"
@@ -66,5 +74,6 @@
             IsVisible="false"
             Clicked="btnNext_Clicked"/>
 
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

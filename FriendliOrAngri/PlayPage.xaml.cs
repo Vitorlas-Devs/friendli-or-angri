@@ -13,12 +13,16 @@ public class Software
 public partial class PlayPage : ContentPage
 {
     public Software Software;
+
+    int hearts;
+
+
     public PlayPage()
     {
         InitializeComponent();
         ChooseRandomSoftwareAsync();
-
-
+        HeartsCreate(5);
+        RefreshHearts(true);
     }
     public async void ChooseRandomSoftwareAsync()
     {
@@ -57,6 +61,7 @@ public partial class PlayPage : ContentPage
         else
         {
             lbResult.Text = "Nope!";
+            RefreshHearts(false);
         }
         if (Software.IsFriendly)
         {
@@ -83,10 +88,63 @@ public partial class PlayPage : ContentPage
         lbResult.Text = "";
         lbSoftware.TextColor = Colors.Black;
         btnNext.IsVisible = false;
+        btnNext.Text = "Go Next";
+        ResetHeartLevel();
         ChooseRandomSoftwareAsync();
         btnAngry.IsEnabled = true;
         btnFriendly.IsEnabled = true;
         btnAngry.Opacity = 1;
         btnFriendly.Opacity = 1;
+    }
+
+    private void HeartsCreate(int maxHeartsCount)
+    {
+        hslBlackHearts.Clear();
+        for (int i = 0; i < maxHeartsCount; i++)
+        {
+            hslHearts.Children.Add(new Label() { Text = "❤️", FontSize = 20});
+        }
+        hearts = maxHeartsCount;
+    }
+
+    private void RefreshHearts(bool isCorrect)
+    {
+        if (!isCorrect)
+        {
+            hearts--;
+            hslHearts.Children.RemoveAt(hslHearts.Children.Count - 1);
+            hslBlackHearts.Children.Add(new Label() { Text = "🖤", FontSize = 20 });
+
+        }
+
+        if (hearts > 0)
+        {
+            lbHearts.Text = $"Life: {hearts} - ";
+        }
+        else
+        {
+            lbHearts.Text = "Game over";
+            GameOver();
+        }
+        
+
+    }
+
+    private void GameOver()
+    {
+        btnNext.Text = "Continue";
+        btnNext.IsVisible = true;
+
+    }
+
+    private void ResetHeartLevel()
+    {
+        if (hearts == 0)
+        {
+            hearts = 5;
+            HeartsCreate(5);
+        }
+        RefreshHearts(true);
+        
     }
 }
