@@ -15,13 +15,14 @@ public partial class PlayPage : ContentPage
     public Software Software;
 
     int hearts;
+    const int maxHearts = 5;
 
 
     public PlayPage()
     {
         InitializeComponent();
         ChooseRandomSoftwareAsync();
-        HeartsCreate(5);
+        HeartsCreate(maxHearts);
         RefreshHearts(true);
     }
     public async void ChooseRandomSoftwareAsync()
@@ -114,37 +115,32 @@ public partial class PlayPage : ContentPage
             hearts--;
             hslHearts.Children.RemoveAt(hslHearts.Children.Count - 1);
             hslBlackHearts.Children.Add(new Label() { Text = "🖤", FontSize = 20 });
-
         }
 
-        if (hearts > 0)
+        if (hearts == 0)
         {
-            lbHearts.Text = $"Life: {hearts} - ";
+            lbHearts.Text = "Game over ";
+            GameOver();
         }
         else
         {
-            lbHearts.Text = "Game over";
-            GameOver();
+            lbHearts.Text = "Life: ";
         }
-        
-
     }
 
     private void GameOver()
     {
         btnNext.Text = "Continue";
         btnNext.IsVisible = true;
-
     }
 
     private void ResetHeartLevel()
     {
         if (hearts == 0)
         {
-            hearts = 5;
-            HeartsCreate(5);
+            hearts = maxHearts;
+            HeartsCreate(maxHearts);
         }
         RefreshHearts(true);
-        
     }
 }
