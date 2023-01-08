@@ -32,8 +32,8 @@
     "Description": "Torch is a scientific computing framework with wide support for machine learning algorithms that puts GPUs first. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation. PyTorch is an open source machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, primarily developed by Facebook's AI Research lab and now maintained by the PyTorch team under the Linux Foundation."
   },
   {
-    "Name": "pandas",
-    "Description": "pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language. In particular, it offers data structures and operations for manipulating numerical tables and time series."
+    "Name": "Pandas",
+    "Description": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language. In particular, it offers data structures and operations for manipulating numerical tables and time series."
   },
   {
     "Name": "Phalcon",
@@ -844,7 +844,7 @@
     "Description": "Ratpoison is a simple Window Manager with no fat library dependencies, no fancy graphics, no window decorations, and no rodent dependence. It is largely modelled after GNU Screen which has done wonders in the virtual terminal market."
   },
   {
-    "Name": "awesome",
+    "Name": "Awesome",
     "Description": "awesome is a highly configurable, next generation framework window manager for the X Window System. It is very fast and extensible."
   },
   {
@@ -920,7 +920,7 @@
     "Description": "foobar2000 is a free audio player for Windows, supports a wide range of audio formats and has a lot of cool features."
   },
   {
-    "Name": "kobo",
+    "Name": "Kobo",
     "Description": "Rakuten kobo is an incredibly ugly but powerful software for ebook management and conversion."
   },
   {
@@ -940,7 +940,7 @@
     "Description": "fun_with_flags is an Elixir feature flag library. Feature flags, or feature toggles, are boolean values associated to a name. They should be used to control whether some application feature is enabled or disabled, and they are meant to be modified at runtime."
   },
   {
-    "Name": "igor",
+    "Name": "Igor",
     "Description": "gor is an abstraction layer for PostgreSQL, written in Go. Igor syntax is (almost) compatible with GORM."
   },
   {
@@ -952,7 +952,7 @@
     "Description": "Bower is a package manager for the web. Bower runs over Git."
   },
   {
-    "Name": "jam",
+    "Name": "Jam",
     "Description": "jam is a JavaScript package manager - using a browser-focused and RequireJS compatible repository."
   },
   {
@@ -968,7 +968,7 @@
     "Description": "Protractor is an end-to-end test framework for Angular and AngularJS applications. Protractor is a Node.js program built on top of WebDriverJS. Protractor runs tests against your application running in a real browser, interacting with it as a user would."
   },
   {
-    "Name": "tape",
+    "Name": "Tape",
     "Description": "tape - Tap-producing test harness for node and browsers."
   },
   {
@@ -976,7 +976,7 @@
     "Description": "Preact is a fast 3kB alternative to React with the same modern API. Components & Virtual DOM."
   },
   {
-    "Name": "riot",
+    "Name": "Riot",
     "Description": "riot is a simple and elegant component-based React-like library, but with very small size."
   },
   {
@@ -990,6 +990,402 @@
   {
     "Name": "HANDSONTABLE",
     "Description": "HANDSONTABLE is a JavaScript component that combines data grid features with spreadsheet-like UX. It provides data binding, data validation, filtering, sorting, and CRUD operations. HANDSONTABLE works with React, Angular, and Vue."
+  },
+  {
+    "Name": "When",
+    "Description": "When.js is a rock solid, battle-tested Promises/A+ and when() implementation, including a complete ES6 Promise shim. It's a powerful combination of small size, high performance and debuggability."
+  },
+  {
+    "Name": "Sanitize-html",
+    "Description": "sanitize-html provides a simple HTML sanitizer with a clear API for Node.js. It is well suited for cleaning up HTML fragments such as those created by CKEditor and other rich text editors. It is especially handy for removing unwanted CSS when copying and pasting from Word."
+  },
+  {
+    "Name": "Partytown",
+    "Description": "Partytown is a lazy-loaded library to help relocate resource intensive scripts into a web worker, and off of the main thread. Its goal is to help speed up sites by dedicating the main thread to your code, and offloading third-party scripts to a web worker."
+  },
+  {
+    "Name": "Mousetrap",
+    "Description": "Mousetrap is a simple library for handling keyboard shortcuts in Javascript."
+  },
+  {
+    "Name": "Shepherd",
+    "Description": "Shepherd is a JavaScript library for guiding users through your app. It uses Floating UI, another open source library, to render dialogs for each tour \"step\"."
+  },
+  {
+    "Name": "JavaGeci",
+    "Description": "Java::Geci is a library for generating Java code. You can execute code generation programs using Java::Geci to generate new source code or modify existing Java source files."
+  },
+  {
+    "Name": "Lombok",
+    "Description": "Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java. Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much more."
+  },
+  {
+    "Name": "Joda-Beans",
+    "Description": "Joda-Beans provides a small framework that adds properties to Java, greatly enhancing JavaBeans."
+  },
+  {
+    "Name": "Philadelphia",
+    "Description": "Philadelphia is a fast Financial Information Exchange (FIX) protocol library for the JVM. You can use Philadelphia to connect to stock exchanges, brokerage firms, and other network endpoints that use the FIX protocol."
+  },
+  {
+    "Name": "TwelveMonkeys",
+    "Description": "TwelveMonkeys ImageIO provides extended image file format support for the Java platform, through plugins."
+  },
+  {
+    "Name": "P6Spy",
+    "Description": "P6Spy is a framework that enables database data to be seamlessly intercepted and logged with no code changes to existing application. The P6Spy distribution includes P6Log, an application which logs all JDBC transactions for any Java application."
+  },
+  {
+    "Name": "Hamcrest",
+    "Description": "Java Hamcrest is a library of matchers, which can be combined in to create flexible expressions of intent in tests."
+  },
+  {
+    "Name": "Truth",
+    "Description": "Truth is a Java library for performing assertions in tests. Truth is owned and maintained by the Guava team. It is used in the majority of the tests in Google’s own codebase."
+  },
+  {
+    "Name": "CRaSH",
+    "Description": "The Common Reusable SHell (CRaSH) is a shell designed for extending Java programs and the Java Virtual Machine."
+  },
+  {
+    "Name": "Ratpack",
+    "Description": "Ratpack is a set of Java libraries for building scalable HTTP applications. It is a lean and powerful foundation, not an all-encompassing framework."
+  },
+  {
+    "Name": "Alcinoe",
+    "Description": "Alcinoe is a library of visual and non-visual components for Delphi."
+  },
+  {
+    "Name": "MARS-Curiosity",
+    "Description": "MARS-Curiosity is a Delphi REST library. With a pure REST approach and standard concepts in a familiar Delphi flavor (including a component based client library)."
+  },
+  {
+    "Name": "Boss",
+    "Description": "Boss is an open source dependency manager inspired by npm for projects developed in Delphi and Lazarus."
+  },
+  {
+    "Name": "Repman",
+    "Description": "Repman is a private PHP package repository manager. Add and manage private PHP Composer dependencies in cloud or behind your firewall. Dedicated integration with GitHub, GitLab and Bitbucket."
+  },
+  {
+    "Name": "phpspy",
+    "Description": "phpspy is a low-overhead sampling profiler for PHP. You can also use it to make cool flamegraphs."
+  },
+  {
+    "Name": "Phing",
+    "Description": "Phing is a PHP project build system or build tool based on Apache Ant. You can do anything with it that you could do with a traditional build system like GNU make."
+  },
+  {
+    "Name": "Money",
+    "Description": "Money is a PHP library to make working with money safer, easier, and fun! \"If I had a dime for every time I've seen someone use FLOAT to store currency, I'd have $999.997634\""
+  },
+  {
+    "Name": "Brick\\Money",
+    "Description": "Brick\\Money is a money and currency library for PHP"
+  },
+  {
+    "Name": "Jigsaw",
+    "Description": "Jigsaw is a framework for rapidly building static sites using Laravel Blade. Don't build a whole backend just for one stupid form."
+  },
+  {
+    "Name": "Shiki",
+    "Description": "Shiki is a beautiful syntax highlighter. Shiki uses TextMate grammar's to tokenize strings, and colors the tokens via VS Code themes. In short, Shiki generates HTML that looks exactly like your code in VS Code, and it works great in your static website generator (or your dynamic website)."
+  },
+  {
+    "Name": "Bref",
+    "Description": "Bref is a framework to run PHP applications on AWS Lambda. It is a PHP port of the Serverless Framework."
+  },
+  {
+    "Name": "uvicorn",
+    "Description": "uvicorn is a lightning-fast ASGI server implementation for Python, using uvloop and httptools."
+  },
+  {
+    "Name": "Dejavu",
+    "Description": "Dejavu is an audio fingerprinting and recognition algorithm implemented in Python."
+  },
+  {
+    "Name": "Mingus",
+    "Description": "Mingus is a music package for Python used by programmers, musicians, composers and researchers to make and analyse music."
+  },
+  {
+    "Name": "Seaborn",
+    "Description": "Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics."
+  },
+  {
+    "Name": "You-Get",
+    "Description": "You-Get is a tiny command-line utility to download media contents (videos, audios, images) from the Web, in case there is no other handy way to do it."
+  },
+  {
+    "Name": "Beautiful Soup",
+    "Description": "Beautiful Soup is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree."
+  },
+  {
+    "Name": "Grumpy",
+    "Description": "Grumpy is a Python to Go source code transcompiler and runtime that is intended to be a near drop-in replacement for CPython 2.7."
+  },
+  {
+    "Name": "Prefect",
+    "Description": "Prefect is a modern workflow orchestration framework for Python that makes it easy to build, schedule and monitor robust data pipelines."
+  },
+  {
+    "Name": "NAPALM",
+    "Description": "NAPALM (Network Automation and Programmability Abstraction Layer with Multivendor support) is a Python library that implements a set of functions to interact with different router vendor devices using a unified API."
+  },
+  {
+    "Name": "Plan",
+    "Description": "Plan is a Python package for writing and deploying cron jobs. Plan will convert Python code to cron syntax."
+  },
+  {
+    "Name": "Doit",
+    "Description": "Doit is a Python task runner and build tool."
+  },
+  {
+    "Name": "Gym",
+    "Description": "Gym is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API."
+  },
+  {
+    "Name": "Gymnasium",
+    "Description": "Gymnasium is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API. This is a fork of OpenAI's Gym."
+  },
+  {
+    "Name": "NLTK",
+    "Description": "NLTK -- the Natural Language Toolkit -- is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing."
+  },
+  {
+    "Name": "Fsociety",
+    "Description": "Fsociety is a Penetration Testing Framework which contains all the tools used in the Mr. Robot series."
+  },
+  {
+    "Name": "Sarge",
+    "Description": "Sarge is yet another wrapper for Python's subprocess."
+  },
+  {
+    "Name": "Bicycle Repair Man",
+    "Description": "The Bicycle Repair Man project is an attempt to create refactoring browser functionality for Python. It is packaged as a library that can be added to IDEs and editors to provide refactoring capabilities."
+  },
+  {
+    "Name": "hug",
+    "Description": "hug aims to make developing Python driven APIs as simple as possible, but no simpler. As a result, it drastically simplifies Python API development."
+  },
+  {
+    "Name": "Karate Club",
+    "Description": "Karate Club is an API oriented open-source Python framework for unsupervised machine learning on graphs."
+  },
+  {
+    "Name": "Biopython",
+    "Description": "Biopython is a set of freely available tools for biological computation written in Python by an international team of developers. It is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics."
+  },
+  {
+    "Name": "Genshi",
+    "Description": "Genshi is a Python library that provides an integrated set of components for parsing, generating, and processing HTML, XML or other textual content for output generation on the web."
+  },
+  {
+    "Name": "Tornado",
+    "Description": "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
+  },
+  {
+    "Name": "Autobahn",
+    "Description": "Autobahn provides an open-source implementations of the Web Application Messaging Protocol (WAMP) for a range of languages (as well as the industry-standard WebSocket test suite)."
+  },
+  {
+    "Name": "Impressionist",
+    "Description": "Impressionist is a Rails plugin that tracks impressions and page views."
+  },
+  {
+    "Name": "Ahoy",
+    "Description": "Ahoy is a simple, powerful, first-party analytics for Rails. Tracks visits and events in Ruby, JavaScript, and native apps."
+  },
+  {
+    "Name": "Avo",
+    "Description": "Avo is a Ruby on Rails application building framework."
+  },
+  {
+    "Name": "Blanket",
+    "Description": "Blanket is a dead simple API wrapper for Ruby."
+  },
+  {
+    "Name": "Crepe",
+    "Description": "Crepe is a lightweight API framework designed to help you write clean, fast web services in Ruby."
+  },
+  {
+    "Name": "CanCanCan",
+    "Description": "CanCanCan is an authorization library for Ruby and Ruby on Rails which restricts what resources a given user is allowed to access. It is the continuation of CanCan."
+  },
+  {
+    "Name": "Danger",
+    "Description": "Danger runs after your CI, automating your team's conventions surrounding code review. This provides another logical step in your process, through which Danger can help lint your rote tasks in daily code review."
+  },
+  {
+    "Name": "Thor",
+    "Description": "Thor is a toolkit for building powerful command-line interfaces. It is used in Bundler, Vagrant, Rails and others."
+  },
+  {
+    "Name": "Arti",
+    "Description": "Arti is an implementation of Tor, in Rust."
+  },
+  {
+    "Name": "Cherrybomb",
+    "Description": "Cherrybomb is a CLI tool that helps you avoid undefined user behavior by validating your API specifications and running API security tests."
+  },
+  {
+    "Name": "Dust",
+    "Description": "u + rust = dust. Like du but more intuitive. Why? Because I want an easy way to see where my disk is being used."
+  },
+  {
+    "Name": "Pigz",
+    "Description": "pigz, which stands for Parallel Implementation of GZip, is a fully functional replacement for gzip that exploits multiple processors and multiple cores to the hilt when compressing data."
+  },
+  {
+    "Name": "Crabz",
+    "Description": "Like pigz, but rust. A cross platform, fast, compression and decompression tool."
+  },
+  {
+    "Name": "Human-panic",
+    "Description": "Human-panic provides a human-friendly panic message for Rust programs. println!(\"A normal log message\"); panic!(\"OMG EVERYTHING IS ON FIRE!!!\")"
+  },
+  {
+    "Name": "Chill",
+    "Description": "Chill is a client-side CouchDB library for the Rust programming language."
+  },
+  {
+    "Name": "STOMP",
+    "Description": "STOMP is the Simple (or Streaming) Text Orientated Messaging Protocol. STOMP provides an interoperable wire format so that STOMP clients can communicate with any STOMP message broker to provide easy and widespread messaging interoperability among many languages, platforms and brokers."
+  },
+  {
+    "Name": "Horrorshow",
+    "Description": "Horrorshow is a macro-based html templating library, compatible with stable rust."
+  },
+  {
+    "Name": "Gotham ",
+    "Description": "Gotham is a flexible web framework that promotes stability, safety, security and speed. It targets stable Rust."
+  },
+  {
+    "Name": "Morpheus",
+    "Description": "Morpheus is a reactive type-safe Scala driver for SQL databases."
+  },
+  {
+    "Name": "Phantom",
+    "Description": "Phantom is a reactive type-safe Scala driver for Apache Cassandra/Datastax Enterprise."
+  },
+  {
+    "Name": "Pushka",
+    "Description": "Pushka is a serialization library implemented without any runtime reflection. It created to reach well human readability of output JSON and good performance. Pushka works well both on Scala and Scala.js."
+  },
+  {
+    "Name": "Vegas",
+    "Description": "Vegas aims to be the missing MatPlotLib for the Scala and Spark world."
+  },
+  {
+    "Name": "Lagom",
+    "Description": "Lagom is a lightbend framework for building reactive microservices in Java or Scala."
+  },
+  {
+    "Name": "Cats",
+    "Description": "Cats is a library which provides abstractions for functional programming in the Scala programming language."
+  },
+  {
+    "Name": "Ammonite",
+    "Description": "Ammonite lets you use the Scala language for scripting purposes."
+  },
+  {
+    "Name": "Hamsters",
+    "Description": "Hamsters is a mini Scala utility library. Compatible with functional programming beginners. For the JVM and Scala.js."
+  },
+  {
+    "Name": "Reboot",
+    "Description": "Reboot is a Scala wrapper for the Java AsyncHttpClient."
+  },
+  {
+    "Name": "JSONNeverDie",
+    "Description": "JSONNeverDie is an auto reflection tool from JSON to Model, a user friendly JSON encoder / decoder, aims to never die. Also JSONNeverDie is a very important part of Pitaya."
+  },
+  {
+    "Name": "Thingy",
+    "Description": "Thingy is a modern device detection and querying library for Swift."
+  },
+  {
+    "Name": "fff",
+    "Description": "fff is a micro-framework for creating fake C functions for tests. Because life is too short to spend time hand-writing fake functions for testing."
+  },
+  {
+    "Name": "Yue",
+    "Description": "Yue is a library for creating native cross-platform GUI apps in C++, Lua, and JavaScript."
+  },
+  {
+    "Name": "Nuklear",
+    "Description": "Nuklear is a minimal-state, immediate-mode graphical user interface toolkit written in ANSI C."
+  },
+  {
+    "Name": "Assimp",
+    "Description": "Assimp is a library to import and export various 3d-model-formats including scene-post-processing to generate missing render data. APIs are provided for C and C++."
+  },
+  {
+    "Name": "Blackhole",
+    "Description": "Blackhole is yet another logging library for C++. Blackhole is an attribute-based logger with strong focus on gaining maximum performance as possible for such kind of loggers."
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Description": ""
   },
   {
     "Name": "",
