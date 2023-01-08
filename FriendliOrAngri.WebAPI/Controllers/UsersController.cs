@@ -1,4 +1,5 @@
-﻿using FriendliOrAngri.WebAPI.Data.Repositories;
+﻿using FriendliOrAngri.WebAPI.Data.Models;
+using FriendliOrAngri.WebAPI.Data.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FriendliOrAngri.WebAPI.Controllers
@@ -12,6 +13,16 @@ namespace FriendliOrAngri.WebAPI.Controllers
         public UsersController() =>
             this.userRepository = new();
 
+        [HttpGet]
+        public IActionResult GetUserByToken(string token) =>
+            this.Run(() =>
+            {
+                UserModel user = userRepository.GetUserByToken(token);
+                if (user == null)
+                    return StatusCode(404);
+                return Ok(user);
+            });
+
         [HttpPost]
         public IActionResult Insert(string userName) =>
             this.Run(() =>
@@ -22,6 +33,8 @@ namespace FriendliOrAngri.WebAPI.Controllers
         public IActionResult Delete(string userName, int id, string password) =>
             this.Run(() =>
             {
+                if (!System.IO.File.Exists("app.pwd"))
+                    return StatusCode(401);
                 if (System.IO.File.ReadAllText("app.pwd").Trim() != password)
                     return StatusCode(401);
 
