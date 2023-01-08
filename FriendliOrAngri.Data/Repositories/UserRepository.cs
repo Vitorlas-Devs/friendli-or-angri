@@ -30,6 +30,11 @@ public class UserRepository
 
     public UserModel Insert(string userName)
     {
+        userName = userName.Trim();
+
+        if (userName.Length < 3 || userName.Length > 25)
+            throw new ArgumentException("Nem megfelő a felhasználónév hossza!");
+
         using var r = RandomNumberGenerator.Create();
         byte[] tokenData = new byte[16];
         r.GetBytes(tokenData);
