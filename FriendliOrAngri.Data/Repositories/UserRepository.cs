@@ -53,6 +53,6 @@ public class UserRepository
         return model;
     }
 
-    public void Delete(int id) =>
-        this.collection.DeleteOne(u => u.Id == id);
+    public void Delete(string userName, int id) =>
+        this.collection.DeleteOne(u => u.Name == userName && u.Id == id);
 }

@@ -12,12 +12,6 @@ namespace FriendliOrAngri.WebAPI.Controllers
         public UsersController() =>
             this.userRepository = new();
 
-        [HttpGet]
-        public IActionResult GetAll() =>
-            this.Run(() =>
-                Ok(userRepository.GetAll())
-            );
-
         [HttpPost]
         public IActionResult Insert(string userName) =>
             this.Run(() =>
@@ -25,10 +19,13 @@ namespace FriendliOrAngri.WebAPI.Controllers
             );
 
         [HttpDelete]
-        public IActionResult Delete(int id) =>
+        public IActionResult Delete(string userName, int id, string password) =>
             this.Run(() =>
             {
-                userRepository.Delete(id);
+                if (System.IO.File.ReadAllText("app.pwd").Trim() != password)
+                    return StatusCode(401);
+
+                userRepository.Delete(userName, id);
                 return Ok();
             });
     }
