@@ -244,7 +244,7 @@
     "Description": "Object-Oriented Graphics Rendering Engine (OGRE) is a scene-oriented, real-time, open-source, 3D rendering engine."
   },
   {
-    "Name": "Three.js",
+    "Name": "Threejs",
     "Description": "Three.js is a popular cross-browser JavaScript library and application programming interface (API) used to create and display animated 3D computer graphics in a web browser. Three.js uses WebGL."
   },
   {
@@ -1324,84 +1324,107 @@
     "Description": "Blackhole is yet another logging library for C++. Blackhole is an attribute-based logger with strong focus on gaining maximum performance as possible for such kind of loggers."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Seasocks",
+    "Description": "Seasocks is a tiny embeddable C++ HTTP and WebSocket server."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "WAFer",
+    "Description": "WAFer is a C language-based ultra-light scalable server-side web applications framework. Think node.js for C programmers."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "InterviewBit",
+    "Description": "InterviewBit is a simple and easy to use online C++ compiler."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Nebular",
+    "Description": "Nebular is a customizable Angular 10 UI Library with a focus on beautiful design and ability to adapt it to your brand easily."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Mensch",
+    "Description": "Mensch is a decent CSS parser."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Susy",
+    "Description": "Susy was a responsive layout engine for Sass, before flexbox and CSS grid were available."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "PIE",
+    "Description": "PIE allows Internet Explorer to recognize and render various CSS3 box decoration properties."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "REVENGE.CSS",
+    "Description": "REVENGE.CSS is a CSS bookmarklet that uses selectors to find bad markup, displaying ugly pink error messages in comic sans serif wherever you write bad HTML."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Natural Selection",
+    "Description": "Natural Selection is a CSS framework without any styling at all. It is just a collection of selectors that can be used to define global styles. Natural Selection aims to provide a best-practice CSS boilerplate that can be used to start projects"
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Mailchimp",
+    "Description": "Mailchimp is a marketing automation platform and an email marketing service."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Campaign Monitor",
+    "Description": "Campaign Monitor is a straightforward email marketing tool that enables marketers to send beautiful and personalized emails."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Reacher",
+    "Description": "Reacher is an open-source email verification API. Check if an email address exists without sending any email, written in Rust."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Phaser",
+    "Description": "Phaser is a fast, free, and fun open source HTML5 game framework that offers WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and native apps by using 3rd party tools. You can use JavaScript or TypeScript for development."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "stickUp",
+    "Description": "stickUp is a simple jQuery plugin that allows you to \"stick\" any element to the top of the page when the user scrolls past it."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "SjTP",
+    "Description": "Stupid jQuery Table Sort is a JQuery table sorting plugin. Nothing fancy, nothing really impressive. Overall, stupidly simple."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Morris",
+    "Description": "Morris.js is a library of pretty time-series line graphs. It's a very simple API for drawing line, bar, area and donut charts."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Vountdown",
+    "Description": "Vountdown is a minimalist countdown component for vue.js."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Rocker",
+    "Description": "Rocker is an extended Dockerfile builder by Grammarly. Supports multiple FROMs, MOUNTS, templates, etc. Rocker breaks the limits of Dockerfile."
   },
   {
-    "Name": "",
-    "Description": ""
+    "Name": "Plash",
+    "Description": "Plash is a container run and build engine - runs inside docker."
+  },
+  {
+    "Name": "SwarmAlert",
+    "Description": "The SwarmAlert app monitors the availability of services running in a Docker Swarm environment."
+  },
+  {
+    "Name": "Zabbix",
+    "Description": "Zabbix is an enterprise-class open source distributed monitoring solution for networks and applications."
+  },
+  {
+    "Name": "Netshoot",
+    "Description": "Netshoot is a Docker + Kubernetes network trouble-shooting swiss-army container."
+  },
+  {
+    "Name": "Dokku",
+    "Description": "Dokku is a Docker powered mini-Heroku. The smallest PaaS implementation you've ever seen."
+  },
+  {
+    "Name": "Traefik",
+    "Description": "Traefik (pronounced traffic) is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, ...) and configures itself automatically and dynamically."
+  },
+  {
+    "Name": "Admiral",
+    "Description": "Admiral is a highly scalable and very lightweight Container Management platform for deploying and managing container based applications."
+  },
+  {
+    "Name": "Nim",
+    "Description": "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula."
   }
-
-
-
-
-
 ]
