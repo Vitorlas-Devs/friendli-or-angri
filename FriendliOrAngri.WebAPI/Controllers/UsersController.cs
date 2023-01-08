@@ -20,7 +20,7 @@ namespace FriendliOrAngri.WebAPI.Controllers
                 UserModel user = userRepository.GetUserByToken(token);
                 if (user == null)
                     return StatusCode(404);
-                return Ok();
+                return Ok(user);
             });
 
         [HttpPost]
@@ -33,6 +33,8 @@ namespace FriendliOrAngri.WebAPI.Controllers
         public IActionResult Delete(string userName, int id, string password) =>
             this.Run(() =>
             {
+                if (!System.IO.File.Exists("app.pwd"))
+                    return StatusCode(401);
                 if (System.IO.File.ReadAllText("app.pwd").Trim() != password)
                     return StatusCode(401);
 
