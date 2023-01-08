@@ -1,7 +1,7 @@
 ﻿using FriendliOrAngri.WebAPI.Data.Models;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace FriendliOrAngri.Data.Models;
+namespace FriendliOrAngri.WebAPI.Data.Models;
 
 public class UserModel
 {

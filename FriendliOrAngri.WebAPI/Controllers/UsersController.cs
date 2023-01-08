@@ -1,5 +1,4 @@
-﻿using FriendliOrAngri.Data.Models;
-using FriendliOrAngri.Data.Repositories;
+﻿using FriendliOrAngri.WebAPI.Data.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FriendliOrAngri.WebAPI.Controllers
@@ -20,9 +19,9 @@ namespace FriendliOrAngri.WebAPI.Controllers
             );
 
         [HttpPost]
-        public IActionResult Insert(UserModel model) =>
+        public IActionResult Insert(string userName) =>
             this.Run(() =>
-                Ok(userRepository.Insert(model))
+                Ok(userRepository.Insert(userName))
             );
 
         [HttpDelete]

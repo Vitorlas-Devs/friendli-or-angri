@@ -1,9 +1,9 @@
-﻿using FriendliOrAngri.Data.Models;
+﻿using FriendliOrAngri.WebAPI.Data.Models;
 using MongoDB.Driver;
 using System.Configuration;
 using System.Security.Cryptography;
 
-namespace FriendliOrAngriASP.Data.Repositories;
+namespace FriendliOrAngri.WebAPI.Data.Repositories;
 
 public class UserRepository
 {
@@ -21,10 +21,10 @@ public class UserRepository
         this.collection = this.database.GetCollection<UserModel>("users");
     }
 
-    public IEnumerable<UserModel> GetLeaderboard()
+    public IEnumerable<UserModel> GetAll()
     {
         List<UserModel> users = this.collection.AsQueryable().ToList();
-        foreach (UserModel user in users.Take(100))
+        foreach (UserModel user in users)
             yield return user;
     }
 

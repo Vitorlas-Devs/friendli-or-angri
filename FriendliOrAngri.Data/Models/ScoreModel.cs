@@ -1,7 +1,7 @@
 ﻿using FriendliOrAngri.WebAPI.Data.Enums;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace FriendliOrAngri.WebAPI.Data.Models;
+namespace FriendliOrAngri.WebAPI.WebAPI.Data.Models;
 
 public class ScoreModel
 {
