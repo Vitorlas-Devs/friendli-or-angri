@@ -1,10 +1,13 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using FriendliOrAngri.WebAPI.Data.Models;
+using MongoDB.Bson.Serialization.Attributes;
 
-namespace FriendliOrAngri.Data.Models;
+namespace FriendliOrAngri.WebAPI.Data.Models;
 
 public class UserModel
 {
     [BsonId]
-    public int Id { get; set; }
+    public string Token { get; set; }
     public string Name { get; set; }
+    public int Id { get; set; }
+    public List<ScoreModel> Scores { get; set; }
 }
