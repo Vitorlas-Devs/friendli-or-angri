@@ -19,8 +19,8 @@ namespace FriendliOrAngri.WebAPI.Controllers
             {
                 UserModel user = userRepository.GetUserByToken(token);
                 if (user == null)
-                    return BadRequest(404);
-                return Ok()
+                    return StatusCode(404);
+                return Ok();
             });
 
         [HttpPost]
