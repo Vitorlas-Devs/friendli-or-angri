@@ -28,6 +28,9 @@ public class UserRepository
             yield return user;
     }
 
+    public UserModel GetUserByToken(string token) =>
+        GetAll().SingleOrDefault(u => u.Token == token);
+
     public UserModel Insert(string userName)
     {
         userName = userName.Trim();
