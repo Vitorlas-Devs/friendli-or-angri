@@ -58,6 +58,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\FriendliOrAngri.Data\FriendliOrAngri.WebAPI.Data.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="FreePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
