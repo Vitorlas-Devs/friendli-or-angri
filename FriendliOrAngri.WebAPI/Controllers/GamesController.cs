@@ -41,5 +41,19 @@ namespace FriendliOrAngri.WebAPI.Controllers
                     return StatusCode(404, e.Message);
                 }
             });
+
+        [HttpGet]
+        public IActionResult GetSoftware(string userToken) =>
+            this.Run(() =>
+            {
+                try
+                {
+                    return Ok(this.gameRepository.GetSoftware(userToken));
+                }
+                catch (MissingMemberException e)
+                {
+                    return StatusCode(404, e.Message);
+                }
+            });
     }
 }
