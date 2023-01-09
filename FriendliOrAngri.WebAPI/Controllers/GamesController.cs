@@ -55,5 +55,19 @@ namespace FriendliOrAngri.WebAPI.Controllers
                     return StatusCode(404, e.Message);
                 }
             });
+
+        [HttpPut]
+        public IActionResult Guess(string userToken, bool isFriendli) =>
+            this.Run(() =>
+            {
+                try
+                {
+                    return Ok(this.gameRepository.Guess(userToken, isFriendli));
+                }
+                catch (MissingMemberException e)
+                {
+                    return StatusCode(404, e.Message);
+                }
+            });
     }
 }
