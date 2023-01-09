@@ -1,0 +1,1430 @@
+[
+  {
+    "Name": "Bikeshed",
+    "Description": "Bikeshed is a pre-processor for spec documents, turning a source document into a final spec document, with appropriate boilerplate, bibliography, indexes, etc all filled in. It's used on specs for CSS and many other W3C working groups, WHATWG, the C++ standards committee, and elsewhere!"
+  },
+  {
+    "Name": "Cirrus",
+    "Description": "Cirrus is a modular, responsive, and component centric SCSS framework aimed at bringing not only beautiful, hassle-free styling, but also a better developer experience. Almost all generated styles can be modified via its config style so you can mold the framework to whatever you want."
+  },
+  {
+    "Name": "Gatsby",
+    "Description": "Gatsby is an open-source static site generator built on top of Node.js using React and GraphQL. It provides over 2500 plugins to create static sites based on sources as Markdown documents, MDX, images, and numerous Content Management Systems such as WordPress, Drupal and more."
+  },
+  {
+    "Name": "Grunt",
+    "Description": "Grunt is a JavaScript task runner, a tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting. Grunt uses a custom configuration file to specify the tasks you want to run, and uses Node.js to run the tasks."
+  },
+  {
+    "Name": "Gulp",
+    "Description": "Gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something."
+  },
+  {
+    "Name": "Horde",
+    "Description": "Horde is a collection of PHP libraries and applications that provide a framework for building web-based applications. Horde is a community of developers who work together to create a set of PHP libraries and applications that provide a framework for building web-based applications."
+  },
+  {
+    "Name": "Hugo",
+    "Description": "Hugo is a static site generator written in Go. It is optimized for speed, ease of use, and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo is designed to work well for any kind of website including blogs, tumbles, and docs. Twitter Community Notes uses it."
+  },
+  {
+    "Name": "Torch",
+    "Description": "Torch is a scientific computing framework with wide support for machine learning algorithms that puts GPUs first. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation. PyTorch is an open source machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, primarily developed by Facebook's AI Research lab and now maintained by the PyTorch team under the Linux Foundation."
+  },
+  {
+    "Name": "Pandas",
+    "Description": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language. In particular, it offers data structures and operations for manipulating numerical tables and time series."
+  },
+  {
+    "Name": "Phalcon",
+    "Description": "Phalcon is another PHP web framework that uses the MVC pattern but is written as a C extension. It is a full-stack framework that provides a complete set of tools to develop web applications. It is a high-performance framework that can be used to build websites and web applications."
+  },
+  {
+    "Name": "Mojolicious",
+    "Description": "Mojolicious is a full-featured web framework for the Perl programming language. It is designed to make web development fun again. It provides you with routes, commands, plugins, templates, testing frameworks, first-class Unicode support, and many other features."
+  },
+  {
+    "Name": "CodeIgniter",
+    "Description": "CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications. It is most often noted for its speed when compared to other PHP frameworks."
+  },
+  {
+    "Name": "PhoneGap",
+    "Description": "PhoneGap is a free and open source framework that allows you to create mobile apps using standardized web APIs for the platforms you care about. It is a distribution of Cordova, the popular open source project maintained by the Apache Software Foundation."
+  },
+  {
+    "Name": "Nightwatch",
+    "Description": "Nightwatch is an automated testing framework for web applications and websites, written in Node.js and using the W3C WebDriver API. It is easy to use and supports advanced selectors and assertions, as well as page object models. It is also extensible using a simple plugin architecture."
+  },
+  {
+    "Name": "Scrapy",
+    "Description": "Scrapy is a free and open source web crawling framework written in Python. It is used to extract the data you need from websites. In a fast, simple, yet extensible way. It can be used for a wide range of purposes, from data mining to monitoring and automated testing."
+  },
+  {
+    "Name": "Electron",
+    "Description": "Electron is a framework for creating native applications with web technologies like JavaScript, HTML, and CSS. It takes care of the hard parts so you can focus on the core of your application. It is based on Node.js and Chromium and is used by Discord, Figma, VS Code, and many others."
+  },
+  {
+    "Name": "MEMORY",
+    "Description": "MEMORY is a storage engine for MySQL and MariaDB relational database management systems, developed by Oracle and MariaDB. It is designed to store data that must be accessed quickly, for example caches, or intermediate data that needs to be transformed before storing it to regular tables."
+  },
+  {
+    "Name": "MyRocks",
+    "Description": "MyRocks is open-source software developed at Facebook in order to use MySQL features with RocksDB implementations. MyRock's efficiency focuses on better space efficiency, better write efficiency, and better read efficiency."
+  },
+  {
+    "Name": "Federated",
+    "Description": "Federated is a storage engine for the MySQL MariaDB relational database management system that allows to create a table that is a local representation of a foreign (remote) table. It uses the MySQL client library API as a data transport, treating remote tables as if they were located on the local server. "
+  },
+  {
+    "Name": "BaseX",
+    "Description": "BaseX is a native and light-weight XML database management system and XQuery processor, developed as a community project on GitHub."
+  },
+  {
+    "Name": "Caché",
+    "Description": "InterSystems Caché is a commercial operational database management system. It is a relational database management system (RDBMS) that supports SQL and ACID transactions. It is used for storing and retrieving data in a variety of applications, including healthcare, financial services, and telecommunications."
+  },
+  {
+    "Name": "eXist",
+    "Description": "eXist is a native XML database, a NoSQL database, and a XQuery 3.1 processor. It is a free and open source software, developed as a community project on GitHub."
+  },
+  {
+    "Name": "Virtuoso",
+    "Description": "Virtuoso Universal Server is a middleware and database engine hybrid that combines the functionality of a traditional relational database management, object-relational database, virtual database, RDF, XML, free-text, web application server and file server functionality in a single system. Rather than have dedicated servers for each of the aforementioned functionality realms, Virtuoso is a \"universal server\"."
+  },
+  {
+    "Name": "Apache Ignite",
+    "Description": "Apache Ignite is a distributed database management system for high-performance computing, and its database utilizes RAM as the default storage."
+  },
+  {
+    "Name": "Starcounter",
+    "Description": "Starcounter is a database management system that uses a relational model and SQL as its query language. It is a native object database that stores data in memory and uses a transaction log to persist data to disk."
+  },
+  {
+    "Name": "SpiderMonkey",
+    "Description": "SpiderMonkey is the first JavaScript engine, written by Brendan Eich at Netscape Communications, later released as open source and currently maintained by the Mozilla Foundation. It is used in the Firefox web browser."
+  },
+  {
+    "Name": "KJS",
+    "Description": "KJS is KDE's ECMAScript-JavaScript engine that was originally developed for the KDE project's Konqueror web browser by Harri Porten."
+  },
+  {
+    "Name": "Stalin",
+    "Description": "Stalin (STAtic Language ImplementatioN) is a programming language, an aggressive optimizing batch whole-program Scheme compiler. It runs slowly, with little or no support for debugging or other niceties. The name is a joke: \"Stalin brutally optimizes.\""
+  },
+  {
+    "Name": "Smalltalk",
+    "Description": "Smalltalk was designed and created in part for educational use. It is a general-purpose, object-oriented, dynamically typed, reflective programming language, meaining that is has the ability to inspect its own structure and behavior at runtime."
+  },
+  {
+    "Name": "Bitwarden",
+    "Description": "Bitwarden is a free and open source password management service that stores sensitive information such as website credentials, credit card details, and SSH keys in an encrypted vault. It is available as a web application, browser extension, and mobile application."
+  },
+  {
+    "Name": "Password Safe",
+    "Description": "Password Safe is a free and open source password manager developed by Bruce Schneier. It is available for Windows, macOS, and Linux. It is a cross-platform password manager that stores passwords in an encrypted database."
+  },
+  {
+    "Name": "Django",
+    "Description": "Django is a free and open-source, Python-based web framework that follows the model-template-views (MTV) architectural pattern. Django's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and \"pluggability\" of components, less code, low coupling, rapid development, and the principle of don't repeat yourself."
+  },
+  {
+    "Name": "Ruby on Rails",
+    "Description": "Ruby on Rails is a server-side web application framework written in Ruby. It is a model-view-controller (MVC) framework, providing default structures for a database, a web service, and web pages."
+  },
+  {
+    "Name": "XOOPS",
+    "Description": "XOOPS is a free open-source content management system (CMS), written in PHP. It uses a modular architecture allowing users to customize, update and theme their websites."
+  },
+  {
+    "Name": "NTLDR",
+    "Description": "NTLDR is the boot loader for all releases of Windows NT operating system from 1993 with the release of Windows NT 3.1 up until Windows XP."
+  },
+  {
+    "Name": "SYSLINUX",
+    "Description": "SYSLINUX is a bootloader for the Linux operating system (OS) that is specifically designed for booting from a CD-ROM, USB drive, or network. It is a lightweight bootloader that is easy to install and customize, and it supports a wide range of hardware platforms."
+  },
+  {
+    "Name": "Vim",
+    "Description": "Vim is a command-line text editor, that runs in a terminal emulator. It increases productivity by making it very hard to exit the editor."
+  },
+  {
+    "Name": "Yew",
+    "Description": "Yew is a modern Rust framework for creating multi-threaded front-end web apps with WebAssembly. It achieves high performance by minimizing DOM API calls for each page render and by making it easy to offload processing to background web workers."
+  },
+  {
+    "Name": "Keras",
+    "Description": "Keras is an open-source software library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library. It was developed with a focus on enabling fast experimentation."
+  },
+  {
+    "Name": "Caffe",
+    "Description": "Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by Berkeley AI Research"
+  },
+  {
+    "Name": "CoffeeScript",
+    "Description": "CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar inspired by Ruby, Python, and Haskell in an effort to enhance JavaScript's brevity and readability."
+  },
+  {
+    "Name": "Tkinter",
+    "Description": "Tkinter is a Python module that provides a simple and easy-to-use interface to the Tk GUI (Graphical User Interface) toolkit, and is Python's de facto standard GUI."
+  },
+  {
+    "Name": "TACTIC",
+    "Description": "TACTIC is a web-based, open source workflow platform and digital asset management system. It uses a hierarchical drawing engine to deliver self-contained HTML5 widgets to a browser. Each widget is an encapsulated bundle of HTML, JavaScript, CSS (cascading style sheets) and server-side Python code."
+  },
+  {
+    "Name": "Camping",
+    "Description": "Camping is a web application microframework written in Ruby. Camping's source code is less than 4 KB in size. Camping stores a complete fledgling web application in a single file, like a bundle of many small CGI scripts, but organizes it as a model-view-controller application"
+  },
+  {
+    "Name": "Raygun",
+    "Description": "Raygun is a cloud-based error and performance monitoring service for web and mobile applications. Crash reports, real-time user tracking, and finding application performance bottlenecks are all made easier with it."
+  },
+  {
+    "Name": "NetBeans",
+    "Description": "NetBeans is an integrated development environment (IDE) for developing applications in Java, JavaScript, PHP, C/C++ and other programming languages. It is open-source and is developed by Oracle Corporation."
+  },
+  {
+    "Name": "AutoIt",
+    "Description": "AutoIt is a freeware programming language for Microsoft Windows. In its earliest release, it was primarily intended to create automation scripts for Microsoft Windows programs but has since grown to include enhancements in both programming language design and overall functionality."
+  },
+  {
+    "Name": "Babel",
+    "Description": "Babel is a JavaScript compiler. It is used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments."
+  },
+  {
+    "Name": "PyCharm",
+    "Description": "PyCharm is an integrated development environment (IDE) used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains. It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (VCSes), and supports web development with Django as well as data science with Anaconda."
+  },
+  {
+    "Name": "JAX",
+    "Description": "JAX is a Python library for numerical computation that is developed and maintained by Google. It is built on top of NumPy, a popular library for numerical computing, and provides additional functionality for machine learning, optimization, and automatic differentiation."
+  },
+  {
+    "Name": "triton",
+    "Description": "triton is a language and compiler for writing highly efficient custom Deep-Learning primitives. The aim of Triton is to provide an open-source Python-like environment to write fast code at higher productivity than CUDA, but also with higher flexibility than other existing DSLs."
+  },
+  {
+    "Name": "Tailwind",
+    "Description": "Tailwind CSS is an open source utility-first CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables."
+  },
+  {
+    "Name": "TupiTube",
+    "Description": "TupiTube is a free and open-source 2D animation software that is focused on usability for children, teenagers, and amateur artists."
+  },
+  {
+    "Name": "Synfig",
+    "Description": "Synfig is a free and open-source vector-based 2D animation software. The goal of the developers is to create a program that is capable of producing \"feature-film quality animation with fewer people and resources\"."
+  },
+  {
+    "Name": "Harmony",
+    "Description": "Harmony is a Java-based software for creating high-definition music videos with 2D and 3D animations. The application was developed by Digital Chaotics."
+  },
+  {
+    "Name": "Ajax",
+    "Description": "Ajax is a set of web development techniques that uses various web technologies on the client-side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously without interfering with the display and behaviour of the existing page."
+  },
+  {
+    "Name": "Ajax Animator",
+    "Description": "Ajax Animator is a free, web-based animation suite. It is primarily written using JavaScript, the Ext JS framework, and HTML5-related technologies such as SVG."
+  },
+  {
+    "Name": "iClone",
+    "Description": "iClone is a real-time 3D animation software developed by Reallusion. It is designed for 3D game development, virtual reality, and character animation."
+  },
+  {
+    "Name": "Messiah",
+    "Description": "Messiah (also known as messiah:studio) is a 3D animation and rendering application developed by pmG Worldwide. Messiah has been used for character animation and the creation of VFX shots in several feature films and shorts."
+  },
+  {
+    "Name": "Anim8or",
+    "Description": "Anim8or is a freeware OpenGL-based 3D modeling and animation program by R. Steven Glanville, a software engineer at NVidia."
+  },
+  {
+    "Name": "OGRE",
+    "Description": "Object-Oriented Graphics Rendering Engine (OGRE) is a scene-oriented, real-time, open-source, 3D rendering engine."
+  },
+  {
+    "Name": "Threejs",
+    "Description": "Three.js is a popular cross-browser JavaScript library and application programming interface (API) used to create and display animated 3D computer graphics in a web browser. Three.js uses WebGL."
+  },
+  {
+    "Name": "SPLAT!",
+    "Description": "SPLAT! (short for an RF Signal Propagation, Loss, And Terrain analysis tool) is a GNU GPL-licensed terrestrial radio propagation model application initially written for Linux but has since been ported for Windows and OS X."
+  },
+  {
+    "Name": "EchoLink",
+    "Description": "EchoLink is a computer-based Amateur Radio system distributed free of charge that allows radio amateurs to communicate with other amateur radio operators using Voice over IP (VoIP) technology on the Internet."
+  },
+  {
+    "Name": "XAMPP",
+    "Description": "XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache Friends, consisting mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages. XAMPP is so buggy it almost qualifies as malware."
+  },
+  {
+    "Name": "DAMP",
+    "Description": "DAMP is a solution stack of computer software, that is used to run dynamic Web sites or servers. The acronym stands for Darwin, Apache, MySQL, and PHP."
+  },
+  {
+    "Name": "LAMP",
+    "Description": "LAMP is an acronym for Linux, Apache, MySQL, and PHP. The LAMP components are largely interchangeable and not limited to the original selection. As a solution stack, LAMP is suitable for building dynamic Web sites and Web applications."
+  },
+  {
+    "Name": "Duplicati",
+    "Description": "Duplicati is a backup client that securely stores encrypted, incremental, compressed remote backups of local files on cloud storage services and remote file servers."
+  },
+  {
+    "Name": "Bacula",
+    "Description": "Bacula is an open-source, enterprise-level computer backup system for heterogeneous networks. It is designed to automate backup tasks that had often required intervention from a systems administrator or computer operator."
+  },
+  {
+    "Name": "Back In Time",
+    "Description": "Back In Time is a backup application for Linux. It uses rsync as backend and has the characteristic feature of using hard links for files which are identical in snapshots at different times, thus using disk space just once for files that remained unchanged."
+  },
+  {
+    "Name": "HYSYS",
+    "Description": "Aspen HYSYS (or simply HYSYS) is a chemical process simulator currently developed by AspenTech used to mathematically model chemical processes, from unit operations to full chemical plants and refineries."
+  },
+  {
+    "Name": "Check Point",
+    "Description": "Check Point is an American-Israeli multinational provider of software and combined hardware and software products for IT security."
+  },
+  {
+    "Name": "Dr.Web",
+    "Description": "Dr.Web is a software suite developed by Russian anti-malware company Doctor Web. First released in 1992, it became the first anti-virus service in Russia."
+  },
+  {
+    "Name": "Sheetgo",
+    "Description": "Sheetgo is a cloud-based automation tool that allows users to transfer data between spreadsheets and other office apps."
+  },
+  {
+    "Name": "GnuCash",
+    "Description": "GnuCash is an accounting program that implements a double-entry bookkeeping system. It is part of the GNU Project."
+  },
+  {
+    "Name": "recordMyDesktop",
+    "Description": "recordMyDesktop is a free and open source desktop screencasting software application written for Linux."
+  },
+  {
+    "Name": "Harvest",
+    "Description": "Harvest is a web-based time tracking tool, which was one of the first software as a service applications to be built on the Ruby on Rails framework, and is listed as one of the most prolific by its creators."
+  },
+  {
+    "Name": "Timely",
+    "Description": "Timely is an automatic time tracking software."
+  },
+  {
+    "Name": "FogBugz",
+    "Description": "FogBugz is an integrated web-based project management system featuring bug and issue tracking, discussion forums, wikis, customer relationship management, and evidence-based scheduling originally developed by Fog Creek Software."
+  },
+  {
+    "Name": "OpenFOAM",
+    "Description": "OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics."
+  },
+  {
+    "Name": "SIMMON",
+    "Description": "SIMMON (SIMulation MONitor) was a proprietary software testing system developed in the late 1960s in the IBM Product Test Laboratory."
+  },
+  {
+    "Name": "Segger",
+    "Description": "Segger Microcontroller, founded in 1992, is a private company involved in the embedded systems industry. It provides products used to develop and manufacture four categories of embedded systems."
+  },
+  {
+    "Name": "Valgrind",
+    "Description": "Valgrind is a programming tool for memory debugging, memory leak detection, and profiling."
+  },
+  {
+    "Name": "Ups",
+    "Description": "Ups is an open source source-level debugger developed in the late 1980s for Unix and Unix-like systems."
+  },
+  {
+    "Name": "SheepShaver",
+    "Description": "SheepShaver is an open-source PowerPC Apple Macintosh emulator originally designed for BeOS and Linux."
+  },
+  {
+    "Name": "Wine",
+    "Description": "Wine (formerly a recursive backronym for Wine Is Not an Emulator, now just \"Wine\") is a free and open-source compatibility layer that aims to allow application software and computer games developed for Microsoft Windows to run on Unix-like operating systems."
+  },
+  {
+    "Name": "Rufus",
+    "Description": "Rufus is a free and open-source portable application for Microsoft Windows that can be used to format and create bootable USB flash drives or Live USBs."
+  },
+  {
+    "Name": "DreamBooth",
+    "Description": "DreamBooth is a deep learning generation model used to fine-tune existing text-to-image models (such as Stable Diffusion), developed by researchers from Google Research and Boston University in 2022."
+  },
+  {
+    "Name": "Waitroom",
+    "Description": "Waitroom is a host-led livestreaming and video meeting platform that allows one-on-one engagement between hosts and their audiences. These engagements can range from 30 seconds to 30 minutes long. Waitroom was co-founded in the summer of 2020."
+  },
+  {
+    "Name": "SafeMoon",
+    "Description": "SafeMoon LLC is a cryptocurrency and blockchain company created in March 2021. The company also has a SafeMoon token (SFM) which trades on the Binance Smart Chain blockchain. The token charges a 10% fee on transactions."
+  },
+  {
+    "Name": "DeepSpeed",
+    "Description": "DeepSpeed is an open source deep learning optimization library for PyTorch. The library is designed to reduce computing power and memory use and to train large distributed models with better parallelism on existing computer hardware. The DeepSpeed source code is licensed under MIT License and available on GitHub."
+  },
+  {
+    "Name": "Clubhouse",
+    "Description": "Clubhouse is a social audio app released in 2020 for iOS and Android where users can communicate in audio chat rooms that accommodate groups of thousands of people. Clubhouse led to the emergence of a new social media segment known as social audio or drop-in audio."
+  },
+  {
+    "Name": "Gas",
+    "Description": "Gas, formerly known as Melt as well as Crush, is an American anonymous social media app. Launched in August 2022, the app is oriented towards high schoolers."
+  },
+  {
+    "Name": "Libgcrypt",
+    "Description": "Libgcrypt is a cryptography library developed as a separated module of GnuPG. It provides the basic functions for encryption, decryption, signatures, message authentication codes, and a few other cryptographic primitives."
+  },
+  {
+    "Name": "Celia",
+    "Description": "Celia is an artificially intelligent virtual assistant developed by Huawei for their latest HarmonyOS and Android-based EMUI smartphones that lack Google Services and a Google Assistant. The assistant can perform day-to-day tasks, which include making a phone call, setting a reminder and checking the weather."
+  },
+  {
+    "Name": "Clova",
+    "Description": "Clova is a virtual assistant developed by Naver, a South Korean internet company. It is available in Korean, Japanese, and English. Clova is available on smartphones, smart speakers, and smart TVs."
+  },
+  {
+    "Name": "Bixby",
+    "Description": "Bixby is a virtual assistant developed by Samsung Electronics. In May 2017, Samsung announced that Bixby would be coming to its line of Family Hub 2.0 refrigerators, making it the first non-mobile product to include the virtual assistant."
+  },
+  {
+    "Name": "Alice",
+    "Description": "Alice is a Russian intelligent personal assistant for Android, iOS and Windows operating systems and Yandex's own devices developed by Yandex. Alice was officially introduced on 10 October 2017. Aside from common tasks, such as internet search or weather forecasts, it can also run applications."
+  },
+  {
+    "Name": "PeduliLindungi",
+    "Description": "PeduliLindungi is the official COVID-19 contact tracing app used for digital contact tracing in Indonesia. On 23 August 2021, Coordinating Minister for Maritime and Investments Affairs, Luhut Binsar Panjaitan, encouraged the government to make this app a mandatory requirement before using public transportations, such as train, bus, ferry, and plane. Furthermore, citizen must have installed the app before entering shopping malls, factories, and sport venues. In September 2021, stored personal data of at least 1.3 million Indonesian residents were leaked online, including the vaccine certificate of President Joko Widodo."
+  },
+  {
+    "Name": "TVING",
+    "Description": "TVING is a South Korean online streaming service operated by TVING Corporation, a joint venture of CJ E&M (CJ Group), Naver and JTBC. It is a platform that streams dramas, entertainment shows, exclusive television films and specials."
+  },
+  {
+    "Name": "Viki",
+    "Description": "Rakuten Viki is an American video streaming website. It streams videos similar to other services, but also allows users to subtitle content available in 200 languages as well as provides original programming. Headquartered in San Mateo, California, it has offices in Singapore, Tokyo, Japan, and Seoul, South Korea."
+  },
+  {
+    "Name": "Crunchyroll",
+    "Description": "Crunchyroll is an American subscription video on-demand over-the-top streaming service owned by Sony through a joint venture between Sony Pictures and Sony Music Entertainment Japan's Aniplex. The service primarily distributes films and television series produced by East Asian media, including Japanese anime."
+  },
+  {
+    "Name": "Microsoft Classroom",
+    "Description": "Microsoft Classroom was an online blended learning platform for schools that aimed to simplify grading assignments and student communication in a paperless way. It was introduced for Office 365 Education subscribers in April 2016. On May 18, 2017 Microsoft announced the retirement of Microsoft Classroom."
+  },
+  {
+    "Name": "Sxmo",
+    "Description": "Sxmo is a user interface for mobile devices with Linux. It is a collection of suckless tools and scripts, with the intention to create a fully functional interface adhering to the Unix philosophy."
+  },
+  {
+    "Name": "suckless",
+    "Description": "suckless.org is a free software community of programmers working on projects with a focus on minimalism, simplicity, clarity, and frugality. The group developed the dwm and wmii window managers, surf tabbed, and other programs that are said to adhere strictly to the Unix philosophy of \"doing one thing and doing it well\"."
+  },
+  {
+    "Name": "TraceTogether",
+    "Description": "TraceTogether is a digital system implemented by the Government of Singapore to facilitate contact tracing efforts in response to the COVID-19 pandemic in Singapore. The main goal is quick identification of persons who may have come into close contact with anyone who has tested positive for COVID-19. It's on GitHub tho."
+  },
+  {
+    "Name": "Bosque",
+    "Description": "Bosque is a free and open-source programming language designed & developed by Microsoft that was inspired by the syntax and types of TypeScript and the semantics of ML and Node/JavaScript. Design goals for the language include better software quality and improved developer productivity."
+  },
+  {
+    "Name": "Chirp",
+    "Description": "Chirp is a U.S. based audiobook retail service. It allows users to stream audiobooks directly from the website or in the app, and is an a la carte retailer, not a subscription based model. The company does not rely on monthly subscriptions and provides discounted prices to its users."
+  },
+  {
+    "Name": "Sanctuary",
+    "Description": "Sanctuary is a mobile app focusing on astrology and mystical services. Users enter their birthday, time of birth, and place of birth information into the app and receive a birth chart as well as daily horoscope readings. Users can also sign up for a monthly membership and receive on-demand astrological readings via a text message format."
+  },
+  {
+    "Name": "Redkey USB",
+    "Description": "Redkey USB is a computer utility developed to securely erase data. It is sold as a bootable live USB drive from which the Redkey software can be used on a perpetual license basis. During 2019, a second Redkey crowdfunding campaign went viral on Indiegogo following a video review by Linus Tech Tips."
+  },
+  {
+    "Name": "Rainway",
+    "Description": "Rainway is a video game streaming service. Rainway allows users to run games on their Windows 10 PC and play them on other devices over an internet connection. Rainway is compatible with games purchased from Steam, Origin, Battle.net, itch.io, GOG.com and Uplay. The service can run in web browsers and will also be compatible with iOS and Android mobile phones, as well as Xbox One consoles."
+  },
+  {
+    "Name": "Proton",
+    "Description": "Proton is a compatibility layer for Microsoft Windows games to run on Linux-based operating systems. Proton is developed by Valve in cooperation with developers from CodeWeavers. It is a collection of software and libraries combined with a patched version of Wine to improve performance and compatibility with Windows games. Proton is officially distributed through the Steam client."
+  },
+  {
+    "Name": "Terra",
+    "Description": "Terra is a blockchain protocol and payment platform used for algorithmic stablecoins. The project was created in 2018 by Terraform Labs, a startup co-founded by Do Kwon and Daniel Shin."
+  },
+  {
+    "Name": "CatBoost",
+    "Description": "CatBoost is an open-source software library developed by Yandex. It provides a gradient boosting framework which among other features attempts to solve for Categorical features using a permutation driven alternative compared to the classical algorithm."
+  },
+  {
+    "Name": "Ballerina",
+    "Description": "Ballerina is an open-source programming language for the cloud that makes it easier to use, combine, and create network services."
+  },
+  {
+    "Name": "Slowly",
+    "Description": "Slowly is a geosocial networking application that allows users to exchange delayed messages or \"letters\". The time taken by a message to be delivered depends on the distance between the sender and the recipient."
+  },
+  {
+    "Name": "Phosh",
+    "Description": "Phosh (portmanteau of phone and shell) is a graphical user interface designed for mobile and touch-based devices. It is the default shell used on several mobile Linux operating systems including PureOS, Mobian, and Fedora Mobility. It is also an option on postmarketOS, Manjaro, and openSUSE."
+  },
+  {
+    "Name": "Peeple",
+    "Description": "Peeple is a mobile application that allows people to leave recommendations for other people based on professional, personal, and romantic relationships. Initially described as a \"Yelp for People\"."
+  },
+  {
+    "Name": "Vulkan",
+    "Description": "Vulkan is a cross-platform application programming interface (API) for rendering 2D and 3D graphics. It is developed by the Khronos Group, a non-profit consortium of companies creating open standards for the development of parallel computing and graphics."
+  },
+  {
+    "Name": "Thiruvananthapuram City Police Mobile App",
+    "Description": "This is the official mobile application for the citizens and public by the Thiruvananthapuram City Police in Kerala, India. The main interface consists of a large red \"PANIC\" button."
+  },
+  {
+    "Name": "Trackbuster",
+    "Description": "Trackbuster is an online service used to identify and remove email trackers."
+  },
+  {
+    "Name": "Anaconda",
+    "Description": "Anaconda is a free and open-source distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment. The distribution includes data science packages suitable for Windows, Linux, and macOS."
+  },
+  {
+    "Name": "Spyder",
+    "Description": "Spyder is a cross-platform integrated development environment (IDE) for the Python programming language. It is a part of the Anaconda distribution and can be installed independently from it in other Python distributions. Spyder is free and open-source software, released under the terms of the MIT License."
+  },
+  {
+    "Name": "Triller",
+    "Description": "Triller is an American video-sharing social networking service. The service allows users to create and share short-form videos, including videos set to, or automatically synchronized to music"
+  },
+  {
+    "Name": "Alien Blue",
+    "Description": "Alien Blue is a third-party Reddit client for iOS and Android. The app was released in 2011 and was the most popular Reddit client for iOS until it was discontinued in 2014."
+  },
+  {
+    "Name": "Hack",
+    "Description": "Hack is a programming language for HHVM. Hack is a superset of PHP that adds optional type annotations, a more powerful type system, and other features. It was developed by Facebook and released in 2014."
+  },
+  {
+    "Name": "Hackintosh",
+    "Description": "Hackintoshing is the process of installing macOS on non-Apple hardware. This includes desktops, laptops, and even servers. Hackintoshing is a form of computer modding."
+  },
+  {
+    "Name": "HAMMER2",
+    "Description": "HAMMER2 is a file system developed by the FreeBSD project. It had a long incubation and development period before it officially entered production in April 2018, as the recommended root filesystem in the Dragonfly BSD 5.2 release."
+  },
+  {
+    "Name": "Velocity",
+    "Description": "Velocity is a cross-platform JavaScript library designed to simplify the client-side scripting of website animation. Velocity is free, open-source software licensed under the MIT License. It is the most popular open source web animation engine."
+  },
+  {
+    "Name": "Brainscape",
+    "Description": "Brainscape is a web and mobile education platform that allows students to study adaptive flashcards. The website and mobile application allow students, teachers, and corporate trainers to create (or upload) electronic flashcards and study them using a spaced repetition learning technique."
+  },
+  {
+    "Name": "Anki",
+    "Description": "Anki is a cross-platform application designed to help users remember facts, such as words or numbers, using a technique called spaced repetition. Anki is free and open-source software, released under the GNU General Public License."
+  },
+  {
+    "Name": "Citra",
+    "Description": "Citra is a free and open-source emulator of the handheld Nintendo 3DS for Windows, macOS, Linux, and Android."
+  },
+  {
+    "Name": "Mattermost",
+    "Description": "Mattermost is an open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack and Microsoft Teams."
+  },
+  {
+    "Name": "frei0r",
+    "Description": "frei0r is a simple cross-platform framework for video effects. It provides filters, mixers and generators by means of minimalistic plugin API. The behaviour of the effects can be controlled from the host through simple parameters. The intent is to solve the recurring reimplementation or adaptation issue of standard video effects."
+  },
+  {
+    "Name": "Searx",
+    "Description": "Searx is a free and open-source metasearch engine, available under the GNU Affero General Public License version 3, with the aim of protecting the privacy of its users. To this end, Searx does not share users' IP addresses or search history with the search engines from which it gathers results. Tracking cookies served by the search engines are blocked, preventing user-profiling-based results modification."
+  },
+  {
+    "Name": "Public Whip",
+    "Description": "The Public Whip is a parliamentary informatics project that analyses and publishes the voting history of MPs in the Parliament of the United Kingdom."
+  },
+  {
+    "Name": "Cuda",
+    "Description": "CUDA is a parallel computing platform and programming model developed by NVIDIA for general computing on graphical processing units. With CUDA, developers are able to dramatically speed up computing applications by harnessing the power of GPUs."
+  },
+  {
+    "Name": "ROCm",
+    "Description": "ROCm is a free and open-source software platform for high-performance computing on AMD GPUs. It is a collection of open-source software tools, libraries and drivers that are designed to work together to provide a complete platform for GPU computing."
+  },
+  {
+    "Name": "Lichess",
+    "Description": "Lichess is a free and open-source Internet chess server run by a non-profit organization of the same name."
+  },
+  {
+    "Name": "APL",
+    "Description": "APL is a programming language created by Kenneth E. Iverson in 1962. Its central datatype is the multidimensional array. It uses a large range of special graphic symbols to represent most functions and operators, leading to very concise code."
+  },
+  {
+    "Name": "Fortran",
+    "Description": "Fortran is a general-purpose, imperative programming language that is especially suited to numeric computation and scientific computing. It is a compiled language, and is therefore more efficient than interpreted languages such as Python, Perl, and Ruby, but less efficient than languages such as C and C++."
+  },
+  {
+    "Name": "COBOL",
+    "Description": "COBOL is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented. COBOL is primarily used in business, finance, and administrative systems for companies and governments."
+  },
+  {
+    "Name": "Dragon NaturallySpeaking",
+    "Description": "Dragon NaturallySpeaking is a speech recognition software package developed by Dragon Systems of Newton, Massachusetts, which was acquired in turn by Lernout & Hauspie Speech Products, Nuance Communications, and Microsoft."
+  },
+  {
+    "Name": "openHAB",
+    "Description": "open Home Automation Bus (openHAB) is an open source home automation software written in Java. It is deployed on premises and connects to devices and services from different vendors."
+  },
+  {
+    "Name": "Poetry",
+    "Description": "Poetry is a python dependency management tool to manage dependencies, packages, and libraries in your python project. It will help you to make your project more simple by resolving dependency complexities in your project and managing to install and update for you."
+  },
+  {
+    "Name": "Ryujinx",
+    "Description": "Ryujinx is an open-source Nintendo Switch emulator written in C#. This emulator aims at providing excellent accuracy and performance, a user-friendly interface, and consistent builds."
+  },
+  {
+    "Name": "HCL",
+    "Description": "HashiCorp Configuration Language (HCL) is a unique configuration language. It was designed to be used with HashiCorp tools, notably Terraform, but HCL has expanded as a more general configuration language. It's visually similar to JSON with additional data structures and capabilities built-in."
+  },
+  {
+    "Name": "Kerberos",
+    "Description": "Kerberos is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography. A free implementation of this protocol is available from the Massachusetts Institute of Technology (MIT). Kerberos is available in many commercial products as well."
+  },
+  {
+    "Name": "Samba",
+    "Description": "Samba is a free and open-source re-implementation of the SMB/CIFS networking protocol. Samba is a suite of programs that allows a computer running the Linux operating system to function as a server for file and print resources, and as a domain controller for Windows clients."
+  },
+  {
+    "Name": "Algorithmia",
+    "Description": "This is an algorithm and data-structure library for .NET 3.5 and up. Algorithmia contains sophisticated algorithms and data-structures like graphs, priority queues, command, undo-redo and more."
+  },
+  {
+    "Name": "Towel",
+    "Description": "Towel is a .NET Standard library that contains data structures, algorithms, mathematics, metadata, extensions, console, measurements, and other useful stuff."
+  },
+  {
+    "Name": "NancyFx",
+    "Description": "Nancy is a lightweight, low-ceremony, framework for building HTTP based services on .NET Framework/Core and Mono. The goal of the framework is to stay out of the way as much as possible and provide a super-duper-happy-path to all interactions."
+  },
+  {
+    "Name": "peasy",
+    "Description": "Peasy is a middle tier framework that offers an easy to use and flexible rules engine and was designed to address common challenges such as concurrency handling, transactional support, fault tolerance, threading, scalability, async and multiple client support, and easy testability, all without a huge learning curve!"
+  },
+  {
+    "Name": "DotNetty",
+    "Description": "DotNetty is a port of Netty, asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients."
+  },
+  {
+    "Name": "Fusion",
+    "Description": "Fusion is a .NET Core and Blazor library that attempts to dramatically improve the way we implement real-time and high-load services by introducing a novel kind of \"computed observables\" - immutable, thread-safe, and most importantly, almost invisible for developers."
+  },
+  {
+    "Name": "SideWaffle",
+    "Description": "SideWaffle is a Visual Studio extension that adds a number of project and item templates to Visual Studio. These templates are designed to make it easier to create projects and files that are useful for web developers."
+  },
+  {
+    "Name": "Nucleus",
+    "Description": "Nucleus is a Vue startup application template that uses ASP.NET Core API layered architecture at the back-end and JWT based authentication."
+  },
+  {
+    "Name": "SIML",
+    "Description": "Synthetic Intelligence Markup Language is a next generation Chatbot & Digital Assistant Language. Developers can easily integrate Natural Language Processing into their .NET and Mono/Xamarin applications while the users can enjoy fast and intelligent conversations."
+  },
+  {
+    "Name": "Bundler",
+    "Description": "Bundler is a fast, cross-platform, command-line runner (easily integrated into existing IDEs, inc VS.NET) with optimized support for ASP.NET MVC and ServiceStack that statically compiles, minifies and combines your websites less, sass, stylus, css, coffeescript, livescript and js files."
+  },
+  {
+    "Name": "SquishIt",
+    "Description": "SquishIt is an asset optimization library for .net web applications. It handles combining and minifying css and javascript assets through creation of bundles. There are currently extensions available that allow use of .less, coffeescript, SASS/SCSS and Hogan templates through SquishIt's preprocessor pipeline."
+  },
+  {
+    "Name": "Make",
+    "Description": "GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files. Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files."
+  },
+  {
+    "Name": "Cake",
+    "Description": "Cake (C# Make) is a build automation system with a C# DSL to do things like compiling code, copy files/folders, running unit tests, compress files and build NuGet packages."
+  },
+  {
+    "Name": "FAKE",
+    "Description": "FAKE - F# Make is a cross platform build automation system. Due to its integration in F#, all the benefits of the .NET Framework and functional programming can be used, including the extensive class library, powerful debuggers and integrated development environments."
+  },
+  {
+    "Name": "Nake",
+    "Description": "Nake is a magic task runner tool for .NET Core. It's a hybrid of Shovel and Rake. The DSL for defining tasks is uniquely minimal and it's just plain (naked) C# code!"
+  },
+  {
+    "Name": "Rake",
+    "Description": "Rake is a Make-like program implemented in Ruby. Tasks and dependencies are specified in standard Ruby syntax."
+  },
+  {
+    "Name": "NUKE",
+    "Description": "NUKE is the AKEless Build System for C#/.NET. It brings your build automation to an even level with every other .NET project."
+  },
+  {
+    "Name": "FastReport",
+    "Description": "The open source report generator for .NET Core 2.x/.Net Framework 4.x. FastReport can be used in ASP.NET MVC, Web API applications."
+  },
+  {
+    "Name": "CacheCow",
+    "Description": "CacheCow is an ASP.NET Web API HTTP caching implementation both on client and server."
+  },
+  {
+    "Name": "Typin",
+    "Description": "Typin is a simple to use declarative framework for interactive CLI applications and command line tools (direct mode) that has its roots in CliFx."
+  },
+  {
+    "Name": "mojoPortal",
+    "Description": "mojoPortal is an extensible, cross database, mobile friendly, web content management system (CMS), and web application framework written in C# ASP.NET."
+  },
+  {
+    "Name": "Umbraco",
+    "Description": "Umbraco is a free open source Content Management System built on the ASP.NET platform."
+  },
+  {
+    "Name": "P",
+    "Description": "P is a state machine based programming language for formally modeling and specifying complex distributed systems. P allows programmers to model their system design as a collection of communicating state machines. P supports several backend analysis engines (based on automated reasoning techniques like model checking and symbolic execution) to check that the distributed system modeled in P satisfy the desired correctness specifications."
+  },
+  {
+    "Name": "BouncyCastle",
+    "Description": "BouncyCastle is a reference implementation for cryptographic algorithms on the CLR together with the .Net System.Security.Cryptography library."
+  },
+  {
+    "Name": "Yessql",
+    "Description": "Yessql is a .NET document database interface for relational databases, because in SQL we (still) trust !"
+  },
+  {
+    "Name": "JustDecompile",
+    "Description": "JustDecompile is a free Telerik tool for . NET assembly browsing and decompiling. It enables you to take an existing compiled assembly (. dll or.exe) and easily browse the symbols it contains. Then just as easily, decompile the assembly language back to readable C#, VB and IL."
+  },
+  {
+    "Name": "dnSpy",
+    "Description": "dnSpy is a debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have any source code available."
+  },
+  {
+    "Name": "ILSpy",
+    "Description": "ILSpy is the open-source .NET assembly browser and decompiler."
+  },
+  {
+    "Name": "dotPeek",
+    "Description": "dotPeek is a free-of-charge standalone tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code."
+  },
+  {
+    "Name": "Ooui",
+    "Description": "Ooui (pronounced weee!) is a small cross-platform UI library for .NET that uses web technologies. It presents a classic object-oriented UI API that controls a dumb browser. With Ooui, you get the full power of your favorite .NET programming language plus the ability to interact with your app using any device."
+  },
+  {
+    "Name": "RestLess",
+    "Description": "RestLess is another type-safe REST API client library. It is heavily inspired by Refit, which is inspired by Retrofit, but does not works exactly the same way."
+  },
+  {
+    "Name": "Ionide",
+    "Description": "Ionide is an organization which builds high quality, cross platform developer tools for F#. Our flagship project is Ionide-VSCode - a Visual Studio Code plugin, with more than 1 million downloads, transforming VSCode into a fully-fledged F# IDE."
+  },
+  {
+    "Name": "Rider",
+    "Description": "Rider is a cross-platform C# IDE based on the IntelliJ platform and ReSharper."
+  },
+  {
+    "Name": "vvvv",
+    "Description": "vvvv is a very visual live-programming environment that takes you from rapid prototyping to final production."
+  },
+  {
+    "Name": "Wax",
+    "Description": "Wax is an interactive editor for WiX projects. Don't ask.'"
+  },
+  {
+    "Name": "i18n",
+    "Description": "The i18n library is designed to replace the use of .NET resources in favor of an easier, globally recognized standard for localizing ASP.NET-based web applications."
+  },
+  {
+    "Name": "Pyrolite",
+    "Description": "This library allows your Java or .NET program to interface very easily with the Python world. It uses the Pyro protocol to call methods on remote objects."
+  },
+  {
+    "Name": "Ninject",
+    "Description": "Ninject is the ninja of .net dependency injectors: it's lightning-fast and ultra-lightweight. It helps you split your application into a collection of loosely-coupled, highly-cohesive pieces, and then glue them back together in a flexible manner."
+  },
+  {
+    "Name": "Jurassic",
+    "Description": "Jurassic is an implementation of the ECMAScript language and runtime. It aims to provide the best performing and most standards-compliant implementation of JavaScript for .NET. Jurassic is not intended for end-users; instead it is intended to be integrated into .NET programs. If you are the author of a .NET program, you can use Jurassic to compile and execute JavaScript code."
+  },
+  {
+    "Name": "FluentEmail",
+    "Description": "FluentEmail is an all in one email sender for .NET. Supports popular senders (SendGrid, MailGun, etc) and Razor templates."
+  },
+  {
+    "Name": "MailKit",
+    "Description": "MailKit is a complete cross-platform mail stack, that includes IMAP, POP3, SMTP, authentication and more."
+  },
+  {
+    "Name": "Humanizer",
+    "Description": "Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities. It is part of the .NET Foundation, and operates under their code of conduct."
+  },
+  {
+    "Name": "YoutubeExplode",
+    "Description": "YoutubeExplode is a library for C# that provides an interface to query metadata of YouTube videos, playlists and channels, as well as to resolve and download video streams and closed caption tracks. Behind a layer of abstraction, this library works by scraping raw page data and exploiting reverse-engineered internal endpoints."
+  },
+  {
+    "Name": "Quickenshtein",
+    "Description": "Quickenshtein is an extremely quick and memory efficient Levenshtein Distance calculator with SIMD and Threading support."
+  },
+  {
+    "Name": "Toxy",
+    "Description": "Toxy is a .NET data/text extraction framework similar to Apache Tika in Java. It supports a lot of popular formats such as docx, xlsx, xls, pdf, csv, txt, epub, html and so on."
+  },
+  {
+    "Name": "Outlook Redemption",
+    "Description": "Outlook Redemption is a paid library used to work with the Outlook Object Model and (Extended) MAPI. Supports Outlook 98 - 2021. Work with objects/mails/accounts/folders in Exchange and Outlook."
+  },
+  {
+    "Name": "Hangfire",
+    "Description": "Hangfire provides a unified programming model to handle background tasks in a reliable way and run them on shared hosting, dedicated hosting or in cloud. Incredibly easy way to perform fire-and-forget, delayed and recurring jobs inside ASP.NET applications."
+  },
+  {
+    "Name": "RawRabbit",
+    "Description": "RawRabbit is a modern .NET framework for communication over RabbitMQ. The modular design and middleware oriented architecture makes the client highly customizable while providing sensible default for topology, routing and more."
+  },
+  {
+    "Name": "SIPSorcery",
+    "Description": "SIPSorcery is a cross platform C# .NET library supporting SIP, VoIP and WebRTC. It enables real-time communications, typically audio and video calls for applications."
+  },
+  {
+    "Name": "Ceras",
+    "Description": "Ceras is a C# binary serializer. It converts any object into a byte[] and back. It goes above and beyond in terms of features, speed, and comfort. Supports reference loops, large/complicated inheritance chains, splitting objects into parts and more."
+  },
+  {
+    "Name": "Migrant",
+    "Description": "Migrant is a serialization framework for .NET and Mono projects. Its aim is to provide an easy way to serialize complex graphs of objects, with minimal programming effort."
+  },
+  {
+    "Name": "NBomber",
+    "Description": "NBomber is a very simple load testing framework for Pull and Push scenarios. It's 100% written in F# and targeting .NET Core and full .NET Framework."
+  },
+  {
+    "Name": "Rhino Mocks",
+    "Description": "Rhino Mocks is a Dynamic Mocking Framework for .NET."
+  },
+  {
+    "Name": "Moq",
+    "Description": "Moq is the most popular and friendly mocking framework for .NET. And that is that."
+  },
+  {
+    "Name": "Snapshooter",
+    "Description": "Snapshooter is a snapshot testing tool for .NET Core and .NET Framework. It is a flexible tool to simplify the result validation in your unit tests in .Net. It is based on the idea of Jest Snapshot Testing."
+  },
+  {
+    "Name": "Superpower",
+    "Description": "Superpower is a C# parser construction toolkit with high-quality error reporting. The job of a parser is to take a sequence of characters as input, and produce a data structure that's easier for a program to analyze, manipulate, or transform."
+  },
+  {
+    "Name": "Dagger",
+    "Description": "Dagger is a fully static, compile-time dependency injection framework for Java, Kotlin, and Android. It is an adaptation of an earlier version created by Square and now maintained by Google."
+  },
+  {
+    "Name": "Toothpick",
+    "Description": "Toothpick is a scope tree based Dependency Injection (DI) library for Java. It is a full-featured, runtime based, but reflection free."
+  },
+  {
+    "Name": "Themis",
+    "Description": "Themis provides strong, usable cryptography for busy people. It is an open-source high-level cryptographic services library for securing data during authentication, storage, messaging, network exchange, etc."
+  },
+  {
+    "Name": "OkHttp",
+    "Description": "OkHttp is an HTTP client for Android and Java applications."
+  },
+  {
+    "Name": "Mutter",
+    "Description": "Mutter is a window manager initially designed and implemented for the X Window System, but then evolved to be a Wayland compositor. It became the default window manager in GNOME 3."
+  },
+  {
+    "Name": "Ratpoison",
+    "Description": "Ratpoison is a simple Window Manager with no fat library dependencies, no fancy graphics, no window decorations, and no rodent dependence. It is largely modelled after GNU Screen which has done wonders in the virtual terminal market."
+  },
+  {
+    "Name": "Awesome",
+    "Description": "awesome is a highly configurable, next generation framework window manager for the X Window System. It is very fast and extensible."
+  },
+  {
+    "Name": "Spice-Up",
+    "Description": "Spice-Up is a presentations app for the modern Linux Desktop."
+  },
+  {
+    "Name": "Whatever",
+    "Description": "Whatever is a lightweight unofficial Evernote, a note-taking app, client for Linux desktop. Whatever is built with Electron."
+  },
+  {
+    "Name": "The Fuck",
+    "Description": "The Fuck is a magnificent app which corrects your previous console command."
+  },
+  {
+    "Name": "Insomnia",
+    "Description": "Insomnia is an open-source, cross-platform API client for GraphQL, REST, WebSockets and gRPC."
+  },
+  {
+    "Name": "HTTPie",
+    "Description": "HTTPie is a command-line HTTP client. Its goal is to make CLI interaction with web services as human-friendly as possible. HTTPie is designed for testing, debugging, and generally interacting with APIs & HTTP servers."
+  },
+  {
+    "Name": "Apidog",
+    "Description": "Apidog is an all-in-one, cross-platform workspace for API Design, Documentation, Debug, Mock, Test."
+  },
+  {
+    "Name": "Broccoli",
+    "Description": "Broccoli is a fast, reliable asset pipeline, supporting constant-time rebuilds and compact build definitions."
+  },
+  {
+    "Name": "Johnny-Five",
+    "Description": "Johnny-Five is an Open Source, Firmata Protocol based, IoT and Robotics programming framework, developed by the Nodebots Community. Johnny-Five programs can be written for Arduino and more."
+  },
+  {
+    "Name": "Kalm",
+    "Description": "Kalm is a low-level socket router and middleware framework for Node.js."
+  },
+  {
+    "Name": "he",
+    "Description": "he (for \"HTML entities\") is a robust HTML entity encoder/decoder written in JavaScript. It supports all standardized named character references as per HTML, handles ambiguous ampersands and other edge cases just like a browser would, has an extensive test suite, and — contrary to many other JavaScript solutions — he handles astral Unicode symbols just fine. Apparently, it is used by 10M repositories on GitHub."
+  },
+  {
+    "Name": "PEG",
+    "Description": "PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily."
+  },
+  {
+    "Name": "Ignite",
+    "Description": "Ignite is the most popular, battle-tested React Native app boilerplate for both Expo and bare React Native. It comes with a CLI, component/model generators, and more!"
+  },
+  {
+    "Name": "Pepperoni",
+    "Description": "Pepperoni is a React Native App starter kit for Android and iOS."
+  },
+  {
+    "Name": "ZombieBox",
+    "Description": "ZombieBox is a JavaScript framework for development of Smart TV and STB applications."
+  },
+  {
+    "Name": "DIAL",
+    "Description": "DIAL - for DIscovery And Launch - is a simple protocol that second-screen devices can use to discover and launch apps on first-screen devices. Developed by Netflix and Google."
+  },
+  {
+    "Name": "MMWormhole",
+    "Description": "MMWormhole provides a simple way to pass messages between two iOS apps or between an iOS app and an iOS extension."
+  },
+  {
+    "Name": "Dopamine",
+    "Description": "Dopamine is an elegant audio player which tries to make organizing and listening to music as simple and pretty as possible. The new version is written using Electron, Angular and Typescript."
+  },
+  {
+    "Name": "foobar2000",
+    "Description": "foobar2000 is a free audio player for Windows, supports a wide range of audio formats and has a lot of cool features."
+  },
+  {
+    "Name": "Kobo",
+    "Description": "Rakuten kobo is an incredibly ugly but powerful software for ebook management and conversion."
+  },
+  {
+    "Name": "Darknet",
+    "Description": "Darknet is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation."
+  },
+  {
+    "Name": "DarkPlaces",
+    "Description": "DarkPlaces is a Quake2 engine modification. It can not easily be described, as it is simply an improved Quake."
+  },
+  {
+    "Name": "Allegro",
+    "Description": "Allegro is a cross-platform library mainly aimed at video game and multimedia programming. It handles common, low-level tasks such as creating windows, accepting user input, loading data, drawing images, playing sounds, etc."
+  },
+  {
+    "Name": "fun_with_flags",
+    "Description": "fun_with_flags is an Elixir feature flag library. Feature flags, or feature toggles, are boolean values associated to a name. They should be used to control whether some application feature is enabled or disabled, and they are meant to be modified at runtime."
+  },
+  {
+    "Name": "Igor",
+    "Description": "gor is an abstraction layer for PostgreSQL, written in Go. Igor syntax is (almost) compatible with GORM."
+  },
+  {
+    "Name": "Squirrel",
+    "Description": "Squirrel is a Go library that helps you build SQL queries."
+  },
+  {
+    "Name": "Bower",
+    "Description": "Bower is a package manager for the web. Bower runs over Git."
+  },
+  {
+    "Name": "Jam",
+    "Description": "jam is a JavaScript package manager - using a browser-focused and RequireJS compatible repository."
+  },
+  {
+    "Name": "Ender",
+    "Description": "Ender is the no-library library. It's not a jQuery replacement. It's not even a static asset. It's a tool for making the consumption of front-end JavaScript packages dead simple and incredibly powerful."
+  },
+  {
+    "Name": "Flow",
+    "Description": "Flow is a static type checker for JavaScript from Facebook."
+  },
+  {
+    "Name": "Protractor",
+    "Description": "Protractor is an end-to-end test framework for Angular and AngularJS applications. Protractor is a Node.js program built on top of WebDriverJS. Protractor runs tests against your application running in a real browser, interacting with it as a user would."
+  },
+  {
+    "Name": "Tape",
+    "Description": "tape - Tap-producing test harness for node and browsers."
+  },
+  {
+    "Name": "Preact",
+    "Description": "Preact is a fast 3kB alternative to React with the same modern API. Components & Virtual DOM."
+  },
+  {
+    "Name": "Riot",
+    "Description": "riot is a simple and elegant component-based React-like library, but with very small size."
+  },
+  {
+    "Name": "Whatsup",
+    "Description": "Whatsup is a modern frontend framework written in TypeScript with its own reactivity system and JSX components based on pure functions and generators."
+  },
+  {
+    "Name": "Cocos",
+    "Description": "Cocos is an efficient, light-weight, cross-platform, all in one 3D development engine."
+  },
+  {
+    "Name": "HANDSONTABLE",
+    "Description": "HANDSONTABLE is a JavaScript component that combines data grid features with spreadsheet-like UX. It provides data binding, data validation, filtering, sorting, and CRUD operations. HANDSONTABLE works with React, Angular, and Vue."
+  },
+  {
+    "Name": "When",
+    "Description": "When.js is a rock solid, battle-tested Promises/A+ and when() implementation, including a complete ES6 Promise shim. It's a powerful combination of small size, high performance and debuggability."
+  },
+  {
+    "Name": "Sanitize-html",
+    "Description": "sanitize-html provides a simple HTML sanitizer with a clear API for Node.js. It is well suited for cleaning up HTML fragments such as those created by CKEditor and other rich text editors. It is especially handy for removing unwanted CSS when copying and pasting from Word."
+  },
+  {
+    "Name": "Partytown",
+    "Description": "Partytown is a lazy-loaded library to help relocate resource intensive scripts into a web worker, and off of the main thread. Its goal is to help speed up sites by dedicating the main thread to your code, and offloading third-party scripts to a web worker."
+  },
+  {
+    "Name": "Mousetrap",
+    "Description": "Mousetrap is a simple library for handling keyboard shortcuts in Javascript."
+  },
+  {
+    "Name": "Shepherd",
+    "Description": "Shepherd is a JavaScript library for guiding users through your app. It uses Floating UI, another open source library, to render dialogs for each tour \"step\"."
+  },
+  {
+    "Name": "JavaGeci",
+    "Description": "Java::Geci is a library for generating Java code. You can execute code generation programs using Java::Geci to generate new source code or modify existing Java source files."
+  },
+  {
+    "Name": "Lombok",
+    "Description": "Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java. Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much more."
+  },
+  {
+    "Name": "Joda-Beans",
+    "Description": "Joda-Beans provides a small framework that adds properties to Java, greatly enhancing JavaBeans."
+  },
+  {
+    "Name": "Philadelphia",
+    "Description": "Philadelphia is a fast Financial Information Exchange (FIX) protocol library for the JVM. You can use Philadelphia to connect to stock exchanges, brokerage firms, and other network endpoints that use the FIX protocol."
+  },
+  {
+    "Name": "TwelveMonkeys",
+    "Description": "TwelveMonkeys ImageIO provides extended image file format support for the Java platform, through plugins."
+  },
+  {
+    "Name": "P6Spy",
+    "Description": "P6Spy is a framework that enables database data to be seamlessly intercepted and logged with no code changes to existing application. The P6Spy distribution includes P6Log, an application which logs all JDBC transactions for any Java application."
+  },
+  {
+    "Name": "Hamcrest",
+    "Description": "Java Hamcrest is a library of matchers, which can be combined in to create flexible expressions of intent in tests."
+  },
+  {
+    "Name": "Truth",
+    "Description": "Truth is a Java library for performing assertions in tests. Truth is owned and maintained by the Guava team. It is used in the majority of the tests in Google’s own codebase."
+  },
+  {
+    "Name": "CRaSH",
+    "Description": "The Common Reusable SHell (CRaSH) is a shell designed for extending Java programs and the Java Virtual Machine."
+  },
+  {
+    "Name": "Ratpack",
+    "Description": "Ratpack is a set of Java libraries for building scalable HTTP applications. It is a lean and powerful foundation, not an all-encompassing framework."
+  },
+  {
+    "Name": "Alcinoe",
+    "Description": "Alcinoe is a library of visual and non-visual components for Delphi."
+  },
+  {
+    "Name": "MARS-Curiosity",
+    "Description": "MARS-Curiosity is a Delphi REST library. With a pure REST approach and standard concepts in a familiar Delphi flavor (including a component based client library)."
+  },
+  {
+    "Name": "Boss",
+    "Description": "Boss is an open source dependency manager inspired by npm for projects developed in Delphi and Lazarus."
+  },
+  {
+    "Name": "Repman",
+    "Description": "Repman is a private PHP package repository manager. Add and manage private PHP Composer dependencies in cloud or behind your firewall. Dedicated integration with GitHub, GitLab and Bitbucket."
+  },
+  {
+    "Name": "phpspy",
+    "Description": "phpspy is a low-overhead sampling profiler for PHP. You can also use it to make cool flamegraphs."
+  },
+  {
+    "Name": "Phing",
+    "Description": "Phing is a PHP project build system or build tool based on Apache Ant. You can do anything with it that you could do with a traditional build system like GNU make."
+  },
+  {
+    "Name": "Money",
+    "Description": "Money is a PHP library to make working with money safer, easier, and fun! \"If I had a dime for every time I've seen someone use FLOAT to store currency, I'd have $999.997634\""
+  },
+  {
+    "Name": "Brick\\Money",
+    "Description": "Brick\\Money is a money and currency library for PHP"
+  },
+  {
+    "Name": "Jigsaw",
+    "Description": "Jigsaw is a framework for rapidly building static sites using Laravel Blade. Don't build a whole backend just for one stupid form."
+  },
+  {
+    "Name": "Shiki",
+    "Description": "Shiki is a beautiful syntax highlighter. Shiki uses TextMate grammar's to tokenize strings, and colors the tokens via VS Code themes. In short, Shiki generates HTML that looks exactly like your code in VS Code, and it works great in your static website generator (or your dynamic website)."
+  },
+  {
+    "Name": "Bref",
+    "Description": "Bref is a framework to run PHP applications on AWS Lambda. It is a PHP port of the Serverless Framework."
+  },
+  {
+    "Name": "uvicorn",
+    "Description": "uvicorn is a lightning-fast ASGI server implementation for Python, using uvloop and httptools."
+  },
+  {
+    "Name": "Dejavu",
+    "Description": "Dejavu is an audio fingerprinting and recognition algorithm implemented in Python."
+  },
+  {
+    "Name": "Mingus",
+    "Description": "Mingus is a music package for Python used by programmers, musicians, composers and researchers to make and analyse music."
+  },
+  {
+    "Name": "Seaborn",
+    "Description": "Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics."
+  },
+  {
+    "Name": "You-Get",
+    "Description": "You-Get is a tiny command-line utility to download media contents (videos, audios, images) from the Web, in case there is no other handy way to do it."
+  },
+  {
+    "Name": "Beautiful Soup",
+    "Description": "Beautiful Soup is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree."
+  },
+  {
+    "Name": "Grumpy",
+    "Description": "Grumpy is a Python to Go source code transcompiler and runtime that is intended to be a near drop-in replacement for CPython 2.7."
+  },
+  {
+    "Name": "Prefect",
+    "Description": "Prefect is a modern workflow orchestration framework for Python that makes it easy to build, schedule and monitor robust data pipelines."
+  },
+  {
+    "Name": "NAPALM",
+    "Description": "NAPALM (Network Automation and Programmability Abstraction Layer with Multivendor support) is a Python library that implements a set of functions to interact with different router vendor devices using a unified API."
+  },
+  {
+    "Name": "Plan",
+    "Description": "Plan is a Python package for writing and deploying cron jobs. Plan will convert Python code to cron syntax."
+  },
+  {
+    "Name": "Doit",
+    "Description": "Doit is a Python task runner and build tool."
+  },
+  {
+    "Name": "Gym",
+    "Description": "Gym is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API."
+  },
+  {
+    "Name": "Gymnasium",
+    "Description": "Gymnasium is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API. This is a fork of OpenAI's Gym."
+  },
+  {
+    "Name": "NLTK",
+    "Description": "NLTK -- the Natural Language Toolkit -- is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing."
+  },
+  {
+    "Name": "Fsociety",
+    "Description": "Fsociety is a Penetration Testing Framework which contains all the tools used in the Mr. Robot series."
+  },
+  {
+    "Name": "Sarge",
+    "Description": "Sarge is yet another wrapper for Python's subprocess."
+  },
+  {
+    "Name": "Bicycle Repair Man",
+    "Description": "The Bicycle Repair Man project is an attempt to create refactoring browser functionality for Python. It is packaged as a library that can be added to IDEs and editors to provide refactoring capabilities."
+  },
+  {
+    "Name": "hug",
+    "Description": "hug aims to make developing Python driven APIs as simple as possible, but no simpler. As a result, it drastically simplifies Python API development."
+  },
+  {
+    "Name": "Karate Club",
+    "Description": "Karate Club is an API oriented open-source Python framework for unsupervised machine learning on graphs."
+  },
+  {
+    "Name": "Biopython",
+    "Description": "Biopython is a set of freely available tools for biological computation written in Python by an international team of developers. It is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics."
+  },
+  {
+    "Name": "Genshi",
+    "Description": "Genshi is a Python library that provides an integrated set of components for parsing, generating, and processing HTML, XML or other textual content for output generation on the web."
+  },
+  {
+    "Name": "Tornado",
+    "Description": "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
+  },
+  {
+    "Name": "Autobahn",
+    "Description": "Autobahn provides an open-source implementations of the Web Application Messaging Protocol (WAMP) for a range of languages (as well as the industry-standard WebSocket test suite)."
+  },
+  {
+    "Name": "Impressionist",
+    "Description": "Impressionist is a Rails plugin that tracks impressions and page views."
+  },
+  {
+    "Name": "Ahoy",
+    "Description": "Ahoy is a simple, powerful, first-party analytics for Rails. Tracks visits and events in Ruby, JavaScript, and native apps."
+  },
+  {
+    "Name": "Avo",
+    "Description": "Avo is a Ruby on Rails application building framework."
+  },
+  {
+    "Name": "Blanket",
+    "Description": "Blanket is a dead simple API wrapper for Ruby."
+  },
+  {
+    "Name": "Crepe",
+    "Description": "Crepe is a lightweight API framework designed to help you write clean, fast web services in Ruby."
+  },
+  {
+    "Name": "CanCanCan",
+    "Description": "CanCanCan is an authorization library for Ruby and Ruby on Rails which restricts what resources a given user is allowed to access. It is the continuation of CanCan."
+  },
+  {
+    "Name": "Danger",
+    "Description": "Danger runs after your CI, automating your team's conventions surrounding code review. This provides another logical step in your process, through which Danger can help lint your rote tasks in daily code review."
+  },
+  {
+    "Name": "Thor",
+    "Description": "Thor is a toolkit for building powerful command-line interfaces. It is used in Bundler, Vagrant, Rails and others."
+  },
+  {
+    "Name": "Arti",
+    "Description": "Arti is an implementation of Tor, in Rust."
+  },
+  {
+    "Name": "Cherrybomb",
+    "Description": "Cherrybomb is a CLI tool that helps you avoid undefined user behavior by validating your API specifications and running API security tests."
+  },
+  {
+    "Name": "Dust",
+    "Description": "u + rust = dust. Like du but more intuitive. Why? Because I want an easy way to see where my disk is being used."
+  },
+  {
+    "Name": "Pigz",
+    "Description": "pigz, which stands for Parallel Implementation of GZip, is a fully functional replacement for gzip that exploits multiple processors and multiple cores to the hilt when compressing data."
+  },
+  {
+    "Name": "Crabz",
+    "Description": "Like pigz, but rust. A cross platform, fast, compression and decompression tool."
+  },
+  {
+    "Name": "Human-panic",
+    "Description": "Human-panic provides a human-friendly panic message for Rust programs. println!(\"A normal log message\"); panic!(\"OMG EVERYTHING IS ON FIRE!!!\")"
+  },
+  {
+    "Name": "Chill",
+    "Description": "Chill is a client-side CouchDB library for the Rust programming language."
+  },
+  {
+    "Name": "STOMP",
+    "Description": "STOMP is the Simple (or Streaming) Text Orientated Messaging Protocol. STOMP provides an interoperable wire format so that STOMP clients can communicate with any STOMP message broker to provide easy and widespread messaging interoperability among many languages, platforms and brokers."
+  },
+  {
+    "Name": "Horrorshow",
+    "Description": "Horrorshow is a macro-based html templating library, compatible with stable rust."
+  },
+  {
+    "Name": "Gotham ",
+    "Description": "Gotham is a flexible web framework that promotes stability, safety, security and speed. It targets stable Rust."
+  },
+  {
+    "Name": "Morpheus",
+    "Description": "Morpheus is a reactive type-safe Scala driver for SQL databases."
+  },
+  {
+    "Name": "Phantom",
+    "Description": "Phantom is a reactive type-safe Scala driver for Apache Cassandra/Datastax Enterprise."
+  },
+  {
+    "Name": "Pushka",
+    "Description": "Pushka is a serialization library implemented without any runtime reflection. It created to reach well human readability of output JSON and good performance. Pushka works well both on Scala and Scala.js."
+  },
+  {
+    "Name": "Vegas",
+    "Description": "Vegas aims to be the missing MatPlotLib for the Scala and Spark world."
+  },
+  {
+    "Name": "Lagom",
+    "Description": "Lagom is a lightbend framework for building reactive microservices in Java or Scala."
+  },
+  {
+    "Name": "Cats",
+    "Description": "Cats is a library which provides abstractions for functional programming in the Scala programming language."
+  },
+  {
+    "Name": "Ammonite",
+    "Description": "Ammonite lets you use the Scala language for scripting purposes."
+  },
+  {
+    "Name": "Hamsters",
+    "Description": "Hamsters is a mini Scala utility library. Compatible with functional programming beginners. For the JVM and Scala.js."
+  },
+  {
+    "Name": "Reboot",
+    "Description": "Reboot is a Scala wrapper for the Java AsyncHttpClient."
+  },
+  {
+    "Name": "JSONNeverDie",
+    "Description": "JSONNeverDie is an auto reflection tool from JSON to Model, a user friendly JSON encoder / decoder, aims to never die. Also JSONNeverDie is a very important part of Pitaya."
+  },
+  {
+    "Name": "Thingy",
+    "Description": "Thingy is a modern device detection and querying library for Swift."
+  },
+  {
+    "Name": "fff",
+    "Description": "fff is a micro-framework for creating fake C functions for tests. Because life is too short to spend time hand-writing fake functions for testing."
+  },
+  {
+    "Name": "Yue",
+    "Description": "Yue is a library for creating native cross-platform GUI apps in C++, Lua, and JavaScript."
+  },
+  {
+    "Name": "Nuklear",
+    "Description": "Nuklear is a minimal-state, immediate-mode graphical user interface toolkit written in ANSI C."
+  },
+  {
+    "Name": "Assimp",
+    "Description": "Assimp is a library to import and export various 3d-model-formats including scene-post-processing to generate missing render data. APIs are provided for C and C++."
+  },
+  {
+    "Name": "Blackhole",
+    "Description": "Blackhole is yet another logging library for C++. Blackhole is an attribute-based logger with strong focus on gaining maximum performance as possible for such kind of loggers."
+  },
+  {
+    "Name": "Seasocks",
+    "Description": "Seasocks is a tiny embeddable C++ HTTP and WebSocket server."
+  },
+  {
+    "Name": "WAFer",
+    "Description": "WAFer is a C language-based ultra-light scalable server-side web applications framework. Think node.js for C programmers."
+  },
+  {
+    "Name": "InterviewBit",
+    "Description": "InterviewBit is a simple and easy to use online C++ compiler."
+  },
+  {
+    "Name": "Nebular",
+    "Description": "Nebular is a customizable Angular 10 UI Library with a focus on beautiful design and ability to adapt it to your brand easily."
+  },
+  {
+    "Name": "Mensch",
+    "Description": "Mensch is a decent CSS parser."
+  },
+  {
+    "Name": "Susy",
+    "Description": "Susy was a responsive layout engine for Sass, before flexbox and CSS grid were available."
+  },
+  {
+    "Name": "PIE",
+    "Description": "PIE allows Internet Explorer to recognize and render various CSS3 box decoration properties."
+  },
+  {
+    "Name": "REVENGE.CSS",
+    "Description": "REVENGE.CSS is a CSS bookmarklet that uses selectors to find bad markup, displaying ugly pink error messages in comic sans serif wherever you write bad HTML."
+  },
+  {
+    "Name": "Natural Selection",
+    "Description": "Natural Selection is a CSS framework without any styling at all. It is just a collection of selectors that can be used to define global styles. Natural Selection aims to provide a best-practice CSS boilerplate that can be used to start projects"
+  },
+  {
+    "Name": "Mailchimp",
+    "Description": "Mailchimp is a marketing automation platform and an email marketing service."
+  },
+  {
+    "Name": "Campaign Monitor",
+    "Description": "Campaign Monitor is a straightforward email marketing tool that enables marketers to send beautiful and personalized emails."
+  },
+  {
+    "Name": "Reacher",
+    "Description": "Reacher is an open-source email verification API. Check if an email address exists without sending any email, written in Rust."
+  },
+  {
+    "Name": "Phaser",
+    "Description": "Phaser is a fast, free, and fun open source HTML5 game framework that offers WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and native apps by using 3rd party tools. You can use JavaScript or TypeScript for development."
+  },
+  {
+    "Name": "stickUp",
+    "Description": "stickUp is a simple jQuery plugin that allows you to \"stick\" any element to the top of the page when the user scrolls past it."
+  },
+  {
+    "Name": "SjTP",
+    "Description": "Stupid jQuery Table Sort is a JQuery table sorting plugin. Nothing fancy, nothing really impressive. Overall, stupidly simple."
+  },
+  {
+    "Name": "Morris",
+    "Description": "Morris.js is a library of pretty time-series line graphs. It's a very simple API for drawing line, bar, area and donut charts."
+  },
+  {
+    "Name": "Vountdown",
+    "Description": "Vountdown is a minimalist countdown component for vue.js."
+  },
+  {
+    "Name": "Rocker",
+    "Description": "Rocker is an extended Dockerfile builder by Grammarly. Supports multiple FROMs, MOUNTS, templates, etc. Rocker breaks the limits of Dockerfile."
+  },
+  {
+    "Name": "Plash",
+    "Description": "Plash is a container run and build engine - runs inside docker."
+  },
+  {
+    "Name": "SwarmAlert",
+    "Description": "The SwarmAlert app monitors the availability of services running in a Docker Swarm environment."
+  },
+  {
+    "Name": "Zabbix",
+    "Description": "Zabbix is an enterprise-class open source distributed monitoring solution for networks and applications."
+  },
+  {
+    "Name": "Netshoot",
+    "Description": "Netshoot is a Docker + Kubernetes network trouble-shooting swiss-army container."
+  },
+  {
+    "Name": "Dokku",
+    "Description": "Dokku is a Docker powered mini-Heroku. The smallest PaaS implementation you've ever seen."
+  },
+  {
+    "Name": "Traefik",
+    "Description": "Traefik (pronounced traffic) is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, ...) and configures itself automatically and dynamically."
+  },
+  {
+    "Name": "Admiral",
+    "Description": "Admiral is a highly scalable and very lightweight Container Management platform for deploying and managing container based applications."
+  },
+  {
+    "Name": "Nim",
+    "Description": "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula."
+  }
+]

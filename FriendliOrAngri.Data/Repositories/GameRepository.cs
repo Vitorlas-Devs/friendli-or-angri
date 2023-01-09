@@ -1,6 +1,7 @@
 ﻿using FriendliOrAngri.WebAPI.Data.Enums;
 using FriendliOrAngri.WebAPI.Data.Models;
 using MongoDB.Driver;
+using System.Text.Json;
 
 namespace FriendliOrAngri.WebAPI.Data.Repositories;
 
@@ -21,7 +22,7 @@ public class GameRepository
 
     public void CreateNewGame(string userToken, GameMode gameMode)
     {
-        if (!this.users.AsQueryable().Any(u => u.Token == userToken))
+        if (IsValidToken(userToken))
             throw new ArgumentException("Nincs ilyen token-ű felhassználó!");
 
         this.games.DeleteMany(g => g.UserToken == userToken);
@@ -34,8 +35,6 @@ public class GameRepository
                 break;
             case GameMode.Hardcore:
                 livesLeft = 1;
-                break;
-            default:
                 break;
         }
 
@@ -51,4 +50,66 @@ public class GameRepository
 
         this.games.InsertOne(newGame);
     }
+
+    public GameModel GetSoftware(string userToken)
+    {
+        if (IsValidToken(userToken))
+            throw new ArgumentException(
+                "Nincs ilyen token-ű felhassználó!");
+
+        GameModel game = this.games.AsQueryable()
+            .SingleOrDefault(g => g.UserToken == userToken);
+
+        if (game is null)
+            throw new MissingMemberException
+                ("Nincs játék létrehozva! Missing `CreateNewGame`?");
+
+        SoftwareModel software;
+        do software = GetRandomSoftware();
+        while (game.LastSoftwares.Any(s => s.Name == software.Name));
+
+        game.CurrentSoftware = software;
+        game.LastSoftwares.Add(software);
+        int uniqueLimit = 0;
+        switch (game.GameMode)
+        {
+            case GameMode.Normal:
+                uniqueLimit = 100;
+                break;
+            case GameMode.Hardcore:
+                uniqueLimit = 200;
+                break;
+        }
+        if (game.LastSoftwares.Count > uniqueLimit)
+            game.LastSoftwares.RemoveAt(0);
+
+        games.InsertOne(game);
+
+        game.CurrentSoftware.Description = null;
+        game.CurrentSoftware.IsFriendli = false;
+        game.LastSoftwares = new();
+
+        return game;
+    }
+
+    private SoftwareModel GetRandomSoftware()
+    {
+        Random r = new Random();
+        bool isFriendli = r.Next(0, 2) == 1;
+        string fileName = "angri.json";
+        if (isFriendli)
+            fileName = "frendli.json";
+
+        List<SoftwareModel> softwares = JsonSerializer
+            .Deserialize<List<SoftwareModel>>(
+                File.ReadAllText(fileName));
+
+        SoftwareModel software = softwares[r.Next(0, softwares.Count - 1)];
+        software.IsFriendli = isFriendli;
+
+        return software;
+    }
+
+    private bool IsValidToken(string token) =>
+        !this.users.AsQueryable().Any(u => u.Token == token);
 }
