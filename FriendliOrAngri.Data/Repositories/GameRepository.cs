@@ -96,9 +96,9 @@ public class GameRepository
     {
         Random r = new Random();
         bool isFriendli = r.Next(0, 2) == 1;
-        string fileName = "angri.json";
+        string fileName = "data_angri.json";
         if (isFriendli)
-            fileName = "frendli.json";
+            fileName = "data_friendli.json";
 
         List<SoftwareModel> softwares = JsonSerializer
             .Deserialize<List<SoftwareModel>>(
