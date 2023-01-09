@@ -17,7 +17,6 @@ public static class MauiProgram
             })
             .UseMauiCommunityToolkit()
             .Services.AddSingleton<Database>()
-            .AddTransient<MainPage>()
             .AddTransient<Database>();
 
         return builder.Build();

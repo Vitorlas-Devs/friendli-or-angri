@@ -2,55 +2,47 @@
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace FriendliOrAngri
 {
     public class Database
     {
-        SQLiteAsyncConnection database;
+        readonly SQLiteAsyncConnection connection;
 
-        public Database()
+        public Database(string dbPath)
         {
-            database = new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
-            database.CreateTableAsync<UserModel>().Wait();
+            connection = new SQLiteAsyncConnection(dbPath);
+            connection.CreateTableAsync<UserModel>().Wait();
         }
 
-        public Task<List<UserModel>> GetItemsAsync()
+        public async Task<UserModel> GetUserAsync()
         {
-            return database.Table<UserModel>().ToListAsync();
+            return await connection.Table<UserModel>().FirstOrDefaultAsync();
         }
 
-        public Task<UserModel> GetItemAsync(int id)
+        public async Task<int> SaveUserAsync(UserModel user)
         {
-            return database.Table<UserModel>().Where(i => i.Id == id).FirstOrDefaultAsync();
-        }
-
-        public Task<int> SaveItemAsync(UserModel item)
-        {
-            if (item.Id != 0)
+            if (user.Id != 0)
             {
-                return database.UpdateAsync(item);
+                return await connection.UpdateAsync(user);
             }
             else
             {
-                return database.InsertAsync(item);
+                return await connection.InsertAsync(user);
             }
         }
 
-        public Task<int> DeleteItemAsync(UserModel item)
+        public async void DeleteDataAsync()
         {
-            return database.DeleteAsync(item);
+            await connection.DropTableAsync<UserModel>();
+            await connection.CreateTableAsync<UserModel>();
         }
 
-        public Task<int> DeleteAllItemsAsync()
-        {
-            return database.DeleteAllAsync<UserModel>();
-        }
 
-        public Task<UserModel> GetUserByToken(string token) =>
-            database.Table<UserModel>().Where(u => u.Token == token).FirstOrDefaultAsync();
     }
 }
