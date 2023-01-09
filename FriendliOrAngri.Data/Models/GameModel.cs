@@ -6,7 +6,7 @@ namespace FriendliOrAngri.WebAPI.Data.Models;
 public class GameModel
 {
     [BsonId]
-    public string Token { get; set; }
+    public string UserToken { get; set; }
     public GameMode GameMode { get; set; }
     public byte LivesLeft { get; set; }
     public DateTime Date { get; set; }
