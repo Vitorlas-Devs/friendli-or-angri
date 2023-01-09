@@ -9,7 +9,6 @@ public class GameRepository
 {
     protected readonly MongoClient dbClient;
     private IMongoCollection<GameModel> games;
-    private IMongoCollection<UserModel> users;
 
     protected IMongoDatabase database => dbClient.GetDatabase("friendliOrAngri");
 
@@ -17,13 +16,12 @@ public class GameRepository
     {
         this.dbClient = new("mongodb://localhost:27017");
         this.games = this.database.GetCollection<GameModel>("games");
-        this.users = this.database.GetCollection<UserModel>("users");
     }
 
     public void CreateNewGame(string userToken, GameMode gameMode)
     {
-        if (IsValidToken(userToken))
-            throw new ArgumentException("Nincs ilyen token-ű felhassználó!");
+        if (!IsValidToken(userToken))
+            throw new MissingMemberException("Nincs ilyen token-ű felhassználó!");
 
         this.games.DeleteMany(g => g.UserToken == userToken);
 
@@ -53,8 +51,8 @@ public class GameRepository
 
     public GameModel GetSoftware(string userToken)
     {
-        if (IsValidToken(userToken))
-            throw new ArgumentException(
+        if (!IsValidToken(userToken))
+            throw new MissingMemberException(
                 "Nincs ilyen token-ű felhassználó!");
 
         GameModel game = this.games.AsQueryable()
@@ -64,24 +62,30 @@ public class GameRepository
             throw new MissingMemberException
                 ("Nincs játék létrehozva! Missing `CreateNewGame`?");
 
-        SoftwareModel software;
-        do software = GetRandomSoftware();
-        while (game.LastSoftwares.Any(s => s.Name == software.Name));
-
-        game.CurrentSoftware = software;
-        game.LastSoftwares.Add(software);
+        byte answerTime = 0;
         int uniqueLimit = 0;
         switch (game.GameMode)
         {
             case GameMode.Normal:
+                answerTime = 15;
                 uniqueLimit = 100;
                 break;
             case GameMode.Hardcore:
+                answerTime = 5;
                 uniqueLimit = 200;
                 break;
         }
-        if (game.LastSoftwares.Count > uniqueLimit)
-            game.LastSoftwares.RemoveAt(0);
+
+        game.Date = DateTime.Now.AddSeconds(answerTime);
+
+        SoftwareModel software;
+        do software = GetRandomSoftware();
+        while (game.LastSoftwares
+            .Take(uniqueLimit)
+            .Any(s => s.Name == software.Name));
+
+        game.CurrentSoftware = software;
+        game.LastSoftwares.Insert(0, software);
 
         games.InsertOne(game);
 
@@ -110,6 +114,47 @@ public class GameRepository
         return software;
     }
 
+    public GameModel Guess(string userToken, bool isFriendli)
+    {
+        if (!IsValidToken(userToken))
+            throw new MissingMemberException(
+                "Nincs ilyen token-ű felhassználó!");
+
+        GameModel game = this.games.AsQueryable()
+            .SingleOrDefault(g => g.UserToken == userToken);
+
+        if (game is null)
+            throw new MissingMemberException
+                ("Nincs játék létrehozva! Missing `CreateNewGame`?");
+
+        if (game.Date < DateTime.Now ||
+            game.CurrentSoftware.IsFriendli != isFriendli)
+            game.LivesLeft--;
+
+        game.CurrentSoftware = null;
+
+        if (game.LivesLeft == 0)
+        {
+            UserRepository userRepository = new UserRepository();
+            UserModel user = userRepository.GetUserByToken(userToken);
+            ScoreModel score = new()
+            {
+                Score = game.LastSoftwares.Count,
+                GameMode = game.GameMode,
+                Date = DateTime.Now
+            };
+            user.Scores.Add(score);
+
+            userRepository.Update(user);
+            Delete(userToken);
+        }
+
+        return game;
+    }
+
     private bool IsValidToken(string token) =>
-        !this.users.AsQueryable().Any(u => u.Token == token);
+        new UserRepository().GetUserByToken(token) != null;
+
+    public void Delete(string token) =>
+        this.games.DeleteOne(g => g.UserToken == token);
 }

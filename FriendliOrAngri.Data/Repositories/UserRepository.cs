@@ -57,6 +57,9 @@ public class UserRepository
         return model;
     }
 
+    public void Update(UserModel user) =>
+        this.users.ReplaceOne(c => c.Token == user.Token, user);
+
     public void Delete(string userName, int id) =>
         this.users.DeleteOne(u => u.Name == userName && u.Id == id);
 }
