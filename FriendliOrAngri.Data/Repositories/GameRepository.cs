@@ -76,7 +76,9 @@ public class GameRepository
                 break;
         }
 
-        game.Date = DateTime.Now.AddSeconds(answerTime);
+        game.Date = DateTime.Now
+            .ToUniversalTime()
+            .AddSeconds(answerTime);
 
         SoftwareModel software;
         do software = GetRandomSoftware();
@@ -87,7 +89,7 @@ public class GameRepository
         game.CurrentSoftware = software;
         game.LastSoftwares.Insert(0, software);
 
-        games.InsertOne(game);
+        games.ReplaceOne(g => g.UserToken == game.UserToken, game);
 
         game.CurrentSoftware.Description = null;
         game.CurrentSoftware.IsFriendli = false;
@@ -100,9 +102,9 @@ public class GameRepository
     {
         Random r = new Random();
         bool isFriendli = r.Next(0, 2) == 1;
-        string fileName = "data_angri.json";
+        string fileName = "Resources/Raw/data_angri.json";
         if (isFriendli)
-            fileName = "data_friendli.json";
+            fileName = "Resources/Raw/data_friendli.json";
 
         List<SoftwareModel> softwares = JsonSerializer
             .Deserialize<List<SoftwareModel>>(
@@ -127,9 +129,13 @@ public class GameRepository
             throw new MissingMemberException
                 ("Nincs játék létrehozva! Missing `CreateNewGame`?");
 
-        if (game.Date < DateTime.Now ||
-            game.CurrentSoftware.IsFriendli != isFriendli)
+        bool isLate = game.Date < DateTime.Now.ToUniversalTime();
+        bool isCorrect = game.CurrentSoftware.IsFriendli == isFriendli;
+
+        if (isLate || !isCorrect)
             game.LivesLeft--;
+        else
+            game.Score++;
 
         game.CurrentSoftware = null;
 
@@ -139,7 +145,7 @@ public class GameRepository
             UserModel user = userRepository.GetUserByToken(userToken);
             ScoreModel score = new()
             {
-                Score = game.LastSoftwares.Count,
+                Score = game.Score,
                 GameMode = game.GameMode,
                 Date = DateTime.Now
             };
@@ -149,6 +155,7 @@ public class GameRepository
             Delete(userToken);
         }
 
+        this.games.ReplaceOne(g => g.UserToken == game.UserToken, game);
         return game;
     }
 

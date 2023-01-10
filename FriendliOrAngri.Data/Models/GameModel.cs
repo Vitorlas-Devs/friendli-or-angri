@@ -7,6 +7,7 @@ public class GameModel
 {
     [BsonId]
     public string UserToken { get; set; }
+    public int Score { get; set; }
     public GameMode GameMode { get; set; }
     public byte LivesLeft { get; set; }
     public DateTime Date { get; set; }

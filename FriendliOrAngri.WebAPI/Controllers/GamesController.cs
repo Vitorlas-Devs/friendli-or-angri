@@ -57,12 +57,12 @@ namespace FriendliOrAngri.WebAPI.Controllers
             });
 
         [HttpPut]
-        public IActionResult Guess(string userToken, bool isFriendli) =>
+        public IActionResult Guess(string userToken, string isFriendli) =>
             this.Run(() =>
             {
                 try
                 {
-                    return Ok(this.gameRepository.Guess(userToken, isFriendli));
+                    return Ok(this.gameRepository.Guess(userToken, bool.Parse(isFriendli)));
                 }
                 catch (MissingMemberException e)
                 {
