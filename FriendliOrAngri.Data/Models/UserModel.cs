@@ -1,5 +1,4 @@
-﻿using FriendliOrAngri.WebAPI.Data.Models;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson.Serialization.Attributes;
 
 namespace FriendliOrAngri.WebAPI.Data.Models;
 
