@@ -115,7 +115,7 @@ public partial class PlayPage : ContentPage
         hslBlackHearts.Clear();
         for (int i = 0; i < maxHeartsCount; i++)
         {
-            hslHearts.Children.Add(new Label() { Text = "❤️", FontSize = 20});
+            hslHearts.Children.Add(new Label() { Text = "❤️", FontSize = 25});
         }
         hearts = maxHeartsCount;
     }
@@ -126,17 +126,12 @@ public partial class PlayPage : ContentPage
         {
             hearts--;
             hslHearts.Children.RemoveAt(hslHearts.Children.Count - 1);
-            hslBlackHearts.Children.Add(new Label() { Text = "🖤", FontSize = 20 });
+            hslBlackHearts.Children.Add(new Label() { Text = "🖤", FontSize = 25 });
         }
 
         if (hearts == 0)
         {
-            lbHearts.Text = "Game over ";
             GameOver();
-        }
-        else
-        {
-            lbHearts.Text = "Life: ";
         }
     }
 
