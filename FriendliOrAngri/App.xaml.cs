@@ -10,7 +10,7 @@ public partial class App : Application
         {
             if (database == null)
             {
-                database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MyData.db3"));
+                database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "FriendliOrAngri.db3"));
             }
             return database;
         }

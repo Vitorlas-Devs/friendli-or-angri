@@ -28,14 +28,15 @@ namespace FriendliOrAngri
 
         public async Task<int> SaveUserAsync(AltUserModel user)
         {
-            if (user.Id != 0)
-            {
-                return await connection.UpdateAsync(user);
-            }
-            else
+            if (user.Id == 1)
             {
                 return await connection.InsertAsync(user);
             }
+            else
+            {
+                return await connection.UpdateAsync(user);
+            }
+           
         }
 
         public async void DeleteDataAsync()

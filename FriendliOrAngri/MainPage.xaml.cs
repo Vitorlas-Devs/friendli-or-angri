@@ -1,6 +1,4 @@
 ﻿using System.Collections.ObjectModel;
-using System.Text.Json;
-using System.Text.Json.Nodes;
 using System.Windows.Input;
 using System.Xml.Linq;
 using FriendliOrAngri;
@@ -9,6 +7,7 @@ using CommunityToolkit.Maui.Alerts;
 using System.Threading.Tasks;
 using CommunityToolkit.Maui.Core;
 using FriendliOrAngri.Models;
+using Newtonsoft.Json;
 
 namespace FriendliOrAngri;
 
@@ -27,6 +26,23 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         VerifyUserAsync();
+        //ShowDialogAsync();
+    }
+
+    private async void ShowDialogAsync()
+    {
+
+        string result = await App.Current.MainPage.DisplayPromptAsync("Question 1", "What's your name?");
+
+        // OK
+        if (result != null)
+        {
+            await DisplayAlert("Alert", "User created!", "OK");
+        }
+        else
+        {
+            await DisplayAlert("Alert", "User not created!", "OK");
+        }
     }
 
     public async void VerifyUserAsync()
@@ -34,17 +50,17 @@ public partial class MainPage : ContentPage
         HttpClient client = new();
         if (await database.GetUserAsync() == null)
         {
-            string userName = await DisplayPromptAsync("Register", "What's your name?");
-            var response = await client.PostAsync($"http://localhost:5124/api/Users?userName={userName}", null);
+            string userName = await App.Current.MainPage.DisplayPromptAsync("Register", "What's your name?");
+            var response = await client.PostAsync($"http://localhost:5124/api/Users?userName={userName}", null); //ÍRD ÁT SAJÁT IP-RE!!!!!!!!!
             string userString = await response.Content.ReadAsStringAsync();
-            AltUserModel user = JsonSerializer.Deserialize<AltUserModel>(userString);
+            AltUserModel user = JsonConvert.DeserializeObject<AltUserModel>(userString);
             await database.SaveUserAsync(user);
             User = user;
             await ShowToast();
         }
         else
         {
-            User = database.GetUserAsync().Result;
+            User = await database.GetUserAsync();
             await ShowToast();
         }
     }
