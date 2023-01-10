@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Views;
 using System.Reflection;
 using System.Text.Json;
 
@@ -135,6 +136,7 @@ public partial class PlayPage : ContentPage
     {
         btnNext.Text = "Continue";
         btnNext.IsVisible = true;
+        this.ShowPopup(new GameOverPopUp());
     }
 
     private void ResetHeartLevel()
