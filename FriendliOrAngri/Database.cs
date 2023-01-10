@@ -1,4 +1,5 @@
-﻿using FriendliOrAngri.WebAPI.Data.Models;
+﻿using FriendliOrAngri.Models;
+using FriendliOrAngri.WebAPI.Data.Models;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -17,15 +18,15 @@ namespace FriendliOrAngri
         public Database(string dbPath)
         {
             connection = new SQLiteAsyncConnection(dbPath);
-            //connection.CreateTableAsync<UserModel>().Wait();
+            connection.CreateTableAsync<UserModel>().Wait();
         }
 
-        public async Task<UserModel> GetUserAsync()
+        public async Task<AltUserModel> GetUserAsync()
         {
-            return await connection.Table<UserModel>().FirstOrDefaultAsync();
+            return await connection.Table<AltUserModel>().FirstOrDefaultAsync();
         }
 
-        public async Task<int> SaveUserAsync(UserModel user)
+        public async Task<int> SaveUserAsync(AltUserModel user)
         {
             if (user.Id != 0)
             {
@@ -39,8 +40,8 @@ namespace FriendliOrAngri
 
         public async void DeleteDataAsync()
         {
-            await connection.DropTableAsync<UserModel>();
-            await connection.CreateTableAsync<UserModel>();
+            await connection.DropTableAsync<AltUserModel>();
+            await connection.CreateTableAsync<AltUserModel>();
         }
 
 

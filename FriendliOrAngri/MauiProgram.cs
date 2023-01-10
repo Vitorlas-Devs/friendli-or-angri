@@ -15,9 +15,10 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 fonts.AddFont("fa_solid.ttf", "FontAwesome");
             })
-            .UseMauiCommunityToolkit()
-            .Services.AddSingleton<Database>()
-            .AddTransient<Database>();
+            .UseMauiCommunityToolkit();
+        // no idea found these in the microsoft docs
+        //.Services.AddSingleton<Database>()
+        //.AddTransient<Database>();
 
         return builder.Build();
     }

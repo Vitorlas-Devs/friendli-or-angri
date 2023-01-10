@@ -8,6 +8,7 @@ using FriendliOrAngri.WebAPI.Data.Models;
 using CommunityToolkit.Maui.Alerts;
 using System.Threading.Tasks;
 using CommunityToolkit.Maui.Core;
+using FriendliOrAngri.Models;
 
 namespace FriendliOrAngri;
 
@@ -20,7 +21,7 @@ public class PageModel
 public partial class MainPage : ContentPage
 {
     Database database = App.Database;
-    UserModel User;
+    AltUserModel User;
 
     public MainPage()
     {
@@ -36,7 +37,7 @@ public partial class MainPage : ContentPage
             string result = await DisplayPromptAsync("Register", "What's your name?");
             var response = await client.PostAsync($"http://localhost:5124/api/Users?userName={result}", null);
             string userString = await response.Content.ReadAsStringAsync();
-            UserModel user = JsonSerializer.Deserialize<UserModel>(userString);
+            AltUserModel user = JsonSerializer.Deserialize<AltUserModel>(userString);
             await database.SaveUserAsync(user);
             User = user;
             await ShowToast();
