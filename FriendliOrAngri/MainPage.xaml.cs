@@ -26,23 +26,6 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         VerifyUserAsync();
-        //ShowDialogAsync();
-    }
-
-    private async void ShowDialogAsync()
-    {
-
-        string result = await App.Current.MainPage.DisplayPromptAsync("Question 1", "What's your name?");
-
-        // OK
-        if (result != null)
-        {
-            await DisplayAlert("Alert", "User created!", "OK");
-        }
-        else
-        {
-            await DisplayAlert("Alert", "User not created!", "OK");
-        }
     }
 
     public async void VerifyUserAsync()
