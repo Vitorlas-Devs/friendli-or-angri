@@ -34,7 +34,8 @@ public partial class MainPage : ContentPage
         HttpClient client = new();
         if (await database.GetUserAsync() == null)
         {
-            string userName = await DisplayPromptAsync("Register", "What's your name?");
+            string userName = await App.Current.MainPage.DisplayPromptAsync("Register", "What's your name?");
+            //string userName = "gello";
             var response = await client.PostAsync($"http://localhost:5124/api/Users?userName={userName}", null);
             string userString = await response.Content.ReadAsStringAsync();
             AltUserModel user = JsonSerializer.Deserialize<AltUserModel>(userString);
