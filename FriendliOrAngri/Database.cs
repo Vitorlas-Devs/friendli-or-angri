@@ -17,7 +17,7 @@ namespace FriendliOrAngri
         public Database(string dbPath)
         {
             connection = new SQLiteAsyncConnection(dbPath);
-            connection.CreateTableAsync<UserModel>().Wait();
+            //connection.CreateTableAsync<UserModel>().Wait();
         }
 
         public async Task<UserModel> GetUserAsync()
