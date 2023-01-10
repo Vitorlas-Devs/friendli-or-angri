@@ -32,10 +32,10 @@ public partial class MainPage : ContentPage
     public async void VerifyUserAsync()
     {
         HttpClient client = new();
-        if (database.GetUserAsync() == null)
+        if (await database.GetUserAsync() == null)
         {
-            string result = await DisplayPromptAsync("Register", "What's your name?");
-            var response = await client.PostAsync($"http://localhost:5124/api/Users?userName={result}", null);
+            string userName = await DisplayPromptAsync("Register", "What's your name?");
+            var response = await client.PostAsync($"http://localhost:5124/api/Users?userName={userName}", null);
             string userString = await response.Content.ReadAsStringAsync();
             AltUserModel user = JsonSerializer.Deserialize<AltUserModel>(userString);
             await database.SaveUserAsync(user);
