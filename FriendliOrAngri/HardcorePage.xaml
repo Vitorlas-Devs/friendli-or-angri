@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FriendliOrAngri.HistoryPage"
-             Title="History">
+             x:Class="FriendliOrAngri.HardcorePage"
+             Title="Hardcore">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to HistoryPage!"
+            Text="Welcome to HardcorePage!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>

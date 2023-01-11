@@ -65,13 +65,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="HardcorePage.xaml.cs">
+	    <DependentUpon>HardcorePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="FreePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="GameOverPopUp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="HistoryPage.xaml">
+	  <MauiXaml Update="HardcorePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PlayPage.xaml">
