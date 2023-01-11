@@ -23,7 +23,7 @@
             </HorizontalStackLayout>
 
 
-            <ScrollView HeightRequest="300" Margin="0,50,0,0" WidthRequest="380" >
+            <ScrollView HeightRequest="250" Margin="0,50,0,0" WidthRequest="380" >
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Label
                     x:Name="lbDescription"

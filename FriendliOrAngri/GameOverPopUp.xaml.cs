@@ -4,8 +4,8 @@ namespace FriendliOrAngri;
 
 public partial class GameOverPopUp : Popup
 {
-	public GameOverPopUp()
-	{
+    public GameOverPopUp()
+    {
         InitializeComponent();
     }
 }
