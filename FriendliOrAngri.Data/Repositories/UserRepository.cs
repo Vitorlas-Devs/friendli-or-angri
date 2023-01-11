@@ -1,9 +1,7 @@
 ﻿using FriendliOrAngri.WebAPI.Data.Enums;
 using FriendliOrAngri.WebAPI.Data.Models;
-using Microsoft.VisualBasic;
 using MongoDB.Driver;
 using System.Security.Cryptography;
-using static System.Formats.Asn1.AsnWriter;
 
 namespace FriendliOrAngri.WebAPI.Data.Repositories;
 
@@ -79,6 +77,10 @@ public class UserRepository
         List<UserScoreModel> leaderboard =
             GetLeaderboard(dateSort, gameMode).ToList();
         UserModel user = GetUserByToken(userToken);
+
+        if (user is null)
+            throw new MissingMemberException("Nincs ilyen token-ű felhassználó!");
+
         return leaderboard.IndexOf(
             leaderboard.SingleOrDefault(u =>
                 u.Name == user.Name &&

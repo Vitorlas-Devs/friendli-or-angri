@@ -21,6 +21,26 @@ public class LeaderboardController : ControllerBase
                 ValidateGameMode(gameMode)))
         );
 
+    [HttpGet]
+    [Route("Position")]
+    public IActionResult GetUsersLeaderboardPosition(
+        string userToken, string dateSort, string gameMode) =>
+        this.Run(() =>
+        {
+            try
+            {
+                return Ok(this.userRepository.GetUsersLeaderboardPosition(
+                    userToken,
+                    ValidateDateSort(dateSort),
+                    ValidateGameMode(gameMode)));
+            }
+            catch (MissingMemberException e)
+            {
+                return StatusCode(404, e.Message);
+            }
+        }
+        );
+
     private DateSort ValidateDateSort(string dateSort)
     {
         switch (dateSort)
