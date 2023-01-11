@@ -21,7 +21,7 @@
                    FontAttributes="Bold" 
                    HorizontalOptions="Center" />
 
-            <Label Text="We found a ton of funny virus names, and as it turns out, it can be hard to tell them apart from real, legit software! I swear humans are bad at naming anything." 
+            <Label Text="We have found a ton of funny virus names, and as it turns out, it can be hard to tell them apart from real, legit software! We swear humans are bad at naming anything." 
                    FontSize="Medium"
                    HorizontalOptions="Center"/>
 

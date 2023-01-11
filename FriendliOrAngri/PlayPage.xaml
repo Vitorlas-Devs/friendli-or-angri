@@ -6,7 +6,6 @@
     <ScrollView>
         <VerticalStackLayout>
             <HorizontalStackLayout HorizontalOptions="End" Margin="0,10,10,0">
-                <Label x:Name="lbHearts" Text="Life: " FontSize="20"/>
                 <HorizontalStackLayout x:Name="hslHearts">
                 </HorizontalStackLayout>
                 <HorizontalStackLayout x:Name="hslBlackHearts">

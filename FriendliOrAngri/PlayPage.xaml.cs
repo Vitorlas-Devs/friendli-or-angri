@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Views;
 using System.Reflection;
 using System.Text.Json;
 
@@ -25,8 +26,7 @@ public partial class PlayPage : ContentPage
 
         InitializeComponent();
         ChooseRandomSoftwareAsync();
-        HeartsCreate(maxHearts);
-        RefreshHearts(true);
+        CreateHearts(maxHearts);
     }
     public async void ChooseRandomSoftwareAsync()
     {
@@ -74,7 +74,7 @@ public partial class PlayPage : ContentPage
         else
         {
             lbResult.Text = "Nope!";
-            RefreshHearts(false);
+            RefreshHearts();
         }
         if (Software.IsFriendly)
         {
@@ -110,33 +110,25 @@ public partial class PlayPage : ContentPage
         btnFriendly.Opacity = 1;
     }
 
-    private void HeartsCreate(int maxHeartsCount)
+    private void CreateHearts(int maxHeartsCount)
     {
         hslBlackHearts.Clear();
         for (int i = 0; i < maxHeartsCount; i++)
         {
-            hslHearts.Children.Add(new Label() { Text = "❤️", FontSize = 20});
+            hslHearts.Children.Add(new Label() { Text = "❤️", FontSize = 25});
         }
         hearts = maxHeartsCount;
     }
 
-    private void RefreshHearts(bool isCorrect)
+    private void RefreshHearts()
     {
-        if (!isCorrect)
-        {
-            hearts--;
-            hslHearts.Children.RemoveAt(hslHearts.Children.Count - 1);
-            hslBlackHearts.Children.Add(new Label() { Text = "🖤", FontSize = 20 });
-        }
+        hearts--;
+        hslHearts.Children.RemoveAt(hslHearts.Children.Count - 1);
+        hslBlackHearts.Children.Add(new Label() { Text = "🖤", FontSize = 25 });
 
         if (hearts == 0)
         {
-            lbHearts.Text = "Game over ";
             GameOver();
-        }
-        else
-        {
-            lbHearts.Text = "Life: ";
         }
     }
 
@@ -144,6 +136,7 @@ public partial class PlayPage : ContentPage
     {
         btnNext.Text = "Continue";
         btnNext.IsVisible = true;
+        this.ShowPopup(new GameOverPopUp());
     }
 
     private void ResetHeartLevel()
@@ -151,8 +144,7 @@ public partial class PlayPage : ContentPage
         if (hearts == 0)
         {
             hearts = maxHearts;
-            HeartsCreate(maxHearts);
+            CreateHearts(maxHearts);
         }
-        RefreshHearts(true);
     }
 }
