@@ -79,7 +79,7 @@ public partial class PlayPage : ContentPage
         else
         {
             lbResult.Text = "Nope!";
-            RefreshHearts(isFriendly);
+            RefreshHearts();
         }
         if (Software.IsFriendli)
         {
@@ -129,7 +129,7 @@ public partial class PlayPage : ContentPage
         }
     }
 
-    private void RefreshHearts(bool isFriendly)
+    private void RefreshHearts()
     {
         bool isCorrect = Game.LivesLeft == hearts;
         if (!isCorrect)
