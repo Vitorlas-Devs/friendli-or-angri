@@ -1,5 +1,7 @@
 using FriendliOrAngri.Models;
 using FriendliOrAngri.WebAPI.Data.Models;
+using Java.Lang;
+using Newtonsoft.Json;
 using System.Reflection;
 using System.Text.Json;
 
@@ -10,6 +12,8 @@ public partial class PlayPage : ContentPage
     Database database = App.Database;
     AltUserModel User;
 
+    
+
     public SoftwareModel Software;
     public GameModel Game;
     readonly int maxHearts = 5;
@@ -17,21 +21,28 @@ public partial class PlayPage : ContentPage
     public PlayPage()
     {
         InitializeComponent();
-        GetUser();
-        CreateNewGame();
-        GetSoftware();
+        InitStuff();
     }
-    public async void GetUser()
+
+    private async void InitStuff()
+    {
+        await GetUser();
+        await CreateNewGame();
+        await GetSoftware();
+    }
+
+    public async Task GetUser()
     {
         User = await database.GetUserAsync();
     }
-    public async void CreateNewGame()
-    {      
-        HttpClient client = new();
+    public async Task CreateNewGame()
+    {
+        using HttpClient client = new();
         await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
+        HeartsCreate(maxHearts);
     }
     
-    public async void GetSoftware()
+    public async Task GetSoftware()
     {
         //Response body: 
         //{
@@ -48,15 +59,14 @@ public partial class PlayPage : ContentPage
         //  "lastSoftwares": []
         //}
 
-        HttpClient client = new();
-        var response = await client.GetAsync($"http://143.198.188.238/api/Games?userToken={User.Token}");
-        string softwareString = await response.Content.ReadAsStringAsync();
-        Game = JsonSerializer.Deserialize<GameModel>(softwareString);
-        HeartsCreate(Game.LivesLeft);
+        using HttpClient client = new();
+
+        var response = await client.GetStringAsync($"http://143.198.188.238/api/Games?userToken={User.Token}");
+        Game = JsonConvert.DeserializeObject<GameModel>(response);
         lbSoftware.Text = Game.CurrentSoftware.Name;
     }
 
-    public async void Guess(bool isFriendly)
+    public async Task Guess(bool isFriendly)
     {
         //Response body:
         //{
@@ -75,22 +85,22 @@ public partial class PlayPage : ContentPage
         //  ]
         //}
 
-        HttpClient client = new();
-        var response = await client.PutAsync($"http://http://143.198.188.238/api/Games?userToken={User.Token}&isFriendly={isFriendly}", null);
+        using HttpClient client = new();
+        var response = await client.PutAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&isFriendli={isFriendly}", null);
         string softwareString = await response.Content.ReadAsStringAsync();
-        Game = JsonSerializer.Deserialize<GameModel>(softwareString);
+        Game = JsonConvert.DeserializeObject<GameModel>(softwareString);
         Software = Game.LastSoftwares.Last();
         ShowResult(isFriendly);
     }
     
-    private void btnAngry_Clicked(object sender, EventArgs e)
+    private async void btnAngry_Clicked(object sender, EventArgs e)
     {
-        Guess(false);
+        await Guess(false);
     }
 
-    private void btnFriendly_Clicked(object sender, EventArgs e)
+    private async void btnFriendly_Clicked(object sender, EventArgs e)
     {
-        Guess(true);
+        await Guess(true);
     }
 
     private void ShowResult(bool isFriendly)
@@ -123,7 +133,7 @@ public partial class PlayPage : ContentPage
     }
 
 
-    private void btnNext_Clicked(object sender, EventArgs e)
+    private async void btnNext_Clicked(object sender, EventArgs e)
     {
         lbDescription.Text = "";
         lbResult.Text = "";
@@ -131,7 +141,7 @@ public partial class PlayPage : ContentPage
         btnNext.IsVisible = false;
         btnNext.Text = "Go Next";
         ResetHeartLevel();
-        GetSoftware();
+        await GetSoftware();
         btnAngry.IsEnabled = true;
         btnFriendly.IsEnabled = true;
         btnAngry.Opacity = 1;
