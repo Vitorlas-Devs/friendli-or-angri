@@ -18,7 +18,7 @@ public class GameRepository
         this.games = this.database.GetCollection<GameModel>("games");
     }
 
-    public void CreateNewGame(string userToken, GameMode gameMode)
+    public int CreateNewGame(string userToken, GameMode gameMode)
     {
         if (!IsValidToken(userToken))
             throw new MissingMemberException("Nincs ilyen token-ű felhassználó!");
@@ -47,6 +47,7 @@ public class GameRepository
         };
 
         this.games.InsertOne(newGame);
+        return livesLeft;
     }
 
     public GameModel GetSoftware(string userToken)
