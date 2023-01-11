@@ -38,8 +38,7 @@ public class LeaderboardController : ControllerBase
             {
                 return StatusCode(404, e.Message);
             }
-        }
-        );
+        });
 
     private DateSort ValidateDateSort(string dateSort)
     {
@@ -70,4 +69,11 @@ public class LeaderboardController : ControllerBase
                 throw new ArgumentException("Ismeretlen játékmód!");
         }
     }
+
+    [HttpGet]
+    [Route("Count")]
+    public IActionResult GetUserCount() =>
+        this.Run(() =>
+            Ok(userRepository.GetUserCount())
+        );
 }
