@@ -1,10 +1,8 @@
 using CommunityToolkit.Maui.Views;
 using FriendliOrAngri.Models;
 using FriendliOrAngri.WebAPI.Data.Models;
-using Java.Lang;
 using Newtonsoft.Json;
 using System.Reflection;
-using System.Text.Json;
 
 namespace FriendliOrAngri;
 
