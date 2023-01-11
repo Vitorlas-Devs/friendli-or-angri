@@ -51,7 +51,7 @@ public class UserRepository
                     .ToUniversalTime()
                     .AddDays(dateFrom);
 
-                if (correctGameMode || isTooOld)
+                if (!correctGameMode || (isTooOld && dateFrom != 0))
                     continue;
 
                 leaderboard.Add(new()
