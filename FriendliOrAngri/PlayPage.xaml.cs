@@ -14,7 +14,7 @@ public partial class PlayPage : ContentPage
     public SoftwareModel Software;
     public GameModel Game;
 
-    readonly int maxHearts = 5;
+    private int hearts = 5;
 
     public PlayPage()
     {
@@ -37,7 +37,7 @@ public partial class PlayPage : ContentPage
     {
         using HttpClient client = new();
         await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
-        CreateHearts(maxHearts);
+        CreateHearts(hearts);
     }
     
     public async Task GetSoftware()
@@ -50,6 +50,7 @@ public partial class PlayPage : ContentPage
 
     public async Task Guess(bool isFriendly)
     {
+        hearts = Game.LivesLeft;
         using HttpClient client = new();
         var response = await client.PutAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&isFriendli={isFriendly}", null);
         string softwareString = await response.Content.ReadAsStringAsync();
@@ -70,7 +71,7 @@ public partial class PlayPage : ContentPage
 
     private void ShowResult(bool isFriendly)
     {
-        if (Software.IsFriendli == isFriendly)
+        if (Game.LivesLeft == hearts)
         {
             lbResult.Text = "Correct!";
         }
@@ -108,10 +109,10 @@ public partial class PlayPage : ContentPage
 
         if (Game.LivesLeft == 0)
         {
+            hearts = 5;
             await CreateNewGame();
         }
-
-        await GetSoftware();
+            await GetSoftware();
         btnAngry.IsEnabled = true;
         btnFriendly.IsEnabled = true;
         btnAngry.Opacity = 1;
@@ -129,7 +130,7 @@ public partial class PlayPage : ContentPage
 
     private void RefreshHearts(bool isFriendly)
     {
-        bool isCorrect = isFriendly == Software.IsFriendli;
+        bool isCorrect = Game.LivesLeft == hearts;
         if (!isCorrect)
         {
             hslHearts.Children.RemoveAt(hslHearts.Children.Count - 1);
