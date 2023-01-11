@@ -2,7 +2,9 @@ using CommunityToolkit.Maui.Views;
 using FriendliOrAngri.Models;
 using FriendliOrAngri.WebAPI.Data.Models;
 using Newtonsoft.Json;
+using System.Diagnostics;
 using System.Reflection;
+using System.Threading;
 
 namespace FriendliOrAngri;
 
@@ -10,6 +12,8 @@ public partial class PlayPage : ContentPage
 {
     Database database = App.Database;
     AltUserModel User;
+    DateTime _startTime;
+    CancellationTokenSource _cancellationTokenSource = new();
 
     public SoftwareModel Software;
     public GameModel Game;
@@ -38,6 +42,7 @@ public partial class PlayPage : ContentPage
         using HttpClient client = new();
         await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
         CreateHearts(hearts);
+        lbScore.Text = "Score: 0";
     }
     
     public async Task GetSoftware()
@@ -46,10 +51,29 @@ public partial class PlayPage : ContentPage
         var response = await client.GetStringAsync($"http://143.198.188.238/api/Games?userToken={User.Token}");
         Game = JsonConvert.DeserializeObject<GameModel>(response);
         lbSoftware.Text = Game.CurrentSoftware.Name;
+        _cancellationTokenSource = new CancellationTokenSource();
+        _startTime = DateTime.Now.AddSeconds(16);
+        Timer();
+    }
+
+    public async void Timer()
+    {
+        while (!_cancellationTokenSource.IsCancellationRequested)
+        {
+            int secondsRemaining = (int)(_startTime - DateTime.Now).TotalMilliseconds / 1000;
+            lbTimer.Text = $"Time left: {secondsRemaining}";
+            if (secondsRemaining <= 0)
+            {
+                lbTimer.Text = "Time's up!";
+                await Guess(false);
+            }
+            await Task.Delay(500);
+        }
     }
 
     public async Task Guess(bool isFriendly)
     {
+        _cancellationTokenSource.Cancel();
         hearts = Game.LivesLeft;
         using HttpClient client = new();
         var response = await client.PutAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&isFriendli={isFriendly}", null);
@@ -78,7 +102,7 @@ public partial class PlayPage : ContentPage
         else
         {
             lbResult.Text = "Nope!";
-            RefreshHearts(isFriendly);
+            RefreshHearts();
         }
         if (Software.IsFriendli)
         {
@@ -96,6 +120,7 @@ public partial class PlayPage : ContentPage
         btnFriendly.IsEnabled = false;
         btnAngry.Opacity = 0.7;
         btnFriendly.Opacity = 0.7;
+        lbScore.Text = $"Score: {Game.Score}";
     }
 
 
@@ -128,7 +153,7 @@ public partial class PlayPage : ContentPage
         }
     }
 
-    private void RefreshHearts(bool isFriendly)
+    private void RefreshHearts()
     {
         bool isCorrect = Game.LivesLeft == hearts;
         if (!isCorrect)
