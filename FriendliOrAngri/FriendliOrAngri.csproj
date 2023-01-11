@@ -48,6 +48,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\fa_solid.ttf" />
+	  <None Remove="Resources\Images\broken_heart.png" />
 	  <None Remove="Resources\Raw\data_angri.json" />
 	  <None Remove="Resources\Raw\data_friendli.json" />
 	</ItemGroup>
@@ -65,6 +66,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="FreePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GameOverPopUp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="HistoryPage.xaml">

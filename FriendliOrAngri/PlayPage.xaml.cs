@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Views;
 using FriendliOrAngri.Models;
 using FriendliOrAngri.WebAPI.Data.Models;
 using Java.Lang;
@@ -12,10 +13,9 @@ public partial class PlayPage : ContentPage
     Database database = App.Database;
     AltUserModel User;
 
-    
-
     public SoftwareModel Software;
     public GameModel Game;
+
     readonly int maxHearts = 5;
 
     public PlayPage()
@@ -39,28 +39,12 @@ public partial class PlayPage : ContentPage
     {
         using HttpClient client = new();
         await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
-        HeartsCreate(maxHearts);
+        CreateHearts(maxHearts);
     }
     
     public async Task GetSoftware()
     {
-        //Response body: 
-        //{
-        //  "userToken": "87156aa6-5f57-65b5-4b78-190e47760266",
-        //  "score": 0,
-        //  "gameMode": 0,
-        //  "livesLeft": 5,
-        //  "date": "2023-01-10T22:09:13.6110568Z",
-        //  "currentSoftware": {
-        //    "name": "Gymnasium",
-        //    "description": null,
-        //    "isFriendli": false
-        //  },
-        //  "lastSoftwares": []
-        //}
-
         using HttpClient client = new();
-
         var response = await client.GetStringAsync($"http://143.198.188.238/api/Games?userToken={User.Token}");
         Game = JsonConvert.DeserializeObject<GameModel>(response);
         lbSoftware.Text = Game.CurrentSoftware.Name;
@@ -68,28 +52,11 @@ public partial class PlayPage : ContentPage
 
     public async Task Guess(bool isFriendly)
     {
-        //Response body:
-        //{
-        //  "userToken": "87156aa6-5f57-65b5-4b78-190e47760266",
-        //  "score": 0,
-        //  "gameMode": 0,
-        //  "livesLeft": 4,
-        //  "date": "2023-01-10T22:09:13.611Z",
-        //  "currentSoftware": null,
-        //  "lastSoftwares": [
-        //    {
-        //      "name": "Gymnasium",
-        //      "description": "Gymnasium is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API. This is a fork of OpenAI's Gym.",
-        //      "isFriendli": true
-        //    }
-        //  ]
-        //}
-
         using HttpClient client = new();
         var response = await client.PutAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&isFriendli={isFriendly}", null);
         string softwareString = await response.Content.ReadAsStringAsync();
         Game = JsonConvert.DeserializeObject<GameModel>(softwareString);
-        Software = Game.LastSoftwares.Last();
+        Software = Game.LastSoftwares.First();
         ShowResult(isFriendly);
     }
     
@@ -112,7 +79,7 @@ public partial class PlayPage : ContentPage
         else
         {
             lbResult.Text = "Nope!";
-            RefreshHearts(false, isFriendly);
+            RefreshHearts(isFriendly);
         }
         if (Software.IsFriendli)
         {
@@ -140,7 +107,12 @@ public partial class PlayPage : ContentPage
         lbSoftware.TextColor = Colors.Black;
         btnNext.IsVisible = false;
         btnNext.Text = "Go Next";
-        ResetHeartLevel();
+
+        if (Game.LivesLeft == 0)
+        {
+            await CreateNewGame();
+        }
+
         await GetSoftware();
         btnAngry.IsEnabled = true;
         btnFriendly.IsEnabled = true;
@@ -148,32 +120,27 @@ public partial class PlayPage : ContentPage
         btnFriendly.Opacity = 1;
     }
 
-    private void HeartsCreate(int maxHeartsCount)
+    private void CreateHearts(int maxHeartsCount)
     {
         hslBlackHearts.Clear();
         for (int i = 0; i < maxHeartsCount; i++)
         {
-            hslHearts.Children.Add(new Label() { Text = "❤️", FontSize = 20});
+            hslHearts.Children.Add(new Label() { Text = "❤️", FontSize = 25});
         }
     }
 
-    private void RefreshHearts(bool isCorrect, bool isFriendly)
+    private void RefreshHearts(bool isFriendly)
     {
-        isCorrect = isFriendly == Software.IsFriendli;
+        bool isCorrect = isFriendly == Software.IsFriendli;
         if (!isCorrect)
         {
             hslHearts.Children.RemoveAt(hslHearts.Children.Count - 1);
-            hslBlackHearts.Children.Add(new Label() { Text = "🖤", FontSize = 20 });
+            hslBlackHearts.Children.Add(new Label() { Text = "🖤", FontSize = 25 });
         }
 
         if (Game.LivesLeft == 0)
         {
-            lbHearts.Text = "Game over ";
             GameOver();
-        }
-        else
-        {
-            lbHearts.Text = "Life: ";
         }
     }
 
@@ -181,13 +148,6 @@ public partial class PlayPage : ContentPage
     {
         btnNext.Text = "Continue";
         btnNext.IsVisible = true;
-    }
-
-    private void ResetHeartLevel()
-    {
-        if (Game.LivesLeft == 0)
-        {
-            HeartsCreate(maxHearts);
-        }
+        this.ShowPopup(new GameOverPopUp());
     }
 }
