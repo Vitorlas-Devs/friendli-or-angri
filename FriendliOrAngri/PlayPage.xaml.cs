@@ -57,7 +57,7 @@ public partial class PlayPage : ContentPage
         string softwareString = await response.Content.ReadAsStringAsync();
         Game = JsonConvert.DeserializeObject<GameModel>(softwareString);
         Software = Game.LastSoftwares.First();
-        ShowResult(isFriendly);
+        ShowResult();
     }
     
     private async void btnAngry_Clicked(object sender, EventArgs e)
@@ -70,7 +70,7 @@ public partial class PlayPage : ContentPage
         await Guess(true);
     }
 
-    private void ShowResult(bool isFriendly)
+    private void ShowResult()
     {
         if (Game.LivesLeft == hearts)
         {
