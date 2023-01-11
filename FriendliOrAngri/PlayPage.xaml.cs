@@ -1,82 +1,110 @@
+using FriendliOrAngri.Models;
+using FriendliOrAngri.WebAPI.Data.Models;
 using System.Reflection;
 using System.Text.Json;
 
 namespace FriendliOrAngri;
 
-public class Software
-{
-    public string Name { get; set; }
-    public string Description { get; set; }
-    public bool IsFriendly { get; set; }
-}
-
 public partial class PlayPage : ContentPage
 {
-    private List<string> lastSoftwares;
+    Database database = App.Database;
+    AltUserModel User;
 
-    public Software Software;
-
-    int hearts;
-    const int maxHearts = 5;
+    public SoftwareModel Software;
+    public GameModel Game;
+    readonly int maxHearts = 5;
 
     public PlayPage()
     {
-        lastSoftwares= new List<string>();
-
         InitializeComponent();
-        ChooseRandomSoftwareAsync();
-        HeartsCreate(maxHearts);
-        RefreshHearts(true);
+        GetUser();
+        CreateNewGame();
+        GetSoftware();
     }
-    public async void ChooseRandomSoftwareAsync()
+    public async void GetUser()
     {
-        Random random = new();
-        bool isFriendly = random.Next(2) == 1;
-        string fileName = isFriendly ? "data_friendli.json" : "data_angri.json";
-        var stream = await FileSystem.OpenAppPackageFileAsync(fileName);
-        string text = "";
-        using (var reader = new StreamReader(stream))
-        {
-            text = reader.ReadToEnd();
-        }
-        List<Software> softwareList = JsonSerializer.Deserialize<List<Software>>(text);
+        User = await database.GetUserAsync();
+    }
+    public async void CreateNewGame()
+    {      
+        HttpClient client = new();
+        await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
+    }
+    
+    public async void GetSoftware()
+    {
+        //Response body: 
+        //{
+        //  "userToken": "87156aa6-5f57-65b5-4b78-190e47760266",
+        //  "score": 0,
+        //  "gameMode": 0,
+        //  "livesLeft": 5,
+        //  "date": "2023-01-10T22:09:13.6110568Z",
+        //  "currentSoftware": {
+        //    "name": "Gymnasium",
+        //    "description": null,
+        //    "isFriendli": false
+        //  },
+        //  "lastSoftwares": []
+        //}
 
-        do
-        {
-            int randomIndex = random.Next(softwareList.Count);
-            Software = softwareList[randomIndex];
-        } while (lastSoftwares.Contains(Software.Name));
-
-        lastSoftwares.Add(Software.Name);
-        if (lastSoftwares.Count > 25)
-            lastSoftwares.RemoveAt(0);
-
-        lbSoftware.Text = Software.Name;
-        Software.IsFriendly = isFriendly;
+        HttpClient client = new();
+        var response = await client.GetAsync($"http://143.198.188.238/api/Games?userToken={User.Token}");
+        string softwareString = await response.Content.ReadAsStringAsync();
+        Game = JsonSerializer.Deserialize<GameModel>(softwareString);
+        HeartsCreate(Game.LivesLeft);
+        lbSoftware.Text = Game.CurrentSoftware.Name;
     }
 
+    public async void Guess(bool isFriendly)
+    {
+        //Response body:
+        //{
+        //  "userToken": "87156aa6-5f57-65b5-4b78-190e47760266",
+        //  "score": 0,
+        //  "gameMode": 0,
+        //  "livesLeft": 4,
+        //  "date": "2023-01-10T22:09:13.611Z",
+        //  "currentSoftware": null,
+        //  "lastSoftwares": [
+        //    {
+        //      "name": "Gymnasium",
+        //      "description": "Gymnasium is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API. This is a fork of OpenAI's Gym.",
+        //      "isFriendli": true
+        //    }
+        //  ]
+        //}
+
+        HttpClient client = new();
+        var response = await client.PutAsync($"http://http://143.198.188.238/api/Games?userToken={User.Token}&isFriendly={isFriendly}", null);
+        string softwareString = await response.Content.ReadAsStringAsync();
+        Game = JsonSerializer.Deserialize<GameModel>(softwareString);
+        Software = Game.LastSoftwares.Last();
+        ShowResult(isFriendly);
+    }
+    
     private void btnAngry_Clicked(object sender, EventArgs e)
     {
-        ShowResult(false);
+        Guess(false);
     }
 
     private void btnFriendly_Clicked(object sender, EventArgs e)
     {
-        ShowResult(true);
+        Guess(true);
     }
 
     private void ShowResult(bool isFriendly)
     {
-        if (Software.IsFriendly == isFriendly)
+        if (Software.IsFriendli == isFriendly)
         {
             lbResult.Text = "Correct!";
         }
         else
         {
             lbResult.Text = "Nope!";
-            RefreshHearts(false);
+            RefreshHearts(false, isFriendly);
         }
-        if (Software.IsFriendly)
+        if (Software.IsFriendli)
         {
             lbSoftware.TextColor = (Color)Application.Current.Resources.MergedDictionaries.ToList()[0]["FriendliColor"];
             lbSoftware.Text = $"😇 {lbSoftware.Text}";
@@ -103,7 +131,7 @@ public partial class PlayPage : ContentPage
         btnNext.IsVisible = false;
         btnNext.Text = "Go Next";
         ResetHeartLevel();
-        ChooseRandomSoftwareAsync();
+        GetSoftware();
         btnAngry.IsEnabled = true;
         btnFriendly.IsEnabled = true;
         btnAngry.Opacity = 1;
@@ -117,19 +145,18 @@ public partial class PlayPage : ContentPage
         {
             hslHearts.Children.Add(new Label() { Text = "❤️", FontSize = 20});
         }
-        hearts = maxHeartsCount;
     }
 
-    private void RefreshHearts(bool isCorrect)
+    private void RefreshHearts(bool isCorrect, bool isFriendly)
     {
+        isCorrect = isFriendly == Software.IsFriendli;
         if (!isCorrect)
         {
-            hearts--;
             hslHearts.Children.RemoveAt(hslHearts.Children.Count - 1);
             hslBlackHearts.Children.Add(new Label() { Text = "🖤", FontSize = 20 });
         }
 
-        if (hearts == 0)
+        if (Game.LivesLeft == 0)
         {
             lbHearts.Text = "Game over ";
             GameOver();
@@ -148,11 +175,9 @@ public partial class PlayPage : ContentPage
 
     private void ResetHeartLevel()
     {
-        if (hearts == 0)
+        if (Game.LivesLeft == 0)
         {
-            hearts = maxHearts;
             HeartsCreate(maxHearts);
         }
-        RefreshHearts(true);
     }
 }
