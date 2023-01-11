@@ -9,9 +9,9 @@
             <VerticalStackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Center">
                 <Label
                     x:Name="lbSoftware"
-                    Text="Tesztszoftver"
-                    LineBreakMode="WordWrap"
-                    WidthRequest="300"
+                    Text="😇 Tesztszoftver"
+                    LineBreakMode="CharacterWrap"
+                    WidthRequest="320"
                     FontSize="40"
                     Margin="0,30,0,20"
                     HorizontalTextAlignment="Center"/>
@@ -19,7 +19,7 @@
                 <ScrollView HeightRequest="250" WidthRequest="340">
                     <Label
                         x:Name="lbDescription"
-                        Text="fdigjdoigjdiogjdgidjgidjg diokkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkgjdigjdigjdigjdifgojdgiojdfigdjgidjgidgjdigjdigjdigggggggggggggggggggggggggggggggggggggggggggggggfgjdfigjdgijdkfcmbkmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm."
+                        Text="Egy egy tesztszoftver."
                         LineBreakMode="WordWrap"
                         FontSize="18"
                         HorizontalTextAlignment="Start"/>
@@ -41,7 +41,7 @@
                         TextColor="White"
                         FontSize="20"
                         FontAttributes="Bold"
-                        WidthRequest="150"
+                        WidthRequest="160"
                         />
 
                     <Button
@@ -51,7 +51,7 @@
                         TextColor="White"
                         FontSize="20"
                         FontAttributes="Bold"
-                        WidthRequest="150"
+                        WidthRequest="160"
                         />
                 </HorizontalStackLayout>
 
@@ -59,7 +59,7 @@
                     <Button
                         x:Name="btnNext"
                         Text="Go next"
-                        WidthRequest="150"
+                        WidthRequest="160"
                         BackgroundColor="{StaticResource Primary}"
                         FontSize="20"
                         FontAttributes="Bold"
