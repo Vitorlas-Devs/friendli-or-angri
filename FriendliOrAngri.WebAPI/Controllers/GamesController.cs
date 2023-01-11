@@ -33,8 +33,7 @@ namespace FriendliOrAngri.WebAPI.Controllers
                 
                 try
                 {
-                    this.gameRepository.CreateNewGame(userToken, validGameMode);
-                    return Ok();
+                    return Ok(this.gameRepository.CreateNewGame(userToken, validGameMode));
                 }
                 catch (MissingMemberException e)
                 {

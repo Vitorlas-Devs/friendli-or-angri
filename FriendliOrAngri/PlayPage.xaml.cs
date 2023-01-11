@@ -18,7 +18,7 @@ public partial class PlayPage : ContentPage
     public SoftwareModel Software;
     public GameModel Game;
 
-    private int hearts = 5;
+    private int hearts;
 
     public PlayPage()
     {
@@ -40,7 +40,8 @@ public partial class PlayPage : ContentPage
     public async Task CreateNewGame()
     {
         using HttpClient client = new();
-        await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
+        var response = await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
+        hearts = int.Parse(await response.Content.ReadAsStringAsync());
         CreateHearts(hearts);
         lbScore.Text = "Score: 0";
     }
@@ -80,7 +81,7 @@ public partial class PlayPage : ContentPage
         string softwareString = await response.Content.ReadAsStringAsync();
         Game = JsonConvert.DeserializeObject<GameModel>(softwareString);
         Software = Game.LastSoftwares.First();
-        ShowResult(isFriendly);
+        ShowResult();
     }
     
     private async void btnAngry_Clicked(object sender, EventArgs e)
@@ -93,7 +94,7 @@ public partial class PlayPage : ContentPage
         await Guess(true);
     }
 
-    private void ShowResult(bool isFriendly)
+    private void ShowResult()
     {
         if (Game.LivesLeft == hearts)
         {
