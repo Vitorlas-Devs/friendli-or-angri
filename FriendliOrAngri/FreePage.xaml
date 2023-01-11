@@ -9,7 +9,6 @@
             <VerticalStackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Center">
                 <Label
                     x:Name="lbSoftware"
-                    Text="😇 Tesztszoftver"
                     LineBreakMode="CharacterWrap"
                     WidthRequest="320"
                     FontSize="40"
@@ -19,7 +18,6 @@
                 <ScrollView HeightRequest="250" WidthRequest="340">
                     <Label
                         x:Name="lbDescription"
-                        Text="Egy egy tesztszoftver."
                         LineBreakMode="WordWrap"
                         FontSize="18"
                         HorizontalTextAlignment="Start"/>
@@ -29,7 +27,6 @@
             <VerticalStackLayout VerticalOptions="End" HorizontalOptions="Center" Margin="0,0,0,20">
                 <Label
                     x:Name="lbResult"
-                    Text="Correct!"
                     FontSize="30"
                     HorizontalTextAlignment="Center"/>
 
@@ -42,6 +39,7 @@
                         FontSize="20"
                         FontAttributes="Bold"
                         WidthRequest="160"
+                        Clicked="btnAngry_Clicked"
                         />
 
                     <Button
@@ -52,6 +50,7 @@
                         FontSize="20"
                         FontAttributes="Bold"
                         WidthRequest="160"
+                        Clicked="btnFriendly_Clicked"
                         />
                 </HorizontalStackLayout>
 
@@ -63,7 +62,8 @@
                         BackgroundColor="{StaticResource Primary}"
                         FontSize="20"
                         FontAttributes="Bold"
-                        IsVisible="true"
+                        IsVisible="false"
+                        Clicked="btnNext_Clicked"
                         />
                 </StackLayout>
             </VerticalStackLayout>
