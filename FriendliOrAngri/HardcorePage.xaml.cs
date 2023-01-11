@@ -1,8 +1,8 @@
 ﻿namespace FriendliOrAngri;
 
-public partial class HistoryPage : ContentPage
+public partial class HardcorePage : ContentPage
 {
-    public HistoryPage()
+    public HardcorePage()
     {
         InitializeComponent();
     }

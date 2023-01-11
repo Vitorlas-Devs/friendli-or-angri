@@ -19,28 +19,27 @@ public class GamesController : ControllerBase
         {
             GameMode validGameMode;
 
-            switch (gameMode)
-            {
-                case "normal":
-                    validGameMode = GameMode.Normal;
-                    break;
-                case "hardcore":
-                    validGameMode = GameMode.Hardcore;
-                    break;
-                default:
-                    throw new ArgumentException("Ismeretlen játékmód!");
-            }
-            
-            try
-            {
-                this.gameRepository.CreateNewGame(userToken, validGameMode);
-                return Ok();
-            }
-            catch (MissingMemberException e)
-            {
-                return StatusCode(404, e.Message);
-            }
-        });
+                switch (gameMode)
+                {
+                    case "normal":
+                        validGameMode = GameMode.Normal;
+                        break;
+                    case "hardcore":
+                        validGameMode = GameMode.Hardcore;
+                        break;
+                    default:
+                        throw new ArgumentException("Ismeretlen játékmód!");
+                }
+                
+                try
+                {
+                    return Ok(this.gameRepository.CreateNewGame(userToken, validGameMode));
+                }
+                catch (MissingMemberException e)
+                {
+                    return StatusCode(404, e.Message);
+                }
+            });
 
     [HttpGet]
     public IActionResult GetSoftware(string userToken) =>

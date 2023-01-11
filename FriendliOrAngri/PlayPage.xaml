@@ -2,34 +2,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FriendliOrAngri.PlayPage"
-             Title="Play">
+             Title="Normal">
     <ScrollView>
         <VerticalStackLayout>
-            <HorizontalStackLayout HorizontalOptions="End" Margin="0,10,10,0">
-                <HorizontalStackLayout x:Name="hslHearts">
+            <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="SpaceBetween" Margin="10,10,10,0" HeightRequest="40">
+                <Label x:Name="lbScore" Text="Score: 0" />
+                <HorizontalStackLayout>
+                    <HorizontalStackLayout x:Name="hslHearts">
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout x:Name="hslBlackHearts">
+                    </HorizontalStackLayout>
                 </HorizontalStackLayout>
-                <HorizontalStackLayout x:Name="hslBlackHearts">
-                </HorizontalStackLayout>
+            </FlexLayout>
+            <HorizontalStackLayout HorizontalOptions="Start" Margin="10,0,0,0">
+                <Label x:Name="lbTimer" Text="Time left:" />
             </HorizontalStackLayout>
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Label 
                 x:Name="lbSoftware"
                 LineBreakMode="WordWrap"
                 MaximumWidthRequest="180"
-                FontSize="Large"
+                FontSize="20"
                 Margin="0,50,0,0"
                 Scale="2"
                 HorizontalTextAlignment="Center"/>
             </HorizontalStackLayout>
 
 
-            <ScrollView HeightRequest="300" Margin="0,50,0,0" WidthRequest="380" >
+            <ScrollView HeightRequest="250" Margin="0,50,0,0" WidthRequest="380" >
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Label
                     x:Name="lbDescription"
                     LineBreakMode="WordWrap"
                     WidthRequest="360"
-                    FontSize="Medium"
+                    FontSize="18"
                     HorizontalTextAlignment="Start"/>
                 </HorizontalStackLayout>
             </ScrollView>
@@ -47,7 +53,7 @@
                 Text="😠 Angri"
                 BackgroundColor="{StaticResource AngriColor}"
                 TextColor="White"
-                FontSize="Large"
+                FontSize="22"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 Clicked="btnAngry_Clicked"/>
@@ -56,7 +62,7 @@
                 Text="😇 Friendli"
                 BackgroundColor="{StaticResource FriendliColor}"
                 TextColor="White"
-                FontSize="Large"
+                FontSize="22"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 Clicked="btnFriendly_Clicked"/>
@@ -67,7 +73,7 @@
             Text="Go next"
             Margin="0,20,0,0"
             BackgroundColor="{StaticResource Primary}"
-            FontSize="Large"
+            FontSize="22"
             FontAttributes="Bold"
             HorizontalOptions="Center"
             IsVisible="false"

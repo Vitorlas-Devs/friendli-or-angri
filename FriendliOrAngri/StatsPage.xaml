@@ -4,9 +4,20 @@
              x:Class="FriendliOrAngri.StatsPage"
              Title="Stats">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to StatsPage!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <ScrollView>
+            <VerticalStackLayout>
+                <Label Text="Leaderboard" FontSize="Large" />
+                <ListView ItemsSource="{Binding Leaderboard}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Name}" />
+                                <Label Text="{Binding Score}" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+        </ScrollView>
     </VerticalStackLayout>
 </ContentPage>

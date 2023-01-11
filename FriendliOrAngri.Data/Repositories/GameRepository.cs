@@ -17,7 +17,7 @@ public class GameRepository
     public GameRepository() =>
         this.dbClient = new("mongodb://localhost:27017");
 
-    public void CreateNewGame(string userToken, GameMode gameMode)
+    public int CreateNewGame(string userToken, GameMode gameMode)
     {
         if (!IsValidToken(userToken))
             throw new MissingMemberException("Nincs ilyen token-ű felhassználó!");
@@ -46,6 +46,7 @@ public class GameRepository
         };
 
         this.games.InsertOne(newGame);
+        return livesLeft;
     }
 
     public GameModel GetSoftware(string userToken)

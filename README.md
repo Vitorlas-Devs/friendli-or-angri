@@ -1,3 +1,3 @@
 # friendli-or-angri
 
-fun game very
+# 🦄👾👅🎮 Minden szipi-szuper

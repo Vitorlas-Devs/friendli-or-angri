@@ -11,14 +11,14 @@
         <Tab Title="Home" Icon="{StaticResource TabOne}">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
         </Tab>
-        <Tab Title="Play" Icon="{StaticResource TabTwo}">
-            <ShellContent ContentTemplate="{DataTemplate local:PlayPage}" Route="PlayPage"/>
-        </Tab>
         <Tab Title="Free Mode" Icon="{StaticResource TabThree}">
             <ShellContent ContentTemplate="{DataTemplate local:FreePage}" Route="FreePage"/>
         </Tab>
-        <Tab Title="History" Icon="{StaticResource TabFour}">
-            <ShellContent ContentTemplate="{DataTemplate local:HistoryPage}" Route="HistoryPage"/>
+        <Tab Title="Normal" Icon="{StaticResource TabTwo}">
+            <ShellContent ContentTemplate="{DataTemplate local:PlayPage}" Route="PlayPage"/>
+        </Tab>
+        <Tab Title="Hardcore" Icon="{StaticResource TabFour}">
+            <ShellContent ContentTemplate="{DataTemplate local:HardcorePage}" Route="HardcorePage"/>
         </Tab>
         <Tab Title="Stats" Icon="{StaticResource TabFive}">
             <ShellContent ContentTemplate="{DataTemplate local:StatsPage}" Route="StatsPage"/>

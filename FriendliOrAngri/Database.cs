@@ -13,7 +13,7 @@ namespace FriendliOrAngri
 {
     public class Database
     {
-        readonly SQLiteAsyncConnection connection;
+        public readonly SQLiteAsyncConnection connection;
 
         public Database(string dbPath)
         {
@@ -28,7 +28,7 @@ namespace FriendliOrAngri
 
         public async Task<int> SaveUserAsync(AltUserModel user)
         {
-            if (user.Id == 1)
+            if (await GetUserAsync() == null)
             {
                 return await connection.InsertAsync(user);
             }
