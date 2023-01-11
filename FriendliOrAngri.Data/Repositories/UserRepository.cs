@@ -7,15 +7,13 @@ namespace FriendliOrAngri.WebAPI.Data.Repositories;
 public class UserRepository
 {
     protected readonly MongoClient dbClient;
-    private IMongoCollection<UserModel> users;
 
-    protected IMongoDatabase database => dbClient.GetDatabase("friendliOrAngri");
+    private IMongoCollection<UserModel> users =>
+        dbClient.GetDatabase("friendliOrAngri")
+            .GetCollection<UserModel>("users");
 
-    public UserRepository()
-    {
+    public UserRepository() =>
         this.dbClient = new("mongodb://localhost:27017");
-        this.users = this.database.GetCollection<UserModel>("users");
-    }
 
     public IEnumerable<UserModel> GetAll()
     {

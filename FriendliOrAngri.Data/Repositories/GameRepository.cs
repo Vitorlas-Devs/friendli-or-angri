@@ -8,15 +8,14 @@ namespace FriendliOrAngri.WebAPI.Data.Repositories;
 public class GameRepository
 {
     protected readonly MongoClient dbClient;
-    private IMongoCollection<GameModel> games;
 
-    protected IMongoDatabase database => dbClient.GetDatabase("friendliOrAngri");
+    private IMongoCollection<GameModel> games =>
+        dbClient.GetDatabase("friendliOrAngri")
+            .GetCollection<GameModel>("games");
 
-    public GameRepository()
-    {
+
+    public GameRepository() =>
         this.dbClient = new("mongodb://localhost:27017");
-        this.games = this.database.GetCollection<GameModel>("games");
-    }
 
     public void CreateNewGame(string userToken, GameMode gameMode)
     {
