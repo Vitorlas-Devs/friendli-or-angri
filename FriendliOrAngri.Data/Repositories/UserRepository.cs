@@ -3,6 +3,7 @@ using FriendliOrAngri.WebAPI.Data.Models;
 using Microsoft.VisualBasic;
 using MongoDB.Driver;
 using System.Security.Cryptography;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace FriendliOrAngri.WebAPI.Data.Repositories;
 
@@ -30,37 +31,41 @@ public class UserRepository
         List<UserScoreModel> leaderboard = new();
 
         foreach (UserModel user in GetAll())
-            foreach (ScoreModel score in user.Scores)
+        {
+            int dateFrom = 0;
+            switch (dateSort)
             {
-                int dateFrom = 0;
-                switch (dateSort)
-                {
-                    case DateSort.LastMonth:
-                        dateFrom = -30;
-                        break;
-                    case DateSort.LastWeek:
-                        dateFrom = -7;
-                        break;
-                    case DateSort.LastDay:
-                        dateFrom = -1;
-                        break;
-                }
-
-                bool correctGameMode = score.GameMode == gameMode;
-                bool isTooOld = score.Date < DateTime.Now
-                    .ToUniversalTime()
-                    .AddDays(dateFrom);
-
-                if (!correctGameMode || (isTooOld && dateFrom != 0))
-                    continue;
-
-                leaderboard.Add(new()
-                {
-                    Name = user.Name,
-                    Id = user.Id,
-                    Score = score.Score,
-                });
+                case DateSort.LastMonth:
+                    dateFrom = -30;
+                    break;
+                case DateSort.LastWeek:
+                    dateFrom = -7;
+                    break;
+                case DateSort.LastDay:
+                    dateFrom = -1;
+                    break;
             }
+            int score = 0;
+
+            if (user.Scores.Any())
+                score = user.Scores
+                    .Where(s =>
+                    {
+                        bool correctGameMode = s.GameMode == gameMode;
+                        bool isTooOld = s.Date < DateTime.Now
+                            .ToUniversalTime()
+                            .AddDays(dateFrom);
+                        return correctGameMode && (!isTooOld || dateFrom == 0);
+                    })
+                    .Max(s => s.Score);
+
+            leaderboard.Add(new()
+            {
+                Name = user.Name,
+                Id = user.Id,
+                Score = score,
+            });
+        }
 
         return leaderboard.OrderByDescending(x => x.Score);
     }
