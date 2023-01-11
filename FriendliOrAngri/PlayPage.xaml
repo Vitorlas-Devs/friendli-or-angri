@@ -5,7 +5,7 @@
              Title="Normal">
     <ScrollView>
         <VerticalStackLayout>
-            <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="SpaceBetween" Margin="10,10,10,0" HeightRequest="30">
+            <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="SpaceBetween" Margin="10,10,10,0" HeightRequest="40">
                 <Label x:Name="lbScore" Text="Score: 0" />
                 <HorizontalStackLayout>
                     <HorizontalStackLayout x:Name="hslHearts">
@@ -14,7 +14,7 @@
                     </HorizontalStackLayout>
                 </HorizontalStackLayout>
             </FlexLayout>
-            <HorizontalStackLayout HorizontalOptions="Start" Margin="10,10,0,0">
+            <HorizontalStackLayout HorizontalOptions="Start" Margin="10,0,0,0">
                 <Label x:Name="lbTimer" Text="Time left:" />
             </HorizontalStackLayout>
             <HorizontalStackLayout HorizontalOptions="Center">
@@ -22,7 +22,7 @@
                 x:Name="lbSoftware"
                 LineBreakMode="WordWrap"
                 MaximumWidthRequest="180"
-                FontSize="Large"
+                FontSize="20"
                 Margin="0,50,0,0"
                 Scale="2"
                 HorizontalTextAlignment="Center"/>
@@ -35,7 +35,7 @@
                     x:Name="lbDescription"
                     LineBreakMode="WordWrap"
                     WidthRequest="360"
-                    FontSize="Medium"
+                    FontSize="18"
                     HorizontalTextAlignment="Start"/>
                 </HorizontalStackLayout>
             </ScrollView>
