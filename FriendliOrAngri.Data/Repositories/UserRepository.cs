@@ -1,4 +1,6 @@
-﻿using FriendliOrAngri.WebAPI.Data.Models;
+﻿using FriendliOrAngri.WebAPI.Data.Enums;
+using FriendliOrAngri.WebAPI.Data.Models;
+using Microsoft.VisualBasic;
 using MongoDB.Driver;
 using System.Security.Cryptography;
 
@@ -20,6 +22,42 @@ public class UserRepository
         List<UserModel> users = this.users.AsQueryable().ToList();
         foreach (UserModel user in users)
             yield return user;
+    }
+
+    public IEnumerable<UserScoreModel> GetLeaderboard(DateSort dateSort, GameMode gameMode)
+    {
+        List<UserScoreModel> leaderboard = new();
+
+        foreach (UserModel user in GetAll())
+            foreach (ScoreModel score in user.Scores)
+            {
+                int dateFrom = 0;
+                switch (dateSort)
+                {
+                    case DateSort.LastMonth:
+                        dateFrom = -30;
+                        break;
+                    case DateSort.LastWeek:
+                        dateFrom = -7;
+                        break;
+                    case DateSort.LastDay:
+                        dateFrom = -1;
+                        break;
+                }
+                bool isTooOld = score.Date < DateTime.Now.ToUniversalTime().AddDays(dateFrom);
+                bool correctGameMode = score.GameMode == gameMode;
+                if (isTooOld || correctGameMode)
+                    continue;
+
+                leaderboard.Add(new()
+                {
+                    Name = user.Name,
+                    Id = user.Id,
+                    Score = score.Score,
+                });
+            }
+
+        return leaderboard.OrderByDescending(x => x.Score);
     }
 
     public UserModel GetUserByToken(string token) =>
