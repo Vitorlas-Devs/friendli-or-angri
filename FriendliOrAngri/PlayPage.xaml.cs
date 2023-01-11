@@ -36,7 +36,7 @@ public partial class PlayPage : ContentPage
     public async Task CreateNewGame()
     {
         using HttpClient client = new();
-        var response = await client.PostAsync($"http://192.168.0.101:5201/api/Games?userToken={User.Token}&gameMode=normal", null);
+        var response = await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
         hearts = int.Parse(await response.Content.ReadAsStringAsync());
         CreateHearts(hearts);
     }
