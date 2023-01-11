@@ -24,7 +24,8 @@ public class UserRepository
             yield return user;
     }
 
-    public IEnumerable<UserScoreModel> GetLeaderboard(DateSort dateSort, GameMode gameMode)
+    public IEnumerable<UserScoreModel> GetLeaderboard(
+        DateSort dateSort, GameMode gameMode)
     {
         List<UserScoreModel> leaderboard = new();
 
@@ -44,9 +45,13 @@ public class UserRepository
                         dateFrom = -1;
                         break;
                 }
-                bool isTooOld = score.Date < DateTime.Now.ToUniversalTime().AddDays(dateFrom);
+
                 bool correctGameMode = score.GameMode == gameMode;
-                if (isTooOld || correctGameMode)
+                bool isTooOld = score.Date < DateTime.Now
+                    .ToUniversalTime()
+                    .AddDays(dateFrom);
+
+                if (correctGameMode || isTooOld)
                     continue;
 
                 leaderboard.Add(new()
@@ -58,6 +63,21 @@ public class UserRepository
             }
 
         return leaderboard.OrderByDescending(x => x.Score);
+    }
+
+    public int GetUserCount() =>
+        GetAll().Count();
+
+    public int GetUsersLeaderboardPosition(
+        string userToken, DateSort dateSort, GameMode gameMode)
+    {
+        List<UserScoreModel> leaderboard =
+            GetLeaderboard(dateSort, gameMode).ToList();
+        UserModel user = GetUserByToken(userToken);
+        return leaderboard.IndexOf(
+            leaderboard.SingleOrDefault(u =>
+                u.Name == user.Name &&
+                u.Id == user.Id)) + 1;
     }
 
     public UserModel GetUserByToken(string token) =>
