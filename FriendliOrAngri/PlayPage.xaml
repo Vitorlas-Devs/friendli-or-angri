@@ -20,7 +20,7 @@
                     </HorizontalStackLayout>
                 </StackLayout>
 
-                <Label x:Name="lbTimer" Text="⏳ -" Margin="10,0,0,0" FontSize="18" />
+                <Label x:Name="lbTimer" Text="⏳ -" Margin="10,0,0,0" FontSize="18" FontAttributes="Bold"/>
 
                 <Label
                     x:Name="lbSoftware"
