@@ -1,75 +1,58 @@
 ﻿using FriendliOrAngri.Models;
 using FriendliOrAngri.WebAPI.Data.Models;
-using static Java.Util.Jar.Attributes;
 using System.Threading;
 using Newtonsoft.Json;
 
 namespace FriendliOrAngri;
 
+public class Software
+{
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public bool IsFriendly { get; set; }
+}
+
 public partial class FreePage : ContentPage
 {
-    Database database = App.Database;
-    AltUserModel User;
-
-    public SoftwareModel Software;
-    public GameModel Game;
+    private Software Software;
 
     public FreePage()
     {
         InitializeComponent();
-        InitStuff();
+        ChooseRandomSoftwareAsync();
     }
 
-    private async void InitStuff()
+    private async void ChooseRandomSoftwareAsync()
     {
-        await GetUser();
-        await CreateNewGame();
-        await GetSoftware();
+        Random random = new();
+        bool isFriendly = random.Next(2) == 1;
+        string fileName = isFriendly ? "data_friendli.json" : "data_angri.json";
+        var stream = await FileSystem.OpenAppPackageFileAsync(fileName);
+        string text = "";
+        using (var reader = new StreamReader(stream))
+        {
+            text = reader.ReadToEnd();
+        }
+        List<Software> softwareList = JsonConvert.DeserializeObject<List<Software>>(text);
+        int randomIndex = random.Next(softwareList.Count);
+        Software = softwareList[randomIndex];
+        lbSoftware.Text = Software.Name;
+        Software.IsFriendly = isFriendly;
     }
 
-    public async Task GetUser()
+    private void btnAngry_Clicked(object sender, EventArgs e)
     {
-        User = await database.GetUserAsync();
+        ShowResult(false);
     }
 
-    public async Task CreateNewGame()
+    private void btnFriendly_Clicked(object sender, EventArgs e)
     {
-        using HttpClient client = new();
-        await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
+        ShowResult(true);
     }
 
-    public async Task GetSoftware()
+    private void ShowResult(bool isFriendly)
     {
-        using HttpClient client = new();
-        var response = await client.GetStringAsync($"http://143.198.188.238/api/Games?userToken={User.Token}");
-        Game = JsonConvert.DeserializeObject<GameModel>(response);
-        lbSoftware.Text = Game.CurrentSoftware.Name;
-    }
-
-    public async Task Guess(bool isFriendly)
-    {
-        using HttpClient client = new();
-        var response = await client.PutAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&isFriendli={isFriendly}", null);
-        string softwareString = await response.Content.ReadAsStringAsync();
-        Game = JsonConvert.DeserializeObject<GameModel>(softwareString);
-        Software = Game.LastSoftwares.First();
-        var isCorrect = Software.IsFriendli == isFriendly;
-        ShowResult(isCorrect);
-    }
-
-    private async void btnAngry_Clicked(object sender, EventArgs e)
-    {
-        await Guess(false);
-    }
-
-    private async void btnFriendly_Clicked(object sender, EventArgs e)
-    {
-        await Guess(true);
-    }
-
-    private void ShowResult(bool isCorrect)
-    {
-        if (isCorrect)
+        if (Software.IsFriendly == isFriendly)
         {
             lbResult.Text = "Correct!";
         }
@@ -77,7 +60,7 @@ public partial class FreePage : ContentPage
         {
             lbResult.Text = "Nope!";
         }
-        if (Software.IsFriendli)
+        if (Software.IsFriendly)
         {
             lbSoftware.TextColor = (Color)Application.Current.Resources.MergedDictionaries.ToList()[0]["FriendliColor"];
             lbSoftware.Text = $"😇 {lbSoftware.Text}";
@@ -95,19 +78,13 @@ public partial class FreePage : ContentPage
         btnFriendly.Opacity = 0.7;
     }
 
-    private async void btnNext_Clicked(object sender, EventArgs e)
+    private void btnNext_Clicked(object sender, EventArgs e)
     {
         lbDescription.Text = "";
         lbResult.Text = "";
         lbSoftware.TextColor = Colors.Black;
         btnNext.IsVisible = false;
-        btnNext.Text = "Go Next";
-
-        if (Game.LivesLeft == 0)
-        {
-            await CreateNewGame();
-        }
-        await GetSoftware();
+        ChooseRandomSoftwareAsync();
         btnAngry.IsEnabled = true;
         btnFriendly.IsEnabled = true;
         btnAngry.Opacity = 1;
