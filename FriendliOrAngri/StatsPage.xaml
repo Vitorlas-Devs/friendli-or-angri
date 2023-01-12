@@ -29,38 +29,32 @@
             </Picker>
         </FlexLayout>
         <Label x:Name="lbError" IsVisible="False" FontSize="20" HorizontalTextAlignment="Center" Text="No data 😳" VerticalOptions="Start" />
-        <ListView Margin="10" x:Name="lwLeaderboard" HasUnevenRows="True" VerticalOptions="Fill">
+        <ListView Margin="10" x:Name="lwLeaderboard" HasUnevenRows="True" VerticalOptions="StartAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <FlexLayout Direction="Row" JustifyContent="SpaceBetween" HeightRequest="30" Margin="0,0,10,0">
-                            <!--<HorizontalStackLayout></HorizontalStackLayout>-->
-                            <Label FontSize="18">
+                            <HorizontalStackLayout>
+                                <Label FontSize="18" Text="{Binding ListIndex}" />
+                                <Label FontSize="18" Margin="2,0,0,0">
                                 <Label.Text>
-                                    <MultiBinding StringFormat="{}{0}. {1}#{2}">
-                                        <Binding Path="Index"/>
+                                    <MultiBinding StringFormat="{}{0}#{1}">
                                         <Binding Path="Name" />
                                         <Binding Path="Id" />
                                     </MultiBinding>
                                 </Label.Text>
                             </Label>
+                            </HorizontalStackLayout>
                             <Label FontSize="18" Text="{Binding Score}" />
                         </FlexLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <HorizontalStackLayout VerticalOptions="End" Margin="10,-10,0,0">
-            <Label x:Name="lbUserPosition" FontAttributes="Bold" FontSize="18" Text="1222222"/>
-            <Label x:Name="lbUser" FontAttributes="Bold" FontSize="18">
-            <Label.Text>
-                <MultiBinding StringFormat="{}{0}#{1}">
-                    <Binding Path="User.Name" />
-                    <Binding Path="User.Id" />
-                </MultiBinding>
-                <!--21. Én#1-->
-            </Label.Text>
-        </Label>
-        </HorizontalStackLayout>
+        <StackLayout x:Name="slUser" Orientation="Horizontal" VerticalOptions="End" Margin="10,-10,10,0">
+            <Label x:Name="lbUserPosition" FontAttributes="Bold" FontSize="18" HorizontalOptions="Start" />
+            <Label x:Name="lbUser" FontAttributes="Bold" FontSize="18" Margin="2,0,0,0" HorizontalOptions="StartAndExpand" />
+            <Label x:Name="lbUserScore" FontAttributes="Bold" FontSize="18" HorizontalOptions="End" />
+        </StackLayout>
     </StackLayout>
 </ContentPage>

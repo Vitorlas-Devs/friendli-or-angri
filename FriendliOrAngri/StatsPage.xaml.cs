@@ -5,22 +5,16 @@ using Newtonsoft.Json;
 
 namespace FriendliOrAngri;
 
-public class ExtendedUserScoreModel : UserScoreModel
-{
-    public int Index { get; set; }
-}
 public partial class StatsPage : ContentPage
 {
     Database database = App.Database;
     public UserScoreModel[] leaderboard { get; set; }
-    public List<ExtendedUserScoreModel> leaderboardEx { get; set; }
     public AltUserModel User;
     string dateSort = "lifeTime";
     string gameMode = "normal";
 
     public StatsPage()
     {
-        //lbUser.BindingContext = User;
         InitializeComponent();
         InitStuff();
     }
@@ -44,26 +38,18 @@ public partial class StatsPage : ContentPage
         try
         {
             using HttpClient client = new();
+            //lwLeaderboard.ItemsSource = null; // maybe
             var response = await client.GetStringAsync($"http://143.198.188.238/api/Leaderboard?dateSort={dateSort}&gameMode={gameMode}");
             leaderboard = JsonConvert.DeserializeObject<UserScoreModel[]>(response);
-            for (int i = 0; i < leaderboard.Length; i++)
-            {
-                leaderboardEx.Add(new ExtendedUserScoreModel
-                {
-                    Index = i + 1,
-                    Name = leaderboard[i].Name,
-                    Id = leaderboard[i].Id,
-                    Score = leaderboard[i].Score,
-                });
-            }
+            var leaderboardWithIndex = leaderboard.Select((item, index) => new { item.Name, item.Id, item.Score, ListIndex = index + 1 + ". " }).ToList();
             lbError.IsVisible = false;
-            lbUser.IsVisible = true;
-            lwLeaderboard.ItemsSource = leaderboardEx;
+            slUser.IsVisible = true;
+            lwLeaderboard.ItemsSource = leaderboardWithIndex;
         }
         catch (Exception)
         {
             lbError.IsVisible = true;
-            lbUser.IsVisible = false;
+            slUser.IsVisible = false;
             lwLeaderboard.ItemsSource = null;
         }
     }
@@ -109,7 +95,11 @@ public partial class StatsPage : ContentPage
             using HttpClient client = new();
             var response = await client.GetStringAsync($"http://143.198.188.238/api/Leaderboard/Position?userToken={User.Token}&dateSort={dateSort}&gameMode={gameMode}");
             var position = JsonConvert.DeserializeObject<int>(response);
-            lbUserPosition.Text = position.ToString();
+            lbUserPosition.Text = $"{position}.";
+            lbUser.Text = $"{User.Name}#{User.Id}";
+            var user = await client.GetStringAsync($"http://143.198.188.238/api/Users?token={User.Token}");
+            UserModel altUser = JsonConvert.DeserializeObject<UserModel>(user);
+            lbUserScore.Text = $"{altUser.Scores.Max(x => x.Score)}";
         }
         catch (Exception)
         {
