@@ -737,7 +737,7 @@
   },
   {
     "Name": "i18n",
-    "Description": "The i18n library is designed to replace the use of .NET resources in favor of an easier, globally recognized standard for localizing ASP.NET-based web applications."
+    "Description": "i18n libraries are software libraries that provide a set of functions and tools to help developers internationalize their applications. These libraries typically provide support for handling text and date/time formats, as well as providing a framework for managing translations."
   },
   {
     "Name": "Pyrolite",
