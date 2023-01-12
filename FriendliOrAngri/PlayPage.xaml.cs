@@ -43,7 +43,7 @@ public partial class PlayPage : ContentPage
         var response = await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
         hearts = int.Parse(await response.Content.ReadAsStringAsync());
         CreateHearts(hearts);
-        lbScore.Text = "Score: 0";
+        lbScore.Text = $"⭐ - 0";
     }
     
     public async Task GetSoftware()
@@ -62,10 +62,10 @@ public partial class PlayPage : ContentPage
         while (!_cancellationTokenSource.IsCancellationRequested)
         {
             int secondsRemaining = (int)(_startTime - DateTime.Now).TotalMilliseconds / 1000;
-            lbTimer.Text = $"Time left: {secondsRemaining}";
+            lbTimer.Text = $"⏳ - {secondsRemaining}";
             if (secondsRemaining <= 0)
             {
-                lbTimer.Text = "Time's up!";
+                lbTimer.Text = "⌛ - Time's up!";
                 await Guess(false);
             }
             await Task.Delay(500);
@@ -121,7 +121,7 @@ public partial class PlayPage : ContentPage
         btnFriendly.IsEnabled = false;
         btnAngry.Opacity = 0.7;
         btnFriendly.Opacity = 0.7;
-        lbScore.Text = $"Score: {Game.Score}";
+        lbScore.Text = $"⭐ - {Game.Score}";
     }
 
 
