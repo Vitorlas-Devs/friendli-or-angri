@@ -1,23 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FriendliOrAngri"
              x:Class="FriendliOrAngri.StatsPage"
              Title="Stats">
-    <VerticalStackLayout>
-        <ScrollView>
-            <VerticalStackLayout>
-                <Label Text="Leaderboard" FontSize="Large" />
-                <ListView ItemsSource="{Binding Leaderboard}">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Name}" />
-                                <Label Text="{Binding Score}" />
-                            </StackLayout>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </VerticalStackLayout>
-        </ScrollView>
-    </VerticalStackLayout>
+    <StackLayout Margin="10">
+        <Label Text="Leaderboard" FontSize="30" VerticalOptions="Start"/>
+        <FlexLayout Direction="Row" HeightRequest="50" JustifyContent="SpaceEvenly" VerticalOptions="Start">
+            <Picker x:Name="pickGameMode" Title="Gamemode" FontSize="25" HorizontalTextAlignment="Center"
+                            SelectedIndexChanged="pickGameMode_SelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Normal</x:String>
+                        <x:String>Hardcore</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="pickDateSort" Title="Date" FontSize="25" HorizontalTextAlignment="Center" BindingContext="{x:Reference pickGameMode}" WidthRequest="{Binding Width}"
+                        SelectedIndexChanged="pickDateSort_SelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Lifetime</x:String>
+                        <x:String>Last Month</x:String>
+                        <x:String>Last Week</x:String>
+                        <x:String>Last Day</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </FlexLayout>
+        <Label x:Name="lbError" IsVisible="False" FontSize="20" HorizontalTextAlignment="Center" Text="No data 😳" VerticalOptions="Start" />
+        <ListView Margin="10" x:Name="lwLeaderboard" HasUnevenRows="True" VerticalOptions="Fill">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <FlexLayout Direction="Row" JustifyContent="SpaceBetween" HeightRequest="30" Margin="0,0,10,0">
+                            <!--<HorizontalStackLayout></HorizontalStackLayout>-->
+                            <Label FontSize="18">
+                                <Label.Text>
+                                    <MultiBinding StringFormat="{}{0}. {1}#{2}">
+                                        <Binding Path="Index"/>
+                                        <Binding Path="Name" />
+                                        <Binding Path="Id" />
+                                    </MultiBinding>
+                                </Label.Text>
+                            </Label>
+                            <Label FontSize="18" Text="{Binding Score}" />
+                        </FlexLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <HorizontalStackLayout VerticalOptions="End" Margin="10,-10,0,0">
+            <Label x:Name="lbUserPosition" FontAttributes="Bold" FontSize="18" Text="1222222"/>
+            <Label x:Name="lbUser" FontAttributes="Bold" FontSize="18">
+            <Label.Text>
+                <MultiBinding StringFormat="{}{0}#{1}">
+                    <Binding Path="User.Name" />
+                    <Binding Path="User.Id" />
+                </MultiBinding>
+                <!--21. Én#1-->
+            </Label.Text>
+        </Label>
+        </HorizontalStackLayout>
+    </StackLayout>
 </ContentPage>
