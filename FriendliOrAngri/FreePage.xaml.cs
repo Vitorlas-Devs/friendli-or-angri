@@ -19,10 +19,15 @@ public partial class FreePage : ContentPage
     public FreePage()
     {
         InitializeComponent();
-        ChooseRandomSoftwareAsync();
+        InitStuff();
     }
 
-    private async void ChooseRandomSoftwareAsync()
+    private async void InitStuff()
+    {
+        await ChooseRandomSoftwareAsync();
+    }
+
+    private async Task ChooseRandomSoftwareAsync()
     {
         Random random = new();
         bool isFriendly = random.Next(2) == 1;
@@ -78,13 +83,13 @@ public partial class FreePage : ContentPage
         btnFriendly.Opacity = 0.7;
     }
 
-    private void btnNext_Clicked(object sender, EventArgs e)
+    private async void btnNext_Clicked(object sender, EventArgs e)
     {
         lbDescription.Text = "";
         lbResult.Text = "";
         lbSoftware.TextColor = Colors.Black;
         btnNext.IsVisible = false;
-        ChooseRandomSoftwareAsync();
+        await ChooseRandomSoftwareAsync();
         btnAngry.IsEnabled = true;
         btnFriendly.IsEnabled = true;
         btnAngry.Opacity = 1;
