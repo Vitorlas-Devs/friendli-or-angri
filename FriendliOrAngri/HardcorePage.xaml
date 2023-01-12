@@ -8,7 +8,7 @@
             <VerticalStackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Center">
                 <StackLayout Orientation="Horizontal" Margin="10,10,10,0">
                     <HorizontalStackLayout HorizontalOptions="StartAndExpand">
-                        <Label x:Name="lbScore" Text="Score: 0" FontSize="18" FontAttributes="Bold"/>
+                        <Label x:Name="lbScore" Text="⭐ - 0" FontSize="18" FontAttributes="Bold"/>
                     </HorizontalStackLayout>
                     <HorizontalStackLayout HorizontalOptions="End">
                         <HorizontalStackLayout>
@@ -20,7 +20,7 @@
                     </HorizontalStackLayout>
                 </StackLayout>
 
-                <Label x:Name="lbTimer" Text="Time left:" Margin="10,0,0,0" FontSize="18" />
+                <Label x:Name="lbTimer" Text="⏳ -" Margin="10,0,0,0" FontSize="18" />
 
                 <Label
                     x:Name="lbSoftware"
