@@ -4,81 +4,84 @@
              x:Class="FriendliOrAngri.PlayPage"
              Title="Normal">
     <ScrollView>
-        <VerticalStackLayout>
-            <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="SpaceBetween" Margin="10,10,10,0" HeightRequest="40">
-                <Label x:Name="lbScore" Text="Score: 0" />
-                <HorizontalStackLayout>
-                    <HorizontalStackLayout x:Name="hslHearts">
+        <StackLayout>
+            <VerticalStackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Center">
+                <StackLayout Orientation="Horizontal" Margin="10,10,10,0">
+                    <HorizontalStackLayout HorizontalOptions="StartAndExpand">
+                        <Label x:Name="lbScore" Text="Score: 0" FontSize="18" FontAttributes="Bold"/>
                     </HorizontalStackLayout>
-                    <HorizontalStackLayout x:Name="hslBlackHearts">
+                    <HorizontalStackLayout HorizontalOptions="End">
+                        <HorizontalStackLayout>
+                            <HorizontalStackLayout x:Name="hslHearts">
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout x:Name="hslBlackHearts">
+                            </HorizontalStackLayout>
+                        </HorizontalStackLayout>
                     </HorizontalStackLayout>
-                </HorizontalStackLayout>
-            </FlexLayout>
-            <HorizontalStackLayout HorizontalOptions="Start" Margin="10,0,0,0">
-                <Label x:Name="lbTimer" Text="Time left:" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Label 
-                x:Name="lbSoftware"
-                LineBreakMode="WordWrap"
-                MaximumWidthRequest="180"
-                FontSize="20"
-                Margin="0,50,0,0"
-                Scale="2"
-                HorizontalTextAlignment="Center"/>
-            </HorizontalStackLayout>
+                </StackLayout>
 
+                <Label x:Name="lbTimer" Text="Time left:" Margin="10,0,0,0" FontSize="18" />
 
-            <ScrollView HeightRequest="250" Margin="0,50,0,0" WidthRequest="380" >
-                <HorizontalStackLayout HorizontalOptions="Center">
+                <Label
+                    x:Name="lbSoftware"
+                    LineBreakMode="CharacterWrap"
+                    WidthRequest="320"
+                    FontSize="40"
+                    Margin="0,30,0,20"
+                    HorizontalTextAlignment="Center"/>
+
+                <ScrollView HeightRequest="250" WidthRequest="340">
                     <Label
-                    x:Name="lbDescription"
-                    LineBreakMode="WordWrap"
-                    WidthRequest="360"
-                    FontSize="18"
-                    HorizontalTextAlignment="Start"/>
+                        x:Name="lbDescription"
+                        LineBreakMode="WordWrap"
+                        FontSize="18"
+                        HorizontalTextAlignment="Start"/>
+                </ScrollView>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout VerticalOptions="End" HorizontalOptions="Center" Margin="0,0,0,20">
+                <Label
+                    x:Name="lbResult"
+                    FontSize="30"
+                    HorizontalTextAlignment="Center"/>
+
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,20" Spacing="30">
+                    <Button
+                        x:Name="btnAngry"
+                        Text="😠 Angri"
+                        BackgroundColor="{StaticResource AngriColor}"
+                        TextColor="White"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        WidthRequest="160"
+                        Clicked="btnAngry_Clicked"
+                        />
+
+                    <Button
+                        x:Name="btnFriendly"
+                        Text="😇 Friendli"
+                        BackgroundColor="{StaticResource FriendliColor}"
+                        TextColor="White"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        WidthRequest="160"
+                        Clicked="btnFriendly_Clicked"
+                        />
                 </HorizontalStackLayout>
-            </ScrollView>
 
-            <Label
-            x:Name="lbResult"
-            HeightRequest="30"
-            FontSize="Large"
-            Margin="0,30,0,0"
-            HorizontalTextAlignment="Center"/>
-
-            <FlexLayout VerticalOptions="End" Margin="0,20,0,0" Direction="Row" AlignContent="Center" JustifyContent="SpaceAround" HeightRequest="50">
-                <Button
-                x:Name="btnAngry"
-                Text="😠 Angri"
-                BackgroundColor="{StaticResource AngriColor}"
-                TextColor="White"
-                FontSize="22"
-                FontAttributes="Bold"
-                HorizontalOptions="Center"
-                Clicked="btnAngry_Clicked"/>
-                <Button
-                x:Name="btnFriendly"
-                Text="😇 Friendli"
-                BackgroundColor="{StaticResource FriendliColor}"
-                TextColor="White"
-                FontSize="22"
-                FontAttributes="Bold"
-                HorizontalOptions="Center"
-                Clicked="btnFriendly_Clicked"/>
-            </FlexLayout>
-
-            <Button
-            x:Name="btnNext"
-            Text="Go next"
-            Margin="0,20,0,0"
-            BackgroundColor="{StaticResource Primary}"
-            FontSize="22"
-            FontAttributes="Bold"
-            HorizontalOptions="Center"
-            IsVisible="false"
-            Clicked="btnNext_Clicked"/>
-
-        </VerticalStackLayout>
+                <StackLayout HeightRequest="55">
+                    <Button
+                        x:Name="btnNext"
+                        Text="Go next"
+                        WidthRequest="160"
+                        BackgroundColor="{StaticResource Primary}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        IsVisible="false"
+                        Clicked="btnNext_Clicked"
+                        />
+                </StackLayout>
+            </VerticalStackLayout>
+        </StackLayout>
     </ScrollView>
 </ContentPage>
