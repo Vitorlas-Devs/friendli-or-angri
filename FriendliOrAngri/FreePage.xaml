@@ -3,10 +3,70 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FriendliOrAngri.FreePage"
              Title="Free Mode">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to FREE MODE! YOU COWARD"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ScrollView>
+        <StackLayout>
+            <VerticalStackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Center">
+                <Label
+                    x:Name="lbSoftware"
+                    LineBreakMode="CharacterWrap"
+                    WidthRequest="320"
+                    FontSize="40"
+                    Margin="0,30,0,20"
+                    HorizontalTextAlignment="Center"/>
+
+                <ScrollView HeightRequest="250" WidthRequest="340">
+                    <Label
+                        x:Name="lbDescription"
+                        LineBreakMode="WordWrap"
+                        FontSize="18"
+                        HorizontalTextAlignment="Start"/>
+                </ScrollView>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout VerticalOptions="End" HorizontalOptions="Center" Margin="0,0,0,20">
+                <Label
+                    x:Name="lbResult"
+                    FontSize="30"
+                    HorizontalTextAlignment="Center"/>
+
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,20" Spacing="30">
+                    <Button
+                        x:Name="btnAngry"
+                        Text="😠 Angri"
+                        BackgroundColor="{StaticResource AngriColor}"
+                        TextColor="White"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        WidthRequest="160"
+                        Clicked="btnAngry_Clicked"
+                        />
+
+                    <Button
+                        x:Name="btnFriendly"
+                        Text="😇 Friendli"
+                        BackgroundColor="{StaticResource FriendliColor}"
+                        TextColor="White"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        WidthRequest="160"
+                        Clicked="btnFriendly_Clicked"
+                        />
+                </HorizontalStackLayout>
+
+                <StackLayout HeightRequest="55">
+                    <Button
+                        x:Name="btnNext"
+                        Text="Go next"
+                        WidthRequest="160"
+                        BackgroundColor="{StaticResource Primary}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        IsVisible="false"
+                        Clicked="btnNext_Clicked"
+                        />
+                </StackLayout>
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
