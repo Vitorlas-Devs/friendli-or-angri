@@ -39,12 +39,9 @@ namespace FriendliOrAngri
            
         }
 
-        public async void DeleteDataAsync()
+        public async Task<int> DeleteUserAsync(AltUserModel user)
         {
-            await connection.DropTableAsync<AltUserModel>();
-            await connection.CreateTableAsync<AltUserModel>();
+            return await connection.DeleteAsync(user);
         }
-
-
     }
 }

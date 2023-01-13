@@ -64,6 +64,7 @@ public partial class StatsPage : ContentPage
                 break;
         }
         await GetLeaderboard();
+        await GetUserLeaderboardPosition();
     }
 
     private async void pickDateSort_SelectedIndexChanged(object sender, EventArgs e)
@@ -84,6 +85,7 @@ public partial class StatsPage : ContentPage
                 break;
         }
         await GetLeaderboard();
+        await GetUserLeaderboardPosition();
     }
 
     public async Task GetUserLeaderboardPosition()
@@ -98,9 +100,33 @@ public partial class StatsPage : ContentPage
             var user = await client.GetStringAsync($"http://143.198.188.238/api/Users?token={User.Token}");
             UserModel altUser = JsonConvert.DeserializeObject<UserModel>(user);
             var altUserScore = 0;
-            if (altUser.Scores.Any())
+            int dateFrom = 0;
+            switch (dateSort)
             {
-                altUserScore = altUser.Scores.Max(x => x.Score);
+                case "lastMonth":
+                    dateFrom = -30;
+                    break;
+                case "lastWeek":
+                    dateFrom = -7;
+                    break;
+                case "lastDay":
+                    dateFrom = -1;
+                    break;
+            }
+
+            var scores = altUser.Scores
+                    .Where(s =>
+                    {
+                        bool correctGameMode = s.GameMode.ToString().ToLower() == gameMode;
+                        bool isTooOld = s.Date < DateTime.Now
+                            .ToUniversalTime()
+                            .AddDays(dateFrom);
+                        bool filter = correctGameMode && (!isTooOld || dateFrom == 0);
+                        return filter;
+                    });
+            if (scores.Any())
+            {
+                altUserScore = scores.Max(x => x.Score);
             }
             lbUserScore.Text = $"{altUserScore}";
         }
