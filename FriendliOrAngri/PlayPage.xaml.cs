@@ -39,6 +39,7 @@ public partial class PlayPage : ContentPage
     }
     public async Task CreateNewGame()
     {
+        Shell.SetTabBarIsVisible(this, false);
         using HttpClient client = new();
         var response = await client.PostAsync($"http://143.198.188.238/api/Games?userToken={User.Token}&gameMode=normal", null);
         hearts = int.Parse(await response.Content.ReadAsStringAsync());
@@ -174,5 +175,6 @@ public partial class PlayPage : ContentPage
         btnNext.Text = "Continue";
         btnNext.IsVisible = true;
         this.ShowPopup(new GameOverPopUp());
+        Shell.SetTabBarIsVisible(this, true);
     }
 }
