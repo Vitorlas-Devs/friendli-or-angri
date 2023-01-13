@@ -30,6 +30,46 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
+	  <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+	  <ApplicationId>com.lyedlik.friendliorangri</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|AnyCPU'">
+	  <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+	  <ApplicationId>com.lyedlik.friendliorangri</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
+	  <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+	  <ApplicationId>com.lyedlik.friendliorangri</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
+	  <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+	  <ApplicationId>com.lyedlik.friendliorangri</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-maccatalyst|AnyCPU'">
+	  <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+	  <ApplicationId>com.lyedlik.friendliorangri</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-maccatalyst|AnyCPU'">
+	  <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+	  <ApplicationId>com.lyedlik.friendliorangri</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+	  <ApplicationId>com.lyedlik.friendliorangri</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+	  <ApplicationId>com.lyedlik.friendliorangri</ApplicationId>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 

@@ -43,25 +43,26 @@ public class UserRepository
                     dateFrom = -1;
                     break;
             }
-            int score = 0;
 
-            if (user.Scores.Any())
-                score = user.Scores
+            var scores = user.Scores
                     .Where(s =>
                     {
                         bool correctGameMode = s.GameMode == gameMode;
                         bool isTooOld = s.Date < DateTime.Now
                             .ToUniversalTime()
                             .AddDays(dateFrom);
-                        return correctGameMode && (!isTooOld || dateFrom == 0);
-                    })
-                    .Max(s => s.Score);
+                        bool filter = correctGameMode && (!isTooOld || dateFrom == 0);
+                        return filter;
+                    });
 
             leaderboard.Add(new()
             {
                 Name = user.Name,
                 Id = user.Id,
-                Score = score,
+                Score =
+                    scores.Any() ?
+                    scores.Max(s => s.Score) : 
+                    0
             });
         }
 
