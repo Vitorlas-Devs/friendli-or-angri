@@ -8,19 +8,19 @@
 
 
     <TabBar>
-        <Tab Title="Home" Icon="{StaticResource TabOne}">
+        <Tab x:Name="tab1" Title="Home" Icon="{StaticResource TabOne}">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
         </Tab>
-        <Tab Title="Free Mode" Icon="{StaticResource TabThree}">
+        <Tab x:Name="tab2" Title="Free Mode" Icon="{StaticResource TabThree}">
             <ShellContent ContentTemplate="{DataTemplate local:FreePage}" Route="FreePage"/>
         </Tab>
-        <Tab Title="Normal" Icon="{StaticResource TabTwo}">
+        <Tab x:Name="tab3" Title="Normal" Icon="{StaticResource TabTwo}">
             <ShellContent ContentTemplate="{DataTemplate local:PlayPage}" Route="PlayPage"/>
         </Tab>
-        <Tab Title="Hardcore" Icon="{StaticResource TabFour}">
+        <Tab x:Name="tab4" Title="Hardcore" Icon="{StaticResource TabFour}">
             <ShellContent ContentTemplate="{DataTemplate local:HardcorePage}" Route="HardcorePage"/>
         </Tab>
-        <Tab Title="Stats" Icon="{StaticResource TabFive}">
+        <Tab x:Name="tab5" Title="Stats" Icon="{StaticResource TabFive}">
             <ShellContent ContentTemplate="{DataTemplate local:StatsPage}" Route="StatsPage"/>
         </Tab>
     </TabBar>
