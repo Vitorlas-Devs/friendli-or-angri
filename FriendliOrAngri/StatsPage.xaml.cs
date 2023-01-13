@@ -35,18 +35,16 @@ public partial class StatsPage : ContentPage
 
     public async Task GetLeaderboard()
     {
-        try
-        {
             using HttpClient client = new();
-            //lwLeaderboard.ItemsSource = null; // maybe
             var response = await client.GetStringAsync($"http://143.198.188.238/api/Leaderboard?dateSort={dateSort}&gameMode={gameMode}");
             leaderboard = JsonConvert.DeserializeObject<UserScoreModel[]>(response);
             var leaderboardWithIndex = leaderboard.Select((item, index) => new { item.Name, item.Id, item.Score, ListIndex = index + 1 + ". " }).ToList();
+            leaderboardWithIndex.RemoveAll(x => x.Score == 0);
             lbError.IsVisible = false;
             slUser.IsVisible = true;
             lwLeaderboard.ItemsSource = leaderboardWithIndex;
-        }
-        catch (Exception)
+
+        if (!leaderboardWithIndex.Any())
         {
             lbError.IsVisible = true;
             slUser.IsVisible = false;
@@ -99,7 +97,12 @@ public partial class StatsPage : ContentPage
             lbUser.Text = $"{User.Name}#{User.Id}";
             var user = await client.GetStringAsync($"http://143.198.188.238/api/Users?token={User.Token}");
             UserModel altUser = JsonConvert.DeserializeObject<UserModel>(user);
-            lbUserScore.Text = $"{altUser.Scores.Max(x => x.Score)}";
+            var altUserScore = 0;
+            if (altUser.Scores.Any())
+            {
+                altUserScore = altUser.Scores.Max(x => x.Score);
+            }
+            lbUserScore.Text = $"{altUserScore}";
         }
         catch (Exception)
         {

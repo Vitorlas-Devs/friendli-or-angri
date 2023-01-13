@@ -28,7 +28,7 @@
                 </Picker.ItemsSource>
             </Picker>
         </FlexLayout>
-        <Label x:Name="lbError" IsVisible="False" FontSize="20" HorizontalTextAlignment="Center" Text="No data 😳" VerticalOptions="Start" />
+        <Label x:Name="lbError" IsVisible="False" FontSize="20" HorizontalTextAlignment="Center" Text="No data yet 😳" VerticalOptions="Start" />
         <ListView Margin="10" x:Name="lwLeaderboard" HasUnevenRows="True" VerticalOptions="StartAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
