@@ -25,6 +25,7 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         VerifyUserAsync();
+        
     }
 
     public async void VerifyUserAsync()
