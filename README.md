@@ -1,3 +1,1 @@
-# friendli-or-angri
-
-# 🦄👾👅🎮 Minden szipi-szuper
+# Download the Release ➡️
